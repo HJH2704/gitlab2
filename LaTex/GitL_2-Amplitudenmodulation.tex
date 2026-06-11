@@ -5,7 +5,7 @@
 \usepackage{amsmath,amssymb,amstext}% American Mathematical Society kurz ams% absolutes Standardpaket und noch zwei ergänzene Pakete
 \usepackage{caption}
 \usepackage{subcaption}
-\usepackage{siunitx}% Inhaltsverzeichnisse werden auf Deutsch benannt und nicht auf Englisch auch Datum-Einstellungen werden in die in Deutschland verwedente Schreibweise umgewandelt also nicht December 24, 2033, sondern 24. Dezember, 2033 auch Umlaute werden erkannt es führt allerdings keine Rechtschreibprüfung durch
+\usepackage{siunitx}% Inhaltsverzeichnisse werden auf Deutsch benannt und nicht auf Englisch auch Datum-Einstellungen werden in die in Deutschland verwendente Schreibweise umgewandelt also nicht December 24, 2033, sondern 24. Dezember, 2033 auch Umlaute werden erkannt es führt allerdings keine Rechtschreibprüfung durch
 \usepackage[utf8]{inputenc} % ist ein Relikt aus den Anfängen von Latex, da früher nicht jeder Edititor Umlaute etc. korrekt umgewandelt hat % wird bei vielen auf Latex basierenden Editoren nicht mehr benötigt aber schadet auch nicht 
 \usepackage[T1]{fontenc} % Silbentrennung und Eingabe von Umlauten
 \usepackage[scaled]{helvet}
@@ -17,17 +17,12 @@
 \usepackage[straightvoltages]{circuitikz} % Beispiel zum Zeichnen 
 \usepackage{multirow}
 \usepackage{float}%Mit dem Paket float kannst du die Positionierung erzwingen
-\usepackage[backend=biber,style=ieee,citestyle=numeric]{biblatex} 
 \usepackage[backend=biber,style=ieee,citestyle=numeric]{biblatex} % hier wird der Stil festgelegt
 \usepackage{csquotes} % zum Zitieren
-\usepackage{siunitx} % um Ohm als Symbol einzuführen
 \usepackage{pgfplots}
-\usepackage[utf8]{inputenc}
 \usepackage{amsmath}
-\usepackage{graphicx}
 \usepackage[ngerman]{babel}
 \usepackage{listings}
-\usepackage{siunitx}
 \usepackage{scrlayer-scrpage}
 \usepackage{rotating}%Rotation von Tabellen
 \usepackage{xcolor}
@@ -38,7 +33,7 @@
 
 
 \pagestyle{scrheadings}
-\addbibresource{../Literatur/Hier_Name_Einsetzen.bib}% fügt die Datei mit den Literaturquellen hinzu  
+\addbibresource{../Literatur/Amplitudenmodulation.bib}% fügt die Datei mit den Literaturquellen hinzu  
 
 \title{Vorlage-LaTex}
 \author{marcel vogel}
@@ -93,7 +88,7 @@
     Versuch:                        &Amplitudenmodulation               &           \\ [2ex] 
     Laborverantwortlicher:          &Vogel, Marcel                      & (5376456) \\ [2ex]
     \multirow{2}{*}{Laborpartner:}  & Holstein, Jonas                   & (5376427) \\
-                                    & Janssen, Heiko                    & (5387526) \\[2ex]  
+                                    & Janssen, Heiko                    & (5387526) \\ [2ex]  
     Semester:                       & SoSe 26                           &           \\ [2ex]  
     Aktives Semester                & Semester 4                        &           \\ [2ex]
     Fakultät:                       & Fakultät 4. - Elektrotechnik      &           \\ 
@@ -116,9 +111,62 @@
 \lstlistoflistings
 \newpage %Erzeugung eines Inhalts-, Abbildungs- und Tabellenverzeichnis
 
-\subsection{Vorbereitung}
-Ein Moduliertes Signal ist das Ergebnis einer modulation.
-Dabei wird durch ein höherfrequentes Trägersignal das Modlulierenden Signal verändert, damit ess übertragen werden kann.
+\section{Vorbereitung}
+\subsection{Was ist der Unterschied zwischen modulierendem und moduliertem Signal?}
+Ein Moduliertes Signal ist das Ergebnis einer Modulation \cite{}.
+Dabei wird durch ein höherfrequentes Trägersignal das Modulierenden Signal dahingehen verändert, damit es übertragen werden kann. \\
+Beim Modulierenden Signal handelt es sich um das Nachrichten oder Nutzsignal \cite{}. 
+Dieses enthält die die Information und soll übertragen werden.
+
+\subsection{Wie lautet für ein sinusförmiges Trägersignal $x_0(t) = U_0 sin(\omega_0t + \phi 0)$ der Zusammenhang zwischen der Amplitude $U_0$ und dessen Effektivwert?}
+Für sinusförmige Signale, somit auch für Trägersignale gilt \cite{Leifiphysik_wechselstrom}:
+\begin{equation}
+    U_{eff}=(\frac{U_0}{\sqrt{2}})
+    \label{Gl:Effektivwert_sin}
+\end{equation}
+Dabei gibt der Effektivwert den Gleichspannungswert, der an einem ohmschen Widerstand die gleiche Leistung erzeugen würde.\\
+Da bei der Frequenzmodulation sowie Phasenmodulation die Amplitude konstant ist, kann die Gleichung \ref{Gl:Effektivwert_sin} auch dabei verwendet werden.\\
+Bei der Amplitudenmmodulation kann der Effektivwert nicht so leicht berechnet werden, da hier die Amplitude schwankend ist. 
+Für diesen Fall kann folgende Formel zur berechnung des Effektivwertes verwendente werden \cite{Ampl_eff}.
+\begin{equation}
+    U_{eff}=\frac{U_0}{\sqrt{2}} \cdot \sqrt{1+\frac{m^2}{2}} 
+\end{equation}
+
+\subsection{Berechnung der Resonanzfrequenz des Parallelschwingkreises}
+
+Der gegebene Parallelschwingkreis besteht, zu sehen im Schaltplan Abbildung \ref{Ah:Schaltplan_Platine}, aus einer Spule $L_1$ und drei parallel geschalteten Kondensatoren $C_{16}$, $C_{17}$ und $C_{18}$.
+
+
+\begin{align*}
+    L_1    &= 22\,\mu\text{H} = 22 \cdot 10^{-6}\,\text{H} \\
+    C_{16} &= 4\text{n}7 = 4,7\,\text{nF} = 4,7 \cdot 10^{-9}\,\text{F} \\
+    C_{17} &= 220\,\text{pF} = 220 \cdot 10^{-12}\,\text{F} = 0,22 \cdot 10^{-9}\,\text{F} \\
+    C_{18} &= 0\,\text{pF} \quad \text{(optionaler Bestückungsplatz)}
+\end{align*}
+ 
+\subsubsection{Berechnung der Gesamtkapazität}
+Bei einer Parallelschaltung von Kondensatoren addieren sich die Einzelkapazitäten zur Gesamtkapazität $C_{\text{ges}}$ auf \cite{hagmannGrundlagenElektrotechnikBewaehrte2020}:
+\begin{align*}
+    C_{\text{ges}} &= C_{16} + C_{17} + C_{18} \\
+    C_{\text{ges}} &= 4,7\,\text{nF} + 0,22\,\text{nF} + 0\,\text{nF} = 4,92\,\text{nF} \\
+\end{align*}
+
+\subsubsection{Berechnung der Resonanzfrequenz}
+Die Resonanzfrequenz $f_r$ des Parallelschwingkreises wird mithilfe der Thomson-Schwingungsformel ermittelt \cite{hagmannGrundlagenElektrotechnikBewaehrte2020}:
+\begin{equation*}
+    f_r = \frac{1}{2\pi \cdot \sqrt{L_1 \cdot C_{\text{ges}}}}
+\end{equation*}
+
+
+\begin{equation*}
+f_r = \frac{1}{2\pi \cdot \sqrt{22 \cdot 10^{-6}\,\text{H} \cdot 4,92 \cdot 10^{-9}\,\text{F}}} \approx 483.756\,\text{Hz} \approx 483,8\,\text{kHz}
+\end{equation*}
+
+
+\subsubsection{Resonanzfrequenz}
+Die theoretische Resonanzfrequenz des Parallelschwingkreises beträgt ca. \textbf{483,8\,kHz}.
+\newpage
+
 
 
 
@@ -199,12 +247,125 @@ Dabei wird durch ein höherfrequentes Trägersignal das Modlulierenden Signal ve
 
 \subsection{Weitere Abbildungen}
 \label{Ah:Weitere_Abbildungen}
-
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/parallelschwingkreis_frequenzgang.png}
+    \caption{Theoretischer Bodeplott des Schwingkreises (Pyhtoncode \ref{lst:Bodeplotts_erzeugung})}
+    \label{Abb:Bodeplott_Schwingkreis}
+\end{figure}
+\newpage
+\includepdf[
+  pages=8,
+  pagecommand={
+    \phantomsection
+    \subsubsection{Schaltplan - Platine \cite{Labor_Amplitudenmodulation}}
+    \label{Ah:Schaltplan_Platine}
+  }
+]{../GIT_Labor_Amplitudenmodulation_SoSe26.pdf}
 
 \newpage
 \subsection{Programmcode}
 \label{Ah:Code}
+\begin{lstlisting}[style=pythonstyle,    
+    caption={Pyhtoncode zum Erzeugen von Bodeplotts},
+    label={lst:Bodeplotts_erzeugung}]
+    import numpy as np
+    import matplotlib.pyplot as plt
+    from scipy import signal
 
+    # Parameter
+    C = 4.92e-9  # 4.92 nF
+    L = 22e-6    # 22 uH
+
+    # Resonanzfrequenz berechnen
+    f0 = 1 / (2 * np.pi * np.sqrt(L * C))
+    omega0 = 2 * np.pi * f0
+
+    print("=" * 60)
+    print("PARALLELSCHWINGKREIS - UEBERTRAGUNGSFUNKTION")
+    print("=" * 60)
+    print(f"\nGegebene Werte:")
+    print(f"  C = {C*1e9:.2f} nF")
+    print(f"  L = {L*1e6:.2f} uH")
+    print(f"\nBerechnete Werte:")
+    print(f"  Resonanzfrequenz f0 = {f0/1e6:.4f} MHz")
+    print(f"  Kreisfrequenz omega0 = {omega0:.2e} rad/s")
+
+    Q = 10
+
+    print(f"  Guetefaktor Q = {Q:.2f}")
+
+    # Uebertragungsfunktion:
+    # H(s) = omega0^2 / (s^2 + (omega0/Q)*s + omega0^2)
+
+    num = [omega0**2]
+    den = [1, omega0/Q, omega0**2]
+
+    print("\n" + "=" * 60)
+    print("UEBERTRAGUNGSFUNKTION")
+    print("=" * 60)
+    print(f"\nH(s) = omega0^2")
+    print(f"       -------------------------")
+    print(f"       s^2 + (omega0/Q)*s + omega0^2")
+
+    frequency_ratio = np.logspace(-1, 0.8, 1000)
+    f = frequency_ratio * f0
+    w = 2 * np.pi * f
+
+    w_response, H_jw = signal.freqs(num, den, w)
+
+    magnitude = np.abs(H_jw)
+    phase = np.angle(H_jw) * 180 / np.pi
+    magnitude_norm = magnitude
+
+    fig = plt.figure(figsize=(14, 10))
+    gs = fig.add_gridspec(2, 1, height_ratios=[2, 2], hspace=0.3)
+
+    ax1 = fig.add_subplot(gs[0])
+    ax1.semilogx(frequency_ratio, magnitude_norm, 'b-', linewidth=2.5)
+
+    ax1.set_xlim([0.1, 6])
+    ax1.grid(True, which='both', alpha=0.3)
+    ax1.set_ylabel('|H(jw)|', fontsize=12, fontweight='bold')
+    ax1.set_title(
+        f'Betragsfrequenzgang (C={C*1e9:.2f}nF, L={L*1e6:.2f}uH)',
+        fontsize=14,
+        fontweight='bold'
+    )
+
+    ax3 = fig.add_subplot(gs[1])
+    ax3.semilogx(frequency_ratio, phase, 'b-', linewidth=2.5)
+
+    ax3.set_xlim([0.1, 6])
+    ax3.set_ylim([-180, 0])
+    ax3.grid(True, which='both', alpha=0.3)
+    ax3.set_xlabel('f/f0', fontsize=12, fontweight='bold')
+    ax3.set_ylabel('phi(w) [deg]', fontsize=12, fontweight='bold')
+    ax3.set_title(
+        'Phasengang (logarithmische Darstellung)',
+        fontsize=12,
+        fontweight='bold'
+    )
+
+    plt.savefig(
+        'parallelschwingkreis_frequenzgang.png',
+        dpi=150,
+        bbox_inches='tight'
+    )
+
+    print("\nPlot gespeichert")
+    plt.show()
+
+    print("\n" + "=" * 60)
+    print("CHARAKTERISTISCHE WERTE")
+    print("=" * 60)
+
+    idx_resonance = np.argmin(np.abs(frequency_ratio - 1.0))
+
+    print(f"\nBei Resonanz (f/f0 = 1.0):")
+    print(f"  y/y0 = {magnitude_norm[idx_resonance]:.4f}")
+    print(f"  Phase = {phase[idx_resonance]:.2f} deg")
+\end{lstlisting}
 
 
 \newpage

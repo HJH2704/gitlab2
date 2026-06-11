@@ -82,7 +82,7 @@
       <file>GitL_2-Amplitudenmodulation.bcf</file>
     </requires>
     <requires type="editable">
-      <file>../Literatur/Hier_Name_Einsetzen.bib</file>
+      <file>../Literatur/Amplitudenmodulation.bib</file>
     </requires>
   </external>
 </requests>

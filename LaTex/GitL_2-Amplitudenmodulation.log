@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.27)  11 JUN 2026 08:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.27)  11 JUN 2026 10:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/mvoge/OneDrive/Marcel/Bildung/Hochschule/4_Semester/4.10 Grundlagen_der_Informationstechnik/Labor/Lab_2/LaTex/GitL_2-Amplitudenmodulation.tex"
-(c:/Users/mvoge/OneDrive/Marcel/Bildung/Hochschule/4_Semester/4.10 Grundlagen_der_Informationstechnik/Labor/Lab_2/LaTex/GitL_2-Amplitudenmodulation.tex
+**c:/Users/mvoge/Git/Lab2/gitlab2/LaTex/GitL_2-Amplitudenmodulation.tex
+(c:/Users/mvoge/Git/Lab2/gitlab2/LaTex/GitL_2-Amplitudenmodulation.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
 (C:\Users\mvoge\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrartcl.cls
@@ -1445,7 +1445,7 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@ftn=\toks54
 )
 
-Package array Warning: Column x is already defined on input line 76.
+Package array Warning: Column x is already defined on input line 71.
 
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
@@ -1454,7 +1454,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 78.
+(scrartcl)           before \begin{document} on input line 73.
 (C:\Users\mvoge\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2026-05-21 v1.32 PDF bookmarks (HO)
  (C:\Users\mvoge\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
@@ -1471,30 +1471,30 @@ Package babel Info: 'ngerman' activates 'german' shorthands.
 )
 \openout1 = `GitL_2-Amplitudenmodulation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 78.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 73.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 73.
  (C:\Users\mvoge\AppData\Local\Programs\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
  (C:\Users\mvoge\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count516
@@ -1524,8 +1524,8 @@ Package caption Info: End \AtBeginDocument code.
  (C:\Users\mvoge\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-german.trsl
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 78.
-Package hyperref Info: Link coloring OFF on input line 78.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 73.
+Package hyperref Info: Link coloring OFF on input line 73.
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
  (C:\Users\mvoge\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\ngerman.lbx
@@ -1546,15 +1546,15 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `GitL_2-Amplitudenmodulation.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'GitL_2-Amplitudenmodulation.bbl' not found.
+Package biblatex Info: ... file 'GitL_2-Amplitudenmodulation.bbl' found.
+ (GitL_2-Amplitudenmodulation.bbl)
+Package biblatex Info: Reference section=0 on input line 73.
+Package biblatex Info: Reference segment=0 on input line 73.
 
-No file GitL_2-Amplitudenmodulation.bbl.
-Package biblatex Info: Reference section=0 on input line 78.
-Package biblatex Info: Reference segment=0 on input line 78.
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 \c@lstlisting=\count522
-Package tocbasic Info: setting babel extension for `lol' on input line 78.
+Package tocbasic Info: setting babel extension for `lol' on input line 73.
 \scr@dte@lstlisting@maxnumwidth=\skip100
 (C:\Users\mvoge\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -1568,28 +1568,28 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 <../Abbildungen/logo.png, id=6, 164.615pt x 69.25874pt>
 File: ../Abbildungen/logo.png Graphic file (type png)
 <use ../Abbildungen/logo.png>
-Package pdftex.def Info: ../Abbildungen/logo.png  used on input line 79.
+Package pdftex.def Info: ../Abbildungen/logo.png  used on input line 74.
 (pdftex.def)             Requested size: 224.06548pt x 94.27411pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 87.
  (C:\Users\mvoge\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 92.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 87.
  (C:\Users\mvoge\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/mvoge/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <../Abbildungen/logo.png>]
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 112.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 107.
  (C:\Users\mvoge\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 112.
+(Font)              scaled to size 11.39996pt on input line 107.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 112.
+(Font)              scaled to size 11.39996pt on input line 107.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 16.41594pt on input line 112.
+(Font)              scaled to size 16.41594pt on input line 107.
  (GitL_2-Amplitudenmodulation.toc)
 \tf@toc=\write5
 \openout5 = `GitL_2-Amplitudenmodulation.toc'.
@@ -1608,16 +1608,128 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 
  [3]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 119.
- [4]
+(Font)              scaled to size 13.67995pt on input line 115.
 
-LaTeX Warning: Empty bibliography on input line 126.
+
+LaTeX Warning: Citation '' on page 4 undefined on input line 116.
+
+
+LaTeX Warning: Citation '' on page 4 undefined on input line 118.
+
+
+Overfull \hbox (71.27686pt too wide) in paragraph at lines 116--120
+\T1/cmr/m/n/12 Beim Mo-du-lie-ren-den Si-gnal han-delt es sich um das Nach-rich-ten oder Nutz-si-gnal [[]].
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\omega' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 121.
+
+[4]
+Overfull \hbox (49.04683pt too wide) in paragraph at lines 155--156
+\T1/cmr/m/n/12 Die Re-so-nanz-fre-quenz $\OML/cmm/m/it/12 f[]$ \T1/cmr/m/n/12 des Par-al-lel-schwing-krei-ses wird mit-hil-fe der Thomson-Schwingungsformel
+ []
 
 [5]
+Overfull \hbox (73.70477pt too wide) in paragraph at lines 177--177
+\T1/cmr/m/n/12 phy-sik. Adres-se: []$\T1/cmtt/m/n/12 https : / / www . leifiphysik . de / elektrizitaetslehre / wechselstromtechnik /
+ []
+
+
+Overfull \hbox (20.2205pt too wide) in paragraph at lines 177--177
+[]\T1/cmr/m/n/12 ^^R  Informations- und Kom-mu-ni-ka-ti-ons-tech-nik - Am-pli-tu-den-mo-du-la-ti-on. ^^PAdresse: []$\T1/cmtt/m/n/12 https :
+ []
+
+[6]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6] [7] [8] [9] (GitL_2-Amplitudenmodulation.aux)
+[7]
+<../Abbildungen/parallelschwingkreis_frequenzgang.png, id=114, 848.4498pt x 622.0038pt>
+File: ../Abbildungen/parallelschwingkreis_frequenzgang.png Graphic file (type png)
+<use ../Abbildungen/parallelschwingkreis_frequenzgang.png>
+Package pdftex.def Info: ../Abbildungen/parallelschwingkreis_frequenzgang.png  used on input line 252.
+(pdftex.def)             Requested size: 358.50612pt x 262.82481pt.
+ [8 <../Abbildungen/parallelschwingkreis_frequenzgang.png>]
+<../GIT_Labor_Amplitudenmodulation_SoSe26.pdf, id=122, 597.50829pt x 845.0471pt>
+File: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf Graphic file (type pdf)
+<use ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf>
+Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf  used on input line 264.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<../GIT_Labor_Amplitudenmodulation_SoSe26.pdf, id=124, page=8, 597.50829pt x 845.0471pt>
+File: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf Graphic file (type pdf)
+<use ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf, page 8>
+Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf , page8 used on input line 264.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf Graphic file (type pdf)
+<use ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf, page 8>
+Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf , page8 used on input line 264.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf Graphic file (type pdf)
+<use ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf, page 8>
+Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf , page8 used on input line 264.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf Graphic file (type pdf)
+<use ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf, page 8>
+Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf , page8 used on input line 264.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\cite' on input line 264.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 264.
+
+File: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf Graphic file (type pdf)
+<use ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf, page 8>
+Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf , page8 used on input line 264.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[9
+
+ <../GIT_Labor_Amplitudenmodulation_SoSe26.pdf>] (C:\Users\mvoge\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 272.
+ [10] [11] [12] [13] (GitL_2-Amplitudenmodulation.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
@@ -1627,17 +1739,17 @@ Package logreq Info: Writing requests to 'GitL_2-Amplitudenmodulation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72492 strings out of 467683
- 1823485 string characters out of 5414721
- 3095111 words of memory out of 5000000
- 100756 multiletter control sequences out of 15000+600000
- 647298 words of font info for 72 fonts, out of 8000000 for 9000
+ 73397 strings out of 467683
+ 1836474 string characters out of 5414721
+ 3400961 words of memory out of 5000000
+ 101532 multiletter control sequences out of 15000+600000
+ 654498 words of font info for 91 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,19n,107p,11373b,2389s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on GitL_2-Amplitudenmodulation.pdf (9 pages, 131078 bytes).
+ 108i,20n,107p,11290b,3234s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecit1095.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso12.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
+Output written on GitL_2-Amplitudenmodulation.pdf (13 pages, 505562 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
- 74 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 746 PDF objects out of 1000 (max. 8388607)
+ 137 named destinations out of 1000 (max. 500000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 
