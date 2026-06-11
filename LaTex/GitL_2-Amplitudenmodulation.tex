@@ -1,0 +1,225 @@
+\documentclass[12pt]{scrartcl}
+\usepackage{textgreek}
+\usepackage[ngerman]{babel}% ngerman verändert die Spracheinstellungen 
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath,amssymb,amstext}% American Mathematical Society kurz ams% absolutes Standardpaket und noch zwei ergänzene Pakete
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{siunitx}% Inhaltsverzeichnisse werden auf Deutsch benannt und nicht auf Englisch auch Datum-Einstellungen werden in die in Deutschland verwedente Schreibweise umgewandelt also nicht December 24, 2033, sondern 24. Dezember, 2033 auch Umlaute werden erkannt es führt allerdings keine Rechtschreibprüfung durch
+\usepackage[utf8]{inputenc} % ist ein Relikt aus den Anfängen von Latex, da früher nicht jeder Edititor Umlaute etc. korrekt umgewandelt hat % wird bei vielen auf Latex basierenden Editoren nicht mehr benötigt aber schadet auch nicht 
+\usepackage[T1]{fontenc} % Silbentrennung und Eingabe von Umlauten
+\usepackage[scaled]{helvet}
+\usepackage[hidelinks]{hyperref}% Dieses Paket wandelt alle internen Verlinkungen in klickbare Verweise um % Dazu gehören auch die Einträge im Inhaltsverzeichnis und im Abbildungsverzeichnis % Ein Klick auf einen entsprechenden Eintrag führt somit direkt in die  entsprechende Stelle im Dokument
+\usepackage{color} % \textcolor{Farbe}{Text} bewirkt, dass der im zweiten Argument enthaltene Text in der im ersten Argument angegebenen Farbe erscheint % Standardmäßig sind die Farben black, white, red, green, blue, cyan, magenta, yellow definiert
+\usepackage{epsfig} % Einfügen von Bildern \inlcudegraphics ist deutlich angenehmer
+\usepackage{wrapfig} % Bilder oder Tabellen können textumflosssen eingebuden werden% \usepackage{graphicx} muss häufig noch mit importiert werden
+\usepackage{tikz} % ermöglicht es in Latex zu zeichnen
+\usepackage[straightvoltages]{circuitikz} % Beispiel zum Zeichnen 
+\usepackage{multirow}
+\usepackage{float}%Mit dem Paket float kannst du die Positionierung erzwingen
+\usepackage[backend=biber,style=ieee,citestyle=numeric]{biblatex} 
+\usepackage[backend=biber,style=ieee,citestyle=numeric]{biblatex} % hier wird der Stil festgelegt
+\usepackage{csquotes} % zum Zitieren
+\usepackage{siunitx} % um Ohm als Symbol einzuführen
+\usepackage{pgfplots}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[ngerman]{babel}
+\usepackage{listings}
+\usepackage{siunitx}
+\usepackage{scrlayer-scrpage}
+\usepackage{rotating}%Rotation von Tabellen
+\usepackage{xcolor}
+\usepackage{pdfpages}
+\usepackage{tabularx}
+
+\newcolumntype{x}[1]{!{\centering\arraybackslash\vrule width #1}}% Erlaubt dickere Linien in Tabellen. cx{2pt}
+
+
+\pagestyle{scrheadings}
+\addbibresource{../Literatur/Hier_Name_Einsetzen.bib}% fügt die Datei mit den Literaturquellen hinzu  
+
+\title{Vorlage-LaTex}
+\author{marcel vogel}
+\date{May 2025}
+\pgfplotsset{compat=1.18}
+
+% --- Color Definitions ---
+\definecolor{pyblue}{RGB}{33, 118, 199}
+\definecolor{pygreen}{RGB}{0, 128, 0}
+\definecolor{pyorange}{RGB}{199, 108, 0}
+\definecolor{pygray}{gray}{0.25}
+\definecolor{pylightgray}{gray}{0.95}
+
+% --- Python Style for Listings ---
+\lstdefinestyle{pythonstyle}{
+    language=Python,
+    backgroundcolor=\color{pylightgray},
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{pyblue}\bfseries,
+    stringstyle=\color{pygreen},
+    commentstyle=\color{pygray}\itshape,
+    numberstyle=\tiny\color{pyorange},
+    numbers=left,
+    stepnumber=1,
+    numbersep=8pt,
+    tabsize=4,
+    showspaces=false,
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    rulecolor=\color{pygray},
+}
+
+% --- Neue Tabellenfunktionen ---
+\newcolumntype{x}[1]{!{\centering\arraybackslash\vrule width #1}}% ERlaubt dickere Linien in Tabellen. cx{2pt}
+
+\begin{document}
+\begin{figure}[h] \centering \includegraphics[width=0.5\textwidth]{../Abbildungen/logo.png}
+\end{figure}
+\bigskip
+\begin{center}
+\bigskip \bigskip \rule{\textwidth}{1pt}
+ 
+\begin{Large} 
+    \bigskip 
+    \textbf{Grundlagen der Informationstechnik - Bericht}
+\end{Large} 
+\rule{\textwidth}{1pt}
+ 
+\bigskip
+\begin{tabular}{lp{6cm}p{2cm}} 
+    Versuch:                        &Amplitudenmodulation               &           \\ [2ex] 
+    Laborverantwortlicher:          &Vogel, Marcel                      & (5376456) \\ [2ex]
+    \multirow{2}{*}{Laborpartner:}  & Holstein, Jonas                   & (5376427) \\
+                                    & Janssen, Heiko                    & (5387526) \\[2ex]  
+    Semester:                       & SoSe 26                           &           \\ [2ex]  
+    Aktives Semester                & Semester 4                        &           \\ [2ex]
+    Fakultät:                       & Fakultät 4. - Elektrotechnik      &           \\ 
+                                    & und Informatik                    &           \\ [2ex] 
+    Studiengang:                    & Dual. B.Eng Elektrotechnik        &           \\ [2ex] 
+    Bezeichnung:                    & ET4 - Informationstechnik         &           \\ [2ex] 
+    Dozent:                         & Prof. Dr.-Ing. Mario Goldenbaum   &           \\ [2ex] 
+    Laboringeneur                   & Dipl.-Ing. H. Würfel              &           \\ [2ex]    
+    Versuchstermin:                 & 12.06.2026                        &           \\ [2ex] 
+    Abgabetermin:                   & 26.06.2026                        &           \\ [2ex]            
+\end{tabular}
+\end{center}
+\thispagestyle{empty} 
+\newpage 
+
+\tableofcontents 
+\newpage 
+\listoffigures 
+\listoftables 
+\lstlistoflistings
+\newpage %Erzeugung eines Inhalts-, Abbildungs- und Tabellenverzeichnis
+
+\subsection{Vorbereitung}
+Ein Moduliertes Signal ist das Ergebnis einer modulation.
+Dabei wird durch ein höherfrequentes Trägersignal das Modlulierenden Signal verändert, damit ess übertragen werden kann.
+
+
+
+
+\newpage
+\section{Literaturverzeichnis}
+\printbibliography %Erzeugung von Literatturverzeichnis
+\newpage
+\section*{Anhang}
+\label{Ah:}
+\addcontentsline{toc}{section}{Anhang} % Hinzufügen eines Section* in das Inhhaltsverzeichnis
+\renewcommand*{\thesubsection}{\Alph{subsection}}% Bildung einer neuen definition von Subsection
+\subsection{Messtabellen}
+\label{Ah:Messtabellen}
+\begin{table}[h] 
+    \centering
+    \begin{tabular}{|c|c|c|} 
+          \hline \textbf{Gleichspannung} & \textbf{Ausgangsamplitude } & \textbf{Ausgangsamplitude }   \\ 
+          \textbf{ $U_2$ [V]}    & \textbf{$U_A$ [V] bei 2V}      & \textbf{$U_A$ [V] bei 25mV} \\ \hline
+            $-12$ &  &  \\ \hline
+            $-11$ &  &  \\ \hline
+            $-10$ &  &  \\ \hline
+            $-9 $ &  &  \\ \hline
+            $-8 $ &  &  \\ \hline
+            $-7 $ &  &  \\ \hline
+            $-6 $ &  &  \\ \hline 
+            $-5 $ &  &  \\ \hline 
+            $-4 $ &  &  \\ \hline    
+            $-3 $ &  &  \\ \hline 
+            $-2 $ &  &  \\ \hline 
+            $-1 $ &  &  \\ \hline 
+            $ 0 $ &  &  \\ \hline      
+    \end{tabular}
+    \caption{Messwerte der Aufgabe 1} \label{tab:Aufgabe1}
+\end{table}
+\begin{table}[h] 
+    \centering
+    \begin{tabular}{|c|c|} 
+          \hline \textbf{Trägerfrequenz} & \textbf{Ausgangsspannung } \\ 
+          \textbf{ $f_0$ [kHz]}    & \textbf{$U_A$ [V] bei 2V}       \\ \hline
+            $400$ &    \\ \hline
+            $420$ &    \\ \hline
+            $440$ &    \\ \hline
+            $460$ &    \\ \hline
+            $480$ &    \\ \hline
+            $500$ &    \\ \hline
+            $520$ &    \\ \hline 
+            $540$ &    \\ \hline 
+            $560$ &    \\ \hline    
+            $580$ &    \\ \hline 
+            $600$ &    \\ \hline      
+    \end{tabular}
+    \caption{Messwerte der Aufgabe 3.1} \label{tab:Aufgabe3.1}
+\end{table}
+\begin{table}[h] 
+    \centering
+    \begin{tabular}{|c|c|} 
+          \hline \textbf{Signalfrequenzen} & \textbf{Ausgangsspannung } \\ 
+          \textbf{ $f_1$ [kHz]}    & \textbf{$U_A$ [V] bei 2V}       \\ \hline
+            $10  $ &    \\ \hline
+            $12.5$ &    \\ \hline
+            $15  $ &    \\ \hline
+            $17.5$ &    \\ \hline
+            $20  $ &    \\ \hline
+            $22.5$ &    \\ \hline
+            $25  $ &    \\ \hline 
+            $27.5$ &    \\ \hline 
+            $30  $ &    \\ \hline    
+            $32.5$ &    \\ \hline 
+            $35  $ &    \\ \hline    
+            $37.5$ &    \\ \hline 
+            $40  $ &    \\ \hline    
+    \end{tabular}
+    \caption{Messwerte der Aufgabe 3.2} \label{tab:Aufgabe3.2}
+\end{table}
+
+\newpage
+
+\subsection{Weitere Abbildungen}
+\label{Ah:Weitere_Abbildungen}
+
+
+\newpage
+\subsection{Programmcode}
+\label{Ah:Code}
+
+
+
+\newpage
+\begin{table}[h] 
+    \subsection{Geräteliste} 
+    \centering
+    \begin{tabular}{|c|c|c|} 
+          \hline \textbf{Bezeichnung} & \textbf{Verwendungszweck} & \textbf{Inventar-Nr.}   \\ \hline
+            &  &  \\ \hline
+            &  &  \\ \hline
+            &  &  \\ \hline
+            &  &  \\ \hline
+            &  &  \\ \hline
+            &  &  \\ \hline        
+    \end{tabular}
+    \caption{Liste aller verwendeten Geräte} \label{tab:Geräteliste}
+\end{table}
+\end{document}

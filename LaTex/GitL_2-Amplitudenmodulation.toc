@@ -1,0 +1,9 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {subsection}{\numberline {0.1}Vorbereitung}{4}{subsection.0.1}%
+\contentsline {section}{\numberline {1}Literaturverzeichnis}{5}{section.1}%
+\contentsline {section}{Anhang}{6}{section.1}%
+\contentsline {subsection}{\numberline {A}Messtabellen}{6}{subsection.1.1}%
+\contentsline {subsection}{\numberline {B}Weitere Abbildungen}{7}{subsection.1.2}%
+\contentsline {subsection}{\numberline {C}Programmcode}{8}{subsection.1.3}%
+\contentsline {subsection}{\numberline {D}Geräteliste}{9}{subsection.1.4}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
