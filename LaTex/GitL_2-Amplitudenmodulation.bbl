@@ -1,0 +1,126 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Leifiphysik_wechselstrom}{online}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{11}
+      \field{month}{6}
+      \field{shorttitle}{Effektivwerte von Wechselstrom und -spannung}
+      \field{title}{Wechselstromtechnik - Effektivwerte von Wechselstrom und -spannung}
+      \field{titleaddon}{LEIFIphysik}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.leifiphysik.de/elektrizitaetslehre/wechselstromtechnik/grundwissen/effektivwerte-von-wechselstrom-und-spannung
+      \endverb
+      \verb{url}
+      \verb https://www.leifiphysik.de/elektrizitaetslehre/wechselstromtechnik/grundwissen/effektivwerte-von-wechselstrom-und-spannung
+      \endverb
+    \endentry
+    \entry{Ampl_eff}{online}{}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{11}
+      \field{month}{6}
+      \field{shorttitle}{Amplitudenmodulation}
+      \field{title}{Informations- und Kommunikationstechnik - Amplitudenmodulation}
+      \field{type}{Blog}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.elektroniktutor.de/signalkunde/am.html
+      \endverb
+      \verb{url}
+      \verb https://www.elektroniktutor.de/signalkunde/am.html
+      \endverb
+    \endentry
+    \entry{hagmannGrundlagenElektrotechnikBewaehrte2020}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=33a7d9a9998e42a7fcbf533ad49040ab}{%
+           family={Hagmann},
+           familyi={H\bibinitperiod},
+           given={Gert},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Wiebelsheim}%
+      }
+      \list{publisher}{1}{%
+        {{AULA}-Verlag}%
+      }
+      \strng{namehash}{33a7d9a9998e42a7fcbf533ad49040ab}
+      \strng{fullhash}{33a7d9a9998e42a7fcbf533ad49040ab}
+      \strng{fullhashraw}{33a7d9a9998e42a7fcbf533ad49040ab}
+      \strng{bibnamehash}{33a7d9a9998e42a7fcbf533ad49040ab}
+      \strng{authorbibnamehash}{33a7d9a9998e42a7fcbf533ad49040ab}
+      \strng{authornamehash}{33a7d9a9998e42a7fcbf533ad49040ab}
+      \strng{authorfullhash}{33a7d9a9998e42a7fcbf533ad49040ab}
+      \strng{authorfullhashraw}{33a7d9a9998e42a7fcbf533ad49040ab}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{18., durchgesehene und korrigierte Auflage}
+      \field{isbn}{978-3-89104-830-6}
+      \field{pagetotal}{398}
+      \field{series}{Elektrotechnik}
+      \field{shorttitle}{Grundlagen der Elektrotechnik}
+      \field{title}{Grundlagen der Elektrotechnik: das bewährte Lehrbuch für Studierende der Elektrotechnik und anderer technischer Studiengänge ab 1. Semester: mit 225 Abbildungen, 4 Tabellen, Aufgaben und Lösungen}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Table of Contents PDF:C\:\\Users\\mvoge\\Zotero\\storage\\HXQ84HLF\\Hagmann - 2020 - Grundlagen der Elektrotechnik das bewährte Lehrbuch für Studierende der Elektrotechnik und anderer.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Labor_Amplitudenmodulation}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b9d5092b153ccb9def9dc65d2a782768}{%
+           family={{Prof. Dr.-Ing. Mario Goldenbaum}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Fakultät für Elektrotechnik und Informatik Hochschule Bremen}%
+      }
+      \strng{namehash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{fullhash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{fullhashraw}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{bibnamehash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{authorbibnamehash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{authornamehash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{authorfullhash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{authorfullhashraw}{b9d5092b153ccb9def9dc65d2a782768}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Grundlagen der Informationstechnik Labor Amplitudenmodulation}
+      \field{urlday}{11}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
