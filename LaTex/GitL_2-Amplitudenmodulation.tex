@@ -28,6 +28,7 @@
 \usepackage{xcolor}
 \usepackage{pdfpages}
 \usepackage{tabularx}
+\usepackage{longtable}
 
 \newcolumntype{x}[1]{!{\centering\arraybackslash\vrule width #1}}% Erlaubt dickere Linien in Tabellen. cx{2pt}
 
@@ -181,69 +182,194 @@ Die theoretische Resonanzfrequenz des Parallelschwingkreises beträgt ca. \textb
 \renewcommand*{\thesubsection}{\Alph{subsection}}% Bildung einer neuen definition von Subsection
 \subsection{Messtabellen}
 \label{Ah:Messtabellen}
-\begin{table}[h] 
-    \centering
-    \begin{tabular}{|c|c|c|} 
-          \hline \textbf{Gleichspannung} & \textbf{Ausgangsamplitude } & \textbf{Ausgangsamplitude }   \\ 
-          \textbf{ $U_2$ [V]}    & \textbf{$U_A$ [V] bei 2V}      & \textbf{$U_A$ [V] bei 25mV} \\ \hline
-            $-12$ &  &  \\ \hline
-            $-11$ &  &  \\ \hline
-            $-10$ &  &  \\ \hline
-            $-9 $ &  &  \\ \hline
-            $-8 $ &  &  \\ \hline
-            $-7 $ &  &  \\ \hline
-            $-6 $ &  &  \\ \hline 
-            $-5 $ &  &  \\ \hline 
-            $-4 $ &  &  \\ \hline    
-            $-3 $ &  &  \\ \hline 
-            $-2 $ &  &  \\ \hline 
-            $-1 $ &  &  \\ \hline 
-            $ 0 $ &  &  \\ \hline      
-    \end{tabular}
-    \caption{Messwerte der Aufgabe 1} \label{tab:Aufgabe1}
-\end{table}
+\begin{longtable}{|c|c|c|}
+
+\hline
+\textbf{Gleichspannung} & \textbf{Ausgangsamplitude} & \textbf{Ausgangsamplitude} \\
+\textbf{$U_2$ [V]} & \textbf{$U_A$ [V] bei 2V} & \textbf{$U_A$ [V] bei 25mV} \\ \hline
+\endfirsthead
+             0.0  &  &  \\ \hline
+            -0.1  &  &  \\ \hline
+            -0.2  &  &  \\ \hline
+            -0.3  &  &  \\ \hline
+            -0.4  &  &  \\ \hline
+            -0.5  &  &  \\ \hline
+            -0.6  &  &  \\ \hline
+            -0.7  &  &  \\ \hline
+            -0.8  &  &  \\ \hline
+            -0.9  &  &  \\ \hline
+            -1.0  &  &  \\ \hline
+            -1.1  &  &  \\ \hline
+            -1.2  &  &  \\ \hline
+            -1.3  &  &  \\ \hline
+            -1.4  &  &  \\ \hline
+            -1.5  &  &  \\ \hline
+            -1.6  &  &  \\ \hline
+            -1.7  &  &  \\ \hline
+            -1.8  &  &  \\ \hline
+            -1.9  &  &  \\ \hline
+            -2.0  &  &  \\ \hline
+            -2.1  &  &  \\ \hline
+            -2.2  &  &  \\ \hline
+            -2.3  &  &  \\ \hline
+            -2.4  &  &  \\ \hline
+            -2.5  &  &  \\ \hline
+            -2.6  &  &  \\ \hline
+            -2.7  &  &  \\ \hline
+            -2.8  &  &  \\ \hline
+            -2.9  &  &  \\ \hline
+            -3.0  &  &  \\ \hline
+            -3.1  &  &  \\ \hline
+            -3.2  &  &  \\ \hline
+            -3.3  &  &  \\ \hline
+            -3.4  &  &  \\ \hline
+            -3.5  &  &  \\ \hline
+            -3.6  &  &  \\ \hline
+            -3.7  &  &  \\ \hline
+            -3.8  &  &  \\ \hline
+            -3.9  &  &  \\ \hline
+            -4.0  &  &  \\ \hline
+            -4.1  &  &  \\ \hline
+            -4.2  &  &  \\ \hline
+            -4.3  &  &  \\ \hline
+            -4.4  &  &  \\ \hline
+            -4.5  &  &  \\ \hline
+            -4.6  &  &  \\ \hline
+            -4.7  &  &  \\ \hline
+            -4.8  &  &  \\ \hline
+            -4.9  &  &  \\ \hline
+            -5.0  &  &  \\ \hline
+            -5.1  &  &  \\ \hline
+            -5.2  &  &  \\ \hline
+            -5.3  &  &  \\ \hline
+            -5.4  &  &  \\ \hline
+            -5.5  &  &  \\ \hline
+            -5.6  &  &  \\ \hline
+            -5.7  &  &  \\ \hline
+            -5.8  &  &  \\ \hline
+            -5.9  &  &  \\ \hline
+            -6.0  &  &  \\ \hline
+            -6.1  &  &  \\ \hline
+            -6.2  &  &  \\ \hline
+            -6.3  &  &  \\ \hline
+            -6.4  &  &  \\ \hline
+            -6.5  &  &  \\ \hline
+            -6.6  &  &  \\ \hline
+            -6.7  &  &  \\ \hline
+            -6.8  &  &  \\ \hline
+            -6.9  &  &  \\ \hline
+            -7.0  &  &  \\ \hline
+            -7.1  &  &  \\ \hline
+            -7.2  &  &  \\ \hline
+            -7.3  &  &  \\ \hline
+            -7.4  &  &  \\ \hline
+            -7.5  &  &  \\ \hline
+            -7.6  &  &  \\ \hline
+            -7.7  &  &  \\ \hline
+            -7.8  &  &  \\ \hline
+            -7.9  &  &  \\ \hline
+            -8.0  &  &  \\ \hline
+            -8.1  &  &  \\ \hline
+            -8.2  &  &  \\ \hline
+            -8.3  &  &  \\ \hline
+            -8.4  &  &  \\ \hline
+            -8.5  &  &  \\ \hline
+            -8.6  &  &  \\ \hline
+            -8.7  &  &  \\ \hline
+            -8.8  &  &  \\ \hline
+            -8.9  &  &  \\ \hline
+            -9.0  &  &  \\ \hline
+            -9.1  &  &  \\ \hline
+            -9.2  &  &  \\ \hline
+            -9.3  &  &  \\ \hline
+            -9.4  &  &  \\ \hline
+            -9.5  &  &  \\ \hline
+            -9.6  &  &  \\ \hline
+            -9.7  &  &  \\ \hline
+            -9.8  &  &  \\ \hline
+            -9.9  &  &  \\ \hline
+            -10.0 &  &  \\ \hline
+            -10.1 &  &  \\ \hline
+            -10.2 &  &  \\ \hline
+            -10.3 &  &  \\ \hline
+            -10.4 &  &  \\ \hline
+            -10.5 &  &  \\ \hline
+            -10.6 &  &  \\ \hline
+            -10.7 &  &  \\ \hline
+            -10.8 &  &  \\ \hline
+            -10.9 &  &  \\ \hline
+            -11.0 &  &  \\ \hline
+            -11.1 &  &  \\ \hline
+            -11.2 &  &  \\ \hline
+            -11.3 &  &  \\ \hline
+            -11.4 &  &  \\ \hline
+            -11.5 &  &  \\ \hline
+            -11.6 &  &  \\ \hline
+            -11.7 &  &  \\ \hline
+            -11.8 &  &  \\ \hline
+            -11.9 &  &  \\ \hline
+            -12.0 &  &  \\ \hline 
+            \caption{Messwerte der Aufgabe 1}\label{tab:Aufgabe1}\\
+\end{longtable}
 \begin{table}[h] 
     \centering
     \begin{tabular}{|c|c|} 
           \hline \textbf{Trägerfrequenz} & \textbf{Ausgangsspannung } \\ 
           \textbf{ $f_0$ [kHz]}    & \textbf{$U_A$ [V] bei 2V}       \\ \hline
-            $400$ &    \\ \hline
-            $420$ &    \\ \hline
-            $440$ &    \\ \hline
-            $460$ &    \\ \hline
-            $480$ &    \\ \hline
-            $500$ &    \\ \hline
-            $520$ &    \\ \hline 
-            $540$ &    \\ \hline 
-            $560$ &    \\ \hline    
-            $580$ &    \\ \hline 
-            $600$ &    \\ \hline      
+            400  &    \\ \hline
+            420  &    \\ \hline
+            440  &    \\ \hline
+            460  &    \\ \hline
+            470  &    \\ \hline
+            475  &    \\ \hline
+            480  &    \\ \hline
+            483  &    \\ \hline
+            483.8&    \\ \hline
+            485  &    \\ \hline
+            490  &    \\ \hline 
+            495  &    \\ \hline 
+            500  &    \\ \hline
+            505  &    \\ \hline
+            510  &    \\ \hline
+            515  &    \\ \hline  
+            520  &    \\ \hline
+            525  &    \\ \hline  
+            530  &    \\ \hline
+            535  &    \\ \hline 
+            540  &    \\ \hline 
+            560  &    \\ \hline    
+            580  &    \\ \hline 
+            600  &    \\ \hline      
     \end{tabular}
     \caption{Messwerte der Aufgabe 3.1} \label{tab:Aufgabe3.1}
 \end{table}
+\newpage
 \begin{table}[h] 
     \centering
     \begin{tabular}{|c|c|} 
           \hline \textbf{Signalfrequenzen} & \textbf{Ausgangsspannung } \\ 
           \textbf{ $f_1$ [kHz]}    & \textbf{$U_A$ [V] bei 2V}       \\ \hline
-            $10  $ &    \\ \hline
-            $12.5$ &    \\ \hline
-            $15  $ &    \\ \hline
-            $17.5$ &    \\ \hline
-            $20  $ &    \\ \hline
-            $22.5$ &    \\ \hline
-            $25  $ &    \\ \hline 
-            $27.5$ &    \\ \hline 
-            $30  $ &    \\ \hline    
-            $32.5$ &    \\ \hline 
-            $35  $ &    \\ \hline    
-            $37.5$ &    \\ \hline 
-            $40  $ &    \\ \hline    
+            10    &  \\ \hline
+            20    &  \\ \hline
+            50    &  \\ \hline
+            100   &  \\ \hline
+            200   &  \\ \hline
+            500   &  \\ \hline
+            1000  & 1 \\ \hline
+            2000  &  \\ \hline
+            5000  &  \\ \hline
+            10000 &  \\ \hline
+            15000 &  \\ \hline
+            20000 &  \\ \hline
+            25000 &  \\ \hline
+            30000 &  \\ \hline
+            35000 &  \\ \hline
+            40000 &  \\ \hline 
     \end{tabular}
     \caption{Messwerte der Aufgabe 3.2} \label{tab:Aufgabe3.2}
 \end{table}
-
 \newpage
+
 
 \subsection{Weitere Abbildungen}
 \label{Ah:Weitere_Abbildungen}
@@ -256,6 +382,8 @@ Die theoretische Resonanzfrequenz des Parallelschwingkreises beträgt ca. \textb
 \newpage
 \includepdf[
   pages=8,
+  scale=1,
+  offset=0 -2cm,
   pagecommand={
     \phantomsection
     \subsubsection{Schaltplan - Platine \cite{Labor_Amplitudenmodulation}}
@@ -366,10 +494,70 @@ Die theoretische Resonanzfrequenz des Parallelschwingkreises beträgt ca. \textb
     print(f"  y/y0 = {magnitude_norm[idx_resonance]:.4f}")
     print(f"  Phase = {phase[idx_resonance]:.2f} deg")
 \end{lstlisting}
+\begin{lstlisting}[style=pythonstyle,    
+    caption={Pyhtoncode zum Erzeugen von Plotts},
+    label={lst:Plotts_erzeugung}]
+    import matplotlib.pyplot as plt
+import os
+import matplotlib
+from datetime import datetime
+
+dateiname = datetime.now().strftime("../Abbildungen/plot_%Y%m%d_%H%M%S.png")
+matplotlib.use('QtAgg')
+print("Skript gestartet")
+print("Arbeitsverzeichnis:", os.getcwd())
+
+
+# Daten einlesen
+x = []
+y1 = []
+y2 = []
+
+with open("tabelle.txt", "r", encoding="utf-8") as file:
+    for line in file:
+
+        # LaTeX-Reste entfernen
+        line = line.replace("\\\\ \\hline", "").strip()
+
+        # Zeile aufteilen
+        parts = [p.strip() for p in line.split("&")]
+
+        # Nur gueltige Zeilen verarbeiten
+        if len(parts) != 3:
+            continue
+
+        x.append(float(parts[0]))
+        y1.append(float(parts[1]))
+        y2.append(float(parts[2]))
+
+# Plot erzeugen
+plt.figure(figsize=(8, 5))
+
+plt.plot(x, y1, marker="o", label="Spalte 2")
+plt.plot(x, y2, marker="s", label="Spalte 3")
+
+plt.xlabel("Spalte 1")
+plt.ylabel("Wert")
+plt.title("Plot der Messdaten")
+
+plt.grid(True)
+plt.legend()
+
+plt.tight_layout()
+#plt.savefig("../Abbildungen/plot.png", dpi=300, bbox_inches="tight")
+plt.savefig(dateiname, dpi=300, bbox_inches="tight")
+
+print("x =", x)
+print("y1 =", y1)
+print("y2 =", y2)
+
+plt.show(block=True)
+\end{lstlisting}
+
 
 
 \newpage
-\begin{table}[h] 
+\begin{table}[!h] 
     \subsection{Geräteliste} 
     \centering
     \begin{tabular}{|c|c|c|} 
@@ -379,7 +567,9 @@ Die theoretische Resonanzfrequenz des Parallelschwingkreises beträgt ca. \textb
             &  &  \\ \hline
             &  &  \\ \hline
             &  &  \\ \hline
-            &  &  \\ \hline        
+            &  &  \\ \hline       
+            &  &  \\ \hline    
+            &  &  \\ \hline     
     \end{tabular}
     \caption{Liste aller verwendeten Geräte} \label{tab:Geräteliste}
 \end{table}

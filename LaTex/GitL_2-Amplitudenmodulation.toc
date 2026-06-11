@@ -9,8 +9,8 @@
 \contentsline {section}{\numberline {2}Literaturverzeichnis}{6}{section.2}%
 \contentsline {section}{Anhang}{7}{section.2}%
 \contentsline {subsection}{\numberline {A}Messtabellen}{7}{subsection.2.1}%
-\contentsline {subsection}{\numberline {B}Weitere Abbildungen}{8}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {B.1}Schaltplan - Platine \blx@tocontentsinit {0}\cite {Labor_Amplitudenmodulation}}{9}{subsubsection.2.2.1}%
-\contentsline {subsection}{\numberline {C}Programmcode}{10}{subsection.2.3}%
-\contentsline {subsection}{\numberline {D}Geräteliste}{13}{subsection.2.4}%
+\contentsline {subsection}{\numberline {B}Weitere Abbildungen}{12}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {B.1}Schaltplan - Platine \blx@tocontentsinit {0}\cite {Labor_Amplitudenmodulation}}{13}{subsubsection.2.2.1}%
+\contentsline {subsection}{\numberline {C}Programmcode}{14}{subsection.2.3}%
+\contentsline {subsection}{\numberline {D}Geräteliste}{18}{subsection.2.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
