@@ -29,23 +29,26 @@ with open("tabelle.txt", "r", encoding="utf-8") as file:
 
         x.append(float(parts[0]))
         y1.append(float(parts[1]))
-        y2.append(float(parts[2]))
+        #y2.append(float(parts[2]))
 
 # Plot erzeugen
 plt.figure(figsize=(8, 5))
 
 plt.plot(x, y1, marker="o", label="Spalte 2")
-plt.plot(x, y2, marker="s", label="Spalte 3")
+#plt.plot(x, y2, marker="s", label="Spalte 3")
 
 plt.xlabel("Spalte 1")
 plt.ylabel("Wert")
 plt.title("Plot der Messdaten")
-
+plt.vlines(x = -4,ymax=2000, ymin = 0, color = 'red', linestyle = '-')
+plt.vlines(x = -6.828,ymax=2000, ymin = 0,color = 'red', linestyle = '-')
+plt.axhline(y=896.31, color = 'green', linestyle = '-')
+plt.axhline(y=1423, color = 'green', linestyle = '-')
 plt.grid(True)
 plt.legend()
 
 plt.tight_layout()
-#plt.savefig("../Abbildungen/plot.png", dpi=300, bbox_inches="tight")
+plt.savefig("../Abbildungen/plot.png", dpi=300, bbox_inches="tight")
 plt.savefig(dateiname, dpi=300, bbox_inches="tight")
 
 print("x =", x)
