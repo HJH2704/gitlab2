@@ -2374,11 +2374,12 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">../Literatur/Amplitudenmodulation.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="2" intorder="1">Leifiphysik_wechselstrom</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">Ampl_eff</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">hagmannGrundlagenElektrotechnikBewaehrte2020</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">Modulationsgrad</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">Leifiphysik_wechselstrom</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">Ampl_eff</bcf:citekey>
     <bcf:citekey order="5" intorder="1">hagmannGrundlagenElektrotechnikBewaehrte2020</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">Labor_Amplitudenmodulation</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">hagmannGrundlagenElektrotechnikBewaehrte2020</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">Labor_Amplitudenmodulation</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

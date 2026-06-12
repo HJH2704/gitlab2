@@ -111,7 +111,75 @@
 \listoftables 
 \lstlistoflistings
 \newpage %Erzeugung eines Inhalts-, Abbildungs- und Tabellenverzeichnis
+\section{Theoretische Grundlagen}
+\subsection{Definitionen}
 
+
+\newpage
+\subsection{Effektivwert}
+\label{Kp:TG_Effektivwert}
+Der Effektivwert gibt den konstante Spannung oder Stromstärke an, die am gleichen Widerstand in der gleichen Zeit die gleiche Energie wie die Wechselspannung liefert.\\
+Zur allgemeinen Berechnung des Effektivwerts kann folgende Formel verwendet werden.
+\begin{equation}
+    X_{eff}=\sqrt{\frac{1}{T}\cdot\int_{0}^{T} \left[x(t)\right]^2 \,dt }
+    \label{Gl:Effektivwert_Grundlagen}
+\end{equation}
+\begin{center} 
+    $X_{eff} $: Effektivwert der Spannung oder des Stroms\\
+    $T$: Periodendauer\\
+    $x(t)$: zeitlicher Verlauf der Spannung oder des Stroms
+\end{center}
+Für ein Sinus oder Cosinus Signal kann die berechnung vereinfacht werden. 
+Hier gilt zur Berechnung folgender Zusammenhang
+\begin{equation}
+    X_{eff}=\frac{\hat{X}}{\sqrt{2}}
+    \label{Gl:Effektivwert_Sin}
+\end{equation}
+\begin{equation}
+    U_{eff}=\frac{U_0}{\sqrt{2}} \cdot \sqrt{1+\frac{m^2}{2}} 
+\end{equation}
+\begin{center}
+    $\hat{X}$: Scheitelwert
+\end{center}
+\subsection{Modulationsgrad}
+\label{Kp:TG_Modulationsgrad}
+Der Modulationsgrad beschreibt die stärke der Verändung des Trägersignals durch das Nutzsignal. 
+Dabei kann der Modulationgrad $m$ durch die Gleichung \ref{Gl:Modulationgrad_Grundlagen} und \ref{Gl:Modulationgrad_OS} bestimmt werden \cite{Modulationsgrad}.
+\begin{equation}
+    m=\frac{A_m}{A_c}=\frac{\hat{U}_m}{\hat{U}_c}
+    \label{Gl:Modulationgrad_Grundlagen}
+\end{equation}
+\begin{center}
+    $A_m$: Amplitude des Modulationssignals\\
+    $A_c$: Amplitude des Trägersignals
+\end{center}
+\begin{equation}
+    m=\frac{U_{max}-U_{min}}{U_{max}+U_{min}}
+    \label{Gl:Modulationgrad_OS}
+\end{equation}
+\begin{center}
+    $U_{max}$: Hüllkurven-Maxima [V]\\
+    $U_{min}$: Hüllkurven-Minima [V]
+\end{center}
+Die Gleichung \ref{Gl:Modulationgrad_OS} kann mittels eines Oszilloskop direkt bestimmt werden. 
+Dabei können die Hüllkurven-Maxima und -Minima direkt vom Bildschirm ablesen werden.\\
+Der Modulationsgrad $m$ kann wie folgt interpretiert werden:
+\begin{itemize}
+    \item $m=0 \rightarrow$ keine Modulation
+    \item $0<m<1 \rightarrow$ normale, unverzerrte Modulation
+    \item $m=1 \rightarrow$ maximale sinnvolle Modulation 
+    \item $m>1 \rightarrow$ Übermodulation, es entstehen Verzerrungen
+\end{itemize}
+\newpage
+
+
+
+
+
+\subsection{}
+
+
+\newpage
 \section{Vorbereitung}
 \subsection{Was ist der Unterschied zwischen modulierendem und moduliertem Signal?}
 Ein Moduliertes Signal ist das Ergebnis einer Modulation \cite{}.
@@ -163,13 +231,19 @@ Die Resonanzfrequenz $f_r$ des Parallelschwingkreises wird mithilfe der Thomson-
 f_r = \frac{1}{2\pi \cdot \sqrt{22 \cdot 10^{-6}\,\text{H} \cdot 4,92 \cdot 10^{-9}\,\text{F}}} \approx 483.756\,\text{Hz} \approx 483,8\,\text{kHz}
 \end{equation*}
 
-
-\subsubsection{Resonanzfrequenz}
 Die theoretische Resonanzfrequenz des Parallelschwingkreises beträgt ca. \textbf{483,8\,kHz}.
 \newpage
+\section{Durchführung}
 
 
-
+\newpage
+\section{Auswertung}
+\subsection{3.2}
+Um bei einer Signalfrequenz $f_1$ von 1kHz einen Modulationsgrad $m$ von 1 zu erhalten, muss, nach Gleichung \ref{Gl:Modulationgrad_OS}, das Minima der Hüllkurven $U_{min}$ exakt bei 0 liegen. 
+\begin{equation*}
+    1=\frac{U_{max}-0}{U_{max}+0}=\frac{U_{max}}{U_{max}} \rightarrow 1=1
+    \label{}
+\end{equation*}   
 
 
 \newpage

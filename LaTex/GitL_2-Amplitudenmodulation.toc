@@ -1,16 +1,22 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {section}{\numberline {1}Vorbereitung}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Was ist der Unterschied zwischen modulierendem und moduliertem Signal?}{4}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Wie lautet für ein sinusförmiges Trägersignal $x_0(t) = U_0 sin(\omega _0t + \phi 0)$ der Zusammenhang zwischen der Amplitude $U_0$ und dessen Effektivwert?}{4}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Berechnung der Resonanzfrequenz des Parallelschwingkreises}{4}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}Berechnung der Gesamtkapazität}{5}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.2}Berechnung der Resonanzfrequenz}{5}{subsubsection.1.3.2}%
-\contentsline {subsubsection}{\numberline {1.3.3}Resonanzfrequenz}{5}{subsubsection.1.3.3}%
-\contentsline {section}{\numberline {2}Literaturverzeichnis}{6}{section.2}%
-\contentsline {section}{Anhang}{7}{section.2}%
-\contentsline {subsection}{\numberline {A}Messtabellen}{7}{subsection.2.1}%
-\contentsline {subsection}{\numberline {B}Weitere Abbildungen}{12}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {B.1}Schaltplan - Platine \blx@tocontentsinit {0}\cite {Labor_Amplitudenmodulation}}{13}{subsubsection.2.2.1}%
-\contentsline {subsection}{\numberline {C}Programmcode}{14}{subsection.2.3}%
-\contentsline {subsection}{\numberline {D}Geräteliste}{18}{subsection.2.4}%
+\contentsline {section}{\numberline {1}Theoretische Grundlagen}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Definitionen}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Effektivwert}{5}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Modulationsgrad}{5}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Vorbereitung}{7}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Was ist der Unterschied zwischen modulierendem und moduliertem Signal?}{7}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Wie lautet für ein sinusförmiges Trägersignal $x_0(t) = U_0 sin(\omega _0t + \phi 0)$ der Zusammenhang zwischen der Amplitude $U_0$ und dessen Effektivwert?}{7}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Berechnung der Resonanzfrequenz des Parallelschwingkreises}{7}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Berechnung der Gesamtkapazität}{8}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Berechnung der Resonanzfrequenz}{8}{subsubsection.2.3.2}%
+\contentsline {section}{\numberline {3}Durchführung}{9}{section.3}%
+\contentsline {section}{\numberline {4}Auswertung}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}3.2}{10}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{11}{section.5}%
+\contentsline {section}{Anhang}{12}{section.5}%
+\contentsline {subsection}{\numberline {A}Messtabellen}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {B}Weitere Abbildungen}{17}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {B.1}Schaltplan - Platine \blx@tocontentsinit {0}\cite {Labor_Amplitudenmodulation}}{18}{subsubsection.5.2.1}%
+\contentsline {subsection}{\numberline {C}Programmcode}{19}{subsection.5.3}%
+\contentsline {subsection}{\numberline {D}Geräteliste}{23}{subsection.5.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
