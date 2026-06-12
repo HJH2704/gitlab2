@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import os
 import matplotlib
 from datetime import datetime
+import numpy as np
 
 dateiname = datetime.now().strftime("../Abbildungen/plot_%Y%m%d_%H%M%S.png")
 matplotlib.use('QtAgg')
@@ -41,10 +42,14 @@ plt.figure(figsize=(8, 5))
 plt.loglog(x, M, marker="o", label="")
 
 
-plt.xlabel("Spalte 1")
-plt.ylabel("Wert")
-plt.title("Plot der Messdaten")
-
+plt.xlabel("Frequenz $f$ [kHz]")
+plt.ylabel("Modulationsgrad $m$")
+plt.title("Modulationskennlinie")
+plt.axhline(y=.7, color = 'orange', linestyle = '-', label = '-3dB Grenze')
+plt.vlines(x = 45.16,ymax=2, ymin = 0, color = 'red', linestyle = '-', label = 'Untere Grenzfrequenz (45Hz)')
+plt.vlines(x = 17394,ymax=2, ymin = 0,color = 'green', linestyle = '-', label = 'Obere Grenzfrequenz (17,4kHz)')
+plt.xlim(10,40000)
+plt.ylim(0,1)
 plt.grid(True)
 plt.legend()
 
@@ -54,5 +59,5 @@ plt.savefig("../Abbildungen/3/3.2/Modulationskennlinie.png", dpi=300, bbox_inche
 #print("x =", x)
 #print("y1 =", y1)
 #print("y2 =", y2)
-
+print(np.round(M,2))
 plt.show(block=True)

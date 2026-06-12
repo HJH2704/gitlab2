@@ -10,7 +10,7 @@ x = []
 y = []
 
 
-with open("tabelle.txt", "r", encoding="utf-8") as file:
+with open("./Daten/tabelle_3_2.txt", "r", encoding="utf-8") as file:
     for line in file:
 
         # LaTeX-Reste entfernen
