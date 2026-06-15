@@ -1,36 +1,38 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {section}{\numberline {1}Theoretische Grundlagen}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Definitionen}{4}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Effektivwert}{5}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Modulationsgrad}{5}{subsection.1.3}%
-\contentsline {section}{\numberline {2}Vorbereitung}{8}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Was ist der Unterschied zwischen modulierendem und moduliertem Signal?}{8}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Berechnung der Resonanzfrequenz des Parallelschwingkreises}{8}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Durchführung}{9}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Durchführung der Aufgabe: 3.1}{9}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Durchführung der Aufgabe: 3.2}{10}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Durchführung der Aufgabe: 3.3}{11}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Durchführung der Aufgabe: 3.4}{12}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Ende des Versuchs}{12}{subsection.3.5}%
-\contentsline {section}{\numberline {4}Auswertung}{13}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Statische Modulationskennlinie}{13}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Modulationskennlinie bei einer Einganggleichspannung von 2V}{13}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}Modulationskennlinie bei einer Einganggleichspannung von 25mV}{13}{subsubsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.2}Zeitlicher Verlauf und Frequenzspektrum}{14}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Frequenzverhalten des Modulators}{15}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Frequenzgang des Modulators}{15}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Frequenzgang des Modulationsgrades}{15}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Hüllkurve des modulierten Ausgangssignals eines Rechtecksignals}{17}{subsubsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}Zeitliche Verzögerung der Hüllkurve}{18}{subsubsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.4}Abgeleitete Modulationsarten}{19}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Theoretische Erstellung eines Zweiseitenbandsignal}{19}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Modulationsartbestimmung 1}{19}{subsubsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.3}Modulationsartbestimmung 2}{19}{subsubsection.4.4.3}%
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{20}{section.5}%
-\contentsline {section}{Anhang}{21}{section.5}%
-\contentsline {subsection}{\numberline {A}Messtabellen}{21}{subsection.5.1}%
-\contentsline {subsection}{\numberline {B}Weitere Abbildungen}{24}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {B.1}Schaltplan - Platine \blx@tocontentsinit {0}\cite {Labor_Amplitudenmodulation}}{32}{subsubsection.5.2.1}%
-\contentsline {subsection}{\numberline {C}Programmcode}{33}{subsection.5.3}%
-\contentsline {subsection}{\numberline {D}Geräteliste}{38}{subsection.5.4}%
+\contentsline {subsection}{\numberline {1.1}Wortdefinitionen}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Bandpassfilter}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Effektivwert}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Modulationsgrad}{5}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Resonanzfrequenz des Parallelschwingkreises auf der Platine \blx@tocontentsinit {0}\cite {Labor_Amplitudenmodulation}}{6}{subsection.1.5}%
+\contentsline {section}{\numberline {2}Durchführung}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Durchführung der Aufgabe: 3.1}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Durchführung der Aufgabe: 3.2}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Durchführung der Aufgabe: 3.3}{10}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Durchführung der Aufgabe: 3.4}{11}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Ende des Versuchs}{11}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Auswertung}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Statische Modulationskennlinie}{12}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Modulationskennlinie bei einer Einganggleichspannung von 2V}{12}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Modulationskennlinie bei einer Einganggleichspannung von 25mV}{12}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Zeitlicher Verlauf und Frequenzspektrum}{13}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Vergleich der Modulationsgrade}{13}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Zeigerdiagramm des Spannungsverlaufes}{13}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Betragsspektrum der Ausgangsspannung}{13}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}Frequenzverhalten des Modulators}{14}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Frequenzgang des Modulators}{14}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Frequenzgang des Modulationsgrades}{14}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Hüllkurve des modulierten Ausgangssignals eines Rechtecksignals}{16}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Zeitliche Verzögerung der Hüllkurve}{17}{subsubsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.4}Abgeleitete Modulationsarten}{18}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Theoretische Erstellung eines Zweiseitenbandsignal}{18}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Modulationsartbestimmung 1}{18}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Modulationsartbestimmung 2}{18}{subsubsection.3.4.3}%
+\contentsline {section}{\numberline {4}Literaturverzeichnis}{19}{section.4}%
+\contentsline {section}{Anhang}{20}{section.4}%
+\contentsline {subsection}{\numberline {A}Messtabellen}{20}{subsection.4.1}%
+\contentsline {subsection}{\numberline {B}Weitere Abbildungen}{23}{subsection.4.2}%
+\contentsline {subsection}{\numberline {C}Schaltplan - Platine \blx@tocontentsinit {0}\cite {Labor_Amplitudenmodulation}}{31}{subsection.4.3}%
+\contentsline {subsection}{\numberline {D}Programmcode}{32}{subsection.4.4}%
+\contentsline {subsection}{\numberline {E}Geräteliste}{37}{subsection.4.5}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

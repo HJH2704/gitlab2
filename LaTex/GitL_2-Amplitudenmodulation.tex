@@ -113,16 +113,45 @@
 \lstlistoflistings
 \newpage %Erzeugung eines Inhalts-, Abbildungs- und Tabellenverzeichnis
 \section{Theoretische Grundlagen}
-\subsection{Definitionen}
+\subsection{Wortdefinitionen}
+\subsubsection*{Modulierendem Signal}
+Beim Modulierenden Signal handelt es sich um das Nachrichten oder Nutzsignal \cite{}. 
+Dieses enthält die die Information und soll übertragen werden.
 
-\begin{equation}
-    f_0=\sqrt{f_L\cdot f_H}
-    \label{Gl:Mittenfrequenz}
-\end{equation}
+\subsubsection*{Moduliertem Signal}
+Ein Moduliertes Signal ist das Ergebnis einer Modulation \cite{}.
+Dabei wird durch ein höherfrequentes Trägersignal das Modulierenden Signal dahingehen verändert, damit es übertragen werden kann.
+
+\subsubsection*{Modulationskennlinie}
+Eine Modulationskennlinie beschreibt den Zusammenhang zwischen einer Eingangsgröße des Modulators und der daraus resultierenden Modulation. 
+Sie charakterisiert das Übertragungs- und Modulationsverhalten einer Modulatorschaltung
+
+
+\subsection{Bandpassfilter}
+Ein Bandpassfilter ist ein Systemm aus RLC-Bauteilen. 
+Er ist eine Schaltung, welches nur Signale in einem bestimmten Frequenzbereichs nahezu ungedämpft überträgt.
+Dieser Frequenzbereich wird von den sogananten Grenzfrequenzen umschlossen.
+Die Grenzefrequenz ist die Frequenz, indem die -3dB Grenze des Signales durchgrochen wird.
+Das bedeutet nur noch 70\% der Ausgangsamplitude überträgt.\\
+Der Bereich zwischen den Grenzefrequenzen nennt man Bandbreite.
+Diese kann mittels der Grenzfrequenzenberechnet werden.
 \begin{equation}
     BW = f_H-f_L 
     \label{Gl:Bandweite}
 \end{equation}
+
+Die Frequenz die am besten Übertragen wird, ist die Resonanzfrequenz oder Mittenfrequenz. 
+Auch diese kann mittels der Grenzefrequenz berechnet werden.
+\begin{equation}
+    f_0=\sqrt{f_L\cdot f_H}
+    \label{Gl:Mittenfrequenz}
+\end{equation}
+\begin{center}
+    $BW$: Bandweite [Hz]\\
+    $f_H$: obere Grenzfrequenzen [Hz]\\
+    $f_L$: untere Grenzfrequenzen [Hz]\\
+    $f_0$: Resonanzfrequenz/Mittenfrequenz [Hz]
+\end{center}
 
 
 
@@ -149,7 +178,7 @@ Hier gilt zur Berechnung folgender Zusammenhang
 \begin{center}
     $\hat{X}$: Scheitelwert [V/A]
 \end{center}
-Bei der Frequenzmodulation sowie Phasenmodulation ist die Amplitude konstant, dadurch kann die Gleichung \ref{Gl:Effektivwert_sin} verwendet werden.\\
+Bei der Frequenzmodulation sowie Phasenmodulation ist die Amplitude konstant, dadurch kann die Gleichung \ref{Gl:Effektivwert_Sin} verwendet werden.\\
 Bei der Amplitudenmmodulation kann der Effektivwert nicht so leicht berechnet werden, da hier die Amplitude schwankend ist. 
 Für diesen Fall kann folgende Formel zur berechnung des Effektivwertes verwendente werden \cite{Ampl_eff}.
 \begin{equation}
@@ -188,34 +217,17 @@ Der Modulationsgrad $m$ kann wie folgt interpretiert werden:
     \item $m=1 \rightarrow$ maximale sinnvolle Modulation 
     \item $m>1 \rightarrow$ Übermodulation, es entstehen Verzerrungen
 \end{itemize}
-\newpage
 
-
-
-
-
-\subsection{}
-
-
-\newpage
-\section{Vorbereitung}
-\subsection{Was ist der Unterschied zwischen modulierendem und moduliertem Signal?}
-Ein Moduliertes Signal ist das Ergebnis einer Modulation \cite{}.
-Dabei wird durch ein höherfrequentes Trägersignal das Modulierenden Signal dahingehen verändert, damit es übertragen werden kann. \\
-Beim Modulierenden Signal handelt es sich um das Nachrichten oder Nutzsignal \cite{}. 
-Dieses enthält die die Information und soll übertragen werden.
-
-
-\subsection{Berechnung der Resonanzfrequenz des Parallelschwingkreises}
-
-Der gegebene Parallelschwingkreis besteht, zu sehen im Schaltplan Abbildung \ref{Ah:Schaltplan_Platine}, aus einer Spule $L_1$ und drei parallel geschalteten Kondensatoren $C_{16}$, $C_{17}$ und $C_{18}$.
-
-
+\subsection{Resonanzfrequenz des Parallelschwingkreises auf der Platine \cite{Labor_Amplitudenmodulation}}
+Für den Versuch ist eine Platine entwickelt worden. 
+Der Schaltplan ist im Anhang \ref{Ah:Schaltplan_Platine} zu finden.
+Innerhalb dieser Platine ist ein Parallelschwingkreises enhalten, dieser wird hier zur späteren Untersuchung berechnet.\\
+Der gegebene Parallelschwingkreis besteht aus einer Spule $L_1$ und drei parallel geschalteten Kondensatoren $C_{16}$, $C_{17}$ und $C_{18}$.
 \begin{align*}
     L_1    &= 22\,\mu\text{H} = 22 \cdot 10^{-6}\,\text{H} \\
     C_{16} &= 4\text{n}7 = 4,7\,\text{nF} = 4,7 \cdot 10^{-9}\,\text{F} \\
     C_{17} &= 220\,\text{pF} = 220 \cdot 10^{-12}\,\text{F} = 0,22 \cdot 10^{-9}\,\text{F} \\
-    C_{18} &= 0\,\text{pF} \quad \text{(optionaler Bestückungsplatz)}
+    C_{18} &= 0\,\text{pF}
 \end{align*}
  
 \subsubsection*{Berechnung der Gesamtkapazität}
@@ -227,9 +239,10 @@ Bei einer Parallelschaltung von Kondensatoren addieren sich die Einzelkapazität
 
 \subsubsection*{Berechnung der Resonanzfrequenz}
 Die Resonanzfrequenz $f_r$ des Parallelschwingkreises wird mithilfe der Thomson-Schwingungsformel ermittelt \cite{hagmannGrundlagenElektrotechnikBewaehrte2020}:
-\begin{equation*}
+\begin{equation}
     f_r = \frac{1}{2\pi \cdot \sqrt{L_1 \cdot C_{\text{ges}}}}
-\end{equation*}
+    \label{Gl:Thomson-Schwingungsformel}
+\end{equation}
 
 
 \begin{equation}
@@ -237,7 +250,14 @@ f_r = \frac{1}{2\pi \cdot \sqrt{22 \cdot 10^{-6}\,\text{H} \cdot 4,92 \cdot 10^{
 \label{Gl:Mittenfrequenz_rechnerisch}
 \end{equation}
 
-Die theoretische Resonanzfrequenz des Parallelschwingkreises beträgt ca. \textbf{483,8\,kHz}.
+Die theoretische Resonanzfrequenz des Parallelschwingkreises beträgt ca.483,8\,kHz.
+
+
+
+\subsection{}
+
+
+
 \newpage
 \section{Durchführung}
 
@@ -383,20 +403,28 @@ Nach Abschluss aller Messungen wurden sämtliche Geräte ausgeschaltet und der A
 \newpage
 \section{Auswertung}
 \subsection{Statische Modulationskennlinie}
+\label{kap:1}
 \subsubsection{Modulationskennlinie bei einer Einganggleichspannung von 2V}
-
+\label{kap:1.1}
 
 
 \subsubsection{Modulationskennlinie bei einer Einganggleichspannung von 25mV}
-
+\label{kap:1.2}
 
 
 
 \newpage
-\subsection{Zeitlicher Verlauf und Frequenzspektrum}
+\subsection{ Zeitlicher Verlauf und Frequenzspektrum}
+\label{kap:2}
+\subsubsection{Vergleich der Modulationsgrade}
+\label{kap:2.1}
 
 
+\subsubsection{Zeigerdiagramm des Spannungsverlaufes}
+\label{kap:2.2}
 
+\subsubsection{Betragsspektrum der Ausgangsspannung}
+\label{kap:2.3}
 
 
 \newpage
@@ -525,13 +553,13 @@ Die Abweichungen beträgt 2\%\\
 Bei der Abstiegszeit ist es ungenauer. 
 Die gemessen Abstiegszeit beträgt 24,6 $\mu$s. 
 Dies bedeutet eine Abweichung von 22\%.
-Dies könnte begründet werden, da Lade- und Entladewege nicht exakt sind. \cite{}\\
+Dies könnte begründet werden, da Lade- und Entladewege nicht exakt sind \cite{}. \\
 Der Dachabfall, in Abbildung \ref{Abb:A2_3_3_3_Dachabfall} zu betrachten, liegt bei 168 mV. 
 Auch der Dachabfall ist eine folge der Bandpasseigenschaften. 
 Der wagerechte Anteil des Rechtecksignals ist eine Gleichspannung. 
 Diese Gleichspannung kann aufgrund des Bandpassferhaltens nur schlecht übertragen werden.
-Aus diesen Grund fällt während der Halbperiode das Dach des Rechtecks exponentiell ab. \cite{}
-Auch dies kann berechnet werden. \cite{}
+Aus diesen Grund fällt während der Halbperiode das Dach des Rechtecks exponentiell ab \cite{}. 
+Auch dies kann berechnet werden \cite{}. 
 \begin{equation}
     \Delta U = U_0 \cdot tanh\left(\frac{T}{4\tau}\right)
     \label{Gl:Dachabfall}
@@ -541,7 +569,7 @@ Auch dies kann berechnet werden. \cite{}
 \end{equation*}
 Daraus ergibt dich beim Dachabfall folgendes. 
 \begin{equation*}
-      \Delta U = 2.8\text{V} \cdot tanh\left(\frac{1\cdot10^{-3}}{4\cdot3,54\cdot 10^{-3}}\right) \rightarrow 0,196 \text{V}
+      \Delta U = 2.8\text{V} \cdot tanh\left(\frac{1\cdot10^{-3}\text{s}}{4\cdot3,54\cdot 10^{-3}\text{s}}\right) \rightarrow \Delta U = 0,196 \text{V}
 \end{equation*}
 Verglichen mit den gemessenen Wert von 168 mV, ist dies eine Abweichung von etwa 14\%. 
 Aufgrund der Approximmierung ist eine hohe Abweichung erwartet gewesen. 
@@ -789,7 +817,7 @@ Denn ist diese Frequenz klein sind die Basisbandfrequenzen im  Spektrum entsprec
   offset=0 -2cm,
   pagecommand={
     \phantomsection
-    \subsubsection{Schaltplan - Platine \cite{Labor_Amplitudenmodulation}}
+    \subsection{Schaltplan - Platine \cite{Labor_Amplitudenmodulation}}
     \label{Ah:Schaltplan_Platine}
   }
 ]{../GIT_Labor_Amplitudenmodulation_SoSe26.pdf}

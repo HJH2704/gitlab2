@@ -20,8 +20,8 @@
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
     \entry{Ampl_eff}{online}{}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{shorttitle}
       \field{day}{11}
       \field{month}{6}
@@ -54,8 +54,8 @@
       \strng{authornamehash}{ca08f897a59dd7d9262e942d2f3121a2}
       \strng{authorfullhash}{ca08f897a59dd7d9262e942d2f3121a2}
       \strng{authorfullhashraw}{ca08f897a59dd7d9262e942d2f3121a2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{shorttitle}{Amplitudenmodulation}
@@ -70,6 +70,33 @@
       \verb{url}
       \verb https://www.etti.unibw.de/download/tk/TK_Versuch_C_AM.pdf
       \endverb
+    \endentry
+    \entry{Labor_Amplitudenmodulation}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b9d5092b153ccb9def9dc65d2a782768}{%
+           family={{Prof. Dr.-Ing. Mario Goldenbaum}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Fakultät für Elektrotechnik und Informatik Hochschule Bremen}%
+      }
+      \strng{namehash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{fullhash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{fullhashraw}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{bibnamehash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{authorbibnamehash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{authornamehash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{authorfullhash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{authorfullhashraw}{b9d5092b153ccb9def9dc65d2a782768}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Grundlagen der Informationstechnik Labor Amplitudenmodulation}
+      \field{urlday}{11}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
     \endentry
     \entry{hagmannGrundlagenElektrotechnikBewaehrte2020}{book}{}{}
       \name{author}{1}{}{%
@@ -93,8 +120,8 @@
       \strng{authornamehash}{33a7d9a9998e42a7fcbf533ad49040ab}
       \strng{authorfullhash}{33a7d9a9998e42a7fcbf533ad49040ab}
       \strng{authorfullhashraw}{33a7d9a9998e42a7fcbf533ad49040ab}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{edition}{18., durchgesehene und korrigierte Auflage}
@@ -109,36 +136,9 @@
       \verb Table of Contents PDF:C\:\\Users\\mvoge\\Zotero\\storage\\HXQ84HLF\\Hagmann - 2020 - Grundlagen der Elektrotechnik das bewährte Lehrbuch für Studierende der Elektrotechnik und anderer.pdf:application/pdf
       \endverb
     \endentry
-    \entry{Labor_Amplitudenmodulation}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=b9d5092b153ccb9def9dc65d2a782768}{%
-           family={{Prof. Dr.-Ing. Mario Goldenbaum}},
-           familyi={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Fakultät für Elektrotechnik und Informatik Hochschule Bremen}%
-      }
-      \strng{namehash}{b9d5092b153ccb9def9dc65d2a782768}
-      \strng{fullhash}{b9d5092b153ccb9def9dc65d2a782768}
-      \strng{fullhashraw}{b9d5092b153ccb9def9dc65d2a782768}
-      \strng{bibnamehash}{b9d5092b153ccb9def9dc65d2a782768}
-      \strng{authorbibnamehash}{b9d5092b153ccb9def9dc65d2a782768}
-      \strng{authornamehash}{b9d5092b153ccb9def9dc65d2a782768}
-      \strng{authorfullhash}{b9d5092b153ccb9def9dc65d2a782768}
-      \strng{authorfullhashraw}{b9d5092b153ccb9def9dc65d2a782768}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Grundlagen der Informationstechnik Labor Amplitudenmodulation}
-      \field{urlday}{11}
-      \field{urlmonth}{6}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-    \endentry
     \entry{Fluke_Bandbreite}{online}{}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labeltitlesource}{title}
       \field{day}{15}
       \field{month}{6}
@@ -154,8 +154,8 @@
       \endverb
     \endentry
     \entry{dataTec_os}{online}{}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{day}{15}
       \field{month}{6}
