@@ -29,6 +29,7 @@
 \usepackage{pdfpages}
 \usepackage{tabularx}
 \usepackage{longtable}
+\usepackage[export]{adjustbox}
 
 \newcolumntype{x}[1]{!{\centering\arraybackslash\vrule width #1}}% Erlaubt dickere Linien in Tabellen. cx{2pt}
 
@@ -135,9 +136,9 @@ Zur allgemeinen Berechnung des Effektivwerts kann folgende Formel verwendet werd
     \label{Gl:Effektivwert_Grundlagen}
 \end{equation}
 \begin{center} 
-    $X_{eff} $: Effektivwert der Spannung oder des Stroms\\
-    $T$: Periodendauer\\
-    $x(t)$: zeitlicher Verlauf der Spannung oder des Stroms
+    $X_{eff} $: Effektivwert der Spannung oder des Stroms [V/A]\\
+    $T$: Periodendauer [s]\\
+    $x(t)$: zeitlicher Verlauf der Spannung oder des Stroms [V/A]
 \end{center}
 Für ein Sinus oder Cosinus Signal kann die berechnung vereinfacht werden. 
 Hier gilt zur Berechnung folgender Zusammenhang
@@ -145,23 +146,30 @@ Hier gilt zur Berechnung folgender Zusammenhang
     X_{eff}=\frac{\hat{X}}{\sqrt{2}}
     \label{Gl:Effektivwert_Sin}
 \end{equation}
+\begin{center}
+    $\hat{X}$: Scheitelwert [V/A]
+\end{center}
+Bei der Frequenzmodulation sowie Phasenmodulation ist die Amplitude konstant, dadurch kann die Gleichung \ref{Gl:Effektivwert_sin} verwendet werden.\\
+Bei der Amplitudenmmodulation kann der Effektivwert nicht so leicht berechnet werden, da hier die Amplitude schwankend ist. 
+Für diesen Fall kann folgende Formel zur berechnung des Effektivwertes verwendente werden \cite{Ampl_eff}.
 \begin{equation}
     U_{eff}=\frac{U_0}{\sqrt{2}} \cdot \sqrt{1+\frac{m^2}{2}} 
 \end{equation}
 \begin{center}
-    $\hat{X}$: Scheitelwert
+    $U_0$: Amplitudengröße [V/A]\\
+    $m$: Modulationsgrad
 \end{center}
 \subsection{Modulationsgrad}
 \label{Kp:TG_Modulationsgrad}
-Der Modulationsgrad beschreibt die stärke der Verändung des Trägersignals durch das Nutzsignal. 
+Der Modulationsgrad $m$ beschreibt die stärke der Verändung des Trägersignals durch das Nutzsignal. 
 Dabei kann der Modulationsgrad $m$ durch die Gleichung \ref{Gl:Modulationsgrad_Grundlagen} und \ref{Gl:Modulationsgrad_OS} bestimmt werden \cite{Modulationsgrad}.
 \begin{equation}
     m=\frac{A_m}{A_c}=\frac{\hat{U}_m}{\hat{U}_c}
     \label{Gl:Modulationsgrad_Grundlagen}
 \end{equation}
 \begin{center}
-    $A_m$: Amplitude des Modulationssignals\\
-    $A_c$: Amplitude des Trägersignals
+    $A_m$: Amplitude des Modulationssignals [V/A]\\
+    $A_c$: Amplitude des Trägersignals [V/A]
 \end{center}
 \begin{equation}
     m=\frac{U_{max}-U_{min}}{U_{max}+U_{min}}
@@ -197,19 +205,6 @@ Dabei wird durch ein höherfrequentes Trägersignal das Modulierenden Signal dah
 Beim Modulierenden Signal handelt es sich um das Nachrichten oder Nutzsignal \cite{}. 
 Dieses enthält die die Information und soll übertragen werden.
 
-\subsection{Wie lautet für ein sinusförmiges Trägersignal $x_0(t) = U_0 sin(\omega_0t + \phi 0)$ der Zusammenhang zwischen der Amplitude $U_0$ und dessen Effektivwert?}
-Für sinusförmige Signale, somit auch für Trägersignale gilt \cite{Leifiphysik_wechselstrom}:
-\begin{equation}
-    U_{eff}=(\frac{U_0}{\sqrt{2}})
-    \label{Gl:Effektivwert_sin}
-\end{equation}
-Dabei gibt der Effektivwert den Gleichspannungswert, der an einem ohmschen Widerstand die gleiche Leistung erzeugen würde.\\
-Da bei der Frequenzmodulation sowie Phasenmodulation die Amplitude konstant ist, kann die Gleichung \ref{Gl:Effektivwert_sin} auch dabei verwendet werden.\\
-Bei der Amplitudenmmodulation kann der Effektivwert nicht so leicht berechnet werden, da hier die Amplitude schwankend ist. 
-Für diesen Fall kann folgende Formel zur berechnung des Effektivwertes verwendente werden \cite{Ampl_eff}.
-\begin{equation}
-    U_{eff}=\frac{U_0}{\sqrt{2}} \cdot \sqrt{1+\frac{m^2}{2}} 
-\end{equation}
 
 \subsection{Berechnung der Resonanzfrequenz des Parallelschwingkreises}
 
@@ -223,14 +218,14 @@ Der gegebene Parallelschwingkreis besteht, zu sehen im Schaltplan Abbildung \ref
     C_{18} &= 0\,\text{pF} \quad \text{(optionaler Bestückungsplatz)}
 \end{align*}
  
-\subsubsection{Berechnung der Gesamtkapazität}
+\subsubsection*{Berechnung der Gesamtkapazität}
 Bei einer Parallelschaltung von Kondensatoren addieren sich die Einzelkapazitäten zur Gesamtkapazität $C_{\text{ges}}$ auf \cite{hagmannGrundlagenElektrotechnikBewaehrte2020}:
 \begin{align*}
     C_{\text{ges}} &= C_{16} + C_{17} + C_{18} \\
     C_{\text{ges}} &= 4,7\,\text{nF} + 0,22\,\text{nF} + 0\,\text{nF} = 4,92\,\text{nF} \\
 \end{align*}
 
-\subsubsection{Berechnung der Resonanzfrequenz}
+\subsubsection*{Berechnung der Resonanzfrequenz}
 Die Resonanzfrequenz $f_r$ des Parallelschwingkreises wird mithilfe der Thomson-Schwingungsformel ermittelt \cite{hagmannGrundlagenElektrotechnikBewaehrte2020}:
 \begin{equation*}
     f_r = \frac{1}{2\pi \cdot \sqrt{L_1 \cdot C_{\text{ges}}}}
@@ -279,7 +274,7 @@ des Trägersignales ist in Abb. \ref{Abb:Träger_3_1_2} zu sehen.
 
 \newpage
 
-\section{Durchführung der Aufgabe: 3.2}
+\subsection{Durchführung der Aufgabe: 3.2}
 \subsubsection*{Durchführung der Aufgabe: 3.2.1}
 Grundlegend wird die Statische Modulationskennlinie aus 3.1.1 für die Bestimmung des Modulationsgrades hinzugezogen, diese Ist im Kapitel \ref{} dargelegt. Für die Untersuchung des zeitlichen 
 Verlaufs wurde die zuvor angelegte Gleichspannung am Eingang E2 entfernt. Das Trägersignal am Eingang E0 wurde wieder auf einen Effektivwert von $2 V$, wie aus 3.1.1 bekannt, eingestellt.
@@ -416,16 +411,21 @@ Für die weitere Bearbeitung der Aufgabe werden die Daten als Graph dargestellt.
     \label{Abb:Frequenzgang_Modulator_3_1}
 \end{figure}\\
 Zu erkennen ist ein Bandpass.
+Der bandpassförmige Verlauf entsteht durch den im Modulator enthaltenen abgestimmten Schwingkreis.
 Dies kann ebenfalls durch die Schaltung der Platine \ref{Ah:Schaltplan_Platine} sowie aus der Überlegung des Kapitels \ref{kap} geschlussfolgert werden.\\
-Die Mittenfrequenz oder Resonanzfrequenz sollte nach Angaben aus den Schaltplan \ref{Ah:Schaltplan_Platine} und Gleichung \ref{Gl:Mittenfrequenz_rechnerisch} bei 483.3 kHz liegen. 
-In der Realität ist dies nicht ganz der Fall. 
-Aus den Messdaten \ref{tab:Aufgabe3.1}  und aus der graphischen Darstellung der Abbildung \ref{Abb:Frequenzgang_Modulator_3_1} kann eine Mittenfrequenz von 480 kHz abgelesen werden.\\
-Die abgelesenen Grenzfrequenzen in der Abbildung \ref{Abb:Frequenzgang_Modulator_3_1} liegen bei 462 kHz und 497 kHz. 
-Mit der Gleichung \ref{Gl:Mittenfrequenz} ergibt sich eine Mittenfrequenz von 479,2 kHz.
+Die Mittenfrequenz oder Resonanzfrequenz und somit die Frequenz der besten Energieübertragung sollte nach Angaben aus den Schaltplan \ref{Ah:Schaltplan_Platine} und Gleichung \ref{Gl:Mittenfrequenz_rechnerisch} bei 483.3 kHz liegen. 
+In der Praxis weicht dieser Wert jedoch geringfügig vom theoretischen Wert ab.
+Aus den Messdaten \ref{tab:Aufgabe3.1} sowie der graphischen Darstellung der Abbildung \ref{Abb:Frequenzgang_Modulator_3_1} kann eine Resonanzfrequenz von etwa 480 kHz abgelesen werden.\\
+Die aus Abbildung \ref{Abb:Frequenzgang_Modulator_3_1} abgelesenen Grenzfrequenzen liegen bei 462 kHz und 497 kHz. 
+Mit Gleichung \ref{Gl:Mittenfrequenz} ergibt sich eine Mittenfrequenz von 479,2 kHz. 
+Dieser Wert stimmt gut mit der aus dem Maximum der Messkurve abgelesenen Resonanzfrequenz von etwa 480kHz überein.
+Mit Gleichung \ref{Gl:Bandweite} ergibt sich eine Bandbreite von 35kHz.
 \begin{equation*}
     f_0=\sqrt{f_L\cdot f_H} \rightarrow f_0=\sqrt{462\text{kHz}\cdot 497\text{kHz}} \approx 479.2 \text{kHz}
 \end{equation*}
-
+\begin{equation*}
+        BW = f_H-f_L \rightarrow BW = 497kHz-462kHz = 35kHz
+\end{equation*}
 \subsubsection{Frequenzgang des Modulationsgrades}
 \label{kap:3_2}
 Um bei einer Signalfrequenz $f_1$ von 1kHz einen Modulationsgrad $m$ von 1 zu erhalten, muss, nach Gleichung \ref{Gl:Modulationsgrad_OS}, das Minima der Hüllkurven $U_{min}$ exakt bei 0 liegen. 
@@ -433,7 +433,7 @@ Um bei einer Signalfrequenz $f_1$ von 1kHz einen Modulationsgrad $m$ von 1 zu er
     1=\frac{U_{max}-0}{U_{max}+0}=\frac{U_{max}}{U_{max}} \rightarrow 1=1
     \label{}
 \end{equation*}   
-Dies ist in der Realität nicht möglich. 
+Dies ist in der Praxis nicht möglich. 
 Aus diesen Grund sind nur Werte des Modulationsgrad $m$ nah an 1 möglich.\\
 Aus den Messdaten der Tabelle \ref{tab:Aufgabe3.2} kann der Modulationsgrad mittels der Gleichung \ref{Gl:Modulationsgrad_OS} bestimmt werden.
 Die daraus ergebenen Modulationsgrade abhangig von der Signalfrequenz kann in der folgenden Tabelle betrachtet werden.
@@ -466,31 +466,90 @@ Die daraus ergebenen Modulationsgrade abhangig von der Signalfrequenz kann in de
 Der Verlauf des Modulationsgrades im Vergleich zur Signalfrequenz aus der Tabelle \ref{tab:Modulationsgrad_3_2}  kann in der folgenden Abbildung \ref{Abb:Modulationsgrad_3_2} betrachtet werden.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{../Abbildungen/3/3.2/Modulationskennlinie.png}
+    \includegraphics[width=0.82\linewidth]{../Abbildungen/3/3.2/Modulationskennlinie.png}
     \caption{Frequenzgang des Modulationsgrades}
     \label{Abb:Modulationsgrad_3_2}
 \end{figure}
-Wird der Verlauf des Modulationsgrad betrachtet, kann direkt erkannt werden, dass es sich bei der Scahltung der Platine \ref{Ah:Schaltplan_Platine} um einen Banpass handeln muss.
-Die 3dB-Grenze oder auch Grenzfrequenzen liegen bei etwa 45 Hz sowie 17400 Hz.
-Eine genaue Bestimung kann nicht erfolgen, da zuwenig Daten um den Grenzfrequenzen erhoben worden sind.\\
+Wird Abbildung \ref{Abb:Modulationsgrad_3_2} betrachtet, kann direkt ein bandpassförmigen Verlauf der dynamischen Modulationskennlinie erkannt werden.
+Diese Eigenschaft kann durch den Aufbau der Platine \ref{Ah:Schaltplan_Platine} erklärt werden.\\
+Tiefe Frequenzen werden aufgrund der Koppelkondensatoren und RC-Glieder (C10 und R3) abgeschwächt.
+Die Abschwächung hoher Frequenzen entsteht vermutlich durch die begrenzte Übertragungsbandbreite der Modulatorschaltung, sowie parasitäre Kapazitäten bei Transistor- und Modulationsstufen.
+Die 3dB-Grenzefrequenz oder auch Grenzfrequenzen liegen näherungsweise bei 45 Hz sowie 17400 Hz.
+Zwischen den Grenzfrequenzen wird das Modulationssignal annähernd unverändert übertragen.
+Eine genaue Bestimmung kann nicht erfolgen, da zu wenig Daten um den Grenzfrequenzen erhoben worden sind.\\
 Aus den Daten und der Gleichung \ref{Gl:Bandweite} kann die Bandbreite des Bandpassfilters bestimmt werden. 
 \begin{equation*}
     BW = f_H-f_L \rightarrow BW \approx 17400\text{Hz}-45\text{Hz} \approx 17,355\text{kHz}  
-\end{equation*}
-Die theoretische Mittenfrequnz weicht, jedoch leicht von der Gefoderten ab.\\
-Die Aufgabenstellung fordert eine Mittenfrequnz von 1kHz, mit der folgenden Gleichung \ref{Gl:Mittenfrequenz} ergibt sich jedoch eine Mittenfrequenz von 885 Hz
+\end{equation*}\\
+Mit der  Gleichung \ref{Gl:Mittenfrequenz} ergibt sich  eine Mittenfrequenz von 885 Hz
 \begin{equation*}
     f_0=\sqrt{f_L\cdot f_H} \rightarrow f_0=\sqrt{45\text{Hz}\cdot 17400\text{Hz}} \approx 885 \text{Hz}
 \end{equation*}
-Die errechnete Mittenfrequenz von 885 Hz weicht stark von der gewünschten ab, dies kann auf die ungenaue Einstellungsmöglichkeit im Zusammenhang mit den Oszilloskop zurückgeführt werden. 
+Die errechnete Mittenfrequenz von 885 Hz kann stark von der wirklichen abweichen.
+Dies kann auf die ungenaue Einstellungsmöglichkeit im Zusammenhang mit den Oszilloskop zurückgeführt werden. 
 Denn das Oszilloskop regelt schon früh ein Überschwingen ab, daher kann das Minima der Hüllkurven $U_{min}$ nicht genau auf 0V moduliert werden. 
-Zusätlich ist die Bestimmung der Grenzfrequenzen aufgrund der wenigen Messpunkte ebenfalls nicht genau, auch dadurch können teile der Abweichungen erklärt werden.\\
+Zusätlich ist die Bestimmung der Grenzfrequenzen aufgrund der wenigen Messpunkte ebenfalls nicht genau, auch dadurch können Teile der Abweichungen erklärt werden.\\
 Grundsätlich kann dennoch mit den Daten gearbeitet werden. 
-Durch die Abbildung \ref{Abb:Modulationsgrad_3_2} kann deutlich die Bandpasseigenschaften der Schaltung erkannt werden. 
+Durch die Abbildung \ref{Abb:Modulationsgrad_3_2} kann deutlich die Bandpasseigenschaften der Schaltung durch verschiedene RC-Bausteine sowie der begrenzten Übertragungsbandbreite der Koppelkondensatoren erkannt werden. 
 Auch die Bandbreite $BW$ ist, trotz ungenauer Messungen, in der konkreten Größenordnung und kann auf etwa 17-17.5 kHz benannt werden.
 
 \subsubsection{Hüllkurve des modulierten Ausgangssignals eines Rechtecksignals}
+Die Aufnahme des Bildschirmes des Oszilloskops können in Abbildung \ref{Abb:A2_3_2_3}, \ref{Abb:A2_3_3_3_Anstiegszeit}, \ref{Abb:A2_3_3_3_Abfallzeit} und \ref{Abb:A2_3_3_3_Dachabfall} betrachtet werden.\\
+Mittels der Abbildung \ref{Abb:A2_3_3_3_Anstiegszeit} kann eine Anstiegszeit von $\delta t$=19.8 $\mu$s festgestellt werden. 
+Die Abbildung \ref{Abb:A2_3_3_3_Abfallzeit} zeigt eine Abfallzeit von $\delta t$=24.6 $\mu$s. 
+Der Dachabfall kann in Abbildung \ref{Abb:A2_3_3_3_Dachabfall} betrachtet weren und beträgt ungefähr 168 mV.\\
+Diese Zeiten können durch die Frequenzabhängigkeit der Schlatung \ref{Ah:Schaltplan_Platine} begründet werden. 
+Ein Ideales Rechtecksignal hat eine senkrechte Flanke, somit ist der Wechsel der Spannung theoretische unendlich schnell. 
+In der Praxsis ist sind die Flanken nicht perfekt senkrecht, jedoch nah dran. 
+Die steilen Flanken des Rechtecksignal agieren identisch wie hohe Frequenzen. 
+Da das System Bandpassverhalten aufweißt, wird deswegen die Flanke abgerundet.  
+Durch die aktiven Bauteile in der Schaltung entstehen lade und entlade Prozesse, die schlussendlich Verzögerung auslösen. 
+Die Verzögerung kann berechnet werden. 
+Dafür sind folgende Gleichungen notwendig. \cite{Fluke_Bandbreite} \cite{dataTec_os}
+\begin{equation}
+    \delta t = \frac{k}{BW}
+    \label{Gl:Ab/Anstiegszeit}
+\end{equation}
+\begin{center}
+    $\Delta t$: Anstiegs-/Abstiegszeit [s]\\
+    $k$: Proportionalitätsfaktor (unter 1GHz = 0,35)\\
+    $BW$: Bandbreite
+\end{center}
+Für den Fall dieser Schaltung, wurde in Kapitel \ref{kap:3_2} eine Bandweite von 17,355 KHz gemessen, wobei diese nur als größenrichtung gewertet werden darf. 
+Somit ergibt sich mit der Gleichung \ref{Gl:Ab/Anstiegszeit} eine Anstiegszeit bzw. Abfallzeit von 20,2 $\mu$s.
+\begin{equation*}
+        \Delta t = \frac{k}{BW} \rightarrow     \Delta t = \frac{0.35}{17355\text{Hz}} \approx 20,2 \cdot 10^{-6} \text{s}
+\end{equation*}\\
+Dieser Wert ist relativ genau mit der gemessenen Anstiegszeit von 19.8 $\mu$s. 
+Die Abweichungen beträgt 2\%\\
+Bei der Abstiegszeit ist es ungenauer. 
+Die gemessen Abstiegszeit beträgt 24,6 $\mu$s. 
+Dies bedeutet eine Abweichung von 22\%.
+Dies könnte begründet werden, da Lade- und Entladewege nicht exakt sind. \cite{}\\
+Der Dachabfall, in Abbildung \ref{Abb:A2_3_3_3_Dachabfall} zu betrachten, liegt bei 168 mV. 
+Auch der Dachabfall ist eine folge der Bandpasseigenschaften. 
+Der wagerechte Anteil des Rechtecksignals ist eine Gleichspannung. 
+Diese Gleichspannung kann aufgrund des Bandpassferhaltens nur schlecht übertragen werden.
+Aus diesen Grund fällt während der Halbperiode das Dach des Rechtecks exponentiell ab. \cite{}
+Auch dies kann berechnet werden. \cite{}
+\begin{equation}
+    \Delta U = U_0 \cdot tanh\left(\frac{T}{4\tau}\right)
+    \label{Gl:Dachabfall}
+\end{equation}
+\begin{equation*}
+    \tau = \frac{1}{2\pi\cdot f_g} \approx 3,54 \text{ms}
+\end{equation*}
+Daraus ergibt dich beim Dachabfall folgendes. 
+\begin{equation*}
+      \Delta U = 2.8\text{V} \cdot tanh\left(\frac{1\cdot10^{-3}}{4\cdot3,54\cdot 10^{-3}}\right) \rightarrow 0,196 \text{V}
+\end{equation*}
+Verglichen mit den gemessenen Wert von 168 mV, ist dies eine Abweichung von etwa 14\%. 
+Aufgrund der Approximmierung ist eine hohe Abweichung erwartet gewesen. 
+Zusätzlich ist das Aufnahmen der Spannungsunterschiede sehr ungenau und könnte zusätzliche Fehler aufweisen. 
+Auch die untere Grenzfrequenz, welche aus Kapitel \ref{kap:3_2} ennommmen worden ist, kann als fehlerhaft angesehen werden. 
+Die Bestimmung war ebenfals ungenau und konnte nicht exakt bestimmt werden.   
 
+\subsubsection{Zeitliche Verzögerung der Hüllkurve}
 
 \newpage
 \subsection{Abgeleitete Modulationsarten}
@@ -685,34 +744,42 @@ Denn ist diese Frequenz klein sind die Basisbandfrequenzen im  Spektrum entsprec
 \newpage
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/3/3.3/OS_3.3/Anstiegszet.PNG}
-    \caption{Aufgabe: 3.3.3.Anstiegszet}
+    \includegraphics[width=0.7\linewidth]{../Abbildungen/3/3.3/Grundbild.PNG}
+    \caption{Aufgabe: 3.3.3.}
     \label{Abb:A2_3_3_3_1}
 \end{figure}
-
-
-\newpage
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/3/3.3/OS_3.3/Abfallzeit.PNG}
-    \caption{Aufgabe: 3.3.3.Abfallzeit}
-    \label{Abb:A2_3_3_3_2}
+    \includegraphics[width=0.7\linewidth]{../Abbildungen/3/3.3/Anstiegszet.PNG}
+    \caption{Anstiegszeit Aufgabe: 3.3.3.}
+    \label{Abb:A2_3_3_3_Anstiegszeit}
 \end{figure}
 
 
 \newpage
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{../Abbildungen/3/3.3/Abfallzeit.PNG}
+    \caption{Abfallzeit Aufgabe: 3.3.3.}
+    \label{Abb:A2_3_3_3_Abfallzeit}
+\end{figure}
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/3/3.3/OS_3.3/Dachabfall.PNG}
-    \caption{Aufgabe: 3.3.3.Dachabfall}
-    \label{Abb:A2_3_3_3_3}
+    \includegraphics[width=0.7\linewidth]{../Abbildungen/3/3.3/Dachabfall.PNG}
+    \caption{Dachabfall Aufgabe: 3.3.3. }
+    \label{Abb:A2_3_3_3_Dachabfall}
 \end{figure}
-
 \newpage
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/3/3.4/3_4_A2_A4_aufnahme_2.PNG}
-    \caption{Aufgabe: 3.3.4}
+    \includegraphics[width=0.7\linewidth]{../Abbildungen/3/3.4/Verzögerung_10kHz.PNG}
+    \caption{10kHz Aufgabe: 3.3.4}
+    \label{Abb:Träger_3_3_4}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{../Abbildungen/3/3.4/Verzögerung_1kHz.PNG}
+    \caption{1kHz Aufgabe: 3.3.4}
     \label{Abb:Träger_3_3_4}
 \end{figure}
 \newpage
@@ -894,7 +961,7 @@ plt.show(block=True)
 
 \newpage
 \begin{sidewaystable}[h] 
-	\section{Geräteliste} 
+	\subsection{Geräteliste} 
 	\label{Ah:Geräteliste}
 	\centering
 	\begin{tabular}{|c|c|c|}

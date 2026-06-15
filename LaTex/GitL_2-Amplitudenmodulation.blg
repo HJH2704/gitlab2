@@ -1,15 +1,15 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'GitL_2-Amplitudenmodulation.blg'
-[71] biber-MSWIN64:342> INFO - === 
-[94] Biber.pm:421> INFO - Reading 'GitL_2-Amplitudenmodulation.bcf'
-[160] Biber.pm:1002> INFO - Found 5 citekeys in bib section 0
-[169] Biber.pm:4487> INFO - Processing section 0
-[176] Biber.pm:4678> INFO - Looking for bibtex file '../Literatur/Amplitudenmodulation.bib' for section 0
-[204] bibtex.pm:1713> INFO - LaTeX decoding ...
-[225] bibtex.pm:1519> INFO - Found BibTeX data source '../Literatur/Amplitudenmodulation.bib'
-[263] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[263] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[263] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'de-DE'
-[263] Biber.pm:4313> INFO - No sort tailoring available for locale 'de-DE'
-[268] bbl.pm:676> INFO - Writing 'GitL_2-Amplitudenmodulation.bbl' with encoding 'UTF-8'
-[269] bbl.pm:779> INFO - Output to GitL_2-Amplitudenmodulation.bbl
+[68] biber-MSWIN64:342> INFO - === 
+[89] Biber.pm:421> INFO - Reading 'GitL_2-Amplitudenmodulation.bcf'
+[155] Biber.pm:1002> INFO - Found 6 citekeys in bib section 0
+[164] Biber.pm:4487> INFO - Processing section 0
+[172] Biber.pm:4678> INFO - Looking for bibtex file '../Literatur/Amplitudenmodulation.bib' for section 0
+[198] bibtex.pm:1713> INFO - LaTeX decoding ...
+[219] bibtex.pm:1519> INFO - Found BibTeX data source '../Literatur/Amplitudenmodulation.bib'
+[258] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[258] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[258] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[258] Biber.pm:4313> INFO - No sort tailoring available for locale 'de-DE'
+[263] bbl.pm:676> INFO - Writing 'GitL_2-Amplitudenmodulation.bbl' with encoding 'UTF-8'
+[265] bbl.pm:779> INFO - Output to GitL_2-Amplitudenmodulation.bbl
