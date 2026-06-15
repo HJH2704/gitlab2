@@ -114,6 +114,16 @@
 \section{Theoretische Grundlagen}
 \subsection{Definitionen}
 
+\begin{equation}
+    f_0=\sqrt{f_L\cdot f_H}
+    \label{Gl:Mittenfrequenz}
+\end{equation}
+\begin{equation}
+    BW = f_H-f_L 
+    \label{Gl:Bandweite}
+\end{equation}
+
+
 
 \newpage
 \subsection{Effektivwert}
@@ -227,13 +237,152 @@ Die Resonanzfrequenz $f_r$ des Parallelschwingkreises wird mithilfe der Thomson-
 \end{equation*}
 
 
-\begin{equation*}
+\begin{equation}
 f_r = \frac{1}{2\pi \cdot \sqrt{22 \cdot 10^{-6}\,\text{H} \cdot 4,92 \cdot 10^{-9}\,\text{F}}} \approx 483.756\,\text{Hz} \approx 483,8\,\text{kHz}
-\end{equation*}
+\label{Gl:Mittenfrequenz_rechnerisch}
+\end{equation}
 
 Die theoretische Resonanzfrequenz des Parallelschwingkreises beträgt ca. \textbf{483,8\,kHz}.
 \newpage
 \section{Durchführung}
+
+
+Zu Beginn des Versuches „Amplitudenmodulation“ wurde der grundlegende Versuchsaufbau aufgebaut. Dieser musste für die einzelnen Versuchsteile jeweils angepasst beziehungsweise erweitert 
+werden. \\
+Der Schaltplan des Aufbaus sowie eine Abbildung des Versuchsaufbaus befinden sich im Anhang \ref{Ah:Weitere_Abbildungen} und \ref{Ah:img_Aufbau} Detaillierte Schaltpläne der verwendeten Platine sind im Anhang \ref{Ah:Schaltplan_Platine} dargestellt
+ \cite{Labor_Amplitudenmodulation}.  Die verwendeten Geräte können der Geräteliste im Anhang B entnommen werden. Der Ausgang Channel 1 des Waveform-Generators wurde mit dem Eingang E0, also mit dem Eingang des Trägers, 
+ der Platine verbunden. Der Channel 2 des Waveform-Generators wurde noch nicht mit dem Eingang E1 der Platine verbunden, da dies für die Aufgabenstellung 3.1 noch nicht erforderlich war. 
+ Zusätzlich wurde der Ausgang A2 der Platine an das Oszilloskop angeschlossen. Der Ausgang A1 wurde zunächst noch nicht mit dem Spektrumanalysator verbunden, um mögliche Beschädigungen durch
+  fehlerhafte Einstellungen zu vermeiden, und da dieser auch für die Aufgabe 3.1 noch nicht benötigt wird.
+
+\subsection{Durchführung der Aufgabe: 3.1}
+\subsubsection*{Durchführung der Aufgabe: 3.1.1}
+Für die Aufnahme der statischen Modulationskennlinie $U_A = U(f_2)$ wurde am Eingang E0 des Modulators ein sinusförmiges Trägersignal $x_0(t)$ mit einer Frequenz von $480 kHz$ angelegt. 
+Die Peak-to-Peak-Spannung $V_{pp}$ des Signalgenerators wurde dabei auf $2,98 V$ eingestellt, sodass sich durch eine Kontrollmessung mit dem Oszilloskop ein Effektivwert von $2 V_{eff}$ 
+ergab. Anschließend wurde am Eingang E2 über das auf der Platine befindliche Drehpotentiometer eine Gleichspannung $U_2$ im Bereich von $\- 12 V$ bis $0 V$ eingestellt.
+Für jede Potentiometerposition wurde die Ausgangsspannung am Ausgang E2 bestimmt. Dazu wurde der Effektivwert der Ausgangsspannung in Schritten von 0,5 V aufgenommen und protokolliert. 
+Die gemessenen Werte wurden anschließend zur Darstellung der statischen Modulationskennlinie in der Tabelle \ref{tab:Aufgabe1} protokoliert. Das Schirmbild des Trägersignales ist in Abb. 
+\ref{Abb:Träger_3_1_1} zu sehen. 
+
+
+
+
+
+\subsubsection*{Durchführung der Aufgabe: 3.1.2}
+Im Anschluss wurde die Amplitude des Trägersignals bei unveränderter Frequenz von $480 kHz$ deutlich reduziert. Der Effektivwert wurde auf $25 mV$ eingestellt und die korrekte Einstellung 
+erneut mit dem Oszilloskop verifiziert.
+Die Gleichspannung am Eingang E2 wurde anschließend, wie im vorherigen Versuchsteil schrittweise im Bereich von $\- 12 V$ bis $0 V$ variiert. Für jede Position des Potentiometers wurde 
+erneut der Effektivwert der Ausgangsspannung protokoliert. Die Messwerte wurden in Tabelle  \ref{tab:Aufgabe1} protokolliert und später mit den Ergebnissen aus Aufgabe 3.1.1 verglichen. Das Schirmbild 
+des Trägersignales ist in Abb. \ref{Abb:Träger_3_1_2} zu sehen. 
+
+
+
+\newpage
+
+\section{Durchführung der Aufgabe: 3.2}
+\subsubsection*{Durchführung der Aufgabe: 3.2.1}
+Grundlegend wird die Statische Modulationskennlinie aus 3.1.1 für die Bestimmung des Modulationsgrades hinzugezogen, diese Ist im Kapitel \ref{} dargelegt. Für die Untersuchung des zeitlichen 
+Verlaufs wurde die zuvor angelegte Gleichspannung am Eingang E2 entfernt. Das Trägersignal am Eingang E0 wurde wieder auf einen Effektivwert von $2 V$, wie aus 3.1.1 bekannt, eingestellt.
+ Zusätzlich wurde ein sinusförmiges Modulationssignal $U(t)$ am Eingang E1 eingespeist. Dieses besaß einen Effektivwert von $U_1 = 1 V_{eff}$ sowie eine Frequenz von $f_1=1kHz$.
+Das modulierte Ausgangssignal wurde am Ausgang A2 mit dem Oszilloskop aufgenommen. Aus dem dargestellten Hüllkurvenverlauf wurden die für die Bestimmung des Modulationsgrades benötigten
+ Größen abgelesen. Hierzu wurden die maximale und minimale Hüllkurvenamplitude bestimmt und protokolliert. Der Verlauf dieses Signales ist Abb. \ref{Abb:A2_3_2_1} gezeigt. 
+
+
+
+
+
+
+
+\subsubsection*{Durchführung der Aufgabe: 3.2.2}
+Auf Grundlage der im Versuchsteil 3.2.1 bestimmten Größen wurde das Zeigerdiagramm des amplitudenmodulierten Ausgangssignals $A2$ erstellt. Die hierfür erforderlichen Werte wurden aus dem 
+aufgenommenen Schirmbild des Oszilloskops entnommen und.
+
+
+
+
+
+\subsubsection*{Durchführung der Aufgabe: 3.2.3}
+Zur Untersuchung des Frequenzspektrums (Betragsspektrum) der Ausgangsspannung $x(t)$ wurde der Ausgang A1 der Platine mit dem Spektrumanalysator verbunden. Die Einstellungen des 
+Spektrumanalysator wurden auf eine Mittenfrequenz von $480 kHz$, eine Span von $50 kHz$, eine Auflösungsbandbreite RBW von $1 kHz$, eine Videobandbreite VBW von $3 kHz$ sowie eine 
+Sweeptime SWT $2 s$ eingestellt. An den Eingang E1 wird ein das Modulation Signal gegeben und auf eine Frequenz von $5 KHz$ eigestellt. \\
+Anschließend wurde die Amplitude des Modulationssignals so eingestellt, dass sich ein Modulationsgrad von annähernd $m = 1$ ergab (1 kann nicht erreicht werden). 
+Das Spektrum des modulierten Signals wurde aufgenommen. Mithilfe des Markers des Spektrumanalysator wurden die Frequenzen und Amplituden der einzelnen Spektrallinien protokolliert.
+ Das Spektrum ist in Abb. \ref{Abb:A2_3_2_3} dargestellt. 
+
+
+
+\newpage
+\subsection{Durchführung der Aufgabe: 3.3}
+\subsubsection*{Durchführung der Aufgabe: 3.3.1}
+Zur Bestimmung des Frequenzgangs $U_A = U_A(f_0)$ blieb der Eingang E1 unbeschaltet. Der Eingang E0 wurde weiterhin mit einem sinusförmigen Träger-Signal mit einem Effektivwert von 2 V 
+eingestellt. Die Trägerfrequenz wurde schrittweise im Bereich zwischen $400 kHz$ und $600 kHz$ variiert.
+Für jede eingestellte Frequenz wurde die Ausgangsspannung $U_A$ des Modulators gemessen und protokoliert. Die Messwerte sind in Tabelle \ref{tab:Aufgabe3.1} protokoliert.
+
+
+
+
+
+\subsubsection*{Durchführung der Aufgabe: 3.3.2}
+Im nächsten Versuchsteil wurde die Spannung $U_1$ des modulierenden Signals so eingestellt, dass sich bei einer Frequenz von $1 kHz$ ein Modulationsgrad von etwa $ m = 1 $ ergab. Anschließend 
+wurde die Frequenz des Modulationssignals schrittweise verändert im Bereich von $10 \text{Hz} <= f_1 <= 40 $kHz.
+Für jede eingestellte Frequenz wurde der Modulationsgrad mithilfe des Schirmbildes des Oszilloskops, sowie der Marker Funktion bestimmt und protokolliert. Die zugehörigen daten befinden sich 
+in Tabelle \ref{tab:Aufgabe3.2}
+
+
+
+
+
+
+\subsubsection*{Durchführung der Aufgabe: 3.3.3}
+Für die Untersuchung der Hüllkurve wurde das sinusförmige Modulationssignal durch ein symmetrisches unipolares Rechtecksignal ersetzt. Dieses wurde mit einer Grundfrequenz von $1 kHz$ und einer
+ Amplitude von $U_1= 5 V$ eingestellt.
+Das modulierte Ausgangssignal $x(t)$ wurde am Ausgang A2 mit dem Oszilloskop betrachtet. Dabei wurden die Anstiegszeit, die Abfallzeit sowie der Dachabfall der Hüllkurve bestimmt und 
+dokumentiert. Diese sind in den Abbildungen \ref{Abb:A2_3_3_3_1}, \ref{Abb:A2_3_3_3_2},\ref{Abb:A2_3_3_3_3}, zu sehen. 
+
+
+
+
+
+
+\subsubsection*{Durchführung der Aufgabe: 3.3.4}
+Abschließend wurde am Eingang E1 ein sinusförmiges Signal mit einer Frequenz $ f_1 = 10$ kHz und einem Effektivwert von $U_1 V_{eff}$ eingespeist. Das modulierende Signal $u(t)$ sowie
+ die Hüllkurve des Ausgangssignals $x(t)$ wurden gleichzeitig mit dem Oszilloskop dargestellt.
+Durch den Vergleich beider Signale am Schirmbild des Oszilloskops wurde die zeitliche Verzögerung der Hüllkurve gegenüber dem Modulationssignal $u(t)$ bestimmt und protokolliert. Das 
+Schirmbild ist in Abb. \ref{Abb:Träger_3_3_4} dargestellt. 
+
+
+
+\newpage
+\subsection{Durchführung der Aufgabe: 3.4}
+\subsubsection*{Durchführung der Aufgabe: 3.4.1}
+In diesem Versuchsteil wurde zunächst untersucht, wie die vorhandene Modulator Schaltung verändert werden müsste, um ein Zweiseitenbandsignal  zu erzeugen. 
+
+\subsubsection*{Durchführung der Aufgabe: 3.4.2}
+Zur Aufnahme des Frequenzspektrums wurde der Ausgang A1 der Modulatorplatine mit dem Spektrumanalysator verbunden. Am Eingang E0 wurde ein sinusförmiges Trägersignal mit einer Frequenz
+ von $f_0 = 360$ kHz und einem Effektivwert von $U_0= 2 V_{eff}$ angelegt. Zusätzlich wurde am Eingang E1 ein sinusförmiges Modulationssignal mit einer Frequenz von $f_1=120$ kHz eingestellt.\\
+
+Die Amplitude des Modulationssignals wurde schrittweise im Bereich von $0 V_{eff}$ bis $3,5 \text{$ V_{eff}$}$ effektiv verändert. Für jede eingestellte Amplitude wurde das Spektrum des Ausgangssignals 
+mit dem Spektrumanalysator aufgenommen. Mithilfe der Marker Funktion wurden die auftretenden Spektrallinien sowie deren Frequenzen und Amplituden  protokolliert. Die Spektrallinien sind in der 
+Tabelle \ref{tab:Aufgabe3.1} protokoliert und Exemplarisch für einen Fall in Abb. \ref{} zu sehen. 
+
+
+\subsubsection*{Durchführung der Aufgabe: 3.4.3}
+Abschließend wurde erneut das Frequenzspektrum des Modulatorausgangs untersucht. Dazu wurde die Frequenz des Trägersignals am Eingang E0 auf $f_0= 495 kHz$ eingestellt, während der Effektivwert 
+weiterhin bei $U_0=2 V$ blieb . Am Eingang E1 wurde ein sinusförmiges Modulationssignal mit einer Frequenz von $f_1=15 kHz$ angelegt. \\
+Die Amplitude des Modulationssignals wurde schrittweise im Bereich von $0 V_{eff}$ bis $3,5 V_{eff}$ effektiv verändert. Für jede eingestellte Amplitude wurde das Spektrum des Ausgangssignals 
+mit dem Spektrumanalysator aufgenommen. Mithilfe der Marker Funktion wurden die auftretenden Spektrallinien sowie deren Frequenzen und Amplituden  protokolliert. Die Spektrallinien sind in der
+ Tabelle \ref{} protokoliert und Exemplarisch für einen Fall in Abb. \ref{} zu sehen. 
+
+
+
+
+
+
+
+
+\subsection{Ende des Versuchs}
+Nach Abschluss aller Messungen wurden sämtliche Geräte ausgeschaltet und der Arbeitsplatz wieder in seinen ursprünglichen Zustand zurückversetzt (Siehe Abbildung \ref{}).
+
 
 
 \newpage
@@ -257,17 +406,38 @@ Die theoretische Resonanzfrequenz des Parallelschwingkreises beträgt ca. \textb
 
 \newpage
 \subsection{Frequenzverhalten des Modulators}
+\subsubsection{Frequenzgang des Modulators}
+Die Messdaten des Frequenzganges $U_A=U_A\left(f_0\right)$ könnnen der Tabelle \ref{tab:Aufgabe3.1} entneommen werden. 
+Für die weitere Bearbeitung der Aufgabe werden die Daten als Graph dargestellt. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/3/3.1/Frequenzgang.png}
+    \caption{Frequenzgang des Modulators}
+    \label{Abb:Frequenzgang_Modulator_3_1}
+\end{figure}\\
+Zu erkennen ist ein Bandpass.
+Dies kann ebenfalls durch die Schaltung der Platine \ref{Ah:Schaltplan_Platine} sowie aus der Überlegung des Kapitels \ref{kap} geschlussfolgert werden.\\
+Die Mittenfrequenz oder Resonanzfrequenz sollte nach Angaben aus den Schaltplan \ref{Ah:Schaltplan_Platine} und Gleichung \ref{Gl:Mittenfrequenz_rechnerisch} bei 483.3 kHz liegen. 
+In der Realität ist dies nicht ganz der Fall. 
+Aus den Messdaten \ref{tab:Aufgabe3.1}  und aus der graphischen Darstellung der Abbildung \ref{Abb:Frequenzgang_Modulator_3_1} kann eine Mittenfrequenz von 480 kHz abgelesen werden.\\
+Die abgelesenen Grenzfrequenzen in der Abbildung \ref{Abb:Frequenzgang_Modulator_3_1} liegen bei 462 kHz und 497 kHz. 
+Mit der Gleichung \ref{Gl:Mittenfrequenz} ergibt sich eine Mittenfrequenz von 479,2 kHz.
+\begin{equation*}
+    f_0=\sqrt{f_L\cdot f_H} \rightarrow f_0=\sqrt{462\text{kHz}\cdot 497\text{kHz}} \approx 479.2 \text{kHz}
+\end{equation*}
+
 \subsubsection{Frequenzgang des Modulationsgrades}
+\label{kap:3_2}
 Um bei einer Signalfrequenz $f_1$ von 1kHz einen Modulationsgrad $m$ von 1 zu erhalten, muss, nach Gleichung \ref{Gl:Modulationsgrad_OS}, das Minima der Hüllkurven $U_{min}$ exakt bei 0 liegen. 
 \begin{equation*}
     1=\frac{U_{max}-0}{U_{max}+0}=\frac{U_{max}}{U_{max}} \rightarrow 1=1
     \label{}
 \end{equation*}   
-Dies ist in der Realtät nicht möglich. 
+Dies ist in der Realität nicht möglich. 
 Aus diesen Grund sind nur Werte des Modulationsgrad $m$ nah an 1 möglich.\\
 Aus den Messdaten der Tabelle \ref{tab:Aufgabe3.2} kann der Modulationsgrad mittels der Gleichung \ref{Gl:Modulationsgrad_OS} bestimmt werden.
 Die daraus ergebenen Modulationsgrade abhangig von der Signalfrequenz kann in der folgenden Tabelle betrachtet werden.
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \begin{tabular}{|c|c|}
         \hline\textbf{Frequenz $f$ [Hz]}&\textbf{Modulationsgrad $m$} \\ \hline 
@@ -291,11 +461,35 @@ Die daraus ergebenen Modulationsgrade abhangig von der Signalfrequenz kann in de
    35000 & 0.44 \\ \hline 
    40000 & 0.41 \\ \hline 
     \end{tabular}
-    \caption{Modulationsgrade der Aufgabe 3.1}\label{tab:Modulationsgrad_3_1}
-\end{table}\\
-Der Verlauf \\
-\textbf{Hier Weiterschreiben @Marcel}
+    \caption{Modulationsgrade der Aufgabe 3.1}\label{tab:Modulationsgrad_3_2}
+\end{table}
+Der Verlauf des Modulationsgrades im Vergleich zur Signalfrequenz aus der Tabelle \ref{tab:Modulationsgrad_3_2}  kann in der folgenden Abbildung \ref{Abb:Modulationsgrad_3_2} betrachtet werden.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{../Abbildungen/3/3.2/Modulationskennlinie.png}
+    \caption{Frequenzgang des Modulationsgrades}
+    \label{Abb:Modulationsgrad_3_2}
+\end{figure}
+Wird der Verlauf des Modulationsgrad betrachtet, kann direkt erkannt werden, dass es sich bei der Scahltung der Platine \ref{Ah:Schaltplan_Platine} um einen Banpass handeln muss.
+Die 3dB-Grenze oder auch Grenzfrequenzen liegen bei etwa 45 Hz sowie 17400 Hz.
+Eine genaue Bestimung kann nicht erfolgen, da zuwenig Daten um den Grenzfrequenzen erhoben worden sind.\\
+Aus den Daten und der Gleichung \ref{Gl:Bandweite} kann die Bandbreite des Bandpassfilters bestimmt werden. 
+\begin{equation*}
+    BW = f_H-f_L \rightarrow BW \approx 17400\text{Hz}-45\text{Hz} \approx 17,355\text{kHz}  
+\end{equation*}
+Die theoretische Mittenfrequnz weicht, jedoch leicht von der Gefoderten ab.\\
+Die Aufgabenstellung fordert eine Mittenfrequnz von 1kHz, mit der folgenden Gleichung \ref{Gl:Mittenfrequenz} ergibt sich jedoch eine Mittenfrequenz von 885 Hz
+\begin{equation*}
+    f_0=\sqrt{f_L\cdot f_H} \rightarrow f_0=\sqrt{45\text{Hz}\cdot 17400\text{Hz}} \approx 885 \text{Hz}
+\end{equation*}
+Die errechnete Mittenfrequenz von 885 Hz weicht stark von der gewünschten ab, dies kann auf die ungenaue Einstellungsmöglichkeit im Zusammenhang mit den Oszilloskop zurückgeführt werden. 
+Denn das Oszilloskop regelt schon früh ein Überschwingen ab, daher kann das Minima der Hüllkurven $U_{min}$ nicht genau auf 0V moduliert werden. 
+Zusätlich ist die Bestimmung der Grenzfrequenzen aufgrund der wenigen Messpunkte ebenfalls nicht genau, auch dadurch können teile der Abweichungen erklärt werden.\\
+Grundsätlich kann dennoch mit den Daten gearbeitet werden. 
+Durch die Abbildung \ref{Abb:Modulationsgrad_3_2} kann deutlich die Bandpasseigenschaften der Schaltung erkannt werden. 
+Auch die Bandbreite $BW$ ist, trotz ungenauer Messungen, in der konkreten Größenordnung und kann auf etwa 17-17.5 kHz benannt werden.
 
+\subsubsection{Hüllkurve des modulierten Ausgangssignals eines Rechtecksignals}
 
 
 \newpage
@@ -307,7 +501,10 @@ Die Mittenfrequenzen der beiden Bandpassfilter müssten auf die Basisbandfrequen
 Auch so ist die Umsetzung nur je gewählt der Nutzsignalfrequenz möglich.
 Denn ist diese Frequenz klein sind die Basisbandfrequenzen im  Spektrum entsprechende nah an der Trägerfrequenz, somit wird der bau des Bandpassfilter schwerer, bis hin zu unmöglich.
 
+\subsubsection{Modulationsartbestimmung 1}
 
+
+\subsubsection{Modulationsartbestimmung 2}
 \newpage
 \section{Literaturverzeichnis}
 \printbibliography %Erzeugung von Literatturverzeichnis
@@ -351,10 +548,10 @@ Denn ist diese Frequenz klein sind die Basisbandfrequenzen im  Spektrum entsprec
     \end{tabular}
 \caption{Messwerte der Aufgabe 1}\label{tab:Aufgabe1}
 \end{table}
-\begin{table}[h] 
+\begin{table}[H] 
     \centering
     \begin{tabular}{|c|c|} 
-          \hline \textbf{Trägerfrequenz} & \textbf{Ausgangsspannung } \\ 
+          \hline \textbf{Trägerfrequenz} & \textbf{Ausgangsspannung} \\ 
           \textbf{ $f_0$ [kHz]}    & \textbf{$U_A$ [mV] bei 2V}       \\ \hline
             400  &  201  \\ \hline
             410  &  231  \\ \hline
@@ -366,9 +563,9 @@ Denn ist diese Frequenz klein sind die Basisbandfrequenzen im  Spektrum entsprec
             465  &  789  \\ \hline
             470  &  904  \\ \hline
             475  &  995  \\ \hline
-            477.5  & 1018   \\ \hline
-            480  &  1021  \\ \hline
-            482.5  & 1004   \\ \hline
+            477.5& 1018  \\ \hline
+            480  &  1021 \\ \hline
+            482.5& 1004  \\ \hline
             483  &  998  \\ \hline
             485  &  970  \\ \hline
             490  &  872  \\ \hline 
@@ -394,49 +591,48 @@ Denn ist diese Frequenz klein sind die Basisbandfrequenzen im  Spektrum entsprec
 \begin{table}[h] 
     \centering
     \begin{tabular}{|c|c|c|} 
-          \hline \textbf{Signalfrequenzen} & \textbf{Minimaleausgangsspannung} & \textbf{Maximaleausgangsspannung }\\ 
+          \hline \textbf{Signal-} & \textbf{Minimal-} & \textbf{Maximal-}\\ 
+          \textbf{frequenzen} &\textbf{ausgangsspannung}&\textbf{ausgangsspannung}\\
           \textbf{ $f_1$ [Hz]}    & \textbf{$U_{A,min}$ [mV]} &  \textbf{$U_{A,max}$ [mV]}   \\ \hline
-            10    & 1118 & 1733\\ \hline
-            20    & 874 & 2011\\ \hline
-            50    & 351 & 2480 \\ \hline
-            70    & 263 & 2597 \\ \hline
-            100   & 166 & 2670\\ \hline
-            200   & 78 & 2793\\ \hline
-            500   & 40 & 2793\\ \hline
-            950   & 48 & 2851\\ \hline
-            1000  & 40 & 2830 \\ \hline
-            1050  & 68 &  2832 \\ \hline
-            2000  & 68 & 2812 \\ \hline
-            5000  & 98 & 2812 \\ \hline
-            10000 & 214 & 2666 \\ \hline
-            15000 & 341 & 2568\\ \hline
-            20000 & 517 & 2382\\ \hline
-            25000 & 625 & 2275\\ \hline
-            30000 & 747 & 2163\\ \hline
-            35000 & 810 & 2070\\ \hline
-            40000 & 854 & 2065\\ \hline 
+            10    & 1118 & 1733 \\ \hline
+            20    & 874  & 2011 \\ \hline
+            50    & 351  & 2480 \\ \hline
+            70    & 263  & 2597 \\ \hline
+            100   & 166  & 2670 \\ \hline
+            200   & 78   & 2793 \\ \hline
+            500   & 40   & 2793 \\ \hline
+            950   & 48   & 2851 \\ \hline
+            1000  & 40   & 2830 \\ \hline
+            1050  & 68   & 2832 \\ \hline
+            2000  & 68   & 2812 \\ \hline
+            5000  & 98   & 2812 \\ \hline
+            10000 & 214  & 2666 \\ \hline
+            15000 & 341  & 2568 \\ \hline
+            20000 & 517  & 2382 \\ \hline
+            25000 & 625  & 2275 \\ \hline
+            30000 & 747  & 2163 \\ \hline
+            35000 & 810  & 2070 \\ \hline
+            40000 & 854  & 2065 \\ \hline 
     \end{tabular}
     \caption{Messwerte der Aufgabe 3.2} \label{tab:Aufgabe3.2}
 \end{table}
 \newpage
-
-\begin{table}[!h] 
+\begin{sidewaystable}[h] 
     \centering
     \begin{tabular}{|c|c|c|c|c|c|} 
           \hline \textbf{Trägerfrequenz} & \textbf{Ausgangsspannung } \\ 
-          \textbf{ $U_1$ [V]}    & \textbf{Seitenband 1 links [mV] }   &  & \textbf{Seitenband 2 links [mV] } \textbf{Hauptpeak [mV] }  & \textbf{Seitenband 1 rechts [mV] }  & \textbf{Seitenband 2 rechts [mV] }   \\ \hline
-            0  &  0 & 0& 746&0 &0   \\ \hline
-            0.5  &  0 & 66& 746& 32&  0 \\ \hline
-            1  & 0  & 136& 745& 63&  0 \\ \hline
-            1.5 & 0  &202 & 745&94 &  0 \\ \hline
-            2  &  5 &269 & 744 & 126&  0 \\ \hline
-            2.5  & 8  & 480&742 &155 &  4 \\ \hline
-            3  &   10& 480 & 740& 185&  5 \\ \hline
-            3.5  & 14  & 465 & 739 & 217 &  6 \\ \hline
-          
+          \textbf{ $U_1$ [V]}    & \textbf{Seitenband 1 links [mV] }   & \textbf{Seitenband 2 links [mV] }& \textbf{Trägerfrequenz [mV] }  & \textbf{Seitenband 1 rechts [mV] }  & \textbf{Seitenband 2 rechts [mV] }   \\ \hline
+            0    & 0 & 0   & 746 & 0   & 0 \\ \hline
+            0.5  & 0 & 66  & 746 & 32  & 0 \\ \hline
+            1    & 0 & 136 & 745 & 63  & 0 \\ \hline
+            1.5  & 0 & 202 & 745 & 94  & 0 \\ \hline
+            2    & 5 & 269 & 744 & 126 & 0 \\ \hline
+            2.5  & 8 & 480 & 742 & 155 & 4 \\ \hline
+            3    & 10& 480 & 740 & 185 & 5 \\ \hline
+            3.5  & 14& 465 & 739 & 217 & 6 \\ \hline
     \end{tabular}
-    \caption{Messwerte der Aufgabe 4.2 Vorverstärker aus!!!!} \label{tab:Aufgabe3.1}
-\end{table}
+    \caption{Messwerte der Aufgabe 4.2 Vorverstärker aus!!!!} \label{tab:Aufgabe4.2}
+\end{sidewaystable}
 \newpage
 \subsection{Weitere Abbildungen}
 \label{Ah:Weitere_Abbildungen}
@@ -445,6 +641,79 @@ Denn ist diese Frequenz klein sind die Basisbandfrequenzen im  Spektrum entsprec
     \includegraphics[width=0.8\linewidth]{../Abbildungen/parallelschwingkreis_frequenzgang.png}
     \caption{Theoretischer Bodeplott des Schwingkreises (Pyhtoncode \ref{lst:Bodeplotts_erzeugung})}
     \label{Abb:Bodeplott_Schwingkreis}
+\end{figure}
+
+\newpage
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/1/1.1/1_1_Träger.PNG}
+    \caption{Aufgabe: 3.1.1}
+    \label{Abb:Träger_3_1_1}
+\end{figure}
+
+\newpage
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/1/1.2/1_2_Träger.PNG}
+    \caption{Aufgabe: 3.1.2}
+    \label{Abb:Träger_3_1_2}
+\end{figure}
+
+
+
+\newpage
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.1/2_1_gesamt_curser_final_.PNG}
+    \caption{Aufgabe: 3.2.1}
+    \label{Abb:A2_3_2_1}
+\end{figure}
+
+
+
+\newpage
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.3/SA_2_3_alle_Peaks/Measurement0099.png}
+    \caption{Aufgabe: 3.2.3}
+    \label{Abb:A2_3_2_3}
+\end{figure}
+
+
+
+
+\newpage
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/3/3.3/OS_3.3/Anstiegszet.PNG}
+    \caption{Aufgabe: 3.3.3.Anstiegszet}
+    \label{Abb:A2_3_3_3_1}
+\end{figure}
+
+
+\newpage
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/3/3.3/OS_3.3/Abfallzeit.PNG}
+    \caption{Aufgabe: 3.3.3.Abfallzeit}
+    \label{Abb:A2_3_3_3_2}
+\end{figure}
+
+
+\newpage
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/3/3.3/OS_3.3/Dachabfall.PNG}
+    \caption{Aufgabe: 3.3.3.Dachabfall}
+    \label{Abb:A2_3_3_3_3}
+\end{figure}
+
+\newpage
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/3/3.4/3_4_A2_A4_aufnahme_2.PNG}
+    \caption{Aufgabe: 3.3.4}
+    \label{Abb:Träger_3_3_4}
 \end{figure}
 \newpage
 \includepdf[

@@ -37,7 +37,7 @@ for i in range(len(y1)):
     M.append(U)
     
 # Plot erzeugen
-plt.figure(figsize=(8, 5))
+plt.figure(figsize=(12, 5))
 #(max-min)/(max+min)
 plt.loglog(x, M, marker="o", label="")
 
