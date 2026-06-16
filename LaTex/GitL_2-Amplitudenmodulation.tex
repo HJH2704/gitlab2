@@ -404,27 +404,160 @@ Nach Abschluss aller Messungen wurden sämtliche Geräte ausgeschaltet und der A
 \section{Auswertung}
 \subsection{Statische Modulationskennlinie}
 \label{kap:1}
-\subsubsection{Modulationskennlinie bei einer Einganggleichspannung von 2V}
+\subsubsection{Modulationskennlinie bei einer Eingangsgleichspannung von 2V}
 \label{kap:1.1}
-
-
-\subsubsection{Modulationskennlinie bei einer Einganggleichspannung von 25mV}
+Die Daten für diese Aufgabe sind in Tabelle \ref{tab:Aufgabe1} zu finden.
+Die folgende Abbildung \ref{Abb:Modulationskennlinie_1_1} zeigt die Daten zur besseren visualisierung als Graph.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\linewidth]{../Abbildungen/1/1.1/Modulationskennlinie.png}
+    \caption{Modulationskennlinie der Ausgangsamplitude}
+    \label{Abb:Modulationskennlinie_1_1}
+\end{figure}\\
+Zu sehen ist ein annähernd linearer Verlauf zwischen der Eingangsspannung -11V bis -0.5V.
+Somit ist die Ausgangsamplitude in diesem Bereich proportional zur Eingangsspannung.\\
+Die Werte außerhalb dieses Bereiches, lassen sich nicht mit der linearen Näherung beschreiben
+Diese Änderung kann durch verschiedene Bauteilgrenzen des Transistors T3 begründet werden . 
+So ist der Bereich außerhalb von -11V bis -0.5V nicht im Arbeitsbereich des Transistors.
+Werte zwischen -12 bis -11 ist der Spannungsunterschied zum -12V Ausgang gering, weshalb die Stromstärke nicht ausreichend ist um den Transistor zu verwenden.
+Die Werte zwischen -0.5 bis 0 liegen überhalb des Arbeitsbereiches. 
+Aus diesem Grund ist diese kennlinie nicht mehr Linear.
+\newpage
+\subsubsection{Modulationskennlinie bei einer Eingangsgleichspannung von 25mV}
 \label{kap:1.2}
-
-
-
+Die Daten für diese Aufgabe sind in Tabelle \ref{tab:Aufgabe1} zu finden.
+Die folgende Abbildung \ref{Abb:Modulationskennlinie_1_2} zeigt die Daten zur besseren visualisierung als Graph.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{../Abbildungen/1/1.2/Modulationskennlinie.png}
+    \caption{Modulationskennlinie der Ausgangsamplitude}
+    \label{Abb:Modulationskennlinie_1_2}
+\end{figure}
+Anders wie in Kapitel \ref{kap:1.1} ist diese Kennlinie nicht linear. 
+Dies bedeutet, dass die Trägeramplitude einfluss auf die Linearität des Ausgangssignales besitzt.\\
+Um die beiden Modulationskennlinien besser vergleichen zu können, werden diese in Abbildung \ref{Abb:Modulationskennlinie_1} zusammengefügt.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{../Abbildungen/1/Gesamt_1.png}
+    \caption{Modulationskennlinie der Ausgangsamplitude}
+    \label{Abb:Modulationskennlinie_1}
+\end{figure}\\
+Zu erkennen sind Ähnlichkeiten im Verhalten außerhalb des Bereiches von -11V bis -0.5V.  
+Ab -0.5 bricht die Ausgangsspannung bei beiden Trägersignalamplituden ein.  
+Dies kann weiterhin durch den Arbeitsbereich des Transistors T3 begründet werden.\\
+Zwischen -12V und -11V ist die Steigung der Kennlinien abgeflacht und erreicht erst bei -11V ihre normle bzw. bei der Trägeramplitude von 25mV ihr größte Steigung. \bigskip
+Innerhalb des Bereiches sind die unterschiede zu erkennen. 
+Der Unterschied, welcher am schnelsten ins Auge fällt ist die Steigung und dessen Verlauf. 
+Bei der Trägeramplitude $U_0$ von 2V ist die Steigung der Eingangsgleichspannung zum Ausgangsamplitude annähernd linear. 
+Für die Trägeramplitude $U_0$ von 25mV fällt die stärke der Steigung kontinuierlich ab. 
+Daraus kann geschlossen werden, dass bei einer zu geringen Amplitude des Trägersignals die Übertragung geschwächt wird.
+Der Übertragungsfaktor beziehungsweise der Modulationsgrad ist dann stärker von der Eingangsgleichspannung abhängig und nicht mehr konstant.
 \newpage
 \subsection{ Zeitlicher Verlauf und Frequenzspektrum}
 \label{kap:2}
 \subsubsection{Vergleich der Modulationsgrade}
 \label{kap:2.1}
-
+Durch den annähernd linearen Verlauf der Modulationskennlinien in Kapitel \ref{kap:1.1} Abbildung \ref{Abb:Modulationskennlinie_1_1} kann ein Modulationsgrad bestimmt werden. 
+Dafür kann die Gleichung \ref{Gl:Modulationsgrad_OS} verwendet werden.
+\begin{equation*}
+    m=\frac{U_{max}-U_{min}}{U_{max}+U_{min}}
+\end{equation*} 
+Um das Maxima und Minima der  Hüllkurvenamplitude $U_{max}$,$U_{min}$ zu erhalten, können die Daten aus der Abbildung \ref{Abb:Modulationskennlinie_1_1} verwendet werden. 
+Dafür muss auf der Eingangsgleichspannung-Achse ein Bereich der maixmalen Signal Amplitude ausgewählt werden. 
+An der stelle, bei den die äußeren Ränder des Signalbereiches die Funktion trifft, können die Hüllkurvenamplitude abgelesen werden. 
+Um den Bereich der maixmalen Signal Amplitude zu erhalten, muss der Effektivwert mit einer umstellung der Gleichung \ref{Gl:Effektivwert_Sin} in den Spitzenwert umgerechnet werden. 
+\begin{equation*}
+       \hat{X} =  X_{eff}\cdot \sqrt{2} \rightarrow \hat{X}= 1\text{V} \cdot \sqrt{2} = 1.4142\text{V}
+\end{equation*}\\
+Dieser bereich kann nun Irgenwo im linearen Bereich der Modulationskennlinie eingesetzt werden
+Mit diesen Wissen wird der Bereich in Abbildung \ref{Abb:Modulationskennlinie_1_1} eingesetzt. 
+Daraus folgt folgende Abbildung \ref{Abb:Modulationskennlinie_2_1}.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{../Abbildungen/2/2.1/Modulationskennlinie.png}
+    \caption{Modulationskennlinie der Ausgangsamplitude}
+    \label{Abb:Modulationskennlinie_2_1}
+\end{figure}\\
+Daraus ergibt sich eine Maximale Hüllkurvenamplitude von $U_{max}=1423$mV und eine Minimale Hüllkurvenamplitude $U_{min}=896$mV. 
+Werden diese Werte in Gleichung \ref{Gl:Modulationsgrad_OS} eingesetzt.
+\begin{equation*}
+    m=\frac{U_{max}-U_{min}}{U_{max}+U_{min}}\rightarrow    m=\frac{1423\text{mV}-896\text{mV}}{1423\text{mV}+896\text{mV}}= 0.227
+\end{equation*}
+Damit ergibt sich ein Modulationsgrad $m$ von 0.227 oder 22,7\%.\\
+Um diesen Wert zu verifizieren kann der Modulationsgrad $m$ mittels eines Oszilloskops bestimmt werden.
+Dafür muss mittels der Curserfuntion die maixmale und minimale Spannung des Signales Abgelesen werden.
+Dies ist im Anhang \ref{Ah:Weitere_Abbildungen} in Abbildung \ref{Abb:A2_3_2_1} zu sehen.
+In dieser Abbildung ist zu erkennen, das die maximale Hüllkurvenamplitude $U_{max}$ bei 1.821V und die minimale Hüllkurvenamplitude $U_{min}$ bei 1.055V liegt. 
+Mit dieser information und der Gleichung \ref{Gl:Modulationsgrad_OS} kann nun der Modulationsgrad bestimmt werden.
+\begin{equation*}
+        m=\frac{U_{max}-U_{min}}{U_{max}+U_{min}}\rightarrow m=\frac{1.821\text{V}-1.055\text{V}}{1.821\text{V}+1.055\text{V}}=0.266
+\end{equation*}
+Damit ergibt sich ein Modulationsgrad $m$ von 0.266 oder 26,6\%.\\
+Somit weißt dieser Modulationsgrad eine Abweichung von 17,2\% zum theoretisch Hergeleiteten auf. 
+Somit muss die Kennlinie Fehler Einstellungen aufgewiesen haben.
 
 \subsubsection{Zeigerdiagramm des Spannungsverlaufes}
 \label{kap:2.2}
 
 \subsubsection{Betragsspektrum der Ausgangsspannung}
 \label{kap:2.3}
+Um bei einer Signalfrequenz $f_1$ von 1kHz einen Modulationsgrad $m$ von 1 zu erhalten, muss, nach Gleichung \ref{Gl:Modulationsgrad_OS}, das Minima der Hüllkurven $U_{min}$ exakt bei 0 liegen. 
+\begin{equation*}
+    1=\frac{U_{max}-0}{U_{max}+0}=\frac{U_{max}}{U_{max}} \rightarrow 1=1
+    \label{}
+\end{equation*}   
+Dies ist in der Praxis nicht möglich. 
+Aus diesen Grund sind nur Werte des Modulationsgrad $m$ nah an 1 möglich.\\
+Bei einem Idealen Fall, also $m$=1 würde ich drei Spektrallinien erwarten.
+Die Größte und mittlere der Spektrallinien würde bei der Trägerfrequenz $f_0$ von 480kHz erwartet werden. 
+Die beiden Seitenbänder würden mit der Signalfrequenz $f_1$ entfernt von der Trägerfrequenz $f_0$ liegen. 
+In Fall des Versuches würde das untere Seitenband bei 475kHz und das obere Seitenband bei 485kHz liegen.\\
+Die Amplitude der Spektrallinien der Seitenband muss addiert bei einerem Modulationsgrad $m$ von 1 identisch zur der der Trägerfrequenz sein. 
+Da zwei Seitenbänder vorhanden sind, muss die Amplitude der Spektrallinien halbiert sein. 
+Somit 50\% der der Trägerfrequenz.
+Berechnet kann es auf folgende Weise.\cite{}
+\begin{equation}
+    \hat{U}_{SB}=\frac{\hat{U}_0}{2}
+    \label{Gl:SB}
+\end{equation}
+\begin{equation}
+    \hat{U}_0=m \cdot \hat{U}_{f_0}
+    \label{Gl:Höhe_Spektrallinien}
+\end{equation}
+\begin{center}
+    $\hat{U}_{SB}$: Amplitude der Seitenbänder im Spektrum [V]        \\
+    $\hat{U}_0$: Amplitude der addierten Seitenbänder im Spektrum [V]        \\
+    $\hat{U}_{f_0}$: Amplitude der Trägerfrequenz im Spektrum [V]\\
+    $m$: Modulationsgrad 
+\end{center}
+\bigskip
+Bei diesen Versuchsaufbau kann kein Modulationsgrad $m$ von 1 erreicht werden, sondern nur nah dran. 
+Ein Oszilloskopbild zur verdeutlichung der annäherung ist im Anhang \ref{Ah:Weitere_Abbildungen} mittels Abbildung \ref{Abb:A2_3_2_3_os} zugefügt.\\
+Ist der Modulationsgrad unter 1 so entstehen weitere ungewünschte Seitenbänder, welche jeweils einen frequenzabstand aufweisen, die Identisch zur Signalfrequenz $f_0$ ist.
+Somit liegen ungewünschte Seitenband beispielsweise bei 470kHz und 490kHz.\\
+Bei einer Eingestellten Trägeramplitude von etwa 1V , der Gleichung\ref{Gl:SB} und \ref{Gl:Höhe_Spektrallinien} haben die beiden Seitenbänder eine Amplitude von 0.5V.
+\newline
+\newline
+Um diese Behauptungen zu Überprüfen kann Abbildung \ref{Abb:A2_3_2_3} im Anhang \ref{Ah:Weitere_Abbildungen} und Tabelle \ref{tab:Aufgabe2.3} im Anhang \ref{Ah:Messtabellen} betrachtet werden.
+Zu sehen sind die beschriebenen gewünschten und ungewünschten Seitenbänder unter- und oderhalb der Trägerfrequenz von 480kHz.
+Da die ungewünschten Seitenbänder zu sehen sind, kann geschlussfolgert werden, dass der Modulationsgrad nicht 1 betragen kann. 
+Dieser liegt leicht darunter.\\
+Mittels der Gleichungen \ref{Gl:SB} und \ref{Gl:Höhe_Spektrallinien} und den Daten aus Tabelle \ref{tab:Aufgabe2.3} kann der modulationswert annähernd bestimmt werden.
+\begin{equation*}
+  \hat{U}_0 = 2 \cdot \hat{U}_{SB} \rightarrow \hat{U}_0 = 2 \cdot 479\text{mV} = 958\text{mV}
+\end{equation*}
+\begin{equation*}
+    m=\frac{\hat{U}_0}{\hat{U}_{f_0}} \rightarrow m=\frac{958\text{mV}}{989,7\text{mV}}=0,968
+\end{equation*}
+Werden die Daten aus der Tabelle \ref{tab:Aufgabe2.3} weiter Betrachtet, fällt auf, das die Trägeramplitude etwas zu schwach gewählt worden sein muss, da sie nicht exakt bei 1V liegt. 
+Desweiteren sind die erwarteten Werte für einen Modulationsgrad von 1 bestimmt worden, da nun durch die Messdaten nur ein Wert von 0.986 erreicht worden ist, müssen auch die erwartetn Werte dahingehend angepasst werden. 
+\begin{equation*}
+    \hat{U}_{SB,Erwartet(neu)} =\hat{U}_{SB,Erwartet(alt)} \cdot m \rightarrow \hat{U}_{SB,Erwartet(neu)}= 500\text{mV}\cdot 0,968 = 484 \text{mV}
+\end{equation*}
+Der Wert der neuen Erwartung mit dem Errechneten Modulationsgrad liegt bei 484mV und damit mit einer Abweichung von 1,1\% von der Realität.\\
+Diese 1.1\% können mit der falsch eingestellten Trägeramplitude begründet werden. 
+Der Fehler liegt hier bei den gleichen 1.1\%. 
+Somit kann geschlussfolgert werden, das mittels einer vorherigen bestimmung des Modulationsgrades $m$ die Amplituden der Spektrallinien extrem genau bestimmt werden können.
 
 
 \newpage
@@ -456,13 +589,8 @@ Mit Gleichung \ref{Gl:Bandweite} ergibt sich eine Bandbreite von 35kHz.
 \end{equation*}
 \subsubsection{Frequenzgang des Modulationsgrades}
 \label{kap:3_2}
-Um bei einer Signalfrequenz $f_1$ von 1kHz einen Modulationsgrad $m$ von 1 zu erhalten, muss, nach Gleichung \ref{Gl:Modulationsgrad_OS}, das Minima der Hüllkurven $U_{min}$ exakt bei 0 liegen. 
-\begin{equation*}
-    1=\frac{U_{max}-0}{U_{max}+0}=\frac{U_{max}}{U_{max}} \rightarrow 1=1
-    \label{}
-\end{equation*}   
-Dies ist in der Praxis nicht möglich. 
-Aus diesen Grund sind nur Werte des Modulationsgrad $m$ nah an 1 möglich.\\
+Wie bereits in Kapitel \ref{kap:2.3} genauer beschriebenm, ist es nicht möglich einen Modulationsgrad $m$ von 1 zu erhalten.
+Es ist nur ein Wert nah an 1 möglich.\\
 Aus den Messdaten der Tabelle \ref{tab:Aufgabe3.2} kann der Modulationsgrad mittels der Gleichung \ref{Gl:Modulationsgrad_OS} bestimmt werden.
 Die daraus ergebenen Modulationsgrade abhangig von der Signalfrequenz kann in der folgenden Tabelle betrachtet werden.
 \begin{table}[H]
@@ -491,7 +619,8 @@ Die daraus ergebenen Modulationsgrade abhangig von der Signalfrequenz kann in de
     \end{tabular}
     \caption{Modulationsgrade der Aufgabe 3.1}\label{tab:Modulationsgrad_3_2}
 \end{table}
-Der Verlauf des Modulationsgrades im Vergleich zur Signalfrequenz aus der Tabelle \ref{tab:Modulationsgrad_3_2}  kann in der folgenden Abbildung \ref{Abb:Modulationsgrad_3_2} betrachtet werden.
+Der Verlauf des Modulationsgrades im Vergleich zur Signalfrequenz aus der Tabelle \ref{tab:Modulationsgrad_3_2}  kann in der folgenden Abbildung \ref{Abb:Modulationsgrad_3_2} betrachtet werden.\\
+Zur besseren Betrachtung musste ein doppelte logarithmische Achse verwendet werden.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.82\linewidth]{../Abbildungen/3/3.2/Modulationskennlinie.png}
@@ -600,127 +729,6 @@ Denn ist diese Frequenz klein sind die Basisbandfrequenzen im  Spektrum entsprec
 \label{Ah:}
 \addcontentsline{toc}{section}{Anhang} % Hinzufügen eines Section* in das Inhhaltsverzeichnis
 \renewcommand*{\thesubsection}{\Alph{subsection}}% Bildung einer neuen definition von Subsection
-\subsection{Messtabellen}
-\label{Ah:Messtabellen}
-\begin{table}[h] 
-    \centering
-    \begin{tabular}{|c|c|c|} 
-\hline\textbf{Gleichspannung} & \textbf{Ausgangsamplitude} & \textbf{Ausgangsamplitude} \\
-\textbf{$U_2$ [V]} & \textbf{$U_A$ [mV] bei 2V} & \textbf{$U_A$ [mV] bei 25mV} \\ \hline
-            -12.0 & 0.0  & 0 \\ \hline 
-            -11.5 & 24.8 & 13.2 \\ \hline
-            -11.0 & 110  & 51.9 \\ \hline
-            -10.5 & 203  & 93.9 \\ \hline
-            -10.0 & 297  & 134 \\ \hline
-            -9.5  & 392  & 174 \\ \hline
-            -9.0  & 486  & 211 \\ \hline
-            -8.5  & 580  & 247 \\ \hline
-            -8.0  & 675  & 281 \\ \hline
-            -7.5  & 770  & 313 \\ \hline
-            -7.0  & 864  & 344 \\ \hline
-            -6.5  & 958  & 374 \\ \hline
-            -6.0  & 1051 & 403 \\ \hline
-            -5.5  & 1145 & 428 \\ \hline
-            -5.0  & 1238 & 455 \\ \hline
-            -4.5  & 1331 & 480 \\ \hline
-            -4.0  & 1423 & 502 \\ \hline
-            -3.5  & 1517 & 525 \\ \hline
-            -3.0  & 1609 & 545 \\ \hline
-            -2.5  & 1700 & 566 \\ \hline
-            -2.0  & 1791 & 585 \\ \hline
-            -1.5  & 1882 & 603 \\ \hline
-            -1.0  & 1973 & 620 \\ \hline
-            -0.5  & 2065 & 638 \\ \hline
-             0.0  & 1852 & 608 \\ \hline
-    \end{tabular}
-\caption{Messwerte der Aufgabe 1}\label{tab:Aufgabe1}
-\end{table}
-\begin{table}[H] 
-    \centering
-    \begin{tabular}{|c|c|} 
-          \hline \textbf{Trägerfrequenz} & \textbf{Ausgangsspannung} \\ 
-          \textbf{ $f_0$ [kHz]}    & \textbf{$U_A$ [mV] bei 2V}       \\ \hline
-            400  &  201  \\ \hline
-            410  &  231  \\ \hline
-            420  &  271  \\ \hline
-            430  &  324  \\ \hline
-            440  &  399  \\ \hline
-            450  &  511  \\ \hline
-            460  &  670  \\ \hline
-            465  &  789  \\ \hline
-            470  &  904  \\ \hline
-            475  &  995  \\ \hline
-            477.5& 1018  \\ \hline
-            480  &  1021 \\ \hline
-            482.5& 1004  \\ \hline
-            483  &  998  \\ \hline
-            485  &  970  \\ \hline
-            490  &  872  \\ \hline 
-            495  &  763  \\ \hline 
-            500  &  666  \\ \hline
-            505  &  585  \\ \hline
-            510  &  516  \\ \hline
-            515  &  461  \\ \hline  
-            520  &  416  \\ \hline
-            525  &  378  \\ \hline  
-            530  &  347  \\ \hline 
-            540  &  298  \\ \hline 
-            550  &  261  \\ \hline
-            560  &  232  \\ \hline
-            570  & 209   \\ \hline    
-            580  & 190   \\ \hline 
-            590  & 175   \\ \hline
-            600  & 162   \\ \hline      
-    \end{tabular}
-    \caption{Messwerte der Aufgabe 3.1} \label{tab:Aufgabe3.1}
-\end{table}
-\newpage
-\begin{table}[h] 
-    \centering
-    \begin{tabular}{|c|c|c|} 
-          \hline \textbf{Signal-} & \textbf{Minimal-} & \textbf{Maximal-}\\ 
-          \textbf{frequenzen} &\textbf{ausgangsspannung}&\textbf{ausgangsspannung}\\
-          \textbf{ $f_1$ [Hz]}    & \textbf{$U_{A,min}$ [mV]} &  \textbf{$U_{A,max}$ [mV]}   \\ \hline
-            10    & 1118 & 1733 \\ \hline
-            20    & 874  & 2011 \\ \hline
-            50    & 351  & 2480 \\ \hline
-            70    & 263  & 2597 \\ \hline
-            100   & 166  & 2670 \\ \hline
-            200   & 78   & 2793 \\ \hline
-            500   & 40   & 2793 \\ \hline
-            950   & 48   & 2851 \\ \hline
-            1000  & 40   & 2830 \\ \hline
-            1050  & 68   & 2832 \\ \hline
-            2000  & 68   & 2812 \\ \hline
-            5000  & 98   & 2812 \\ \hline
-            10000 & 214  & 2666 \\ \hline
-            15000 & 341  & 2568 \\ \hline
-            20000 & 517  & 2382 \\ \hline
-            25000 & 625  & 2275 \\ \hline
-            30000 & 747  & 2163 \\ \hline
-            35000 & 810  & 2070 \\ \hline
-            40000 & 854  & 2065 \\ \hline 
-    \end{tabular}
-    \caption{Messwerte der Aufgabe 3.2} \label{tab:Aufgabe3.2}
-\end{table}
-\newpage
-\begin{sidewaystable}[h] 
-    \centering
-    \begin{tabular}{|c|c|c|c|c|c|} 
-          \hline \textbf{Trägerfrequenz} & \textbf{Ausgangsspannung } \\ 
-          \textbf{ $U_1$ [V]}    & \textbf{Seitenband 1 links [mV] }   & \textbf{Seitenband 2 links [mV] }& \textbf{Trägerfrequenz [mV] }  & \textbf{Seitenband 1 rechts [mV] }  & \textbf{Seitenband 2 rechts [mV] }   \\ \hline
-            0    & 0 & 0   & 746 & 0   & 0 \\ \hline
-            0.5  & 0 & 66  & 746 & 32  & 0 \\ \hline
-            1    & 0 & 136 & 745 & 63  & 0 \\ \hline
-            1.5  & 0 & 202 & 745 & 94  & 0 \\ \hline
-            2    & 5 & 269 & 744 & 126 & 0 \\ \hline
-            2.5  & 8 & 480 & 742 & 155 & 4 \\ \hline
-            3    & 10& 480 & 740 & 185 & 5 \\ \hline
-            3.5  & 14& 465 & 739 & 217 & 6 \\ \hline
-    \end{tabular}
-    \caption{Messwerte der Aufgabe 4.2 Vorverstärker aus!!!!} \label{tab:Aufgabe4.2}
-\end{sidewaystable}
-\newpage
 \subsection{Weitere Abbildungen}
 \label{Ah:Weitere_Abbildungen}
 \begin{figure}[h]
@@ -749,6 +757,7 @@ Denn ist diese Frequenz klein sind die Basisbandfrequenzen im  Spektrum entsprec
 
 
 \newpage
+
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.1/2_1_gesamt_curser_final_.PNG}
@@ -761,14 +770,16 @@ Denn ist diese Frequenz klein sind die Basisbandfrequenzen im  Spektrum entsprec
 \newpage
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.3/SA_2_3_alle_Peaks/Measurement0099.png}
+    \includegraphics[width=0.7\linewidth]{../Abbildungen/2/2.3/2_3_Aufnahme_2.PNG}
+    \caption{Aufgabe: 3.2.3}
+    \label{Abb:A2_3_2_3_os}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{../Abbildungen/2/2.3/SA_2_3_alle_Peaks/Measurement0100.png}
     \caption{Aufgabe: 3.2.3}
     \label{Abb:A2_3_2_3}
 \end{figure}
-
-
-
-
 \newpage
 \begin{figure}[h]
     \centering
@@ -810,6 +821,141 @@ Denn ist diese Frequenz klein sind die Basisbandfrequenzen im  Spektrum entsprec
     \caption{1kHz Aufgabe: 3.3.4}
     \label{Abb:Träger_3_3_4}
 \end{figure}
+\newpage
+\subsection{Messtabellen}
+\label{Ah:Messtabellen}
+\begin{table}[!h] 
+    \centering
+    \begin{tabular}{|c|c|c|} 
+\hline\textbf{Gleichspannung} & \textbf{Ausgangsamplitude} & \textbf{Ausgangsamplitude} \\
+\textbf{$U_2$ [V]} & \textbf{$U_A$ [mV] bei 2V} & \textbf{$U_A$ [mV] bei 25mV} \\ \hline
+            -12.0 & 0.0  & 0 \\ \hline 
+            -11.5 & 24.8 & 13.2 \\ \hline
+            -11.0 & 110  & 51.9 \\ \hline
+            -10.5 & 203  & 93.9 \\ \hline
+            -10.0 & 297  & 134 \\ \hline
+            -9.5  & 392  & 174 \\ \hline
+            -9.0  & 486  & 211 \\ \hline
+            -8.5  & 580  & 247 \\ \hline
+            -8.0  & 675  & 281 \\ \hline
+            -7.5  & 770  & 313 \\ \hline
+            -7.0  & 864  & 344 \\ \hline
+            -6.5  & 958  & 374 \\ \hline
+            -6.0  & 1051 & 403 \\ \hline
+            -5.5  & 1145 & 428 \\ \hline
+            -5.0  & 1238 & 455 \\ \hline
+            -4.5  & 1331 & 480 \\ \hline
+            -4.0  & 1423 & 502 \\ \hline
+            -3.5  & 1517 & 525 \\ \hline
+            -3.0  & 1609 & 545 \\ \hline
+            -2.5  & 1700 & 566 \\ \hline
+            -2.0  & 1791 & 585 \\ \hline
+            -1.5  & 1882 & 603 \\ \hline
+            -1.0  & 1973 & 620 \\ \hline
+            -0.5  & 2065 & 638 \\ \hline
+             0.0  & 1852 & 608 \\ \hline
+    \end{tabular}
+\caption{Messwerte der Aufgabe 1}\label{tab:Aufgabe1}
+\end{table}
+\begin{table}[!h] 
+    \centering
+    \begin{tabular}{|c|c|c|} 
+          \hline \textbf{Bandbezeichnung}   & \textbf{Amplitude der Spektrallinien} & \textbf{Frequenz} \\ 
+                                            & \textbf{$\hat{U}$ [mV]}               & \textbf{ $f$ [kHz]} \\ \hline
+            Unteres ungewünschtes Bandsignal& 26.57 &  470    \\ \hline
+            Unteres gewünschtes Bandsignal  & 479.0 &  475    \\ \hline
+            Trägeramplitude                 & 989.7 &  480    \\ \hline
+            Oberes gewünschtes Bandsignal   & 479.0 &  485    \\ \hline
+            Oberes ungewünschtes Bandsignal & 26.58 &  490    \\ \hline
+    \end{tabular}
+    \caption{Messwerte der Aufgabe 2.3} \label{tab:Aufgabe2.3}
+\end{table}
+\newpage
+\begin{table}[H] 
+    \centering
+    \begin{tabular}{|c|c|} 
+          \hline \textbf{Trägerfrequenz} & \textbf{Ausgangsspannung} \\ 
+          \textbf{ $f_0$ [kHz]}    & \textbf{$U_A$ [mV] bei 2V}       \\ \hline
+            400  &  201  \\ \hline
+            410  &  231  \\ \hline
+            420  &  271  \\ \hline
+            430  &  324  \\ \hline
+            440  &  399  \\ \hline
+            450  &  511  \\ \hline
+            460  &  670  \\ \hline
+            465  &  789  \\ \hline
+            470  &  904  \\ \hline
+            475  &  995  \\ \hline
+            477.5& 1018  \\ \hline
+            480  &  1021 \\ \hline
+            482.5& 1004  \\ \hline
+            483  &  998  \\ \hline
+            485  &  970  \\ \hline
+            490  &  872  \\ \hline 
+            495  &  763  \\ \hline 
+            500  &  666  \\ \hline
+            505  &  585  \\ \hline
+            510  &  516  \\ \hline
+            515  &  461  \\ \hline  
+            520  &  416  \\ \hline
+            525  &  378  \\ \hline  
+            530  &  347  \\ \hline 
+            540  &  298  \\ \hline 
+            550  &  261  \\ \hline
+            560  &  232  \\ \hline
+            570  & 209   \\ \hline    
+            580  & 190   \\ \hline 
+            590  & 175   \\ \hline
+            600  & 162   \\ \hline      
+    \end{tabular}
+    \caption{Messwerte der Aufgabe 3.1} \label{tab:Aufgabe3.1}
+\end{table}
+\newpage
+\begin{table}[H] 
+    \centering
+    \begin{tabular}{|c|c|c|} 
+          \hline \textbf{Signal-} & \textbf{Minimal-} & \textbf{Maximal-}\\ 
+          \textbf{frequenzen} &\textbf{ausgangsspannung}&\textbf{ausgangsspannung}\\
+          \textbf{ $f_1$ [Hz]}    & \textbf{$U_{A,min}$ [mV]} &  \textbf{$U_{A,max}$ [mV]}   \\ \hline
+            10    & 1118 & 1733 \\ \hline
+            20    & 874  & 2011 \\ \hline
+            50    & 351  & 2480 \\ \hline
+            70    & 263  & 2597 \\ \hline
+            100   & 166  & 2670 \\ \hline
+            200   & 78   & 2793 \\ \hline
+            500   & 40   & 2793 \\ \hline
+            950   & 48   & 2851 \\ \hline
+            1000  & 40   & 2830 \\ \hline
+            1050  & 68   & 2832 \\ \hline
+            2000  & 68   & 2812 \\ \hline
+            5000  & 98   & 2812 \\ \hline
+            10000 & 214  & 2666 \\ \hline
+            15000 & 341  & 2568 \\ \hline
+            20000 & 517  & 2382 \\ \hline
+            25000 & 625  & 2275 \\ \hline
+            30000 & 747  & 2163 \\ \hline
+            35000 & 810  & 2070 \\ \hline
+            40000 & 854  & 2065 \\ \hline 
+    \end{tabular}
+    \caption{Messwerte der Aufgabe 3.2} \label{tab:Aufgabe3.2}
+\end{table}
+\newpage
+\begin{sidewaystable}[!h] 
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|} 
+          \hline \textbf{Trägerfrequenz} & \textbf{Ausgangsspannung } \\ 
+          \textbf{ $U_1$ [V]}    & \textbf{Seitenband 1 links [mV] }   & \textbf{Seitenband 2 links [mV] }& \textbf{Trägerfrequenz [mV] }  & \textbf{Seitenband 1 rechts [mV] }  & \textbf{Seitenband 2 rechts [mV] }   \\ \hline
+            0    & 0 & 0   & 746 & 0   & 0 \\ \hline
+            0.5  & 0 & 66  & 746 & 32  & 0 \\ \hline
+            1    & 0 & 136 & 745 & 63  & 0 \\ \hline
+            1.5  & 0 & 202 & 745 & 94  & 0 \\ \hline
+            2    & 5 & 269 & 744 & 126 & 0 \\ \hline
+            2.5  & 8 & 480 & 742 & 155 & 4 \\ \hline
+            3    & 10& 480 & 740 & 185 & 5 \\ \hline
+            3.5  & 14& 465 & 739 & 217 & 6 \\ \hline
+    \end{tabular}
+    \caption{Messwerte der Aufgabe 4.2 Vorverstärker aus!!!!} \label{tab:Aufgabe4.2}
+\end{sidewaystable}
 \newpage
 \includepdf[
   pages=8,

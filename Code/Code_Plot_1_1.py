@@ -12,7 +12,7 @@ print("Arbeitsverzeichnis:", os.getcwd())
 # Daten einlesen
 x = []
 y1 = []
-y2 = []
+
 
 with open("./Daten/tabelle_1.txt", "r", encoding="utf-8") as file:
     for line in file:
@@ -42,12 +42,12 @@ plt.ylabel("Ausgangsamplitude $U_A$ [mV]")
 plt.title("Statische Modulationskennlinie $U_A = f(U_2)$ ($U_0 =2$V)")
 plt.xlim(-12,0)
 plt.ylim(0,2150)
-plt.vlines(x = -4,ymax=2500, ymin = 0, color = 'red', linestyle = '-', label = 'Bandbreite')
-plt.vlines(x = -6.828,ymax=2500, ymin = 0,color = 'red', linestyle = '-')
-plt.axhline(y=896.31, color = 'orange', linestyle = '-', label = 'Hüllkurven-Minima $U_{min}=896$mV')
-plt.axhline(y=1423, color = 'green', linestyle = '-', label = 'Hüllkurven-Maxima $U_{max}=1423$mV')
+#plt.vlines(x = -4,ymax=2500, ymin = 0, color = 'red', linestyle = '-', label = 'Bandbreite')
+#plt.vlines(x = -6.828,ymax=2500, ymin = 0,color = 'red', linestyle = '-')
+#plt.axhline(y=896.31, color = 'orange', linestyle = '-', label = 'Hüllkurven-Minima $U_{min}=896$mV')
+#plt.axhline(y=1423, color = 'green', linestyle = '-', label = 'Hüllkurven-Maxima $U_{max}=1423$mV')
 plt.grid(True)
-plt.legend()
+#plt.legend()
 
 plt.tight_layout()
 #plt.savefig("../Abbildungen/plot.png", dpi=300, bbox_inches="tight")
@@ -55,6 +55,5 @@ plt.savefig("../Abbildungen/1/1.1/Modulationskennlinie.png", dpi=300, bbox_inche
 
 print("x =", x)
 print("y1 =", y1)
-print("y2 =", y2)
 
 plt.show(block=True)

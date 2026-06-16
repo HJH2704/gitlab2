@@ -35,7 +35,7 @@ with open("./Daten/tabelle_1.txt", "r", encoding="utf-8") as file:
 plt.figure(figsize=(8, 5))
 
 #plt.plot(x, y1, marker="o")
-plt.plot(x, y2, marker="s")
+plt.plot(x, y2, marker="s",color='darkorange')
 
 plt.xlabel("Eingangsgleichspannung $U_2$ [V]")
 plt.ylabel("Ausgangsamplitude $U_A$ [mV]")
@@ -47,7 +47,7 @@ plt.ylim(0,700)
 #plt.axhline(y=896.31, color = 'orange', linestyle = '-', label = 'Hüllkurven-Minima $U_{min}=896$mV')
 #plt.axhline(y=1423, color = 'green', linestyle = '-', label = 'Hüllkurven-Maxima $U_{max}=1423$mV')
 plt.grid(True)
-plt.legend()
+#plt.legend()
 
 plt.tight_layout()
 #plt.savefig("../Abbildungen/plot.png", dpi=300, bbox_inches="tight")
