@@ -29,11 +29,12 @@
 \contentsline {subsubsection}{\numberline {3.4.1}Theoretische Erstellung eines Zweiseitenbandsignal}{25}{subsubsection.3.4.1}%
 \contentsline {subsubsection}{\numberline {3.4.2}Modulationsartbestimmung 1}{25}{subsubsection.3.4.2}%
 \contentsline {subsubsection}{\numberline {3.4.3}Modulationsartbestimmung 2}{25}{subsubsection.3.4.3}%
-\contentsline {section}{\numberline {4}Literaturverzeichnis}{26}{section.4}%
-\contentsline {section}{Anhang}{27}{section.4}%
-\contentsline {subsection}{\numberline {A}Weitere Abbildungen}{27}{subsection.4.1}%
-\contentsline {subsection}{\numberline {B}Messtabellen}{34}{subsection.4.2}%
-\contentsline {subsection}{\numberline {C}Schaltplan - Platine \blx@tocontentsinit {0}\cite {Labor_Amplitudenmodulation}}{38}{subsection.4.3}%
-\contentsline {subsection}{\numberline {D}Programmcode}{39}{subsection.4.4}%
-\contentsline {subsection}{\numberline {E}Geräteliste}{43}{subsection.4.5}%
+\contentsline {section}{\numberline {4}Fazit}{26}{section.4}%
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{27}{section.5}%
+\contentsline {section}{Anhang}{28}{section.5}%
+\contentsline {subsection}{\numberline {A}Weitere Abbildungen}{28}{subsection.5.1}%
+\contentsline {subsection}{\numberline {B}Messtabellen}{35}{subsection.5.2}%
+\contentsline {subsection}{\numberline {C}Schaltplan - Platine \blx@tocontentsinit {0}\cite {Labor_Amplitudenmodulation}}{39}{subsection.5.3}%
+\contentsline {subsection}{\numberline {D}Programmcode}{40}{subsection.5.4}%
+\contentsline {subsection}{\numberline {E}Geräteliste}{44}{subsection.5.5}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
