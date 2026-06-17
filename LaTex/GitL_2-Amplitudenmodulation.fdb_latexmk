@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber GitL_2-Amplitudenmodulation"] 1781693438.1596 "GitL_2-Amplitudenmodulation.bcf" "GitL_2-Amplitudenmodulation.bbl" "GitL_2-Amplitudenmodulation" 1781698380.0411 0
+["biber GitL_2-Amplitudenmodulation"] 1781693438.1596 "GitL_2-Amplitudenmodulation.bcf" "GitL_2-Amplitudenmodulation.bbl" "GitL_2-Amplitudenmodulation" 1781700493.19534 0
   "../Literatur/Amplitudenmodulation.bib" 1781531795 14581 3af52171a01cd16130f15ca8edd48c67 ""
-  "GitL_2-Amplitudenmodulation.bcf" 1781698379 108537 969a01024bddcbe79b89f4f557a9997a "pdflatex"
+  "GitL_2-Amplitudenmodulation.bcf" 1781700492 108537 969a01024bddcbe79b89f4f557a9997a "pdflatex"
   (generated)
   "GitL_2-Amplitudenmodulation.bbl"
   "GitL_2-Amplitudenmodulation.blg"
   (rewritten before read)
-["pdflatex"] 1781698374.59225 "c:/Users/mvoge/Git/Lab2/gitlab2/LaTex/GitL_2-Amplitudenmodulation.tex" "GitL_2-Amplitudenmodulation.pdf" "GitL_2-Amplitudenmodulation" 1781698380.04192 0
+["pdflatex"] 1781700487.79395 "c:/Users/mvoge/Git/Lab2/gitlab2/LaTex/GitL_2-Amplitudenmodulation.tex" "GitL_2-Amplitudenmodulation.pdf" "GitL_2-Amplitudenmodulation" 1781700493.19597 0
   "../Abbildungen/1/1.1/1_1_Träger.PNG" 1781277339 30312 f5057402fe8b8a7e2a7527f7667a5043 ""
   "../Abbildungen/1/1.1/Modulationskennlinie.png" 1781606698 129374 13c51a97e11ad7cf40f8daac6244bfb9 ""
   "../Abbildungen/1/1.2/1_2_Träger.PNG" 1781277339 31344 f9bad5de15f5dbfa3201cc91b9303241 ""
@@ -355,15 +355,15 @@
   "C:/Users/mvoge/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/mvoge/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/mvoge/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "GitL_2-Amplitudenmodulation.aux" 1781698379 32426 ce5194911c15db83cf1790e03c6f0e71 "pdflatex"
+  "GitL_2-Amplitudenmodulation.aux" 1781700492 33137 18d707e61b0822a02da44f198b784712 "pdflatex"
   "GitL_2-Amplitudenmodulation.bbl" 1781693439 7229 b7aa512d28267831f8ed951ef750349d "biber GitL_2-Amplitudenmodulation"
-  "GitL_2-Amplitudenmodulation.lof" 1781698379 2413 0e3dfef32966bcab34fee8ec4b114dc4 "pdflatex"
-  "GitL_2-Amplitudenmodulation.lol" 1781698379 325 2525969f7c4c4d0ef596fc67df4f8da7 "pdflatex"
-  "GitL_2-Amplitudenmodulation.lot" 1781698379 969 e6529f1752fb952398d12b46395be7c5 "pdflatex"
-  "GitL_2-Amplitudenmodulation.run.xml" 1781698379 2583 47f596e8ff000e8ce1400f75eeba1103 "pdflatex"
-  "GitL_2-Amplitudenmodulation.tex" 1781698368 66299 8dddc1a44a57164412368118191cf492 ""
-  "GitL_2-Amplitudenmodulation.toc" 1781698379 3669 ad098f552b78c5d9efe1c8c4a21a4b5d "pdflatex"
-  "c:/Users/mvoge/Git/Lab2/gitlab2/LaTex/GitL_2-Amplitudenmodulation.tex" 1781698368 66299 8dddc1a44a57164412368118191cf492 ""
+  "GitL_2-Amplitudenmodulation.lof" 1781700492 2564 70e01428cbef1387dc98d0b976543386 "pdflatex"
+  "GitL_2-Amplitudenmodulation.lol" 1781700492 325 d8261d09db2132e962951fa5143a61cc "pdflatex"
+  "GitL_2-Amplitudenmodulation.lot" 1781700492 966 d7390b05f25e9d1fc22c7c4fac11c15c "pdflatex"
+  "GitL_2-Amplitudenmodulation.run.xml" 1781700492 2583 47f596e8ff000e8ce1400f75eeba1103 "pdflatex"
+  "GitL_2-Amplitudenmodulation.tex" 1781700481 66713 7844d210cf09c4323fd2c0cba191fa5c ""
+  "GitL_2-Amplitudenmodulation.toc" 1781700492 3756 a168381334a212461a1c29a5b5414448 "pdflatex"
+  "c:/Users/mvoge/Git/Lab2/gitlab2/LaTex/GitL_2-Amplitudenmodulation.tex" 1781700481 66713 7844d210cf09c4323fd2c0cba191fa5c ""
   (generated)
   "GitL_2-Amplitudenmodulation.aux"
   "GitL_2-Amplitudenmodulation.bcf"

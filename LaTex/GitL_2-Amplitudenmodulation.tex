@@ -126,6 +126,26 @@ Dabei wird durch ein höherfrequentes Trägersignal das Modulierenden Signal dah
 Eine Modulationskennlinie beschreibt den Zusammenhang zwischen einer Eingangsgröße des Modulators und der daraus resultierenden Modulation. 
 Sie charakterisiert das Übertragungs- und Modulationsverhalten einer Modulatorschaltung
 
+\subsubsection*{Trägersignal}
+
+
+
+\subsubsection*{Informationssignal}
+% Hier muss rein, das es häufig als Signalamplidute oder Signalfrequenz bezeichnet worden ist. 
+
+
+\subsubsection*{Seitenband}
+
+
+\subsubsection*{Frequenzspektrum}
+
+
+
+\subsection{Amplitudenmodulation}
+
+
+
+
 
 \subsection{Bandpassfilter}
 Ein Bandpassfilter ist ein Systemm aus RLC-Bauteilen. 
@@ -554,6 +574,7 @@ Berechnet kann es auf folgende Weise.\cite{}
 \end{center}
 Bei einem angenommenen Modulationsgrad $m=1$ sowie einer Trägeramplitude von $U_1=1$V Effektivwert sollten die Amplituden der Seitenbänder jeweils 500mV Effektiv anzeigen. 
 \bigskip
+
 Bei diesen Versuchsaufbau kann kein Modulationsgrad $m$ von 1 erreicht werden, sondern nur nah dran. 
 Ein Oszilloskopbild zur verdeutlichung der annäherung ist im Anhang \ref{Ah:Weitere_Abbildungen} mittels Abbildung \ref{Abb:A2_3_2_3_os} zugefügt.\\
 Ist der Modulationsgrad unter 1 so entstehen weitere ungewünschte Seitenbänder, welche jeweils einen Frequenzabstand aufweisen, der ein vielfaches zur Signalfrequenz $f_0$ ist.
@@ -641,7 +662,7 @@ Die daraus ergebenen Modulationsgrade abhangig von der Signalfrequenz kann in de
    35000 & 0.44 \\ \hline 
    40000 & 0.41 \\ \hline 
     \end{tabular}
-    \caption{Modulationsgrade der Aufgabe 3.1}\label{tab:Modulationsgrad_3_2}
+    \caption{Aufgabe: 3.2 Modulationsgrade}\label{tab:Modulationsgrad_3_2}
 \end{table}
 Der Verlauf des Modulationsgrades im Vergleich zur Signalfrequenz aus der Tabelle \ref{tab:Modulationsgrad_3_2}  kann in der folgenden Abbildung \ref{Abb:Modulationsgrad_3_2} betrachtet werden.\\
 Zur besseren Betrachtung musste ein doppelte logarithmische Achse verwendet werden.
@@ -786,63 +807,52 @@ Zu sehen, da ein Seitenband, jedoch nicht die Trägeramplitude gedämpft ist \ci
 \renewcommand*{\thesubsection}{\Alph{subsection}}% Bildung einer neuen definition von Subsection
 \subsection{Weitere Abbildungen}
 \label{Ah:Weitere_Abbildungen}
-\begin{figure}[h]
+\begin{figure}[!h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/parallelschwingkreis_frequenzgang.png}
+    \includegraphics[width=0.7\linewidth]{../Abbildungen/parallelschwingkreis_frequenzgang.png}
     \caption{Theoretischer Bodeplott des Schwingkreises (Pyhtoncode \ref{lst:Bodeplotts_erzeugung})}
     \label{Abb:Bodeplott_Schwingkreis}
 \end{figure}
-
-\newpage
-\begin{figure}[h]
+\begin{figure}[!h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/1/1.1/1_1_Träger.PNG}
+    \includegraphics[width=0.7\linewidth]{../Abbildungen/1/1.1/1_1_Träger.PNG}
     \caption{Aufgabe: 3.1.1}
     \label{Abb:Träger_3_1_1}
 \end{figure}
-
 \newpage
-\begin{figure}[h]
+\begin{figure}[!h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/1/1.2/1_2_Träger.PNG}
+    \includegraphics[width=0.7\linewidth]{../Abbildungen/1/1.2/1_2_Träger.PNG}
     \caption{Aufgabe: 3.1.2}
     \label{Abb:Träger_3_1_2}
 \end{figure}
-
-
-
-\newpage
-
-\begin{figure}[h]
+\begin{figure}[!h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.1/2_1_gesamt_curser_final_.PNG}
-    \caption{Aufgabe: 3.2.1}
+    \includegraphics[width=0.7\linewidth]{../Abbildungen/2/2.1/2_1_gesamt_curser_final_.PNG}
+    \caption{Aufgabe: 2.1 Verlauf der Hüllkurve}
     \label{Abb:A2_3_2_1}
 \end{figure}
-
-
-
 \newpage
-\begin{figure}[h]
+\begin{figure}[!h]
     \centering
     \includegraphics[width=0.7\linewidth]{../Abbildungen/2/2.3/2_3_Aufnahme_2.PNG}
-    \caption{Aufgabe: 3.2.3}
+    \caption{Aufgabe: 2.3 Oszilloskopbild}
     \label{Abb:A2_3_2_3_os}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[!h]
     \centering
     \includegraphics[width=0.7\linewidth]{../Abbildungen/2/2.3/SA_2_3_alle_Peaks/Measurement0100.png}
-    \caption{Aufgabe: 3.2.3}
+    \caption{Aufgabe: 2.3 Betragsspektrum der Ausgangsspannung}
     \label{Abb:A2_3_2_3}
 \end{figure}
 \newpage
-\begin{figure}[h]
+\begin{figure}[!h]
     \centering
     \includegraphics[width=0.7\linewidth]{../Abbildungen/3/3.3/Grundbild.PNG}
     \caption{Aufgabe: 3.3 Gesamtsignal}
     \label{Abb:A2_3_3_3_1}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[!h]
     \centering
     \includegraphics[width=0.7\linewidth]{../Abbildungen/3/3.3/Anstiegszet.PNG}
     \caption{Aufgabe: 3.3 Anstiegszeit }
@@ -880,13 +890,13 @@ Zu sehen, da ein Seitenband, jedoch nicht die Trägeramplitude gedämpft ist \ci
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.7\linewidth]{../Abbildungen/4/4.2/3.5/Measurement0129.png}
-    \caption{Aufgabe: 4.2 }
+    \caption{Aufgabe: 4.2 Frequenzspektrum des modulierten Signals}
     \label{Abb:Träger_3_4_2_Spektrallinien}
 \end{figure}
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.7\linewidth]{../Abbildungen/4/4.3/3.5/Measurement0132.png}
-    \caption{Aufgabe: 4.3}
+    \caption{Aufgabe: 4.3 Frequenzspektrum des modulierten Signals}
     \label{Abb:Träger_3_4_3_Spektrallinien}
 \end{figure}
 
