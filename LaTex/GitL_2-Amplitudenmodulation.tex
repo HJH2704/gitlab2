@@ -126,23 +126,36 @@ Dabei wird durch ein höherfrequentes Trägersignal das Modulierenden Signal dah
 Eine Modulationskennlinie beschreibt den Zusammenhang zwischen einer Eingangsgröße des Modulators und der daraus resultierenden Modulation. 
 Sie charakterisiert das Übertragungs- und Modulationsverhalten einer Modulatorschaltung
 
-\subsubsection*{Trägersignal}
-
-
 
 \subsubsection*{Informationssignal}
-% Hier muss rein, das es häufig als Signalamplidute oder Signalfrequenz bezeichnet worden ist. 
+Das Informatuionssignal ist das eigentliche Nutzsignal, also das Signal, welches die information trägt.
+Als gutes Beispiel für Informatuionssignal sind die Schallwellen des menschlichen Sprechens. 
+Hier fällt auch auf, dass das Informatuionssignal alleine nicht weit übertragen werden kann.
+Aus diesem Grund muss ein Trägersignal eingebunden werden, um größere Strecken der Übertragung zu ermöglichen.\\
+Im folgenden Beericht wird die Frequenz des Informationssignal häufig als Signalfrequenz bezeichnet. 
+Die Amplitude des Signals wird in diesem Bericht als Signalamplidute bezeichnet \cite{}.
 
-
-\subsubsection*{Seitenband}
-
+\subsubsection*{Trägersignal}
+Ein Trägersignal ist eine meist hochfrequente Schwingung, die allein noch keine Information enthält. 
+Es dient dazu, ein anderes Signal zu „tragen“, damit dieses besser übertragen werden kann, zum Beispiel per Funk \cite{}.
 
 \subsubsection*{Frequenzspektrum}
-
+Das Frequenzspektrum beschreibt, aus welchen einzelnen Frequenzanteilen ein Signal besteht und wie stark diese Anteile sind.
+Ein Signal kann also nicht nur aus einer einzigen Frequenz bestehen, sondern aus mehreren Frequenzen zusammengesetzt sein.\\ 
+Im Frequenzspektrum sieht man dann, bei welchen Frequenzen das Signal Anteile hat und welche Amplitude diese Anteile besitzen\cite{}.
 
 
 \subsection{Amplitudenmodulation}
-
+Die Amplitudenmodulation ist eine Art der Signalbearbeitung, mithilfe ein Informatuionssignal mittels eines Trägersignals über weite Strecken übertragen werden kann.\\
+Bei dieser Modulationsart wird mithilfe des Informationssignal die Amplitude des Trägersignals moduliert.
+Das bedeutet, dass nach der Modulation die Amplitude des Trägersignal mit der Frequenz und Amplitude des Informatuionssignal pulsiert.
+Die information liegt somit ebenfalls in der Amplitude des hochfrequenten Trägersignales und kann somit deutlich weiter und besser Übertragen werden.\\
+Wird das resultierenden Signal im Frequenzspektrum betrachtet, kann die Trägerfrequenz umgeben von Seitenbändern betrachtet werden. 
+Die ersten Seitenbänder um die Trägerfrequenz enthalten die Informatuion \cite{}.\\
+Diese Modulation benötigt viel Energie für das Trägersignal und somit wird die meiste Energie unbenutzt verwendet. 
+Die Energie geht somit nicht ins Informationssignal sondern eher in das Trägersignal.\\
+Um dieses Problem zu verringern, kann mittels verschiedene Passfilter Träger sowie das doblikat des Informatuionssignal weggedämpft werden. 
+Näheres dazu kann in Kapitel \ref{kap:4} nachgelesen werden. 
 
 
 
@@ -238,7 +251,7 @@ Der Modulationsgrad $m$ kann wie folgt interpretiert werden:
     \item $m>1 \rightarrow$ Übermodulation, es entstehen Verzerrungen
 \end{itemize}
 
-\subsection{Resonanzfrequenz des Parallelschwingkreises auf der Platine \cite{Labor_Amplitudenmodulation}}
+\subsection{Resonanzfrequenz des Parallelschwingkreises der Platine \cite{Labor_Amplitudenmodulation}}
 \label{kap:Resonanzfrequenz}
 Für den Versuch ist eine Platine entwickelt worden. 
 Der Schaltplan ist im Anhang \ref{Ah:Schaltplan_Platine} zu finden.
@@ -272,13 +285,6 @@ f_r = \frac{1}{2\pi \cdot \sqrt{22 \cdot 10^{-6}\,\text{H} \cdot 4,92 \cdot 10^{
 \end{equation}
 
 Die theoretische Resonanzfrequenz des Parallelschwingkreises beträgt ca.483,8\,kHz.
-
-
-
-\subsection{}
-
-
-
 \newpage
 \section{Durchführung}
 
@@ -454,8 +460,11 @@ Die folgende Abbildung \ref{Abb:Modulationskennlinie_1_2} zeigt die Daten zur be
     \caption{Modulationskennlinie der Ausgangsamplitude}
     \label{Abb:Modulationskennlinie_1_2}
 \end{figure}\\
-Anders wie in Kapitel \ref{kap:1.1} ist diese Kennlinie nicht linear. 
-Dies bedeutet, dass die Trägeramplitude einfluss auf die Linearität des Ausgangssignales besitzt.
+Anderst wie in Kapitel \ref{kap:1.1} ist diese Kennlinie sichtbar nicht linear.
+Sie weist einen Abfallenden Charakter hin.
+Daraus kann geschlussfolgert werden, dass die Trägeramplitude einfluss auf die Linearität des Ausgangssignales besitzt.\\
+
+
 \newpage
 Um die beiden Modulationskennlinien besser vergleichen zu können, werden diese in Abbildung \ref{Abb:Modulationskennlinie_1} zusammengefügt.
 \begin{figure}[!h]
@@ -474,7 +483,9 @@ Bei der Trägeramplitude $U_0$ von 2V ist die Steigung der Eingangsgleichspannun
 Für die Trägeramplitude $U_0$ von 25mV fällt die stärke der Steigung kontinuierlich ab. 
 Daraus kann geschlossen werden, dass bei einer zu geringen Amplitude des Trägersignals die Übertragung geschwächt wird.
 Der Übertragungsfaktor beziehungsweise der Modulationsgrad ist dann stärker von der Eingangsgleichspannung abhängig und nicht mehr konstant.
-\newpage
+Auch kann mittels Abbildung \ref{Abb:Modulationskennlinie_1} erkannt werden, dass die Ausgangsampitude bei geringerer Trägersignalamplituden geringer ist. 
+So liegt sie bei der Eingangsspannung von -2V und einer Trägeramplitude von 2V bei 1791mV und bei einer Trägeramplitude von 25mV nur bei 585mV.
+Somit kann erschlossen werden, dass Trägeramplitude direkt mit der maximalen Ausgangsspannung zusammenhängt. \newpage
 \subsection{ Zeitlicher Verlauf und Frequenzspektrum}
 \label{kap:2}
 \subsubsection{Vergleich der Modulationsgrade}
@@ -665,14 +676,15 @@ Die daraus ergebenen Modulationsgrade abhangig von der Signalfrequenz kann in de
     \end{tabular}
     \caption{Aufgabe: 3.2 Modulationsgrade}\label{tab:Modulationsgrad_3_2}
 \end{table}
-Der Verlauf des Modulationsgrades im Vergleich zur Signalfrequenz aus der Tabelle \ref{tab:Modulationsgrad_3_2}  kann in der folgenden Abbildung \ref{Abb:Modulationsgrad_3_2} betrachtet werden.\\
-Zur besseren Betrachtung musste ein doppelte logarithmische Achse verwendet werden.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.82\linewidth]{../Abbildungen/3/3.2/Modulationskennlinie.png}
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/3/3.2/Modulationskennlinie.png}
     \caption{Frequenzgang des Modulationsgrades}
     \label{Abb:Modulationsgrad_3_2}
 \end{figure}
+Zur besseren Verdeutlichung des Modulationsgrad aus Tabelle \ref{tab:Modulationsgrad_3_2} ist in Abbildung \ref{Abb:Modulationsgrad_3_2} der Verlauf des Modulationsgrades zur Frequenz dargestellt.
+%Der Verlauf des Modulationsgrades im Vergleich zur Signalfrequenz aus der Tabelle \ref{}  kann in der folgenden Abbildung \ref{} betrachtet werden.\\
+Zur besseren Betrachtung musste ein doppelte logarithmische Achse verwendet werden.\\
 Wird Abbildung \ref{Abb:Modulationsgrad_3_2} betrachtet, kann direkt ein bandpassförmigen Verlauf der dynamischen Modulationskennlinie erkannt werden.
 Diese Eigenschaft kann durch den Aufbau der Platine \ref{Ah:Schaltplan_Platine} erklärt werden.\\
 Tiefe Frequenzen werden aufgrund der Koppelkondensatoren und RC-Glieder (C10 und R3) abgeschwächt.
@@ -696,6 +708,7 @@ Zusätlich ist die Bestimmung der Grenzfrequenzen aufgrund der wenigen Messpunkt
 Grundsätlich kann dennoch mit den Daten gearbeitet werden. 
 Durch die Abbildung \ref{Abb:Modulationsgrad_3_2} kann deutlich die Bandpasseigenschaften der Schaltung durch verschiedene RC-Bausteine sowie der begrenzten Übertragungsbandbreite der Koppelkondensatoren erkannt werden. 
 Auch die Bandbreite $BW$ ist, trotz ungenauer Messungen, in der konkreten Größenordnung und kann auf etwa 17-17.5 kHz benannt werden.
+\newpage
 \subsubsection{Hüllkurve des modulierten Ausgangssignals eines Rechtecksignals}
 Die Aufnahme des Bildschirmes des Oszilloskops können in Abbildung \ref{Abb:A2_3_3_3_1}, \ref{Abb:A2_3_3_3_Anstiegszeit}, \ref{Abb:A2_3_3_3_Abfallzeit} und \ref{Abb:A2_3_3_3_Dachabfall} betrachtet werden.\\
 Mittels der Abbildung \ref{Abb:A2_3_3_3_Anstiegszeit} kann eine Anstiegszeit von $\Delta t$=19.8 $\mu$s festgestellt werden. 
@@ -766,8 +779,9 @@ Bei einer Signalfrequenz $f_1$ von 1kHz ist die Gruppenlaufzeit deutlich geringe
 Aus diesen Grund ist in Abbildung \ref{Abb:Träger_3_3_4_1kHz} keine Zeitverzögerung erkennbar.
 \newpage
 \subsection{Abgeleitete Modulationsarten}
-\label{kap:4.1}
+\label{kap:4}
 \subsubsection{Theoretische Erstellung eines  Zweiseitenbandsignal}
+\label{kap:4.1}
 Wird der Schaltplan im Anhang \ref{Ah:Schaltplan_Platine} sowie die vorherigen Messergebnisse betrachtet, fällt auf, dass ein Bandpassfilter mit einer Mittenfrequenz $f_m$ von 483, 8 kHz verbaut ist. 
 Wenn daraus ein Zweiseitenbandsignal entstehen soll, muss ein Weiterer Bandpassfilter parallel zu den ersten auf die Platine eingebaut werden. 
 Die Mittenfrequenzen der beiden Bandpassfilter müssten auf die Basisbandfrequenzen des Signals abgestimmt sein.\\
@@ -968,7 +982,7 @@ Zu sehen, da ein Seitenband, jedoch nicht die Trägeramplitude gedämpft ist \ci
             470  &  904  \\ \hline
             475  &  995  \\ \hline
             477.5& 1018  \\ \hline
-            480  &  1021 \\ \hline
+            480  & 1021  \\ \hline
             482.5& 1004  \\ \hline
             483  &  998  \\ \hline
             485  &  970  \\ \hline
@@ -984,10 +998,10 @@ Zu sehen, da ein Seitenband, jedoch nicht die Trägeramplitude gedämpft ist \ci
             540  &  298  \\ \hline 
             550  &  261  \\ \hline
             560  &  232  \\ \hline
-            570  & 209   \\ \hline    
-            580  & 190   \\ \hline 
-            590  & 175   \\ \hline
-            600  & 162   \\ \hline      
+            570  &  209  \\ \hline    
+            580  &  190  \\ \hline 
+            590  &  175  \\ \hline
+            600  &  162  \\ \hline      
     \end{tabular}
     \caption{Messwerte der Aufgabe 3.1} \label{tab:Aufgabe3.1}
 \end{table}
@@ -1044,8 +1058,8 @@ Zu sehen, da ein Seitenband, jedoch nicht die Trägeramplitude gedämpft ist \ci
     \begin{tabular}{|c|c|c|c|c|c|} 
           \hline         \textbf{Träger-}& \multicolumn{5}{c|}{\textbf{Ausgangsspannung}}\\
           \textbf{frequenz}  & \multicolumn{5}{c|}{\textbf{in mV}}\\ \hline
-          \textbf{ $U_1$ [V]} & \textbf{2. Untere}  & \textbf{1. Untere} & \textbf{Träger-} & \textbf{1. Obere}  & \textbf{2. Obere}\\
-            & \textbf{Seitenband}   & \textbf{Seitenband}& \textbf{frequenz}  & \textbf{Seitenband}  & \textbf{Seitenband}   \\ \hline
+          \textbf{ $U_1$} & \textbf{2. Untere}  & \textbf{1. Untere} & \textbf{Träger-} & \textbf{1. Obere}  & \textbf{2. Obere}\\
+            \textbf{[V]}  & \textbf{Seitenband}   & \textbf{Seitenband}& \textbf{frequenz}  & \textbf{Seitenband}  & \textbf{Seitenband}   \\ \hline
             0    & 0 & 0   & 746 & 0   & 0 \\ \hline
             0.5  & 0 & 66  & 746 & 32  & 0 \\ \hline
             1    & 0 & 136 & 745 & 63  & 0 \\ \hline
