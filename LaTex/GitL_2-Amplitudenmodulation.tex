@@ -30,6 +30,8 @@
 \usepackage{tabularx}
 \usepackage{longtable}
 \usepackage[export]{adjustbox}
+\usepackage{circuitikz}
+\usetikzlibrary{arrows.meta, positioning}
 
 \newcolumntype{x}[1]{!{\centering\arraybackslash\vrule width #1}}% Erlaubt dickere Linien in Tabellen. cx{2pt}
 
@@ -110,7 +112,6 @@
 \newpage 
 \listoffigures 
 \listoftables 
-\lstlistoflistings
 \newpage %Erzeugung eines Inhalts-, Abbildungs- und Tabellenverzeichnis
 \section{Theoretische Grundlagen}
 \subsection{Wortdefinitionen}
@@ -180,7 +181,7 @@ Auch diese kann mittels der Grenzefrequenz berechnet werden.
     \label{Gl:Mittenfrequenz}
 \end{equation}
 \begin{center}
-    $BW$: Bandweite [Hz]\\
+    $BW$: Bandbreite [Hz]\\
     $f_H$: obere Grenzfrequenzen [Hz]\\
     $f_L$: untere Grenzfrequenzen [Hz]\\
     $f_0$: Resonanzfrequenz/Mittenfrequenz [Hz]
@@ -476,7 +477,9 @@ Um die beiden Modulationskennlinien besser vergleichen zu können, werden diese 
 Zu erkennen sind Ähnlichkeiten im Verhalten außerhalb des Bereiches von -11V bis -0.5V.  
 Ab -0.5 bricht die Ausgangsspannung bei beiden Trägersignalamplituden ein.  
 Dies kann weiterhin durch den Arbeitsbereich des Transistors T3 begründet werden.\\
-Zwischen -12V und -11V ist die Steigung der Kennlinien abgeflacht und erreicht erst bei -11V ihre normle bzw. bei der Trägeramplitude von 25mV ihr größte Steigung. \bigskip
+Zwischen -12V und -11V ist die Steigung der Kennlinien abgeflacht und erreicht erst bei -11V ihre normle bzw. bei der Trägeramplitude von 25mV ihr größte Steigung.
+\bigskip
+
 Innerhalb des Bereiches sind die unterschiede zu erkennen. 
 Der Unterschied, welcher am schnelsten ins Auge fällt ist die Steigung und dessen Verlauf. 
 Bei der Trägeramplitude $U_0$ von 2V ist die Steigung der Eingangsgleichspannung zum Ausgangsamplitude annähernd linear. 
@@ -490,7 +493,7 @@ Somit kann erschlossen werden, dass Trägeramplitude direkt mit der maximalen Au
 \label{kap:2}
 \subsubsection{Vergleich der Modulationsgrade}
 \label{kap:2.1}
-Durch den annähernd linearen Verlauf der Modulationskennlinien in Kapitel \ref{kap:1.1} Abbildung \ref{Abb:Modulationskennlinie_1_1} kann ein Modulationsgrad bestimmt werden. 
+Durch den annähernd linearen Verlauf der Kennlinien in Kapitel \ref{kap:1.1} Abbildung \ref{Abb:Modulationskennlinie_1_1} kann ein Modulationsgrad bestimmt werden. 
 Dafür kann die Gleichung \ref{Gl:Modulationsgrad_OS} verwendet werden.
 \begin{equation*}
     m=\frac{U_{max}-U_{min}}{U_{max}+U_{min}}
@@ -498,11 +501,15 @@ Dafür kann die Gleichung \ref{Gl:Modulationsgrad_OS} verwendet werden.
 Um das Maxima und Minima der  Hüllkurvenamplitude $U_{max}$,$U_{min}$ zu erhalten, können die Daten aus der Abbildung \ref{Abb:Modulationskennlinie_1_1} verwendet werden. 
 Dafür muss auf der Eingangsgleichspannung-Achse ein Bereich der maixmalen Signal Amplitude ausgewählt werden. 
 An der stelle, bei den die äußeren Ränder des Signalbereiches die Funktion trifft, können die Hüllkurvenamplitude abgelesen werden. 
-Um den Bereich der maixmalen Signal Amplitude zu erhalten, muss der Effektivwert mit einer Umstellung der Gleichung \ref{Gl:Effektivwert_Sin} in den Spitzenwert umgerechnet werden. 
+Um den Bereich der maixmalen Signal Amplitude zu erhalten, muss der Effektivwert mit einer Umstellung der Gleichung \ref{Gl:Effektivwert_Sin} in den Spitze-Spitze-Wert umgerechnet werden. 
 \begin{equation*}
        \hat{X} =  X_{eff}\cdot \sqrt{2} \rightarrow \hat{X}= 1\text{V} \cdot \sqrt{2} = 1.4142\text{V}
-\end{equation*}\\
-Dieser bereich kann nun irgenwo im linearen Bereich der Modulationskennlinie eingesetzt werden
+\end{equation*}
+\begin{equation}
+    U_{pp} = 2 \cdot \hat{X} = 2.8384 \text{V} 
+    \label{Gl:Upp}
+\end{equation}
+Ein Bereich mit der breite von $U_{pp}$ kann nun irgenwo im linearen Bereich der Modulationskennlinie eingesetzt werden
 Mit diesen Wissen wird der Bereich in Abbildung \ref{Abb:Modulationskennlinie_1_1} eingesetzt. 
 Daraus folgt folgende Abbildung \ref{Abb:Modulationskennlinie_2_1}.
 \begin{figure}[!h]
@@ -511,7 +518,8 @@ Daraus folgt folgende Abbildung \ref{Abb:Modulationskennlinie_2_1}.
     \caption{Modulationskennlinie der Ausgangsamplitude}
     \label{Abb:Modulationskennlinie_2_1}
 \end{figure}\\
-Daraus ergibt sich eine Maximale Hüllkurvenamplitude von $U_{max}=1423$mV und eine Minimale Hüllkurvenamplitude von $U_{min}=896$mV. 
+Daraus kann eine Maximale Hüllkurvenamplitude von $U_{max}=1423$mV und eine Minimale Hüllkurvenamplitude von $U_{min}=896$mV abgelesen werden.
+Das Ablesen der Punkte ist auf die 1 erste Nachkommerstelle mV genau. 
 Werden diese Werte in Gleichung \ref{Gl:Modulationsgrad_OS} eingesetzt ergibt sich der Modulationsgrad $m$.
 \begin{equation*}
     m=\frac{U_{max}-U_{min}}{U_{max}+U_{min}}\rightarrow    m=\frac{1423\text{mV}-896\text{mV}}{1423\text{mV}+896\text{mV}}= 0.227
@@ -529,8 +537,9 @@ Damit ergibt sich ein Modulationsgrad $m$ von 0.266 oder 26,6\%.\\
 Somit weißt dieser Modulationsgrad eine Abweichung von 17,2\% zum theoretisch Hergeleiteten auf. 
 Dies weißt auf eine fehlerhafte Messung oder Einstellungen für die Theoretische Herleitung in Kapitel \ref{kap:1.1} hin.\\
 Um diese Aussage zu verifizieren wird erneut der Theoretische Wert aus den Daten der Tabelle \ref{tab:Aufgabe1} berechnet.
-Dieses mal genau mittig im linearen bereich. 
-Es ergibt sich folgende Abbildung.
+Dieses mal mittig im linearen Bereich.
+Theoretische sollte der Modulationsgrad unverändert bleiben.
+Es ergibt sich folgende Abbildung \ref{Abb:Modulationskennlinie_2_1_V2}.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.6\linewidth]{../Abbildungen/2/2.1/Modulationskennlinie_V2.png}
@@ -543,8 +552,57 @@ Werden diese Werte in Gleichung \ref{Gl:Modulationsgrad_OS} eingesetzt entsteht 
     m=\frac{U_{max}-U_{min}}{U_{max}+U_{min}}\rightarrow    m=\frac{1315\text{mV}-786\text{mV}}{1315\text{mV}+786\text{mV}}= 0.251
 \end{equation*}
 Der neu errechnetet Modulationsgrad $m$ liegt bei 25.1\%, dieser Wert ist deutlich näher am praktisch gemessenen Wert von 26.6\% und weicht nur mit 5.6\% ab.\\
-Sollten der Modulationskennlinie, wie angenommen, im Arbeitsbereich linear verlaufen, so müssten beide theoretische errechneten Werte identisch sein. 
-Da dies nicht der Fall ist, kann geschlussfolgert werden, das die Erhöhung der Trägeramplitude die linearität zunimmt jedoch nie perfekt linear wird. 
+Sollten der Modulationskennlinie im Arbeitsbereich linear verlaufen, so müssten beide errechneten Werte identisch sein. 
+Daher muss die Methode des Ablesens zu ungenau sein. \\
+Aus diesem Grund wird zur Bestimmung der Hüllkurvenamplituden folgend ein rechnerisches Verfahren verwendet. 
+Zuerst wird aus den Daten der Tabelle \ref{tab:Aufgabe1} die durchschnitteliche Steigung $a_s$ mittels der Gleichung \ref{Gl:Steigung_Durchschnitt} berechnet werden.
+Dieses Verfahren funktioniert nur, wenn die Modulationskennlinie linear ist.
+\begin{equation}
+    a_s=\sum_{i=1}^{n-1} \frac{f(x)_{n+1} - f(x)_n}{x_{n+1} - x_n}
+    \label{Gl:Steigung_Durchschnitt}
+\end{equation}
+Mittels dieser Gleichung konnte eine durchschnitteliche Steigung $a_s$ von 186.75mV. 
+Mittels diesen Wert kann nun des y-Achsenabschnitt $b$ berechnet werden. 
+Dafür wird Gleichung \ref{Gl:y-Achsenabschnitt} verwendet.
+\begin{equation}
+    b = f(x) - a_s \cdot x \rightarrow b =  297\text{mV} - 186.75\text{mV} \cdot -10 = 2164.5 \text{mV}
+    \label{Gl:y-Achsenabschnitt}
+\end{equation}
+Aus diesem Grund kann folgende Geradengleichung als Modulationskennlinie angenommen werden.
+\begin{equation*}
+    f(x) = 186.75\text{mV} \cdot x + 2164.5\text{mV}
+\end{equation*}
+ Mit dieser Modulationsgeraden kann die Hüllkurvenamplituden berechnet werden.
+ Die Steigung ist bei dieser Geraden identisch, aus diesen Grund kann jeder x-Wert verwendet werden. 
+ Die Differenz der x-Werte muss jedoch die in Gleichung \ref{Gl:Upp} berechneten Spitze-Spitze-Wert besitzen.
+ Folgende Gleichungen zeigen die Berechnungen der Hüllkurvenamplituden um den Wert von -6.
+ \begin{equation*}
+    U_{max}= 186.75\text{mV} \cdot \left(-4.5858\right) + 2164.5\text{mV} \rightarrow U_{max}= 1308.0645\text{mV}
+ \end{equation*}
+  \begin{equation*}
+    U_{min}= 186.75\text{mV} \cdot \left(-7.4142\right) + 2164.5\text{mV} \rightarrow U_{min}= 779.9355\text{mV}
+ \end{equation*}
+ Dies Maxima und Minima der Hüllkurve kann nun in Gleichung \ref{Gl:Modulationsgrad_OS} eingesetzt werden.
+\begin{equation*}
+    m=\frac{U_{max}-U_{min}}{U_{max}+U_{min}}\rightarrow    m=\frac{1308.0645\text{mV}-779.9355\text{mV}}{1308.0645\text{mV}+779.9355\text{mV}}= 0.253
+\end{equation*}
+Daraus ergibt sich ein Modulationsgrad $m$ von 0.253 oder 25.3\%. 
+Dieses Ergebnis ist in ähnlichen Bereich wie der zweite Wert, der durchs ablesen errechnet worden ist.\\
+Mittels dieser Rechnungen kann geschlussfolgert werden, das während des ersten Ablesens ein Fehler aufgetreten sein muss oder zwischen Messpunkten gemessen worden ist, der fehlerhaft war.\\
+Die Abweichung zwischen den gerechneten Modulationsgrad $m$ von 25.3\%, den von abgelesenen Wert von $m$ 25.1\% und den mitthilfe des Oszilloskops gebildetn Modulationsgrad $m$ von 26,6\% kann daraus jedoch nicht begründet werden. 
+Auch welcher Wert der korrekte Modulationsgrad ist, kann nicht ermittelt werden.\\
+Fehlerquellen können bei der arbeit mit den Daten aus Tabelle \ref{tab:Aufgabe1} beispielsweise ungenaues Ablesen, Messfehler, falsche Bedienung des Anwenders sowie Rechenfehler sein. 
+Bei dem Oszilloskop können Fehler ebenfalls durch Rechenfehler oder ungenaues Ablesen und falsche Bedienung erfolgt sein. 
+Auch kann die Curserfuntion ungenau verwendet worden sein.\\
+Schlussendlich ergibt sich aus den Daten, dass bei erhöhter Trägeramplitude der Modulationsgrad $m$ konstant ist. 
+Kleine ungenauigkeiten wiederstechen diese Aussage nicht, da Schwankungen beim erheben der Messwerte aufgetreten sind.
+
+
+
+%Da dies nicht der Fall ist, kann geschlussfolgert werden, das die Erhöhung der Trägeramplitude die linearität zunimmt jedoch nie perfekt linear wird. 
+%ZU sehen mittels der Hilfsgerade.
+%Diese Aussage wird auch von Kapitel \ref{kap:1.2} unterstützt.
+%Jedoch können Mess- und Rechenfehler nicht ausgeschlossen werden.
 %Da die theoretisch errechneten Werte identisch sein müssten, wenn der Arbeitsbereich in der praxis ein linearen Verlauf hätte, kann festgestellt werden, dass bei erhöhter Trägeramplitude der Verlauf nur lineärer wird, jedoch nie perfekt linear ist. 
   
 \subsubsection{Zeigerdiagramm des Spannungsverlaufes}
@@ -629,6 +687,7 @@ Für die weitere Bearbeitung der Aufgabe werden die Daten als Graph dargestellt.
 Zu erkennen ist ein bandpassförmiger Verlauf.
 Der bandpassförmige Verlauf entsteht durch den im Modulator enthaltenen abgestimmten Schwingkreis.
 Dies kann ebenfalls durch die Schaltung der Platine \ref{Ah:Schaltplan_Platine} sowie aus der Überlegung des Kapitels \ref{kap:1} geschlussfolgert werden.\\
+Genaueres hierzu Folgt in Kapitel \ref{kap:3_2}.\\
 Die Mittenfrequenz oder Resonanzfrequenz und somit die Frequenz der besten Energieübertragung sollte nach Angaben aus den Schaltplan \ref{Ah:Schaltplan_Platine} und Gleichung \ref{Gl:Mittenfrequenz_rechnerisch} bei 483.3 kHz liegen.
 Die Berechnung dafür ist in Kapitel \ref{kap:Resonanzfrequenz} zu finden.
 In der Praxis weicht dieser Wert jedoch geringfügig vom theoretischen Wert ab.
@@ -687,9 +746,10 @@ Zur besseren Verdeutlichung des Modulationsgrad aus Tabelle \ref{tab:Modulations
 Zur besseren Betrachtung musste ein doppelte logarithmische Achse verwendet werden.\\
 Wird Abbildung \ref{Abb:Modulationsgrad_3_2} betrachtet, kann direkt ein bandpassförmigen Verlauf der dynamischen Modulationskennlinie erkannt werden.
 Diese Eigenschaft kann durch den Aufbau der Platine \ref{Ah:Schaltplan_Platine} erklärt werden.\\
-Tiefe Frequenzen werden aufgrund der Koppelkondensatoren und RC-Glieder (C10 und R3) abgeschwächt.
-Ebenfalls kann der Kondensator C21 am Eingang des Signales dafür verantwortlich gemacht werden.
-Die Abschwächung hoher Frequenzen entsteht vermutlich durch die begrenzte Übertragungsbandbreite der Modulatorschaltung, sowie parasitäre Kapazitäten bei Transistor- und Modulationsstufen.
+Tiefe Frequenzen werden aufgrund der Koppelkondensatoren C21 und RC-Glieder (C10 und R3) abgeschwächt.
+Die Abschwächung hoher Frequenzen entsteht durch die CL-Kombination L1, C16, C17 und C18, welche zusammen einen Bandpass bilden.
+Somit werden durch diese Kombination auch geringe Frequenzen gedämpft.
+Das Bandpassfilter-Verhalten, kann somit auf RCL-Kombination auf der Platine komplett begründet werden.
 Die 3dB-Grenzefrequenz oder auch Grenzfrequenzen liegen näherungsweise bei 45 Hz sowie 17400 Hz.
 Zwischen den Grenzfrequenzen wird das Modulationssignal annähernd unverändert übertragen.
 Eine genaue Bestimmung kann nicht erfolgen, da zu wenig Daten um den Grenzfrequenzen erhoben worden sind.\\
@@ -731,7 +791,7 @@ Dafür sind folgende Gleichungen notwendig. \cite{Fluke_Bandbreite} \cite{dataTe
     $k$: Proportionalitätsfaktor (unter 1GHz = 0,35)\\
     $BW$: Bandbreite
 \end{center}
-Für den Fall dieser Schaltung, wurde in Kapitel \ref{kap:3_2} eine Bandweite von 17,355 KHz gemessen, wobei diese nur als größenrichtung gewertet werden darf. 
+Für den Fall dieser Schaltung, wurde in Kapitel \ref{kap:3_2} eine Bandbreite von 17,355 KHz gemessen, wobei diese nur als größenrichtung gewertet werden darf. 
 Somit ergibt sich mit der Gleichung \ref{Gl:Ab/Anstiegszeit} eine Anstiegszeit bzw. Abfallzeit von 20,2 $\mu$s.
 \begin{equation*}
         \Delta t = \frac{k}{BW} \rightarrow     \Delta t = \frac{0.35}{17355\text{Hz}} \approx 20,2 \cdot 10^{-6} \text{s}
@@ -1078,176 +1138,164 @@ Zu sehen, da ein Seitenband, jedoch nicht die Trägeramplitude gedämpft ist \ci
   offset=0 -2cm,
   pagecommand={
     \phantomsection
-    \subsection{Schaltplan - Platine \cite{Labor_Amplitudenmodulation}}
+    \subsection{Schaltpläne}
+    \subsubsection{Schaltplan - Platine \cite{Labor_Amplitudenmodulation}}
     \label{Ah:Schaltplan_Platine}
+    \vspace*{0.5cm}
+    \begin{center}
+      \captionof{figure}{Schaltplan der Platine}
+      \label{fig:schaltplan_platine}
+    \end{center}
   }
 ]{../GIT_Labor_Amplitudenmodulation_SoSe26.pdf}
 
 \newpage
-\subsection{Programmcode}
-\label{Ah:Code}
-\begin{lstlisting}[style=pythonstyle,    
-    caption={Pyhtoncode zum Erzeugen von Bodeplotts},
-    label={lst:Bodeplotts_erzeugung}]
-    import numpy as np
-    import matplotlib.pyplot as plt
-    from scipy import signal
 
-    # Parameter
-    C = 4.92e-9  # 4.92 nF
-    L = 22e-6    # 22 uH
+\begin{sidewaysfigure}
+    \subsubsection{Aufbau - Skizze} 
+	\label{Ah:Aufbau}
+\centering
+\begin{adjustbox}{max width=\textheight, max height=\textwidth}
 
-    # Resonanzfrequenz berechnen
-    f0 = 1 / (2 * np.pi * np.sqrt(L * C))
-    omega0 = 2 * np.pi * f0
+\begin{tikzpicture}[
+    scale=0.78,
+    transform shape,
+    device/.style={
+        draw,
+        thick,
+        minimum width=5.4cm,
+        minimum height=2.0cm,
+        align=center
+    },
+    board/.style={
+        draw,
+        thick,
+        minimum width=6.2cm,
+        minimum height=7.0cm,
+        align=center
+    },
+    cable/.style={
+        thick,
+        -{Latex[length=2.2mm]}
+    },
+    signal/.style={cable, black},
+    redcable/.style={cable, red},
+    blackcable/.style={cable, black},
+    bluecable/.style={cable, blue}
+]
 
-    print("=" * 60)
-    print("PARALLELSCHWINGKREIS - UEBERTRAGUNGSFUNKTION")
-    print("=" * 60)
-    print(f"\nGegebene Werte:")
-    print(f"  C = {C*1e9:.2f} nF")
-    print(f"  L = {L*1e6:.2f} uH")
-    print(f"\nBerechnete Werte:")
-    print(f"  Resonanzfrequenz f0 = {f0/1e6:.4f} MHz")
-    print(f"  Kreisfrequenz omega0 = {omega0:.2e} rad/s")
+% Geraete
+\node[device] (fg)  at (-11,0)   {Funktions-\\generator};
+\node[board]  (pcb) at (0,0)     {Platine};
+\node[device] (osc) at (11,2.5)  {Oszilloskop};
+\node[device] (sa)  at (11,-3.5) {Spektrum-\\analyzer};
+\node[device] (psu) at (0,8.0)   {Power Supply};
 
-    Q = 10
+% Anschluesse Platine links
+\coordinate (E1) at ($(pcb.west)+(0,1.4)$);
+\coordinate (E2) at ($(pcb.west)+(0,-1.4)$);
 
-    print(f"  Guetefaktor Q = {Q:.2f}")
+\node[left=8pt] at (E1) {E1};
+\node[left=8pt] at (E2) {E2};
 
-    # Uebertragungsfunktion:
-    # H(s) = omega0^2 / (s^2 + (omega0/Q)*s + omega0^2)
+% Anschluesse Platine rechts
+\coordinate (A1) at ($(pcb.east)+(0,1.4)$);
+\coordinate (A2) at ($(pcb.east)+(0,-1.4)$);
 
-    num = [omega0**2]
-    den = [1, omega0/Q, omega0**2]
+\node[right=8pt] at (A1) {A1};
+\node[right=8pt] at (A2) {A2};
 
-    print("\n" + "=" * 60)
-    print("UEBERTRAGUNGSFUNKTION")
-    print("=" * 60)
-    print(f"\nH(s) = omega0^2")
-    print(f"       -------------------------")
-    print(f"       s^2 + (omega0/Q)*s + omega0^2")
+% Anschluesse Platine oben
+\coordinate (J6) at ($(pcb.north)+(-1.7,0)$);
+\coordinate (J7) at ($(pcb.north)+(0,0)$);
+\coordinate (J8) at ($(pcb.north)+(1.7,0)$);
 
-    frequency_ratio = np.logspace(-1, 0.8, 1000)
-    f = frequency_ratio * f0
-    w = 2 * np.pi * f
+\node[below=8pt] at (J6) {J6 / DC};
+\node[below=8pt] at (J7) {J7 / GND};
+\node[below=8pt] at (J8) {J8 / DC};
 
-    w_response, H_jw = signal.freqs(num, den, w)
+% Funktionsgenerator Anschluesse
+\coordinate (FG1) at ($(fg.east)+(0,0.55)$);
+\coordinate (FG2) at ($(fg.east)+(0,-0.55)$);
 
-    magnitude = np.abs(H_jw)
-    phase = np.angle(H_jw) * 180 / np.pi
-    magnitude_norm = magnitude
+\node[left=8pt] at (FG1) {Ch 1};
+\node[left=8pt] at (FG2) {Ch 2};
 
-    fig = plt.figure(figsize=(14, 10))
-    gs = fig.add_gridspec(2, 1, height_ratios=[2, 2], hspace=0.3)
+% Oszilloskop Anschluesse
+\coordinate (OSC1) at ($(osc.west)+(0,0.7)$);
+\coordinate (OSC2) at ($(osc.west)+(0,0)$);
+\coordinate (OSC4) at ($(osc.west)+(0,-0.7)$);
 
-    ax1 = fig.add_subplot(gs[0])
-    ax1.semilogx(frequency_ratio, magnitude_norm, 'b-', linewidth=2.5)
+\node[right=8pt] at (OSC1) {Ch 1};
+\node[right=8pt] at (OSC2) {Ch 2};
+\node[right=8pt] at (OSC4) {Ch 4};
 
-    ax1.set_xlim([0.1, 6])
-    ax1.grid(True, which='both', alpha=0.3)
-    ax1.set_ylabel('|H(jw)|', fontsize=12, fontweight='bold')
-    ax1.set_title(
-        f'Betragsfrequenzgang (C={C*1e9:.2f}nF, L={L*1e6:.2f}uH)',
-        fontsize=14,
-        fontweight='bold'
-    )
+% Spektrumanalyzer Eingang
+\coordinate (SAIN) at ($(sa.west)+(0,0)$);
+\node[right=8pt] at (SAIN) {Input};
 
-    ax3 = fig.add_subplot(gs[1])
-    ax3.semilogx(frequency_ratio, phase, 'b-', linewidth=2.5)
+% Power-Supply Anschluesse
+\coordinate (PSU1P) at ($(psu.south)+(-1.9,0)$);
+\coordinate (PSU1M) at ($(psu.south)+(-0.65,0)$);
+\coordinate (PSU2M) at ($(psu.south)+(0.65,0)$);
+\coordinate (PSU2P) at ($(psu.south)+(1.9,0)$);
 
-    ax3.set_xlim([0.1, 6])
-    ax3.set_ylim([-180, 0])
-    ax3.grid(True, which='both', alpha=0.3)
-    ax3.set_xlabel('f/f0', fontsize=12, fontweight='bold')
-    ax3.set_ylabel('phi(w) [deg]', fontsize=12, fontweight='bold')
-    ax3.set_title(
-        'Phasengang (logarithmische Darstellung)',
-        fontsize=12,
-        fontweight='bold'
-    )
+\node[above=8pt] at (PSU1P) {Ch 1 +};
+\node[above=8pt] at (PSU1M) {Ch 1 -};
+\node[above=8pt] at (PSU2M) {Ch 2 -};
+\node[above=8pt] at (PSU2P) {Ch 2 +};
 
-    plt.savefig(
-        'parallelschwingkreis_frequenzgang.png',
-        dpi=150,
-        bbox_inches='tight'
-    )
+% Hilfspunkte
+\coordinate (LEFTBUS1) at (-6.7,1.4);
+\coordinate (LEFTBUS2) at (-6.7,-1.4);
 
-    print("\nPlot gespeichert")
-    plt.show()
+% Funktionsgenerator zu Platine
+\draw[signal] (FG1) -- (LEFTBUS1) -- (E1);
+\draw[signal] (FG2) -- (LEFTBUS2) -- (E2);
 
-    print("\n" + "=" * 60)
-    print("CHARAKTERISTISCHE WERTE")
-    print("=" * 60)
+% Abzweige zum Oszilloskop ausserhalb der Platine
+\draw[signal] (LEFTBUS1) -- ++(0,4.0) -- (6.7,5.4) |- (OSC1);
+\draw[signal] (LEFTBUS2) -- ++(0,-4.0) -- (6.7,-5.4) |- (OSC2);
 
-    idx_resonance = np.argmin(np.abs(frequency_ratio - 1.0))
+% Ausgaenge der Platine
+\draw[signal] (A2) -- ++(1.5,0) |- (OSC4);
+\draw[signal] (A1) -- ++(1.5,0) |- (SAIN);
 
-    print(f"\nBei Resonanz (f/f0 = 1.0):")
-    print(f"  y/y0 = {magnitude_norm[idx_resonance]:.4f}")
-    print(f"  Phase = {phase[idx_resonance]:.2f} deg")
-\end{lstlisting}
-\begin{lstlisting}[style=pythonstyle,    
-    caption={Pyhtoncode zum Erzeugen von Plotts},
-    label={lst:Plotts_erzeugung}]
-    import matplotlib.pyplot as plt
-import os
-import matplotlib
-from datetime import datetime
+% Versorgungskabel
+\draw[redcable] (PSU1P) -- ++(0,-1.0) -- ++(0.3,0) -- (J6);
 
-dateiname = datetime.now().strftime("../Abbildungen/plot_%Y%m%d_%H%M%S.png")
-matplotlib.use('QtAgg')
-print("Skript gestartet")
-print("Arbeitsverzeichnis:", os.getcwd())
+\draw[blackcable] (J7) -- ++(0,1.3)
+                  -- ++(-0.65,0) |- (PSU1M);
 
+\draw[blackcable] (J7) -- ++(0,1.7)
+                  -- ++(0.65,0) |- (PSU2M);
 
-# Daten einlesen
-x = []
-y1 = []
-y2 = []
+\draw[bluecable] (PSU2P) -- ++(0,-1.0) -- ++(-0.3,0) -- (J8);
 
-with open("tabelle.txt", "r", encoding="utf-8") as file:
-    for line in file:
+% Anschlussmarkierungen
+\foreach \p in {E1,E2,A1,A2,J6,J7,J8,FG1,FG2,OSC1,OSC2,OSC4,SAIN,PSU1P,PSU1M,PSU2M,PSU2P}
+    \fill (\p) circle (2pt);
 
-        # LaTeX-Reste entfernen
-        line = line.replace("\\\\ \\hline", "").strip()
+\end{tikzpicture}
 
-        # Zeile aufteilen
-        parts = [p.strip() for p in line.split("&")]
+\end{adjustbox}
 
-        # Nur gueltige Zeilen verarbeiten
-        if len(parts) != 3:
-            continue
-
-        x.append(float(parts[0]))
-        y1.append(float(parts[1]))
-        y2.append(float(parts[2]))
-
-# Plot erzeugen
-plt.figure(figsize=(8, 5))
-
-plt.plot(x, y1, marker="o", label="Spalte 2")
-plt.plot(x, y2, marker="s", label="Spalte 3")
-
-plt.xlabel("Spalte 1")
-plt.ylabel("Wert")
-plt.title("Plot der Messdaten")
-
-plt.grid(True)
-plt.legend()
-
-plt.tight_layout()
-#plt.savefig("../Abbildungen/plot.png", dpi=300, bbox_inches="tight")
-plt.savefig(dateiname, dpi=300, bbox_inches="tight")
-
-print("x =", x)
-print("y1 =", y1)
-print("y2 =", y2)
-
-plt.show(block=True)
-\end{lstlisting}
-
-
-
+\caption{Messaufbau des Versuches: Amplitudenmodulation}
+    \label{Abb:Aufbau-Skizze}
+\end{sidewaysfigure}
+\newpage
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{../Abbildungen/Aufbau/Aufbau.png}
+    \caption{Aufbau - Versuch}
+    \label{Abb:Aufbau_phy}
+\end{figure}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{../Abbildungen/Aufbau/Aufbau_Platine.png}
+    \caption{Aufbau - Platine}
+    \label{Abb:Aufbau_platine}
+\end{figure}
 \newpage
 \begin{sidewaystable}[h] 
 	\subsection{Geräteliste} 
