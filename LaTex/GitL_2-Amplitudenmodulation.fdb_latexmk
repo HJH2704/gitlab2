@@ -1,15 +1,15 @@
 # Fdb version 4
-["biber GitL_2-Amplitudenmodulation"] 1781885629.6868 "GitL_2-Amplitudenmodulation.bcf" "GitL_2-Amplitudenmodulation.bbl" "GitL_2-Amplitudenmodulation" 1781885637.11488 0
+["biber GitL_2-Amplitudenmodulation"] 1781885757.0878 "GitL_2-Amplitudenmodulation.bcf" "GitL_2-Amplitudenmodulation.bbl" "GitL_2-Amplitudenmodulation" 1781886324.27841 0
   "../Literatur/Amplitudenmodulation.bib" 1781531795 14581 3af52171a01cd16130f15ca8edd48c67 ""
-  "GitL_2-Amplitudenmodulation.bcf" 1781885636 108537 969a01024bddcbe79b89f4f557a9997a "pdflatex"
+  "GitL_2-Amplitudenmodulation.bcf" 1781886323 108536 ed38ee0ed26c13869c239691da06b389 "pdflatex"
   (generated)
   "GitL_2-Amplitudenmodulation.bbl"
   "GitL_2-Amplitudenmodulation.blg"
   (rewritten before read)
-["pdflatex"] 1781885631.29187 "c:/Users/mvoge/Git/Lab2/gitlab2/LaTex/GitL_2-Amplitudenmodulation.tex" "GitL_2-Amplitudenmodulation.pdf" "GitL_2-Amplitudenmodulation" 1781885637.11551 0
-  "../Abbildungen/1/1.1/1_1_Träger.PNG" 1781277339 30312 f5057402fe8b8a7e2a7527f7667a5043 ""
+["pdflatex"] 1781886318.43438 "c:/Users/mvoge/Git/Lab2/gitlab2/LaTex/GitL_2-Amplitudenmodulation.tex" "GitL_2-Amplitudenmodulation.pdf" "GitL_2-Amplitudenmodulation" 1781886324.27911 0
+  "../Abbildungen/1/1.1/1_1_Träger.PNG" 1781886302 44597 ad7d838832e855ba9dd934f47163b1ce ""
   "../Abbildungen/1/1.1/Modulationskennlinie.png" 1781606698 129374 13c51a97e11ad7cf40f8daac6244bfb9 ""
-  "../Abbildungen/1/1.2/1_2_Träger.PNG" 1781277339 31344 f9bad5de15f5dbfa3201cc91b9303241 ""
+  "../Abbildungen/1/1.2/1_2_Träger.PNG" 1781886317 46811 714f4efa21115d0ecfd46c1b3f7ea6ba ""
   "../Abbildungen/1/1.2/Modulationskennlinie.png" 1781613901 107316 7f4eeb05b0ed5dfd262faa87302a191b ""
   "../Abbildungen/1/Gesamt_1.png" 1781608847 156215 cc18cb9f696f7df5e1923e9cbe814dfb ""
   "../Abbildungen/2/2.1/2_1_gesamt_curser_final_.PNG" 1781612894 70494 e441f4e10de31ea31530a383f282fd13 ""
@@ -351,14 +351,14 @@
   "C:/Users/mvoge/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/mvoge/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/mvoge/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "GitL_2-Amplitudenmodulation.aux" 1781885636 34398 2b341b22b02aa87dfe1bae03a7afb595 "pdflatex"
-  "GitL_2-Amplitudenmodulation.bbl" 1781885631 7229 b7aa512d28267831f8ed951ef750349d "biber GitL_2-Amplitudenmodulation"
-  "GitL_2-Amplitudenmodulation.lof" 1781885636 2988 abf3335c8ee0f8dbdf7c50b27cff0cac "pdflatex"
-  "GitL_2-Amplitudenmodulation.lot" 1781885636 966 131b3d340479ffa6d6f6a03b4c970419 "pdflatex"
-  "GitL_2-Amplitudenmodulation.run.xml" 1781885636 2583 47f596e8ff000e8ce1400f75eeba1103 "pdflatex"
-  "GitL_2-Amplitudenmodulation.tex" 1781885623 73663 9694ecdd84686a8296793857083cbdbe ""
-  "GitL_2-Amplitudenmodulation.toc" 1781885636 3914 5bc3c9a04eace921c191664862d5074d "pdflatex"
-  "c:/Users/mvoge/Git/Lab2/gitlab2/LaTex/GitL_2-Amplitudenmodulation.tex" 1781885623 73663 9694ecdd84686a8296793857083cbdbe ""
+  "GitL_2-Amplitudenmodulation.aux" 1781886323 33219 83df90684ca588dd624ee7124060cee7 "pdflatex"
+  "GitL_2-Amplitudenmodulation.bbl" 1781885758 7229 0937d95581380dfccb23ee1dca8c5d85 "biber GitL_2-Amplitudenmodulation"
+  "GitL_2-Amplitudenmodulation.lof" 1781886323 2988 c86fcc672d7bcbf3d3c1255f15cb6115 "pdflatex"
+  "GitL_2-Amplitudenmodulation.lot" 1781886323 966 c74e42dd6014c6173c11b74cf5a855bb "pdflatex"
+  "GitL_2-Amplitudenmodulation.run.xml" 1781886323 2583 47f596e8ff000e8ce1400f75eeba1103 "pdflatex"
+  "GitL_2-Amplitudenmodulation.tex" 1781886322 73665 483382fb8d6c73a020481bacad252b91 ""
+  "GitL_2-Amplitudenmodulation.toc" 1781886323 3670 d7fa14643ccfbbc707f6309eb3cba037 "pdflatex"
+  "c:/Users/mvoge/Git/Lab2/gitlab2/LaTex/GitL_2-Amplitudenmodulation.tex" 1781886322 73665 483382fb8d6c73a020481bacad252b91 ""
   (generated)
   "GitL_2-Amplitudenmodulation.aux"
   "GitL_2-Amplitudenmodulation.bcf"
