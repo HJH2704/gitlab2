@@ -71,8 +71,6 @@
     rulecolor=\color{pygray},
 }
 
-% --- Neue Tabellenfunktionen ---
-\newcolumntype{x}[1]{!{\centering\arraybackslash\vrule width #1}}% ERlaubt dickere Linien in Tabellen. cx{2pt}
 
 \begin{document}
 \begin{figure}[h] \centering \includegraphics[width=0.5\textwidth]{../Abbildungen/logo.png}
@@ -115,26 +113,25 @@
 \newpage %Erzeugung eines Inhalts-, Abbildungs- und Tabellenverzeichnis
 \section{Theoretische Grundlagen}
 \subsection{Wortdefinitionen}
-\subsubsection*{Modulierendem Signal}
-Beim Modulierenden Signal handelt es sich um das Nachrichten oder Nutzsignal \cite{GoldenbaumGitskript}. 
-Dieses enthält die die Information und soll übertragen werden.
+\subsubsection*{Modulierendes Signal}
+Beim modulierenden Signal handelt es sich um das Nachrichten- oder Nutzsignal \cite{GoldenbaumGitskript}. 
+Dieses enthält die Information und soll übertragen werden.
 
-\subsubsection*{Moduliertem Signal}
-Ein Moduliertes Signal ist das Ergebnis einer Modulation \cite{GoldenbaumGitskript}.
-Dabei wird durch ein höherfrequentes Trägersignal das Modulierenden Signal dahingehen verändert, damit es übertragen werden kann.
+\subsubsection*{Moduliertes Signal}
+Ein moduliertes Signal ist das Ergebnis einer Modulation \cite{GoldenbaumGitskript}.
+Dabei wird durch ein höherfrequentes Trägersignal das modulierende Signal dahingehend verändert, damit es übertragen werden kann.
 
 \subsubsection*{Modulationskennlinie}
 Eine Modulationskennlinie beschreibt den Zusammenhang zwischen einer Eingangsgröße des Modulators und der daraus resultierenden Modulation. 
 Sie charakterisiert das Übertragungs- und Modulationsverhalten einer Modulatorschaltung
 
-
 \subsubsection*{Informationssignal}
-Das Informatuionssignal ist das eigentliche Nutzsignal, also das Signal, welches die information trägt.
-Als gutes Beispiel für Informatuionssignal sind die Schallwellen des menschlichen Sprechens. 
-Hier fällt auch auf, dass das Informatuionssignal alleine nicht weit übertragen werden kann.
+Das Informationssignal ist das eigentliche Nutzsignal, also das Signal, welches die Information trägt.
+Als gutes Beispiel für Informationssignale sind die Schallwellen des menschlichen Sprechens. 
+Hier fällt auch auf, dass das Informationssignal alleine nicht weit übertragen werden kann.
 Aus diesem Grund muss ein Trägersignal eingebunden werden, um größere Strecken der Übertragung zu ermöglichen.\\
-Im folgenden Beericht wird die Frequenz des Informationssignal häufig als Signalfrequenz bezeichnet. 
-Die Amplitude des Signals wird in diesem Bericht als Signalamplidute bezeichnet \cite{GoldenbaumGitskript}.
+Im folgenden Bericht wird die Frequenz des Informationssignals häufig als Signalfrequenz bezeichnet. 
+Die Amplitude des Signals wird in diesem Bericht als Signalamplitude bezeichnet \cite{GoldenbaumGitskript}.
 
 \subsubsection*{Trägersignal}
 Ein Trägersignal ist eine meist hochfrequente Schwingung, die allein noch keine Information enthält. 
@@ -143,39 +140,37 @@ Es dient dazu, ein anderes Signal zu „tragen“, damit dieses besser übertrag
 \subsubsection*{Frequenzspektrum}
 Das Frequenzspektrum beschreibt, aus welchen einzelnen Frequenzanteilen ein Signal besteht und wie stark diese Anteile sind.
 Ein Signal kann also nicht nur aus einer einzigen Frequenz bestehen, sondern aus mehreren Frequenzen zusammengesetzt sein.\\ 
-Im Frequenzspektrum sieht man dann, bei welchen Frequenzen das Signal Anteile hat und welche Amplitude diese Anteile besitzen\cite{GoldenbaumGitskript}.
+Im Frequenzspektrum sieht man dann, bei welchen Frequenzen das Signal Anteile hat und welche Amplituden diese Anteile besitzen \cite{GoldenbaumGitskript}.
 
 
 \subsection{Amplitudenmodulation}
-Die Amplitudenmodulation ist eine Art der Signalbearbeitung, mithilfe ein Informatuionssignal mittels eines Trägersignals über weite Strecken übertragen werden kann.\\
-Bei dieser Modulationsart wird mithilfe des Informationssignal die Amplitude des Trägersignals moduliert.
-Das bedeutet, dass nach der Modulation die Amplitude des Trägersignal mit der Frequenz und Amplitude des Informatuionssignal pulsiert.
-Die information liegt somit ebenfalls in der Amplitude des hochfrequenten Trägersignales und kann somit deutlich weiter und besser Übertragen werden.\\
-Wird das resultierenden Signal im Frequenzspektrum betrachtet, kann die Trägerfrequenz umgeben von Seitenbändern betrachtet werden. 
-Die ersten Seitenbänder um die Trägerfrequenz enthalten die Informatuion \cite{GoldenbaumGitskript}.\\
+Die Amplitudenmodulation ist eine Art der Signalbearbeitung, mit deren Hilfe ein Informationssignal mithilfe eines Trägersignals über weite Strecken übertragen werden kann.\\
+Bei dieser Modulationsart wird mithilfe des Informationssignals die Amplitude des Trägersignals moduliert.
+Das bedeutet, dass nach der Modulation die Amplitude des Trägersignals mit der Frequenz und Amplitude des Informationssignals pulsiert.
+Die Information liegt somit ebenfalls in der Amplitude des hochfrequenten Trägersignals und kann somit deutlich weiter und besser übertragen werden.\\
+Wird das resultierende Signal im Frequenzspektrum betrachtet, kann die Trägerfrequenz umgeben von Seitenbändern betrachtet werden. 
+Die ersten Seitenbänder um die Trägerfrequenz enthalten die Information \cite{GoldenbaumGitskript}.\\
 Diese Modulation benötigt viel Energie für das Trägersignal und somit wird die meiste Energie unbenutzt verwendet. 
-Die Energie geht somit nicht ins Informationssignal sondern eher in das Trägersignal.\\
-Um dieses Problem zu verringern, kann mittels verschiedene Passfilter Träger sowie das doblikat des Informatuionssignal weggedämpft werden. 
+Die Energie geht somit nicht ins Informationssignal, sondern eher in das Trägersignal.\\
+Um dieses Problem zu verringern, können mittels verschiedener Passfilter Träger sowie das Duplikat des Informationssignals weggedämpft werden. 
 Näheres dazu kann in Kapitel \ref{kap:4} nachgelesen werden. 
 
 
-
-
 \subsection{Bandpassfilter}
-Ein Bandpassfilter ist ein Systemm aus RLC-Bauteilen. 
-Er ist eine Schaltung, welches nur Signale in einem bestimmten Frequenzbereichs nahezu ungedämpft überträgt.
-Dieser Frequenzbereich wird von den sogananten Grenzfrequenzen umschlossen.
-Die Grenzefrequenz ist die Frequenz, indem die -3dB Grenze des Signales durchgrochen wird.
-Das bedeutet nur noch 70\% der Ausgangsamplitude überträgt.\\
-Der Bereich zwischen den Grenzefrequenzen nennt man Bandbreite.
-Diese kann mittels der Grenzfrequenzenberechnet werden.
+Ein Bandpassfilter ist ein System aus RLC-Bauteilen. 
+Er ist eine Schaltung, welche nur Signale in einem bestimmten Frequenzbereich nahezu ungedämpft überträgt.
+Dieser Frequenzbereich wird von den sogenannten Grenzfrequenzen umschlossen.
+Die Grenzfrequenz ist die Frequenz, bei der die -3dB-Grenze des Signals durchbrochen wird.
+Das bedeutet, nur noch 70\% der Ausgangsamplitude werden übertragen.\\
+Der Bereich zwischen den Grenzfrequenzen nennt man Bandbreite.
+Diese kann mittels der Grenzfrequenzen berechnet werden.
 \begin{equation}
     BW = f_H-f_L 
     \label{Gl:Bandweite}
 \end{equation}
 
-Die Frequenz die am besten Übertragen wird, ist die Resonanzfrequenz oder Mittenfrequenz. 
-Auch diese kann mittels der Grenzefrequenz berechnet werden.
+Die Frequenz, die am besten übertragen wird, ist die Resonanzfrequenz oder Mittenfrequenz. 
+Auch diese kann mittels der Grenzfrequenzen berechnet werden.
 \begin{equation}
     f_0=\sqrt{f_L\cdot f_H}
     \label{Gl:Mittenfrequenz}
@@ -192,7 +187,7 @@ Auch diese kann mittels der Grenzefrequenz berechnet werden.
 \newpage
 \subsection{Effektivwert}
 \label{Kp:TG_Effektivwert}
-Der Effektivwert gibt den konstante Spannung oder Stromstärke an, die am gleichen Widerstand in der gleichen Zeit die gleiche Energie wie die Wechselspannung liefert.\\
+Der Effektivwert gibt die konstante Spannung oder Stromstärke an, die am gleichen Widerstand in der gleichen Zeit die gleiche Energie wie die Wechselspannung liefert.\\
 Zur allgemeinen Berechnung des Effektivwerts kann folgende Formel verwendet werden.
 \begin{equation}
     X_{eff}=\sqrt{\frac{1}{T}\cdot\int_{0}^{T} \left[x(t)\right]^2 \,dt }
@@ -203,8 +198,8 @@ Zur allgemeinen Berechnung des Effektivwerts kann folgende Formel verwendet werd
     $T$: Periodendauer [s]\\
     $x(t)$: zeitlicher Verlauf der Spannung oder des Stroms [V/A]
 \end{center}
-Für ein Sinus oder Cosinus Signal kann die berechnung vereinfacht werden. 
-Hier gilt zur Berechnung folgender Zusammenhang
+Für ein Sinus- oder Cosinussignal kann die Berechnung vereinfacht werden. 
+Hier gilt zur Berechnung folgender Zusammenhang:
 \begin{equation}
     X_{eff}=\frac{\hat{X}}{\sqrt{2}}
     \label{Gl:Effektivwert_Sin}
@@ -213,8 +208,8 @@ Hier gilt zur Berechnung folgender Zusammenhang
     $\hat{X}$: Scheitelwert [V/A]
 \end{center}
 Bei der Frequenzmodulation sowie Phasenmodulation ist die Amplitude konstant, dadurch kann die Gleichung \ref{Gl:Effektivwert_Sin} verwendet werden.\\
-Bei der Amplitudenmmodulation kann der Effektivwert nicht so leicht berechnet werden, da hier die Amplitude schwankend ist. 
-Für diesen Fall kann folgende Formel zur berechnung des Effektivwertes verwendente werden \cite{Ampl_eff}.
+Bei der Amplitudenmodulation kann der Effektivwert nicht so leicht berechnet werden, da hier die Amplitude schwankend ist. 
+Für diesen Fall kann folgende Formel zur Berechnung des Effektivwertes verwendet werden \cite{Ampl_eff}.
 \begin{equation}
     U_{eff}=\frac{U_0}{\sqrt{2}} \cdot \sqrt{1+\frac{m^2}{2}} 
 \end{equation}
@@ -222,10 +217,11 @@ Für diesen Fall kann folgende Formel zur berechnung des Effektivwertes verwende
     $U_0$: Amplitudengröße [V/A]\\
     $m$: Modulationsgrad
 \end{center}
+
 \subsection{Modulationsgrad}
 \label{Kp:TG_Modulationsgrad}
-Der Modulationsgrad $m$ beschreibt die stärke der Verändung des Trägersignals durch das Nutzsignal. 
-Dabei kann der Modulationsgrad $m$ durch die Gleichung \ref{Gl:Modulationsgrad_Grundlagen} und \ref{Gl:Modulationsgrad_OS} bestimmt werden \cite{Modulationsgrad}.
+Der Modulationsgrad $m$ beschreibt die Stärke der Veränderung des Trägersignals durch das Nutzsignal. 
+Dabei kann der Modulationsgrad $m$ durch die Gleichungen \ref{Gl:Modulationsgrad_Grundlagen} und \ref{Gl:Modulationsgrad_OS} bestimmt werden \cite{Modulationsgrad}.
 \begin{equation}
     m=\frac{A_m}{A_c}=\frac{\hat{U}_m}{\hat{U}_c}
     \label{Gl:Modulationsgrad_Grundlagen}
@@ -242,8 +238,8 @@ Dabei kann der Modulationsgrad $m$ durch die Gleichung \ref{Gl:Modulationsgrad_G
     $U_{max}$: Hüllkurven-Maxima [V]\\
     $U_{min}$: Hüllkurven-Minima [V]
 \end{center}
-Die Gleichung \ref{Gl:Modulationsgrad_OS} kann mittels eines Oszilloskop direkt bestimmt werden. 
-Dabei können die Hüllkurven-Maxima und -Minima direkt vom Bildschirm ablesen werden.\\
+Die Gleichung \ref{Gl:Modulationsgrad_OS} kann mittels eines Oszilloskops direkt bestimmt werden. 
+Dabei können die Hüllkurven-Maxima und -Minima direkt vom Bildschirm abgelesen werden.\\
 Der Modulationsgrad $m$ kann wie folgt interpretiert werden:
 \begin{itemize}
     \item $m=0 \rightarrow$ keine Modulation
@@ -256,7 +252,7 @@ Der Modulationsgrad $m$ kann wie folgt interpretiert werden:
 \label{kap:Resonanzfrequenz}
 Für den Versuch ist eine Platine entwickelt worden. 
 Der Schaltplan ist im Anhang \ref{Ah:Schaltplan_Platine} zu finden.
-Innerhalb dieser Platine ist ein Parallelschwingkreises enhalten, dieser wird hier zur späteren Untersuchung berechnet.\\
+Innerhalb dieser Platine ist ein Parallelschwingkreis enthalten, dieser wird hier zur späteren Untersuchung berechnet.\\
 Der gegebene Parallelschwingkreis besteht aus einer Spule $L_1$ und drei parallel geschalteten Kondensatoren $C_{16}$, $C_{17}$ und $C_{18}$.
 \begin{align*}
     L_1    &= 22\,\mu\text{H} = 22 \cdot 10^{-6}\,\text{H} \\
@@ -285,7 +281,7 @@ f_r = \frac{1}{2\pi \cdot \sqrt{22 \cdot 10^{-6}\,\text{H} \cdot 4,92 \cdot 10^{
 \label{Gl:Mittenfrequenz_rechnerisch}
 \end{equation}
 
-Die theoretische Resonanzfrequenz des Parallelschwingkreises beträgt ca.483,8\,kHz.
+Die theoretische Resonanzfrequenz des Parallelschwingkreises beträgt ca. 483,8\,kHz.
 \newpage
 \section{Durchführung}
 
@@ -435,7 +431,7 @@ Nach Abschluss aller Messungen wurden sämtliche Geräte ausgeschaltet und der A
 \subsubsection{Modulationskennlinie bei einer Eingangsgleichspannung von 2V}
 \label{kap:1.1}
 Die Daten für diese Aufgabe sind in Tabelle \ref{tab:Aufgabe1} zu finden.
-Die folgende Abbildung \ref{Abb:Modulationskennlinie_1_1} zeigt die Daten zur besseren visualisierung als Graph.
+Die folgende Abbildung \ref{Abb:Modulationskennlinie_1_1} zeigt die Daten zur besseren Visualisierung als Graph.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\linewidth]{../Abbildungen/1/1.1/Modulationskennlinie.png}
@@ -444,27 +440,27 @@ Die folgende Abbildung \ref{Abb:Modulationskennlinie_1_1} zeigt die Daten zur be
 \end{figure}\\
 Zu sehen ist ein annähernd linearer Verlauf zwischen der Eingangsspannung -11V bis -0.5V.
 Somit ist die Ausgangsamplitude in diesem Bereich proportional zur Eingangsspannung.\\
-Die Werte außerhalb dieses Bereiches, lassen sich nicht mit der linearen Näherung beschreiben
-Diese Änderung kann durch verschiedene Bauteilgrenzen des Transistors T3 begründet werden . 
+Die Werte außerhalb dieses Bereiches lassen sich nicht mit der linearen Näherung beschreiben.
+Diese Änderung kann durch verschiedene Bauteilgrenzen des Transistors T3 begründet werden.
 So ist der Bereich außerhalb von -11V bis -0.5V nicht im Arbeitsbereich des Transistors.
-Werte zwischen -12 bis -11 ist der Spannungsunterschied zum -12V Ausgang gering, weshalb die Stromstärke nicht ausreichend ist um den Transistor zu verwenden.
-Die Werte zwischen -0.5 bis 0 liegen überhalb des Arbeitsbereiches. 
-Aus diesem Grund ist diese kennlinie nicht mehr Linear.
+Werte zwischen -12 und -11 ist der Spannungsunterschied zum -12V Ausgang gering, weshalb die Stromstärke nicht ausreichend ist, um den Transistor zu verwenden.
+Die Werte zwischen -0.5 und 0 liegen oberhalb des Arbeitsbereiches.
+Aus diesem Grund ist diese Kennlinie nicht mehr linear.
 \newpage
+
 \subsubsection{Modulationskennlinie bei einer Eingangsgleichspannung von 25mV}
 \label{kap:1.2}
 Die Daten für diese Aufgabe sind in Tabelle \ref{tab:Aufgabe1} zu finden.
-Die folgende Abbildung \ref{Abb:Modulationskennlinie_1_2} zeigt die Daten zur besseren visualisierung als Graph.
+Die folgende Abbildung \ref{Abb:Modulationskennlinie_1_2} zeigt die Daten zur besseren Visualisierung als Graph.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.8\linewidth]{../Abbildungen/1/1.2/Modulationskennlinie.png}
     \caption{Modulationskennlinie der Ausgangsamplitude}
     \label{Abb:Modulationskennlinie_1_2}
 \end{figure}\\
-Anderst wie in Kapitel \ref{kap:1.1} ist diese Kennlinie sichtbar nicht linear.
-Sie weist einen Abfallenden Charakter hin.
-Daraus kann geschlussfolgert werden, dass die Trägeramplitude einfluss auf die Linearität des Ausgangssignales besitzt.\\
-
+Anders wie in Kapitel \ref{kap:1.1} ist diese Kennlinie sichtbar nicht linear.
+Sie weist einen abfallenden Charakter hin.
+Daraus kann geschlussfolgert werden, dass die Trägeramplitude Einfluss auf die Linearität des Ausgangssignals besitzt.\\
 
 \newpage
 Um die beiden Modulationskennlinien besser vergleichen zu können, werden diese in Abbildung \ref{Abb:Modulationskennlinie_1} zusammengefügt.
@@ -477,31 +473,32 @@ Um die beiden Modulationskennlinien besser vergleichen zu können, werden diese 
 Zu erkennen sind Ähnlichkeiten im Verhalten außerhalb des Bereiches von -11V bis -0.5V.  
 Ab -0.5 bricht die Ausgangsspannung bei beiden Trägersignalamplituden ein.  
 Dies kann weiterhin durch den Arbeitsbereich des Transistors T3 begründet werden.\\
-Zwischen -12V und -11V ist die Steigung der Kennlinien abgeflacht und erreicht erst bei -11V ihre normle bzw. bei der Trägeramplitude von 25mV ihr größte Steigung.
+Zwischen -12 und -11V ist die Steigung der Kennlinien abgeflacht und erreicht erst bei -11V ihre normale bzw. bei der Trägeramplitude von 25mV ihre größte Steigung.
 \bigskip
 
-Innerhalb des Bereiches sind die unterschiede zu erkennen. 
-Der Unterschied, welcher am schnelsten ins Auge fällt ist die Steigung und dessen Verlauf. 
-Bei der Trägeramplitude $U_0$ von 2V ist die Steigung der Eingangsgleichspannung zum Ausgangsamplitude annähernd linear. 
-Für die Trägeramplitude $U_0$ von 25mV fällt die stärke der Steigung kontinuierlich ab. 
+Innerhalb des Bereiches sind die Unterschiede zu erkennen. 
+Der Unterschied, welcher am schnellsten ins Auge fällt, ist die Steigung und dessen Verlauf. 
+Bei der Trägeramplitude $U_0$ von 2V ist die Steigung der Eingangsgleichspannung zur Ausgangsamplitude annähernd linear. 
+Für die Trägeramplitude $U_0$ von 25mV fällt die Stärke der Steigung kontinuierlich ab. 
 Daraus kann geschlossen werden, dass bei einer zu geringen Amplitude des Trägersignals die Übertragung geschwächt wird.
 Der Übertragungsfaktor beziehungsweise der Modulationsgrad ist dann stärker von der Eingangsgleichspannung abhängig und nicht mehr konstant.
-Auch kann mittels Abbildung \ref{Abb:Modulationskennlinie_1} erkannt werden, dass die Ausgangsampitude bei geringerer Trägersignalamplituden geringer ist. 
+Auch kann mittels Abbildung \ref{Abb:Modulationskennlinie_1} erkannt werden, dass die Ausgangsamplitude bei geringerer Trägersignalamplitude geringer ist. 
 So liegt sie bei der Eingangsspannung von -2V und einer Trägeramplitude von 2V bei 1791mV und bei einer Trägeramplitude von 25mV nur bei 585mV.
-Somit kann erschlossen werden, dass Trägeramplitude direkt mit der maximalen Ausgangsspannung zusammenhängt. \newpage
+Somit kann erschlossen werden, dass die Trägeramplitude direkt mit der maximalen Ausgangsspannung zusammenhängt. 
+\newpage
 \subsection{ Zeitlicher Verlauf und Frequenzspektrum}
 \label{kap:2}
 \subsubsection{Vergleich der Modulationsgrade}
 \label{kap:2.1}
-Durch den annähernd linearen Verlauf der Kennlinien in Kapitel \ref{kap:1.1} Abbildung \ref{Abb:Modulationskennlinie_1_1} kann ein Modulationsgrad bestimmt werden. 
-Dafür kann die Gleichung \ref{Gl:Modulationsgrad_OS} verwendet werden.
+Aufgrund des annähernd linearen Verlaufs der Kennlinien in Kapitel \ref{kap:1.1} (Abbildung \ref{Abb:Modulationskennlinie_1_1}) kann der Modulationsgrad bestimmt werden. 
+Dafür kann Gleichung \ref{Gl:Modulationsgrad_OS} verwendet werden.
 \begin{equation*}
     m=\frac{U_{max}-U_{min}}{U_{max}+U_{min}}
 \end{equation*} 
-Um das Maxima und Minima der  Hüllkurvenamplitude $U_{max}$,$U_{min}$ zu erhalten, können die Daten aus der Abbildung \ref{Abb:Modulationskennlinie_1_1} verwendet werden. 
-Dafür muss auf der Eingangsgleichspannung-Achse ein Bereich der maixmalen Signal Amplitude ausgewählt werden. 
-An der stelle, bei den die äußeren Ränder des Signalbereiches die Funktion trifft, können die Hüllkurvenamplitude abgelesen werden. 
-Um den Bereich der maixmalen Signal Amplitude zu erhalten, muss der Effektivwert mit einer Umstellung der Gleichung \ref{Gl:Effektivwert_Sin} in den Spitze-Spitze-Wert umgerechnet werden. 
+Um die Maxima und Minima der Hüllkurvenamplitude $U_{max}$ und $U_{min}$ zu bestimmen, können die Daten aus Abbildung \ref{Abb:Modulationskennlinie_1_1} verwendet werden. 
+Dazu muss auf der Achse der Eingangsgleichspannung ein Bereich der maximalen Signalamplitude ausgewählt werden. 
+An den Stellen, an denen die äußeren Ränder des Signalbereichs die Funktion schneiden, können die Hüllkurvenamplituden abgelesen werden. 
+Um den Bereich der maximalen Signalamplitude zu bestimmen, muss der Effektivwert mithilfe einer Umstellung der Gleichung \ref{Gl:Effektivwert_Sin} in den Spitze-Spitze-Wert umgerechnet werden. 
 \begin{equation*}
        \hat{X} =  X_{eff}\cdot \sqrt{2} \rightarrow \hat{X}= 1\text{V} \cdot \sqrt{2} = 1.4142\text{V}
 \end{equation*}
@@ -509,36 +506,36 @@ Um den Bereich der maixmalen Signal Amplitude zu erhalten, muss der Effektivwert
     U_{pp} = 2 \cdot \hat{X} = 2.8384 \text{V} 
     \label{Gl:Upp}
 \end{equation}
-Ein Bereich mit der breite von $U_{pp}$ kann nun irgenwo im linearen Bereich der Modulationskennlinie eingesetzt werden
-Mit diesen Wissen wird der Bereich in Abbildung \ref{Abb:Modulationskennlinie_1_1} eingesetzt. 
-Daraus folgt folgende Abbildung \ref{Abb:Modulationskennlinie_2_1}.
+Ein Bereich mit der Breite von $U_{pp}$ kann nun an beliebiger Stelle im linearen Bereich der Modulationskennlinie eingesetzt werden.
+Mit diesem Wissen wird der Bereich in Abbildung \ref{Abb:Modulationskennlinie_1_1} angewendet. 
+Daraus ergibt sich Abbildung \ref{Abb:Modulationskennlinie_2_1}.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.7\linewidth]{../Abbildungen/2/2.1/Modulationskennlinie.png}
     \caption{Modulationskennlinie der Ausgangsamplitude}
     \label{Abb:Modulationskennlinie_2_1}
 \end{figure}\\
-Daraus kann eine Maximale Hüllkurvenamplitude von $U_{max}=1423$mV und eine Minimale Hüllkurvenamplitude von $U_{min}=896$mV abgelesen werden.
-Das Ablesen der Punkte ist auf die 1 erste Nachkommerstelle mV genau. 
-Werden diese Werte in Gleichung \ref{Gl:Modulationsgrad_OS} eingesetzt ergibt sich der Modulationsgrad $m$.
+Daraus kann eine maximale Hüllkurvenamplitude von $U_{max}=1423$mV und eine minimale Hüllkurvenamplitude von $U_{min}=896$mV abgelesen werden.
+Das Ablesen der Werte erfolgt mit einer Genauigkeit von einer Nachkommastelle im mV-Bereich. 
+Werden diese Werte in Gleichung \ref{Gl:Modulationsgrad_OS} eingesetzt, ergibt sich der Modulationsgrad $m$.
 \begin{equation*}
     m=\frac{U_{max}-U_{min}}{U_{max}+U_{min}}\rightarrow    m=\frac{1423\text{mV}-896\text{mV}}{1423\text{mV}+896\text{mV}}= 0.227
 \end{equation*}
-Damit ergibt sich ein Modulationsgrad $m$ von 0.227 oder 22,7\%.\\
-Um diesen Wert zu verifizieren kann der Modulationsgrad $m$ mittels eines Oszilloskops bestimmt werden.
-Dafür muss mittels der Curserfuntion die maixmale und minimale Spannung der Hüllkurve des Signales abgelesen werden.
-Dies ist im Anhang \ref{Ah:Weitere_Abbildungen} in Abbildung \ref{Abb:A2_3_2_1} zu sehen.
-In dieser Abbildung ist zu erkennen, das die maximale Hüllkurvenamplitude $U_{max}$ bei 1.821V und die minimale Hüllkurvenamplitude $U_{min}$ bei 1.055V liegt. 
-Mit dieser information und der Gleichung \ref{Gl:Modulationsgrad_OS} kann nun der Modulationsgrad bestimmt werden.
+Damit ergibt sich ein Modulationsgrad $m$ von 0.227 bzw. 22,7\%.\\
+Zur Verifizierung dieses Wertes kann der Modulationsgrad $m$ mithilfe eines Oszilloskops bestimmt werden.
+Dazu müssen mithilfe der Cursorfunktion die maximale und minimale Spannung der Hüllkurve des Signals abgelesen werden.
+Dies ist im Anhang \ref{Ah:Weitere_Abbildungen} in Abbildung \ref{Abb:A2_3_2_1} dargestellt.
+Dort ist zu erkennen, dass die maximale Hüllkurvenamplitude $U_{max}$ bei 1.821V und die minimale Hüllkurvenamplitude $U_{min}$ bei 1.055V liegt. 
+Mit dieser Information und Gleichung \ref{Gl:Modulationsgrad_OS} kann der Modulationsgrad bestimmt werden.
 \begin{equation*}
         m=\frac{U_{max}-U_{min}}{U_{max}+U_{min}}\rightarrow m=\frac{1.821\text{V}-1.055\text{V}}{1.821\text{V}+1.055\text{V}}=0.266
 \end{equation*}
-Damit ergibt sich ein Modulationsgrad $m$ von 0.266 oder 26,6\%.\\
-Somit weißt dieser Modulationsgrad eine Abweichung von 17,2\% zum theoretisch Hergeleiteten auf. 
-Dies weißt auf eine fehlerhafte Messung oder Einstellungen für die Theoretische Herleitung in Kapitel \ref{kap:1.1} hin.\\
-Um diese Aussage zu verifizieren wird erneut der Theoretische Wert aus den Daten der Tabelle \ref{tab:Aufgabe1} berechnet.
-Dieses mal mittig im linearen Bereich.
-Theoretische sollte der Modulationsgrad unverändert bleiben.
+Damit ergibt sich ein Modulationsgrad $m$ von 0.266 bzw. 26,6\%.\\
+Somit weist dieser Modulationsgrad eine Abweichung von 17,2\% zum theoretisch hergeleiteten Wert auf. 
+Dies deutet auf eine fehlerhafte Messung oder fehlerhafte Einstellungen bei der theoretischen Herleitung in Kapitel \ref{kap:1.1} hin.\\
+Um diese Aussage zu überprüfen, wird der theoretische Wert erneut aus den Daten der Tabelle \ref{tab:Aufgabe1} berechnet.
+Dieses Mal wird ein Punkt in der Mitte des linearen Bereichs gewählt.
+Theoretisch sollte der Modulationsgrad dabei unverändert bleiben.
 Es ergibt sich folgende Abbildung \ref{Abb:Modulationskennlinie_2_1_V2}.
 \begin{figure}[!h]
     \centering
@@ -546,88 +543,78 @@ Es ergibt sich folgende Abbildung \ref{Abb:Modulationskennlinie_2_1_V2}.
     \caption{Modulationskennlinie der Ausgangsamplitude}
     \label{Abb:Modulationskennlinie_2_1_V2}
 \end{figure}\\
-Zu erkennen ist eine Maximale Hüllkurvenamplitude von $U_{max}=1315$mV und eine Minimale Hüllkurvenamplitude von $U_{min}=786$mV.
-Werden diese Werte in Gleichung \ref{Gl:Modulationsgrad_OS} eingesetzt entsteht folgender Modulationsgrad $m$.
+Zu erkennen ist eine maximale Hüllkurvenamplitude von $U_{max}=1315$mV und eine minimale Hüllkurvenamplitude von $U_{min}=786$mV.
+Werden diese Werte in Gleichung \ref{Gl:Modulationsgrad_OS} eingesetzt, ergibt sich folgender Modulationsgrad $m$.
 \begin{equation*}
     m=\frac{U_{max}-U_{min}}{U_{max}+U_{min}}\rightarrow    m=\frac{1315\text{mV}-786\text{mV}}{1315\text{mV}+786\text{mV}}= 0.251
 \end{equation*}
-Der neu errechnetet Modulationsgrad $m$ liegt bei 25.1\%, dieser Wert ist deutlich näher am praktisch gemessenen Wert von 26.6\% und weicht nur mit 5.6\% ab.\\
-Sollten der Modulationskennlinie im Arbeitsbereich linear verlaufen, so müssten beide errechneten Werte identisch sein. 
-Daher muss die Methode des Ablesens zu ungenau sein. \\
-Aus diesem Grund wird zur Bestimmung der Hüllkurvenamplituden folgend ein rechnerisches Verfahren verwendet. 
-Zuerst wird aus den Daten der Tabelle \ref{tab:Aufgabe1} die durchschnitteliche Steigung $a_s$ mittels der Gleichung \ref{Gl:Steigung_Durchschnitt} berechnet werden.
-Dieses Verfahren funktioniert nur, wenn die Modulationskennlinie linear ist.
+Der neu berechnete Modulationsgrad $m$ beträgt 25,1\%. Dieser Wert liegt deutlich näher am praktisch gemessenen Wert von 26,6\% und weicht nur um 5,6\% ab.\\
+Wäre die Modulationskennlinie im Arbeitsbereich vollständig linear, müssten beide berechneten Werte identisch sein. 
+Daher ist die Methode des Ablesens vermutlich zu ungenau. \\
+Aus diesem Grund wird zur Bestimmung der Hüllkurvenamplituden im Folgenden ein rechnerisches Verfahren verwendet. 
+Zunächst wird aus den Daten der Tabelle \ref{tab:Aufgabe1} die durchschnittliche Steigung $a_s$ mithilfe der Gleichung \ref{Gl:Steigung_Durchschnitt} berechnet.
+Dieses Verfahren ist nur gültig, wenn die Modulationskennlinie linear ist.
 \begin{equation}
     a_s=\sum_{i=1}^{n-1} \frac{f(x)_{n+1} - f(x)_n}{x_{n+1} - x_n}
     \label{Gl:Steigung_Durchschnitt}
 \end{equation}
-Mittels dieser Gleichung konnte eine durchschnitteliche Steigung $a_s$ von 186.75mV. 
-Mittels diesen Wert kann nun des y-Achsenabschnitt $b$ berechnet werden. 
-Dafür wird Gleichung \ref{Gl:y-Achsenabschnitt} verwendet.
+Mit dieser Gleichung konnte eine durchschnittliche Steigung $a_s$ von 186.75mV bestimmt werden. 
+Damit kann nun der y-Achsenabschnitt $b$ berechnet werden. 
+Dazu wird Gleichung \ref{Gl:y-Achsenabschnitt} verwendet.
 \begin{equation}
     b = f(x) - a_s \cdot x \rightarrow b =  297\text{mV} - 186.75\text{mV} \cdot -10 = 2164.5 \text{mV}
     \label{Gl:y-Achsenabschnitt}
 \end{equation}
-Aus diesem Grund kann folgende Geradengleichung als Modulationskennlinie angenommen werden.
+Daraus ergibt sich folgende Geradengleichung als Modulationskennlinie.
 \begin{equation*}
     f(x) = 186.75\text{mV} \cdot x + 2164.5\text{mV}
 \end{equation*}
- Mit dieser Modulationsgeraden kann die Hüllkurvenamplituden berechnet werden.
- Die Steigung ist bei dieser Geraden identisch, aus diesen Grund kann jeder x-Wert verwendet werden. 
- Die Differenz der x-Werte muss jedoch die in Gleichung \ref{Gl:Upp} berechneten Spitze-Spitze-Wert besitzen.
- Folgende Gleichungen zeigen die Berechnungen der Hüllkurvenamplituden um den Wert von -6.
- \begin{equation*}
+Mit dieser Geraden können die Hüllkurvenamplituden berechnet werden.
+Die Steigung ist dabei konstant, daher kann jeder x-Wert verwendet werden. 
+Die Differenz der x-Werte muss jedoch dem in Gleichung \ref{Gl:Upp} berechneten Spitze-Spitze-Wert entsprechen.
+Die folgenden Gleichungen zeigen die Berechnung der Hüllkurvenamplituden um den Wert -6.
+\begin{equation*}
     U_{max}= 186.75\text{mV} \cdot \left(-4.5858\right) + 2164.5\text{mV} \rightarrow U_{max}= 1308.0645\text{mV}
- \end{equation*}
-  \begin{equation*}
+\end{equation*}
+\begin{equation*}
     U_{min}= 186.75\text{mV} \cdot \left(-7.4142\right) + 2164.5\text{mV} \rightarrow U_{min}= 779.9355\text{mV}
- \end{equation*}
- Dies Maxima und Minima der Hüllkurve kann nun in Gleichung \ref{Gl:Modulationsgrad_OS} eingesetzt werden.
+\end{equation*}
+Diese Maxima und Minima der Hüllkurve können nun in Gleichung \ref{Gl:Modulationsgrad_OS} eingesetzt werden.
 \begin{equation*}
     m=\frac{U_{max}-U_{min}}{U_{max}+U_{min}}\rightarrow    m=\frac{1308.0645\text{mV}-779.9355\text{mV}}{1308.0645\text{mV}+779.9355\text{mV}}= 0.253
 \end{equation*}
-Daraus ergibt sich ein Modulationsgrad $m$ von 0.253 oder 25.3\%. 
-Dieses Ergebnis ist in ähnlichen Bereich wie der zweite Wert, der durchs ablesen errechnet worden ist.\\
-Mittels dieser Rechnungen kann geschlussfolgert werden, das während des ersten Ablesens ein Fehler aufgetreten sein muss oder zwischen Messpunkten gemessen worden ist, der fehlerhaft war.\\
-Die Abweichung zwischen den gerechneten Modulationsgrad $m$ von 25.3\%, den von abgelesenen Wert von $m$ 25.1\% und den mitthilfe des Oszilloskops gebildetn Modulationsgrad $m$ von 26,6\% kann daraus jedoch nicht begründet werden. 
-Auch welcher Wert der korrekte Modulationsgrad ist, kann nicht ermittelt werden.\\
-Fehlerquellen können bei der arbeit mit den Daten aus Tabelle \ref{tab:Aufgabe1} beispielsweise ungenaues Ablesen, Messfehler, falsche Bedienung des Anwenders sowie Rechenfehler sein. 
-Bei dem Oszilloskop können Fehler ebenfalls durch Rechenfehler oder ungenaues Ablesen und falsche Bedienung erfolgt sein. 
-Auch kann die Curserfuntion ungenau verwendet worden sein.\\
-Schlussendlich ergibt sich aus den Daten, dass bei erhöhter Trägeramplitude der Modulationsgrad $m$ konstant ist. 
-Kleine ungenauigkeiten wiederstechen diese Aussage nicht, da Schwankungen beim erheben der Messwerte aufgetreten sind.
+Daraus ergibt sich ein Modulationsgrad $m$ von 0.253 bzw. 25,3\%. 
+Dieses Ergebnis liegt in einem ähnlichen Bereich wie der zuvor aus Ablesung bestimmte Wert.\\
+Aus diesen Berechnungen kann geschlussfolgert werden, dass beim ersten Ablesen ein Fehler aufgetreten sein muss oder zwischen Messpunkten gemessen wurde, der ungenau war.\\
+Die Abweichungen zwischen dem berechneten Modulationsgrad von 25,3\%, dem abgelesenen Wert von 25,1\% und dem mithilfe des Oszilloskops bestimmten Wert von 26,6\% lassen sich jedoch nicht eindeutig erklären. 
+Auch welcher Wert der korrekte Modulationsgrad ist, kann nicht eindeutig bestimmt werden.\\
+Fehlerquellen bei der Arbeit mit den Daten aus Tabelle \ref{tab:Aufgabe1} können beispielsweise ungenaues Ablesen, Messfehler, Bedienfehler oder Rechenfehler sein. 
+Beim Oszilloskop können ebenfalls Fehler durch ungenaues Ablesen, Bedienfehler oder falsche Cursorpositionierung entstanden sein.\\
+Abschließend ergibt sich aus den Daten, dass bei erhöhter Trägeramplitude der Modulationsgrad $m$ näherungsweise konstant ist. 
+Kleine Ungenauigkeiten widersprechen dieser Aussage nicht, da Schwankungen bei der Erhebung der Messwerte aufgetreten sind.
 
-
-
-%Da dies nicht der Fall ist, kann geschlussfolgert werden, das die Erhöhung der Trägeramplitude die linearität zunimmt jedoch nie perfekt linear wird. 
-%ZU sehen mittels der Hilfsgerade.
-%Diese Aussage wird auch von Kapitel \ref{kap:1.2} unterstützt.
-%Jedoch können Mess- und Rechenfehler nicht ausgeschlossen werden.
-%Da die theoretisch errechneten Werte identisch sein müssten, wenn der Arbeitsbereich in der praxis ein linearen Verlauf hätte, kann festgestellt werden, dass bei erhöhter Trägeramplitude der Verlauf nur lineärer wird, jedoch nie perfekt linear ist. 
-  
 \subsubsection{Zeigerdiagramm des Spannungsverlaufes}
 \label{kap:2.2}
 
 \subsubsection{Betragsspektrum der Ausgangsspannung}
 \label{kap:2.3}
-Um bei einer Signalfrequenz $f_1$ von 1kHz einen Modulationsgrad $m$ von 1 zu erhalten, muss, nach Gleichung \ref{Gl:Modulationsgrad_OS}, das Minima der Hüllkurven $U_{min}$ exakt bei 0 liegen. 
+Um bei einer Signalfrequenz $f_1$ von 1kHz einen Modulationsgrad $m$ von 1 zu erhalten, muss nach Gleichung \ref{Gl:Modulationsgrad_OS} das Minimum der Hüllkurve $U_{min}$ exakt bei 0 liegen. 
 \begin{equation*}
     1=\frac{U_{max}-0}{U_{max}+0}=\frac{U_{max}}{U_{max}} \rightarrow 1=1
     \label{}
 \end{equation*}   
 Dies ist in der Praxis nicht möglich. 
-Aus diesen Grund sind nur Werte des Modulationsgrad $m$ nah an 1 möglich.
-Der exakte Modulationsgrad $m$ kann somit nur mittels eines genauen Oszilloskops berechnet werden.\\
+Aus diesem Grund sind nur Werte des Modulationsgrades $m$ nahe 1 möglich.
+Der exakte Modulationsgrad $m$ kann somit nur mithilfe eines genauen Oszilloskops bestimmt werden.\\
 
-
-Bei einem Idealen Fall, also $m$=1 würden drei Spektrallinien erwarten werden.
-Die Größte und mittlere der Spektrallinien würde bei der Trägerfrequenz $f_0$ von 480kHz erscheinen. 
-Die beiden Seitenbänder würden mit der Signalfrequenz $f_1$ entfernt von der Trägerfrequenz $f_0$ liegen. 
-In Fall des Versuches würde das untere Seitenband bei 475kHz und das obere Seitenband bei 485kHz liegen, da die Trägerfrequenz $f_0$ bei 480kHz und die Signalfrequenz $f_1$ bei 5kHz liegt.\\
-Die Amplitude der Spektrallinien der Seitenband muss addiert bei einem Modulationsgrad $m$ von 1 identisch zur der Amplitude der Trägerfrequenz sein. 
-Da zwei Seitenbänder vorhanden sind, muss die Amplitude der Spektrallinien halbiert sein. 
-Somit bei 50\% der Amplitudeder Trägerfrequenz.
-Berechnet kann es auf folgende Weise.\cite{Seitenband}
+Im idealen Fall, also $m=1$, würden drei Spektrallinien erwartet werden.
+Die größte und mittlere der Spektrallinien würde bei der Trägerfrequenz $f_0$ von 480kHz erscheinen. 
+Die beiden Seitenbänder würden mit der Signalfrequenz $f_1$ um die Trägerfrequenz $f_0$ verschoben liegen. 
+Im Fall des Versuchs würde das untere Seitenband bei 475kHz und das obere Seitenband bei 485kHz liegen, da die Trägerfrequenz $f_0$ bei 480kHz und die Signalfrequenz $f_1$ bei 5kHz liegt.\\
+Die Amplitude der Spektrallinien der Seitenbänder muss addiert bei einem Modulationsgrad $m$ von 1 identisch zur Amplitude der Trägerfrequenz sein. 
+Da zwei Seitenbänder vorhanden sind, muss die Amplitude der einzelnen Spektrallinien halbiert sein. 
+Somit liegen sie bei 50\% der Amplitude der Trägerfrequenz.
+Berechnet kann dies auf folgende Weise \cite{Seitenband}.
 \begin{equation}
     \hat{U}_{SB}=\frac{\hat{U}_0}{2}
     \label{Gl:SB}
@@ -642,36 +629,35 @@ Berechnet kann es auf folgende Weise.\cite{Seitenband}
     $\hat{U}_{f_0}$: Amplitude der Trägerfrequenz im Spektrum [V]\\
     $m$: Modulationsgrad 
 \end{center}
-Bei einem angenommenen Modulationsgrad $m=1$ sowie einer Trägeramplitude von $U_1=1$V Effektivwert sollten die Amplituden der Seitenbänder jeweils 500mV Effektiv anzeigen. 
+Bei einem angenommenen Modulationsgrad $m=1$ sowie einer Trägeramplitude von $U_1=1$V Effektivwert sollten die Amplituden der Seitenbänder jeweils 500mV Effektivwert anzeigen. 
 \bigskip
 
-Bei diesen Versuchsaufbau kann kein Modulationsgrad $m$ von 1 erreicht werden, sondern nur nah dran. 
-Ein Oszilloskopbild zur verdeutlichung der annäherung ist im Anhang \ref{Ah:Weitere_Abbildungen} mittels Abbildung \ref{Abb:A2_3_2_3_os} zugefügt.\\
-Ist der Modulationsgrad unter 1 so entstehen weitere ungewünschte Seitenbänder, welche jeweils einen Frequenzabstand aufweisen, der ein vielfaches zur Signalfrequenz $f_0$ ist.
-Somit liegen ungewünschte Seitenband beispielsweise bei 470kHz und 490kHz.
+Bei diesem Versuchsaufbau kann kein Modulationsgrad $m$ von 1 erreicht werden, sondern nur ein Wert nahe daran. 
+Ein Oszilloskopbild zur Veranschaulichung der Annäherung ist im Anhang \ref{Ah:Weitere_Abbildungen} in Abbildung \ref{Abb:A2_3_2_3_os} zu finden.\\
+Ist der Modulationsgrad unter 1, so entstehen weitere unerwünschte Seitenbänder, welche jeweils einen Frequenzabstand aufweisen, der einem Vielfachen der Signalfrequenz $f_1$ entspricht.
+Somit liegen unerwünschte Seitenbänder beispielsweise bei 470kHz und 490kHz.
 \newline
 \newline
-Um diese Behauptungen zu Überprüfen kann Abbildung \ref{Abb:A2_3_2_3} im Anhang \ref{Ah:Weitere_Abbildungen} und Tabelle \ref{tab:Aufgabe2.3} im Anhang \ref{Ah:Messtabellen} betrachtet werden.
-Zu sehen sind die beschriebenen gewünschten und ungewünschten Seitenbänder unter- und oderhalb der Trägerfrequenz von 480kHz.
-Da die ungewünschten Seitenbänder zu sehen sind, kann geschlussfolgert werden, dass der Modulationsgrad nicht 1 betragen kann. 
+Um diese Behauptungen zu überprüfen, können Abbildung \ref{Abb:A2_3_2_3} im Anhang \ref{Ah:Weitere_Abbildungen} und Tabelle \ref{tab:Aufgabe2.3} im Anhang \ref{Ah:Messtabellen} betrachtet werden.
+Zu sehen sind die beschriebenen gewünschten und unerwünschten Seitenbänder unter- und oberhalb der Trägerfrequenz von 480kHz.
+Da die unerwünschten Seitenbänder zu sehen sind, kann geschlussfolgert werden, dass der Modulationsgrad nicht 1 betragen kann. 
 Dieser liegt leicht darunter.\\
-Mittels der Gleichungen \ref{Gl:SB} und \ref{Gl:Höhe_Spektrallinien} und den Daten aus Tabelle \ref{tab:Aufgabe2.3} kann der modulationswert annähernd bestimmt werden.
+Mithilfe der Gleichungen \ref{Gl:SB} und \ref{Gl:Höhe_Spektrallinien} sowie den Daten aus Tabelle \ref{tab:Aufgabe2.3} kann der Modulationsgrad näherungsweise bestimmt werden.
 \begin{equation*}
   \hat{U}_0 = 2 \cdot \hat{U}_{SB} \rightarrow \hat{U}_0 = 2 \cdot 479\text{mV} = 958\text{mV}
 \end{equation*}
 \begin{equation*}
     m=\frac{\hat{U}_0}{\hat{U}_{f_0}} \rightarrow m=\frac{958\text{mV}}{989,7\text{mV}}=0,968
 \end{equation*}
-Werden die Daten aus der Tabelle \ref{tab:Aufgabe2.3} weiter Betrachtet, fällt auf, das die Trägeramplitude etwas zu schwach gewählt worden sein muss, da sie nicht exakt bei 1V liegt. 
-Desweiteren sind die erwarteten Werte für einen Modulationsgrad von 1 bestimmt worden, da nun durch die Messdaten nur ein Wert von 0.986 erreicht worden ist, müssen auch die erwartetn Werte dahingehend angepasst werden. 
+Werden die Daten aus Tabelle \ref{tab:Aufgabe2.3} weiter betrachtet, fällt auf, dass die Trägeramplitude etwas zu schwach gewählt worden sein muss, da sie nicht exakt bei 1V liegt. 
+Des Weiteren sind die erwarteten Werte für einen Modulationsgrad von 1 bestimmt worden. Da nun durch die Messdaten nur ein Wert von 0,986 erreicht wurde, müssen auch die erwarteten Werte entsprechend angepasst werden. 
 \begin{equation*}
     \hat{U}_{SB,Erwartet(neu)} =\hat{U}_{SB,Erwartet(alt)} \cdot m \rightarrow \hat{U}_{SB,Erwartet(neu)}= 500\text{mV}\cdot 0,968 = 484 \text{mV}
 \end{equation*}
-Der Wert der neuen Erwartung mit dem Errechneten Modulationsgrad liegt bei 484mV und damit mit einer Abweichung von 1,1\% von der Realität.\\
-Diese 1.1\% können mit der falsch eingestellten Trägeramplitude begründet werden. 
-Der Fehler liegt hier bei den gleichen 1.1\%. 
-Somit kann geschlussfolgert werden, das mittels einer vorherigen bestimmung des Modulationsgrades $m$ die Amplituden der Spektrallinien extrem genau bestimmt werden können.
-
+Der Wert der neuen Erwartung mit dem errechneten Modulationsgrad liegt bei 484mV und damit mit einer Abweichung von 1,1\% von der Realität.\\
+Diese 1,1\% können durch die falsch eingestellte Trägeramplitude begründet werden. 
+Der Fehler entspricht hier ebenfalls diesen 1,1\%. 
+Somit kann geschlussfolgert werden, dass mithilfe einer vorherigen Bestimmung des Modulationsgrades $m$ die Amplituden der Spektrallinien sehr genau bestimmt werden können.
 
 \newpage
 \subsection{Frequenzverhalten des Modulators}
@@ -842,34 +828,33 @@ Aus diesen Grund ist in Abbildung \ref{Abb:Träger_3_3_4_1kHz} keine Zeitverzög
 \label{kap:4}
 \subsubsection{Theoretische Erstellung eines  Zweiseitenbandsignal}
 \label{kap:4.1}
-Wird der Schaltplan im Anhang \ref{Ah:Schaltplan_Platine} sowie die vorherigen Messergebnisse betrachtet, fällt auf, dass ein Bandpassfilter mit einer Mittenfrequenz $f_m$ von 483, 8 kHz verbaut ist. 
-Wenn daraus ein Zweiseitenbandsignal entstehen soll, muss ein Weiterer Bandpassfilter parallel zu den ersten auf die Platine eingebaut werden. 
+Wird der Schaltplan im Anhang \ref{Ah:Schaltplan_Platine} sowie die vorherigen Messergebnisse betrachtet, fällt auf, dass ein Bandpassfilter mit einer Mittenfrequenz $f_m$ von 483,8 kHz verbaut ist. 
+Wenn daraus ein Zweiseitenbandsignal entstehen soll, muss ein weiterer Bandpassfilter parallel zu dem ersten auf die Platine eingebaut werden. 
 Die Mittenfrequenzen der beiden Bandpassfilter müssten auf die Basisbandfrequenzen des Signals abgestimmt sein.\\
-Auch so ist die Umsetzung nur je gewählt der Nutzsignalfrequenz möglich.
-Denn ist diese Frequenz klein sind die Basisbandfrequenzen im  Spektrum entsprechende nah an der Trägerfrequenz, somit wird der Bau des Bandpassfilter schwerer, bis hin zu unmöglich.
+Auch so ist die Umsetzung nur je nach gewählter Nutzsignalfrequenz möglich.
+Denn ist diese Frequenz klein, sind die Basisbandfrequenzen im Spektrum entsprechend nah an der Trägerfrequenz, somit wird der Bau des Bandpassfilters schwerer bis hin zu unmöglich.
 
 \subsubsection{Modulationsartbestimmung 1}
 \label{kap:4.2}
-Für diese Auswertungsteil werden die Daten aus den Tabelle \ref{tab:Aufgabe4.2} und Exemplarisch in Abbildung \ref{Abb:Träger_3_4_2_Spektrallinien} verwendet.\\
-Wird das Frequenzspektrum in Abbildung \ref{Abb:Träger_3_4_2_Spektrallinien} genauer betrachtet, kann erkannt werden, dass der Betrag des oberen Seitenbands deutlich höher ist, als die Trägerfrequenz und das untere Seitenband. 
-Die Amplitude des untere Seitenband liegt bei etwa 5\% der Amplitude des oberen Seitenbandes.\\
+Für diesen Auswertungsteil werden die Daten aus Tabelle \ref{tab:Aufgabe4.2} und exemplarisch in Abbildung \ref{Abb:Träger_3_4_2_Spektrallinien} verwendet.\\
+Wird das Frequenzspektrum in Abbildung \ref{Abb:Träger_3_4_2_Spektrallinien} genauer betrachtet, kann erkannt werden, dass der Betrag des oberen Seitenbands deutlich höher ist als die Trägerfrequenz und das untere Seitenband. 
+Die Amplitude des unteren Seitenbands liegt bei etwa 5\% der Amplitude des oberen Seitenbands.\\
 Die Trägerfrequenz sowie die Signalfrequenz sind so gewählt, dass das obere Seitenband genau in der berechneten Resonanzfrequenz des Bandpasses liegt. 
 Die Berechnung kann in Kapitel \ref{kap:Resonanzfrequenz} nachvollzogen werden.\\
-Dieses Verhalten weißt auf eine Einseitenband Ammplitudenmodulation hin \cite{GoldenbaumGitskript}.\\
-Da das obere sowie untere Seitenband die gleiche Information enthält, kann eines der beiden Seitenbänder gedämpft werden.
-Genau diese Verhalten kann in Abbildung \ref{Abb:Träger_3_4_2_Spektrallinien} betrachtet werden.
-Somit wird auch die Trägeramplitude gedämpft, was wiederrum das Energieverhältnis zwischen Seitenbänder und Trägerfrequenz verbessert. 
-Somit wird mehr Energie für den Seitenband abgestrahlt.
+Dieses Verhalten weist auf eine Einseitenband-Amplitudenmodulation hin \cite{GoldenbaumGitskript}.\\
+Da das obere sowie das untere Seitenband die gleiche Information enthält, kann eines der beiden Seitenbänder gedämpft werden.
+Genau dieses Verhalten kann in Abbildung \ref{Abb:Träger_3_4_2_Spektrallinien} betrachtet werden.
+Somit wird auch die Trägeramplitude gedämpft, was wiederum das Energieverhältnis zwischen Seitenbändern und Trägerfrequenz verbessert. 
+Somit wird mehr Energie im Seitenband abgestrahlt.
 
 \subsubsection{Modulationsartbestimmung 2}
 \label{kap:4.3}
-Für diese Auswertungsteil werden die Daten aus den Tabelle \ref{tab:Aufgabe4.3} und Exemplarisch in Abbildung \ref{Abb:Träger_3_4_3_Spektrallinien} verwendet.\\
-Genauso wie in Kapitel \ref{kap:4.2} ist die Trägerfrequenz $f_0$ und die Signalfrequenz $f_1$ so gewählt, dass, in diesem Fall das untere Seitenband, in dem berechneten Resonanzfrequenz liegt. 
-Anderst wie im Kapitel \ref{kap:4.2} ist die Signalfrequenz deutlich kleiner, aus diesem Grund, kann kein Seitenband durch den Bandpassfilter starkt gedämpft werden.
-Auch die Trägerfrequenz wird dadurch nicht stark gedämpftw, da die Bandbreite größer als die Signalfrequenz ist.\\
-Aus diesem Grund handelt es sich hier nicht um eine Einseitenband Ammplitudenmodulation sondern um eine Restseiten Ammplitudenmodulation.\\
-Zu sehen, da ein Seitenband, jedoch nicht die Trägeramplitude gedämpft ist \cite{GoldenbaumGitskript}.
-\newpage
+Für diesen Auswertungsteil werden die Daten aus Tabelle \ref{tab:Aufgabe4.3} und exemplarisch in Abbildung \ref{Abb:Träger_3_4_3_Spektrallinien} verwendet.\\
+Genauso wie in Kapitel \ref{kap:4.2} sind die Trägerfrequenz $f_0$ und die Signalfrequenz $f_1$ so gewählt, dass in diesem Fall das untere Seitenband in der berechneten Resonanzfrequenz liegt. 
+Anders als in Kapitel \ref{kap:4.2} ist die Signalfrequenz deutlich kleiner, aus diesem Grund kann kein Seitenband durch den Bandpassfilter stark gedämpft werden.
+Auch die Trägerfrequenz wird dadurch nicht stark gedämpft, da die Bandbreite größer als die Signalfrequenz ist.\\
+Aus diesem Grund handelt es sich hier nicht um eine Einseitenband-Amplitudenmodulation, sondern um eine Restseitenband-Amplitudenmodulation.\\
+Zu sehen ist, dass ein Seitenband gedämpft ist, jedoch nicht die Trägeramplitude \cite{GoldenbaumGitskript}.\newpage
 \section{Fazit}
 
 \newpage
