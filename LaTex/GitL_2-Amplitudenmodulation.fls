@@ -561,7 +561,6 @@ INPUT C:\Users\mvoge\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb
 INPUT .\GitL_2-Amplitudenmodulation.lof
 INPUT .\GitL_2-Amplitudenmodulation.lof
 INPUT GitL_2-Amplitudenmodulation.lof
-INPUT C:\Users\mvoge\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1200.tfm
 OUTPUT GitL_2-Amplitudenmodulation.lof
 INPUT .\GitL_2-Amplitudenmodulation.lot
 INPUT .\GitL_2-Amplitudenmodulation.lot
@@ -618,6 +617,7 @@ INPUT ..\Abbildungen\3\3.1\Frequenzgang.png
 INPUT ..\Abbildungen\3\3.1\Frequenzgang.png
 INPUT ..\Abbildungen\3\3.1\Frequenzgang.png
 INPUT ..\Abbildungen\3\3.1\Frequenzgang.png
+INPUT C:\Users\mvoge\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1200.tfm
 INPUT ..\Abbildungen\3\3.2\Modulationskennlinie.png
 INPUT ..\Abbildungen\3\3.2\Modulationskennlinie.png
 INPUT ..\Abbildungen\3\3.2\Modulationskennlinie.png
@@ -763,12 +763,12 @@ INPUT C:\Users\mvoge\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ect
 INPUT C:\Users\mvoge\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
 INPUT C:\Users\mvoge\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
 INPUT C:\Users\mvoge\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
+INPUT C:\Users\mvoge\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
+INPUT C:\Users\mvoge\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
 INPUT C:\Users\mvoge\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\mvoge\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\mvoge\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\mvoge\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
-INPUT C:\Users\mvoge\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
-INPUT C:\Users\mvoge\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
 INPUT C:\Users\mvoge\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
 INPUT C:\Users\mvoge\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
 INPUT C:\Users\mvoge\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk

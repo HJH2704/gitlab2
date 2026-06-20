@@ -19,9 +19,46 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
+    \entry{GoldenbaumGitskript}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=606d4dba137aa2adf71498132f1ac985}{%
+           family={Goldenbaum},
+           familyi={G\bibinitperiod},
+           given={Prof.\bibnamedelimi Dr.-Ing.\bibnamedelimi Mario},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinithyphendelim I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Hochschule Bremen}%
+      }
+      \strng{namehash}{606d4dba137aa2adf71498132f1ac985}
+      \strng{fullhash}{606d4dba137aa2adf71498132f1ac985}
+      \strng{fullhashraw}{606d4dba137aa2adf71498132f1ac985}
+      \strng{bibnamehash}{606d4dba137aa2adf71498132f1ac985}
+      \strng{authorbibnamehash}{606d4dba137aa2adf71498132f1ac985}
+      \strng{authornamehash}{606d4dba137aa2adf71498132f1ac985}
+      \strng{authorfullhash}{606d4dba137aa2adf71498132f1ac985}
+      \strng{authorfullhashraw}{606d4dba137aa2adf71498132f1ac985}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Skript zur Vorlesung Grundlagen der Informationstechnik}
+      \field{type}{Vorlesungsskript}
+      \field{urlday}{20}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://aulis.hs-bremen.de/ilias.php?baseClass=ilrepositorygui&cmdNode=zh:oi&cmdClass=ilObjFileGUI&cmd=sendfile&ref_id=2418942
+      \endverb
+      \verb{url}
+      \verb https://aulis.hs-bremen.de/ilias.php?baseClass=ilrepositorygui&cmdNode=zh:oi&cmdClass=ilObjFileGUI&cmd=sendfile&ref_id=2418942
+      \endverb
+    \endentry
     \entry{Ampl_eff}{online}{}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{shorttitle}
       \field{day}{11}
       \field{month}{6}
@@ -54,8 +91,8 @@
       \strng{authornamehash}{ca08f897a59dd7d9262e942d2f3121a2}
       \strng{authorfullhash}{ca08f897a59dd7d9262e942d2f3121a2}
       \strng{authorfullhashraw}{ca08f897a59dd7d9262e942d2f3121a2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{shorttitle}{Amplitudenmodulation}
@@ -70,33 +107,6 @@
       \verb{url}
       \verb https://www.etti.unibw.de/download/tk/TK_Versuch_C_AM.pdf
       \endverb
-    \endentry
-    \entry{Labor_Amplitudenmodulation}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=b9d5092b153ccb9def9dc65d2a782768}{%
-           family={{Prof. Dr.-Ing. Mario Goldenbaum}},
-           familyi={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Fakultät für Elektrotechnik und Informatik Hochschule Bremen}%
-      }
-      \strng{namehash}{b9d5092b153ccb9def9dc65d2a782768}
-      \strng{fullhash}{b9d5092b153ccb9def9dc65d2a782768}
-      \strng{fullhashraw}{b9d5092b153ccb9def9dc65d2a782768}
-      \strng{bibnamehash}{b9d5092b153ccb9def9dc65d2a782768}
-      \strng{authorbibnamehash}{b9d5092b153ccb9def9dc65d2a782768}
-      \strng{authornamehash}{b9d5092b153ccb9def9dc65d2a782768}
-      \strng{authorfullhash}{b9d5092b153ccb9def9dc65d2a782768}
-      \strng{authorfullhashraw}{b9d5092b153ccb9def9dc65d2a782768}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Grundlagen der Informationstechnik Labor Amplitudenmodulation}
-      \field{urlday}{11}
-      \field{urlmonth}{6}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
     \endentry
     \entry{hagmannGrundlagenElektrotechnikBewaehrte2020}{book}{}{}
       \name{author}{1}{}{%
@@ -120,8 +130,8 @@
       \strng{authornamehash}{33a7d9a9998e42a7fcbf533ad49040ab}
       \strng{authorfullhash}{33a7d9a9998e42a7fcbf533ad49040ab}
       \strng{authorfullhashraw}{33a7d9a9998e42a7fcbf533ad49040ab}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{edition}{18., durchgesehene und korrigierte Auflage}
@@ -136,9 +146,54 @@
       \verb Table of Contents PDF:C\:\\Users\\mvoge\\Zotero\\storage\\HXQ84HLF\\Hagmann - 2020 - Grundlagen der Elektrotechnik das bewährte Lehrbuch für Studierende der Elektrotechnik und anderer.pdf:application/pdf
       \endverb
     \endentry
+    \entry{Labor_Amplitudenmodulation}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b9d5092b153ccb9def9dc65d2a782768}{%
+           family={{Prof. Dr.-Ing. Mario Goldenbaum}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Fakultät für Elektrotechnik und Informatik Hochschule Bremen}%
+      }
+      \strng{namehash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{fullhash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{fullhashraw}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{bibnamehash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{authorbibnamehash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{authornamehash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{authorfullhash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{authorfullhashraw}{b9d5092b153ccb9def9dc65d2a782768}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Grundlagen der Informationstechnik Labor Amplitudenmodulation}
+      \field{urlday}{11}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{Seitenband}{online}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{11}
+      \field{month}{6}
+      \field{shorttitle}{AM nach dem Restseitenbandverfahren}
+      \field{title}{Informations- und Kommunikationstechnik - AM nach dem Restseitenbandverfahren}
+      \field{type}{Blog}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.elektroniktutor.de/signalkunde/am.html
+      \endverb
+      \verb{url}
+      \verb https://www.elektroniktutor.de/signalkunde/am.html
+      \endverb
+    \endentry
     \entry{Fluke_Bandbreite}{online}{}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{day}{15}
       \field{month}{6}
@@ -154,8 +209,8 @@
       \endverb
     \endentry
     \entry{dataTec_os}{online}{}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{day}{15}
       \field{month}{6}
@@ -169,6 +224,24 @@
       \endverb
       \verb{url}
       \verb https://www.datatec.eu/wiki/ein-oszilloskop-kaufen-die-qual-der-wahl?srsltid=AfmBOorMyGCT9sGKx7CwF7cbrcs5xhtXqfGmpeM8GPdHyaUROV0a74oQ
+      \endverb
+    \endentry
+    \entry{Impulsgrößen}{online}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{11}
+      \field{month}{6}
+      \field{shorttitle}{AM nach dem Restseitenbandverfahren}
+      \field{title}{Informations- und Kommunikationstechnik - Impulsgrößen}
+      \field{type}{Blog}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.elektroniktutor.de/signalkunde/am.html
+      \endverb
+      \verb{url}
+      \verb https://www.elektroniktutor.de/signalkunde/am.html
       \endverb
     \endentry
   \enddatalist
