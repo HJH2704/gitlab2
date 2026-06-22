@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.27)  20 JUN 2026 18:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.27)  22 JUN 2026 18:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1740,12 +1740,7 @@ File: ../Abbildungen/3/3.2/Modulationskennlinie.png Graphic file (type png)
 <use ../Abbildungen/3/3.2/Modulationskennlinie.png>
 Package pdftex.def Info: ../Abbildungen/3/3.2/Modulationskennlinie.png  used on input line 726.
 (pdftex.def)             Requested size: 358.50612pt x 146.8025pt.
- [21 <../Abbildungen/3/3.2/Modulationskennlinie.png>]
-Overfull \hbox (0.37479pt too wide) in paragraph at lines 749--757
-\T1/cmr/m/n/12 kann deut-lich die Band-pass-ei-gen-schaf-ten der Schal-tung durch ver-schie-de-ne RC-Bausteine
- []
-
-[22] [23] [24]
+ [21 <../Abbildungen/3/3.2/Modulationskennlinie.png>] [22] [23] [24]
 Overfull \hbox (14.15614pt too wide) in paragraph at lines 852--857
 \T1/cmr/m/n/12 Aus die-sem Grund han-delt es sich hier nicht um ei-ne Einseitenband-Amplitudenmodulation,
  []
@@ -1910,7 +1905,7 @@ Here is how much of TeX's memory you used:
  1143 hyphenation exceptions out of 8191
  108i,20n,107p,11290b,2483s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso12.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on GitL_2-Amplitudenmodulation.pdf (42 pages, 5087120 bytes).
+Output written on GitL_2-Amplitudenmodulation.pdf (42 pages, 5087176 bytes).
 PDF statistics:
  1055 PDF objects out of 1200 (max. 8388607)
  139 named destinations out of 1000 (max. 500000)
