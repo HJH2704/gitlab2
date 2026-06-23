@@ -9,17 +9,17 @@
 \contentsline {section}{\numberline {2}Durchführung}{8}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Durchführung der Aufgabe: 1}{8}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Durchführung der Aufgabe: 2}{9}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Durchführung der Aufgabe: 3}{10}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Durchführung der Aufgabe: 4}{11}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.3}Durchführung der Aufgabe: 3}{9}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Durchführung der Aufgabe: 4}{10}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Ende des Versuchs}{11}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Auswertung}{12}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Statische Modulationskennlinie}{12}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Modulationskennlinie bei einer Eingangsgleichspannung von 2V}{12}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Modulationskennlinie bei einer Eingangsgleichspannung von 25mV}{13}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Zeitlicher Verlauf und Frequenzspektrum}{15}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Vergleich der Modulationsgrade}{15}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Zeigerdiagramm des Spannungsverlaufes}{18}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Betragsspektrum der Ausgangsspannung}{18}{subsubsection.3.2.3}%
+\contentsline {section}{\numberline {3}Auswertung}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Statische Modulationskennlinie}{11}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Modulationskennlinie bei einer Eingangsgleichspannung von 2V}{11}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Modulationskennlinie bei einer Eingangsgleichspannung von 25mV}{12}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Zeitlicher Verlauf und Frequenzspektrum}{14}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Vergleich der Modulationsgrade}{14}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Zeigerdiagramm des Spannungsverlaufes}{17}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Betragsspektrum der Ausgangsspannung}{17}{subsubsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.3}Frequenzverhalten des Modulators}{20}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Frequenzgang des Modulators}{20}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Frequenzgang des Modulationsgrades}{21}{subsubsection.3.3.2}%

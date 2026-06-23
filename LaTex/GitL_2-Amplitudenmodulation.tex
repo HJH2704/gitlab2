@@ -31,6 +31,9 @@
 \usepackage{longtable}
 \usepackage[export]{adjustbox}
 \usepackage{circuitikz}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,decorations.pathreplacing}
+
 \usetikzlibrary{arrows.meta, positioning}
 
 \newcolumntype{x}[1]{!{\centering\arraybackslash\vrule width #1}}% Erlaubt dickere Linien in Tabellen. cx{2pt}
@@ -337,9 +340,6 @@ Auf Grundlage der im Versuchsteil 3.2.1 bestimmten Größen wurde das Zeigerdiag
 aufgenommenen Schirmbild des Oszilloskops entnommen und.
 
 
-
-
-
 \subsubsection*{Durchführung der Aufgabe: 2.3}
 Zur Untersuchung des Frequenzspektrums (Betragsspektrum) der Ausgangsspannung $x(t)$ wurde der Ausgang A1 der Platine mit dem Spektrumanalysator verbunden. Die Einstellungen des 
 Spektrumanalysator wurden auf eine Mittenfrequenz von $480 kHz$, eine Span von $50 kHz$, eine Auflösungsbandbreite RBW von $1 kHz$, eine Videobandbreite VBW von $3 kHz$ sowie eine 
@@ -349,8 +349,6 @@ Das Spektrum des modulierten Signals wurde aufgenommen. Mithilfe des Markers des
  Das Spektrum ist in Abb. \ref{Abb:A2_3_2_3} dargestellt. 
 
 
-
-\newpage
 \subsection{Durchführung der Aufgabe: 3}
 \subsubsection*{Durchführung der Aufgabe: 3.1}
 Zur Bestimmung des Frequenzgangs $U_A = U_A(f_0)$ blieb der Eingang E1 unbeschaltet. Der Eingang E0 wurde weiterhin mit einem sinusförmigen Träger-Signal mit einem Effektivwert von 2 V 
@@ -391,7 +389,6 @@ Schirmbild ist in Abb. \ref{Abb:Träger_3_3_4_10kHz} sowie \ref{Abb:Träger_3_3_
 
 
 
-\newpage
 \subsection{Durchführung der Aufgabe: 4}
 \subsubsection*{Durchführung der Aufgabe: 4.1}
 In diesem Versuchsteil wurde zunächst untersucht, wie die vorhandene Modulator Schaltung verändert werden müsste, um ein Zweiseitenbandsignal  zu erzeugen. 
@@ -424,7 +421,6 @@ Nach Abschluss aller Messungen wurden sämtliche Geräte ausgeschaltet und der A
 
 
 
-\newpage
 \section{Auswertung}
 \subsection{Statische Modulationskennlinie}
 \label{kap:1}
@@ -462,7 +458,6 @@ Anders wie in Kapitel \ref{kap:1.1} ist diese Kennlinie sichtbar nicht linear.
 Sie weist einen abfallenden Charakter hin.
 Daraus kann geschlussfolgert werden, dass die Trägeramplitude Einfluss auf die Linearität des Ausgangssignals besitzt.\\
 
-\newpage
 Um die beiden Modulationskennlinien besser vergleichen zu können, werden diese in Abbildung \ref{Abb:Modulationskennlinie_1} zusammengefügt.
 \begin{figure}[!h]
     \centering
@@ -592,9 +587,175 @@ Fehlerquellen bei der Arbeit mit den Daten aus Tabelle \ref{tab:Aufgabe1} könne
 Beim Oszilloskop können ebenfalls Fehler durch ungenaues Ablesen, Bedienfehler oder falsche Cursorpositionierung entstanden sein.\\
 Abschließend ergibt sich aus den Daten, dass bei erhöhter Trägeramplitude der Modulationsgrad $m$ näherungsweise konstant ist. 
 Kleine Ungenauigkeiten widersprechen dieser Aussage nicht, da Schwankungen bei der Erhebung der Messwerte aufgetreten sind.
-
+\newpage
 \subsubsection{Zeigerdiagramm des Spannungsverlaufes}
 \label{kap:2.2}
+In der in \ref{Abb:A2_3_2_1} dargestellte Spannungsverlauf soll nun über ein Zeigerbild visualisiert werden. Es ist zu erkennen, dass  der Vektor mit der Länge $r = 1,433 V$ den Träger darstellt. Die beiden grünen Vektoren mit der Länge von $0,1915 V$ stellen die Modulation dar.
+Durch die Unterschiedlichen Frequenzen der beiden Signale entstehen durch die Überhöhung bzw. nicht Überhöhung der zu sehenden Signalverlauf. Im Maximalfall bei kompletter Überhöhung wird so der Wert $U_{max} = 1,821 V$ erreicht wie in Abbildung \ref{Abb:3.2.2_Überhöhung}. Im Minimalfall bei kompletter Unterhöhung wird der Wert $U_{min} = 1,055 V$ erreicht und in Abbildung \ref{Abb:3.2.2_Unüberhöhung} gezeigt.
+
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}[>=Stealth, x = 1cm , y = 1cm]
+
+% Achsen
+\draw[->] (0,-4.1) -- (0,4.1) node[above] {$x(t)$};
+\draw[->] (-0.3,0) -- (4.1,0) node[right] {$t$};
+
+% Zeitpunkte
+\node[below] at (0,-4.1) {$t_0$};
+% gedämpfte Schwingun
+
+\def\radius{2.866}
+
+\draw[blue,thick] (-3.8,0) circle (\radius);
+% Durchmesser
+\draw[<->,thick]
+(-3.8,-\radius) -- (-3.8,\radius);
+% Zeiger
+\draw[->,thick]
+(-3.8,0) -- (-6.55,0.9);
+\node at (-6.5,0.9) [right] {$ r = 1,433 V$};
+
+\def\arrowlength{0.383}
+
+% oben
+\draw[green!60!black,thick,->]
+(-3.6,\radius) -- (-3.6,\radius+\arrowlength);
+
+\draw[green!60!black,thick,->]
+(-4,\radius) -- (-4,\radius+\arrowlength);
+\node at (-4,\radius+0.05) [left] {$0,1915 V$};
+\draw[->,thick]
+(-3.8,\radius) -- (-3.8,\radius+\arrowlength+\arrowlength);
+
+\draw[|-|,thick]
+(-3.5,0) -- (-3.5,\radius+\arrowlength+\arrowlength);
+\node at (-3.5, 1) [right] {$1,821 V$};
+% unten
+\draw[green!60!black,thick,->]
+(-3.6,-\radius) -- (-3.6,-\radius-\arrowlength);
+
+\draw[green!60!black,thick,->]
+(-4,-\radius) -- (-4,-\radius-\arrowlength);
+
+\draw[->,thick]
+(-3.8,-\radius) -- (-3.8,-\radius-\arrowlength-\arrowlength);
+
+
+\fill (0,\radius+\arrowlength+\arrowlength) circle (0.06);
+\fill (0,-\radius-\arrowlength-\arrowlength) circle (0.06);
+% Verbindung zur Zeitachse
+\draw[dashed]
+(-3.8,\radius+\arrowlength+\arrowlength) -- (0,\radius+\arrowlength+\arrowlength);
+
+\draw[dashed]
+(-3.8,-\radius-\arrowlength-\arrowlength) -- (0,-\radius-\arrowlength-\arrowlength);
+
+\draw[dashed, gray, thick]
+(-3.8,\radius+\arrowlength) -- (1.3,\radius+\arrowlength);
+\draw[dashed, gray, thick]
+(-3.8,-\radius) -- (2.5,-\radius);
+
+% Einhüllende
+\draw[dashed,violet,thick]
+(0,\radius+\arrowlength+\arrowlength)
+.. controls (1.3,\radius+\arrowlength) and (2.5,\radius) .. (4,\radius-\arrowlength-\arrowlength);
+
+\draw[dashed,violet,thick]
+(0,-\radius-\arrowlength-\arrowlength)
+.. controls (1.4,-\radius-\arrowlength) and (2.6,-\radius) .. (4.1,-\radius+\arrowlength+\arrowlength);
+
+\draw[orange,very thick,domain=0:4,samples=400,smooth]
+plot (\x,{(\radius+2*\arrowlength-\arrowlength*\x)*sin(360*5*\x)});
+\node at ( 4,-4.1) [right] {2cm $\hat= $ 1V};
+\end{tikzpicture}
+\caption{Maßstabsgetreues Zeigerbild mit Überhöhung der Zeiger }
+\label{Abb:3.2.2_Überhöhung}
+\end{figure}
+
+
+
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}[>=Stealth, x = 1cm , y = 1cm]
+
+% Achsen
+\draw[->] (0,-4.1) -- (0,4.1) node[above] {$x(t)$};
+\draw[->] (-0.3,0) -- (4.3,0) node[right] {$t$};
+
+% Zeitpunkte
+\node[below] at (0,-4.1) {$t_0$};
+% gedämpfte Schwingun
+
+\def\radius{2.866}
+
+\draw[blue,thick] (-3.8,0) circle (\radius);
+% Durchmesser
+\draw[<->,thick]
+(-3.8,-\radius) -- (-3.8,\radius);
+% Zeiger
+\draw[->,thick]
+(-3.8,0) -- (-6.55,0.9);
+\node at (-6.5,0.9) [right] {$ r = 1,433 V$};
+
+\def\arrowlength{0.383}
+
+
+% oben
+\draw[green!60!black,thick,->]
+(-3.6,\radius) -- (-3.6,\radius-\arrowlength);
+
+\draw[green!60!black,thick,->]
+(-4,\radius) -- (-4,\radius-\arrowlength);
+\node at (-4.5,-\radius+0.1) [left] {$0,1915 V$};
+\draw[->,thick]
+(-3.8,\radius) -- (-3.8,\radius-\arrowlength-\arrowlength);
+
+\draw[|-|,thick]
+(-3.5,0) -- (-3.5,\radius-\arrowlength-\arrowlength);
+\node at (-3.5, 1) [right] {$1,054 V$};
+% unten
+\draw[green!60!black,thick,->]
+(-3.6,-\radius) -- (-3.6,-\radius+\arrowlength);
+
+\draw[green!60!black,thick,->]
+(-4,-\radius) -- (-4,-\radius+\arrowlength);
+
+\draw[->,thick]
+(-3.8,-\radius) -- (-3.8,-\radius+\arrowlength+\arrowlength);
+
+
+\fill (0,\radius-\arrowlength-\arrowlength) circle (0.06);
+\fill (0,-\radius+\arrowlength+\arrowlength) circle (0.06);
+% Verbindung zur Zeitachse
+\draw[dashed]
+(-3.8,\radius-\arrowlength-\arrowlength) -- (0,\radius-\arrowlength-\arrowlength);
+
+\draw[dashed]
+(-3.8,-\radius+\arrowlength+\arrowlength) -- (0,-\radius+\arrowlength+\arrowlength);
+
+\draw[dashed, gray, thick]
+(-3.8,\radius-\arrowlength) -- (1.3,\radius-\arrowlength);
+\draw[dashed, gray, thick]
+(-3.8,-\radius) -- (2.5,-\radius);
+
+% Einhüllende
+\draw[dashed,violet,thick]
+(0,\radius-\arrowlength-\arrowlength)
+.. controls (1.3,\radius-\arrowlength) and (2.5,\radius) .. (4,\radius+\arrowlength+\arrowlength);
+
+\draw[dashed,violet,thick]
+(0,-\radius+\arrowlength+\arrowlength)
+.. controls (1.4,-\radius+\arrowlength) and (2.6,-\radius) .. (4.1,-\radius-\arrowlength-\arrowlength);
+
+\draw[orange,very thick,domain=0:4,samples=400,smooth]
+plot (\x,{(\radius-2*\arrowlength+\arrowlength*\x)*sin(360*5*\x)});
+\node at ( 4,-4.1) [right] {2cm $\hat= $ 1V};
+\end{tikzpicture}
+\caption{Maßstabsgetreues Zeigerbild mit Unüberhöhung der Zeiger }
+\label{Abb:3.2.2_Unüberhöhung}
+\end{figure}
+
 
 \subsubsection{Betragsspektrum der Ausgangsspannung}
 \label{kap:2.3}
@@ -856,6 +1017,11 @@ Auch die Trägerfrequenz wird dadurch nicht stark gedämpft, da die Bandbreite g
 Aus diesem Grund handelt es sich hier nicht um eine Einseitenband-Amplitudenmodulation, sondern um eine Restseitenband-Amplitudenmodulation.\\
 Zu sehen ist, dass ein Seitenband gedämpft ist, jedoch nicht die Trägeramplitude \cite{GoldenbaumGitskript}.\newpage
 \section{Fazit}
+
+Abschließend kann gesagt werden, dass die Aufgabenstellung erfolgreich bearbeitet werden konnte. 
+Im ersten Versuchsteil der Modulationskennlinie eine Grundlage geschaffen, welche Vorraussetzung war, das die betriebene Systemtheorie für die folgenden Versuchsteile richtig ist, und so die theoretischen Annahmen getroffen werden durften. Dies war nötig, um die theoriewerte zu legitimieren, mit welche in den späteren Versuchsteilen als Referenz dienen. 
+
+
 
 \newpage
 \section{Literaturverzeichnis}
