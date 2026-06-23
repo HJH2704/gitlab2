@@ -1,0 +1,25 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Theoretische Grundlagen}{4}{section.1}%
+\contentsline {section}{\numberline {2}Durchführung}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Durchführung der Aufgabe: 1}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Durchführung der Aufgabe: 2}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Durchführung der Aufgabe: 3}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Ende des Versuchs}{4}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Auswertung}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Statische Modulationskennlinie}{5}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Modulationskennlinie der Momentanfrequenz als Funktion des Augenblickwerts $U_e$ des modulierten Eingangsignals}{5}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Wahl eines Geeigneten Arbeitsbereiches}{5}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Frequenzspektren harmonischer Modulationssignale}{5}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Modulation von Sinussignalen}{5}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Benötige Amplitude eines 20kHz Sinussignals}{5}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Frequenzmodulator als Phasenmodulator}{5}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}Frequenzspektren periodischer Modulationssignale}{5}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Frequenzspektrum eines Sinus-, Dreieck- und Rechtecksignals}{5}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Frequenzumtastung eines Rechtecksignals}{5}{subsubsection.3.3.2}%
+\contentsline {section}{\numberline {4}Fazit}{5}{section.4}%
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{6}{section.5}%
+\contentsline {section}{Anhang}{7}{section.5}%
+\contentsline {subsection}{\numberline {A}Weitere Abbildungen}{7}{subsection.5.1}%
+\contentsline {subsection}{\numberline {B}Messtabellen}{7}{subsection.5.2}%
+\contentsline {subsection}{\numberline {C}Geräteliste}{8}{subsection.5.3}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

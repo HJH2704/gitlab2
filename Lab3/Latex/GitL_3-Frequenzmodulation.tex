@@ -1,0 +1,656 @@
+\documentclass[12pt]{scrartcl}
+\usepackage{textgreek}
+\usepackage[ngerman]{babel}% ngerman verändert die Spracheinstellungen 
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath,amssymb,amstext}% American Mathematical Society kurz ams% absolutes Standardpaket und noch zwei ergänzene Pakete
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{siunitx}% Inhaltsverzeichnisse werden auf Deutsch benannt und nicht auf Englisch auch Datum-Einstellungen werden in die in Deutschland verwendente Schreibweise umgewandelt also nicht December 24, 2033, sondern 24. Dezember, 2033 auch Umlaute werden erkannt es führt allerdings keine Rechtschreibprüfung durch
+\usepackage[utf8]{inputenc} % ist ein Relikt aus den Anfängen von Latex, da früher nicht jeder Edititor Umlaute etc. korrekt umgewandelt hat % wird bei vielen auf Latex basierenden Editoren nicht mehr benötigt aber schadet auch nicht 
+\usepackage[T1]{fontenc} % Silbentrennung und Eingabe von Umlauten
+\usepackage[scaled]{helvet}
+\usepackage[hidelinks]{hyperref}% Dieses Paket wandelt alle internen Verlinkungen in klickbare Verweise um % Dazu gehören auch die Einträge im Inhaltsverzeichnis und im Abbildungsverzeichnis % Ein Klick auf einen entsprechenden Eintrag führt somit direkt in die  entsprechende Stelle im Dokument
+\usepackage{color} % \textcolor{Farbe}{Text} bewirkt, dass der im zweiten Argument enthaltene Text in der im ersten Argument angegebenen Farbe erscheint % Standardmäßig sind die Farben black, white, red, green, blue, cyan, magenta, yellow definiert
+\usepackage{epsfig} % Einfügen von Bildern \inlcudegraphics ist deutlich angenehmer
+\usepackage{wrapfig} % Bilder oder Tabellen können textumflosssen eingebuden werden% \usepackage{graphicx} muss häufig noch mit importiert werden
+\usepackage{tikz} % ermöglicht es in Latex zu zeichnen
+\usepackage[straightvoltages]{circuitikz} % Beispiel zum Zeichnen 
+\usepackage{multirow}
+\usepackage{float}%Mit dem Paket float kannst du die Positionierung erzwingen
+\usepackage[backend=biber,style=ieee,citestyle=numeric]{biblatex} % hier wird der Stil festgelegt
+\usepackage{csquotes} % zum Zitieren
+\usepackage{pgfplots}
+\usepackage{amsmath}
+\usepackage[ngerman]{babel}
+\usepackage{listings}
+\usepackage{scrlayer-scrpage}
+\usepackage{rotating}%Rotation von Tabellen
+\usepackage{xcolor}
+\usepackage{pdfpages}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage[export]{adjustbox}
+\usepackage{circuitikz}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,decorations.pathreplacing}
+
+\usetikzlibrary{arrows.meta, positioning}
+
+\newcolumntype{x}[1]{!{\centering\arraybackslash\vrule width #1}}% Erlaubt dickere Linien in Tabellen. cx{2pt}
+
+
+\pagestyle{scrheadings}
+\addbibresource{../Literatur/Amplitudenmodulation.bib}% fügt die Datei mit den Literaturquellen hinzu  
+
+\title{Vorlage-LaTex}
+\author{marcel vogel}
+\date{May 2025}
+\pgfplotsset{compat=1.18}
+
+% --- Color Definitions ---
+\definecolor{pyblue}{RGB}{33, 118, 199}
+\definecolor{pygreen}{RGB}{0, 128, 0}
+\definecolor{pyorange}{RGB}{199, 108, 0}
+\definecolor{pygray}{gray}{0.25}
+\definecolor{pylightgray}{gray}{0.95}
+
+% --- Python Style for Listings ---
+\lstdefinestyle{pythonstyle}{
+    language=Python,
+    backgroundcolor=\color{pylightgray},
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{pyblue}\bfseries,
+    stringstyle=\color{pygreen},
+    commentstyle=\color{pygray}\itshape,
+    numberstyle=\tiny\color{pyorange},
+    numbers=left,
+    stepnumber=1,
+    numbersep=8pt,
+    tabsize=4,
+    showspaces=false,
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    rulecolor=\color{pygray},
+}
+
+
+\begin{document}
+\begin{figure}[h] \centering \includegraphics[width=0.5\textwidth]{../Abbildungen/logo.png}
+\end{figure}
+\bigskip
+\begin{center}
+\bigskip \bigskip \rule{\textwidth}{1pt}
+ 
+\begin{Large} 
+    \bigskip 
+    \textbf{Grundlagen der Informationstechnik - Bericht}
+\end{Large} 
+\rule{\textwidth}{1pt}
+ 
+\bigskip
+\begin{tabular}{lp{6cm}p{2cm}} 
+    Versuch:                        &Frequenzmodulation                 &           \\ [2ex] 
+    Laborverantwortlicher:          & Janssen, Heiko                    & (5387526)\\ [2ex]
+    \multirow{2}{*}{Laborpartner:}  & Holstein, Jonas                   & (5376427) \\
+                                    & Vogel, Marcel                     & (5376456) \\ [2ex]  
+    Semester:                       & SoSe 26                           &           \\ [2ex]  
+    Aktives Semester                & Semester 4                        &           \\ [2ex]
+    Fakultät:                       & Fakultät 4. - Elektrotechnik      &           \\ 
+                                    & und Informatik                    &           \\ [2ex] 
+    Studiengang:                    & Dual. B.Eng Elektrotechnik        &           \\ [2ex] 
+    Bezeichnung:                    & ET4 - Informationstechnik         &           \\ [2ex] 
+    Dozent:                         & Prof. Dr.-Ing. Mario Goldenbaum   &           \\ [2ex] 
+    Laboringeneur                   & Dipl.-Ing. H. Würfel              &           \\ [2ex]    
+    Versuchstermin:                 & 26.06.2026                        &           \\ [2ex] 
+    Abgabetermin:                   & 10.07.2026                        &           \\ [2ex]            
+\end{tabular}
+\end{center}
+\thispagestyle{empty} 
+\newpage 
+
+\tableofcontents 
+\newpage 
+\listoffigures 
+\listoftables 
+\newpage %Erzeugung eines Inhalts-, Abbildungs- und Tabellenverzeichnis
+\section{Theoretische Grundlagen}
+% \subsection{Wortdefinitionen}
+% \subsubsection*{Modulierendes Signal}
+% Beim modulierenden Signal handelt es sich um das Nachrichten- oder Nutzsignal \cite{GoldenbaumGitskript}. 
+% Dieses enthält die Information und soll übertragen werden.
+
+% \subsubsection*{Moduliertes Signal}
+% Ein moduliertes Signal ist das Ergebnis einer Modulation \cite{GoldenbaumGitskript}.
+% Dabei wird durch ein höherfrequentes Trägersignal das modulierende Signal dahingehend verändert, damit es übertragen werden kann.
+
+% \subsubsection*{Modulationskennlinie}
+% Eine Modulationskennlinie beschreibt den Zusammenhang zwischen einer Eingangsgröße des Modulators und der daraus resultierenden Modulation. 
+% Sie charakterisiert das Übertragungs- und Modulationsverhalten einer Modulatorschaltung
+
+% \subsubsection*{Informationssignal}
+% Das Informationssignal ist das eigentliche Nutzsignal, also das Signal, welches die Information trägt.
+% Als gutes Beispiel für Informationssignale sind die Schallwellen des menschlichen Sprechens. 
+% Hier fällt auch auf, dass das Informationssignal alleine nicht weit übertragen werden kann.
+% Aus diesem Grund muss ein Trägersignal eingebunden werden, um größere Strecken der Übertragung zu ermöglichen.\\
+% Im folgenden Bericht wird die Frequenz des Informationssignals häufig als Signalfrequenz bezeichnet. 
+% Die Amplitude des Signals wird in diesem Bericht als Signalamplitude bezeichnet \cite{GoldenbaumGitskript}.
+
+% \subsubsection*{Trägersignal}
+% Ein Trägersignal ist eine meist hochfrequente Schwingung, die allein noch keine Information enthält. 
+% Es dient dazu, ein anderes Signal zu „tragen“, damit dieses besser übertragen werden kann, zum Beispiel per Funk \cite{GoldenbaumGitskript}.
+
+% \subsubsection*{Frequenzspektrum}
+% Das Frequenzspektrum beschreibt, aus welchen einzelnen Frequenzanteilen ein Signal besteht und wie stark diese Anteile sind.
+% Ein Signal kann also nicht nur aus einer einzigen Frequenz bestehen, sondern aus mehreren Frequenzen zusammengesetzt sein.\\ 
+% Im Frequenzspektrum sieht man dann, bei welchen Frequenzen das Signal Anteile hat und welche Amplituden diese Anteile besitzen \cite{GoldenbaumGitskript}.
+
+
+% \subsection{Amplitudenmodulation}
+% Die Amplitudenmodulation ist eine Art der Signalbearbeitung, mit deren Hilfe ein Informationssignal mithilfe eines Trägersignals über weite Strecken übertragen werden kann.\\
+% Bei dieser Modulationsart wird mithilfe des Informationssignals die Amplitude des Trägersignals moduliert.
+% Das bedeutet, dass nach der Modulation die Amplitude des Trägersignals mit der Frequenz und Amplitude des Informationssignals pulsiert.
+% Die Information liegt somit ebenfalls in der Amplitude des hochfrequenten Trägersignals und kann somit deutlich weiter und besser übertragen werden.\\
+% Wird das resultierende Signal im Frequenzspektrum betrachtet, kann die Trägerfrequenz umgeben von Seitenbändern betrachtet werden. 
+% Die ersten Seitenbänder um die Trägerfrequenz enthalten die Information \cite{GoldenbaumGitskript}.\\
+% Diese Modulation benötigt viel Energie für das Trägersignal und somit wird die meiste Energie unbenutzt verwendet. 
+% Die Energie geht somit nicht ins Informationssignal, sondern eher in das Trägersignal.\\
+% Um dieses Problem zu verringern, können mittels verschiedener Passfilter Träger sowie das Duplikat des Informationssignals weggedämpft werden. 
+% Näheres dazu kann in Kapitel \ref{kap:4} nachgelesen werden. 
+
+
+% \subsection{Bandpassfilter}
+% Ein Bandpassfilter ist ein System aus RLC-Bauteilen. 
+% Er ist eine Schaltung, welche nur Signale in einem bestimmten Frequenzbereich nahezu ungedämpft überträgt.
+% Dieser Frequenzbereich wird von den sogenannten Grenzfrequenzen umschlossen.
+% Die Grenzfrequenz ist die Frequenz, bei der die -3dB-Grenze des Signals durchbrochen wird.
+% Das bedeutet, nur noch 70\% der Ausgangsamplitude werden übertragen.\\
+% Der Bereich zwischen den Grenzfrequenzen nennt man Bandbreite.
+% Diese kann mittels der Grenzfrequenzen berechnet werden.
+% \begin{equation}
+%     BW = f_H-f_L 
+%     \label{Gl:Bandweite}
+% \end{equation}
+
+% Die Frequenz, die am besten übertragen wird, ist die Resonanzfrequenz oder Mittenfrequenz. 
+% Auch diese kann mittels der Grenzfrequenzen berechnet werden.
+% \begin{equation}
+%     f_0=\sqrt{f_L\cdot f_H}
+%     \label{Gl:Mittenfrequenz}
+% \end{equation}
+% \begin{center}
+%     $BW$: Bandbreite [Hz]\\
+%     $f_H$: obere Grenzfrequenzen [Hz]\\
+%     $f_L$: untere Grenzfrequenzen [Hz]\\
+%     $f_0$: Resonanzfrequenz/Mittenfrequenz [Hz]
+% \end{center}
+
+
+
+% \newpage
+% \subsection{Effektivwert}
+% \label{Kp:TG_Effektivwert}
+% Der Effektivwert gibt die konstante Spannung oder Stromstärke an, die am gleichen Widerstand in der gleichen Zeit die gleiche Energie wie die Wechselspannung liefert.\\
+% Zur allgemeinen Berechnung des Effektivwerts kann folgende Formel verwendet werden.
+% \begin{equation}
+%     X_{eff}=\sqrt{\frac{1}{T}\cdot\int_{0}^{T} \left[x(t)\right]^2 \,dt }
+%     \label{Gl:Effektivwert_Grundlagen}
+% \end{equation}
+% \begin{center} 
+%     $X_{eff} $: Effektivwert der Spannung oder des Stroms [V/A]\\
+%     $T$: Periodendauer [s]\\
+%     $x(t)$: zeitlicher Verlauf der Spannung oder des Stroms [V/A]
+% \end{center}
+% Für ein Sinus- oder Cosinussignal kann die Berechnung vereinfacht werden. 
+% Hier gilt zur Berechnung folgender Zusammenhang:
+% \begin{equation}
+%     X_{eff}=\frac{\hat{X}}{\sqrt{2}}
+%     \label{Gl:Effektivwert_Sin}
+% \end{equation}
+% \begin{center}
+%     $\hat{X}$: Scheitelwert [V/A]
+% \end{center}
+% Bei der Frequenzmodulation sowie Phasenmodulation ist die Amplitude konstant, dadurch kann die Gleichung \ref{Gl:Effektivwert_Sin} verwendet werden.\\
+% Bei der Amplitudenmodulation kann der Effektivwert nicht so leicht berechnet werden, da hier die Amplitude schwankend ist. 
+% Für diesen Fall kann folgende Formel zur Berechnung des Effektivwertes verwendet werden \cite{Ampl_eff}.
+% \begin{equation}
+%     U_{eff}=\frac{U_0}{\sqrt{2}} \cdot \sqrt{1+\frac{m^2}{2}} 
+% \end{equation}
+% \begin{center}
+%     $U_0$: Amplitudengröße [V/A]\\
+%     $m$: Modulationsgrad
+% \end{center}
+
+% \subsection{Modulationsgrad}
+% \label{Kp:TG_Modulationsgrad}
+% Der Modulationsgrad $m$ beschreibt die Stärke der Veränderung des Trägersignals durch das Nutzsignal. 
+% Dabei kann der Modulationsgrad $m$ durch die Gleichungen \ref{Gl:Modulationsgrad_Grundlagen} und \ref{Gl:Modulationsgrad_OS} bestimmt werden \cite{Modulationsgrad}.
+% \begin{equation}
+%     m=\frac{A_m}{A_c}=\frac{\hat{U}_m}{\hat{U}_c}
+%     \label{Gl:Modulationsgrad_Grundlagen}
+% \end{equation}
+% \begin{center}
+%     $A_m$: Amplitude des Modulationssignals [V/A]\\
+%     $A_c$: Amplitude des Trägersignals [V/A]
+% \end{center}
+% \begin{equation}
+%     m=\frac{U_{max}-U_{min}}{U_{max}+U_{min}}
+%     \label{Gl:Modulationsgrad_OS}
+% \end{equation}
+% \begin{center}
+%     $U_{max}$: Hüllkurven-Maxima [V]\\
+%     $U_{min}$: Hüllkurven-Minima [V]
+% \end{center}
+% Die Gleichung \ref{Gl:Modulationsgrad_OS} kann mittels eines Oszilloskops direkt bestimmt werden. 
+% Dabei können die Hüllkurven-Maxima und -Minima direkt vom Bildschirm abgelesen werden.\\
+% Der Modulationsgrad $m$ kann wie folgt interpretiert werden:
+% \begin{itemize}
+%     \item $m=0 \rightarrow$ keine Modulation
+%     \item $0<m<1 \rightarrow$ normale, unverzerrte Modulation
+%     \item $m=1 \rightarrow$ maximale sinnvolle Modulation 
+%     \item $m>1 \rightarrow$ Übermodulation, es entstehen Verzerrungen
+% \end{itemize}
+
+% \newpage
+\section{Durchführung}
+
+
+
+\subsection{Durchführung der Aufgabe:  1}
+\subsubsection*{Durchführung der Aufgabe: 1.1}
+
+
+
+\subsubsection*{Durchführung der Aufgabe: 1.2}
+
+
+\subsection{Durchführung der Aufgabe: 2}
+\subsubsection*{Durchführung der Aufgabe: 2.1}
+
+
+\subsubsection*{Durchführung der Aufgabe: 2.2}
+
+\subsubsection*{Durchführung der Aufgabe: 2.3}
+
+\subsection{Durchführung der Aufgabe: 3}
+\subsubsection*{Durchführung der Aufgabe: 3.1}
+
+\subsubsection*{Durchführung der Aufgabe: 3.2}
+
+
+\subsubsection*{Durchführung der Aufgabe: 3.3}
+
+
+\subsection{Ende des Versuchs}
+Nach Abschluss aller Messungen wurden sämtliche Geräte ausgeschaltet und der Arbeitsplatz wieder in seinen ursprünglichen Zustand zurückversetzt (Siehe Abbildung \ref{Abb:Aufbau_phy}).
+
+
+
+\section{Auswertung}
+\subsection{Statische Modulationskennlinie}
+\label{kap:1}
+\subsubsection{Modulationskennlinie der Momentanfrequenz als Funktion des Augenblickwerts $U_e$ des modulierten Eingangsignals}
+\label{kap:1.1}
+
+
+\subsubsection{Wahl eines Geeigneten Arbeitsbereiches}
+\label{kap:1.2}
+
+\subsection{ Frequenzspektren harmonischer Modulationssignale }
+\label{kap:2}
+\subsubsection{Modulation von Sinussignalen}
+\label{kap:2.1}
+
+\subsubsection{Benötige Amplitude eines 20kHz Sinussignals}
+\label{kap:2.2}
+
+\subsubsection{Frequenzmodulator als Phasenmodulator}
+\label{kap:2.3}
+
+\subsection{Frequenzspektren periodischer Modulationssignale}
+\subsubsection{Frequenzspektrum eines Sinus-, Dreieck- und Rechtecksignals}
+
+\subsubsection{Frequenzumtastung eines Rechtecksignals}
+
+\section{Fazit}
+
+
+
+\newpage
+\section{Literaturverzeichnis}
+\printbibliography %Erzeugung von Literatturverzeichnis
+\newpage
+\section*{Anhang}
+\label{Ah:}
+\addcontentsline{toc}{section}{Anhang} % Hinzufügen eines Section* in das Inhhaltsverzeichnis
+\renewcommand*{\thesubsection}{\Alph{subsection}}% Bildung einer neuen definition von Subsection
+\subsection{Weitere Abbildungen}
+\label{Ah:Weitere_Abbildungen}
+
+
+
+\subsection{Messtabellen}
+\label{Ah:Messtabellen}
+% \begin{table}[!h] 
+%     \centering
+%     \begin{tabular}{|c|c|c|} 
+% \hline\textbf{Gleichspannung} & \textbf{Ausgangsamplitude} & \textbf{Ausgangsamplitude} \\
+% \textbf{$U_2$ [V]} & \textbf{$U_A$ [mV] bei 2V} & \textbf{$U_A$ [mV] bei 25mV} \\ \hline
+%             -12.0 & 0.0  & 0 \\ \hline 
+%             -11.5 & 24.8 & 13.2 \\ \hline
+%             -11.0 & 110  & 51.9 \\ \hline
+%             -10.5 & 203  & 93.9 \\ \hline
+%             -10.0 & 297  & 134 \\ \hline
+%             -9.5  & 392  & 174 \\ \hline
+%             -9.0  & 486  & 211 \\ \hline
+%             -8.5  & 580  & 247 \\ \hline
+%             -8.0  & 675  & 281 \\ \hline
+%             -7.5  & 770  & 313 \\ \hline
+%             -7.0  & 864  & 344 \\ \hline
+%             -6.5  & 958  & 374 \\ \hline
+%             -6.0  & 1051 & 403 \\ \hline
+%             -5.5  & 1145 & 428 \\ \hline
+%             -5.0  & 1238 & 455 \\ \hline
+%             -4.5  & 1331 & 480 \\ \hline
+%             -4.0  & 1423 & 502 \\ \hline
+%             -3.5  & 1517 & 525 \\ \hline
+%             -3.0  & 1609 & 545 \\ \hline
+%             -2.5  & 1700 & 566 \\ \hline
+%             -2.0  & 1791 & 585 \\ \hline
+%             -1.5  & 1882 & 603 \\ \hline
+%             -1.0  & 1973 & 620 \\ \hline
+%             -0.5  & 2065 & 638 \\ \hline
+%              0.0  & 1852 & 608 \\ \hline
+%     \end{tabular}
+% \caption{Messwerte der Aufgabe 1}\label{tab:Aufgabe1}
+% \end{table}
+% \begin{table}[!h] 
+%     \centering
+%     \begin{tabular}{|c|c|c|} 
+%           \hline \textbf{Bandbezeichnung}   & \textbf{Amplitude der Spektrallinien} & \textbf{Frequenz} \\ 
+%                                             & \textbf{$\hat{U}$ [mV]}               & \textbf{ $f$ [kHz]} \\ \hline
+%             Unteres ungewünschtes Bandsignal& 26.57 &  470    \\ \hline
+%             Unteres gewünschtes Bandsignal  & 479.0 &  475    \\ \hline
+%             Trägeramplitude                 & 989.7 &  480    \\ \hline
+%             Oberes gewünschtes Bandsignal   & 479.0 &  485    \\ \hline
+%             Oberes ungewünschtes Bandsignal & 26.58 &  490    \\ \hline
+%     \end{tabular}
+%     \caption{Messwerte der Aufgabe 2.3} \label{tab:Aufgabe2.3}
+% \end{table}
+% \newpage
+% \begin{table}[H] 
+%     \centering
+%     \begin{tabular}{|c|c|} 
+%           \hline \textbf{Trägerfrequenz} & \textbf{Ausgangsspannung} \\ 
+%           \textbf{ $f_0$ [kHz]}    & \textbf{$U_A$ [mV] bei 2V}       \\ \hline
+%             400  &  201  \\ \hline
+%             410  &  231  \\ \hline
+%             420  &  271  \\ \hline
+%             430  &  324  \\ \hline
+%             440  &  399  \\ \hline
+%             450  &  511  \\ \hline
+%             460  &  670  \\ \hline
+%             465  &  789  \\ \hline
+%             470  &  904  \\ \hline
+%             475  &  995  \\ \hline
+%             477.5& 1018  \\ \hline
+%             480  & 1021  \\ \hline
+%             482.5& 1004  \\ \hline
+%             483  &  998  \\ \hline
+%             485  &  970  \\ \hline
+%             490  &  872  \\ \hline 
+%             495  &  763  \\ \hline 
+%             500  &  666  \\ \hline
+%             505  &  585  \\ \hline
+%             510  &  516  \\ \hline
+%             515  &  461  \\ \hline  
+%             520  &  416  \\ \hline
+%             525  &  378  \\ \hline  
+%             530  &  347  \\ \hline 
+%             540  &  298  \\ \hline 
+%             550  &  261  \\ \hline
+%             560  &  232  \\ \hline
+%             570  &  209  \\ \hline    
+%             580  &  190  \\ \hline 
+%             590  &  175  \\ \hline
+%             600  &  162  \\ \hline      
+%     \end{tabular}
+%     \caption{Messwerte der Aufgabe 3.1} \label{tab:Aufgabe3.1}
+% \end{table}
+% \newpage
+% \begin{table}[H] 
+%     \centering
+%     \begin{tabular}{|c|c|c|} 
+%           \hline \textbf{Signal-} & \textbf{Minimal-} & \textbf{Maximal-}\\ 
+%           \textbf{frequenzen} &\textbf{ausgangsspannung}&\textbf{ausgangsspannung}\\
+%           \textbf{ $f_1$ [Hz]}    & \textbf{$U_{A,min}$ [mV]} &  \textbf{$U_{A,max}$ [mV]}   \\ \hline
+%             10    & 1118 & 1733 \\ \hline
+%             20    & 874  & 2011 \\ \hline
+%             50    & 351  & 2480 \\ \hline
+%             70    & 263  & 2597 \\ \hline
+%             100   & 166  & 2670 \\ \hline
+%             200   & 78   & 2793 \\ \hline
+%             500   & 40   & 2793 \\ \hline
+%             950   & 48   & 2851 \\ \hline
+%             1000  & 40   & 2830 \\ \hline
+%             1050  & 68   & 2832 \\ \hline
+%             2000  & 68   & 2812 \\ \hline
+%             5000  & 98   & 2812 \\ \hline
+%             10000 & 214  & 2666 \\ \hline
+%             15000 & 341  & 2568 \\ \hline
+%             20000 & 517  & 2382 \\ \hline
+%             25000 & 625  & 2275 \\ \hline
+%             30000 & 747  & 2163 \\ \hline
+%             35000 & 810  & 2070 \\ \hline
+%             40000 & 854  & 2065 \\ \hline 
+%     \end{tabular}
+%     \caption{Messwerte der Aufgabe 3.2} \label{tab:Aufgabe3.2}
+% \end{table}
+% \newpage
+% \begin{table}[h] 
+%     \centering
+%     \begin{tabular}{|c|c|c|c|} 
+%           \hline         \textbf{Träger-}& \multicolumn{3}{c|}{\textbf{Ausgangsspannung}}\\
+%           \textbf{frequenz}  & \multicolumn{3}{c|}{\textbf{in mV}}\\ \hline
+%           \textbf{ $U_1$ [V]}  & \textbf{Untere} & \textbf{Träger-} & \textbf{Obere}  \\
+%                & \textbf{Seitenband}& \textbf{frequenz}  & \textbf{Seitenband}     \\ \hline
+%             0    & 0    & 121 & 0   \\ \hline
+%             0.5  & 3.1  & 121 & 67  \\ \hline
+%             1    & 6    & 121 & 133 \\ \hline
+%             1.5  & 9    & 120 & 199 \\ \hline 
+%             2    & 13   & 121 & 266 \\ \hline
+%             2.5  & 16   & 121 & 331 \\ \hline
+%             3    & 19   & 121 & 396 \\ \hline
+%             3.5  & 22   & 121 & 461 \\ \hline
+%     \end{tabular}
+%     \caption{Messwerte der Aufgabe 4.2 ohne Vorverstärker} \label{tab:Aufgabe4.2}
+% \end{table}
+% \begin{table}[h] 
+%     \centering
+%     \begin{tabular}{|c|c|c|c|c|c|} 
+%           \hline         \textbf{Träger-}& \multicolumn{5}{c|}{\textbf{Ausgangsspannung}}\\
+%           \textbf{frequenz}  & \multicolumn{5}{c|}{\textbf{in mV}}\\ \hline
+%           \textbf{ $U_1$} & \textbf{2. Untere}  & \textbf{1. Untere} & \textbf{Träger-} & \textbf{1. Obere}  & \textbf{2. Obere}\\
+%             \textbf{[V]}  & \textbf{Seitenband}   & \textbf{Seitenband}& \textbf{frequenz}  & \textbf{Seitenband}  & \textbf{Seitenband}   \\ \hline
+%             0    & 0 & 0   & 746 & 0   & 0 \\ \hline
+%             0.5  & 0 & 66  & 746 & 32  & 0 \\ \hline
+%             1    & 0 & 136 & 745 & 63  & 0 \\ \hline
+%             1.5  & 0 & 202 & 745 & 94  & 0 \\ \hline
+%             2    & 5 & 269 & 744 & 126 & 0 \\ \hline
+%             2.5  & 8 & 480 & 742 & 155 & 4 \\ \hline
+%             3    & 10& 480 & 740 & 185 & 5 \\ \hline
+%             3.5  & 14& 465 & 739 & 217 & 6 \\ \hline
+%     \end{tabular}
+%     \caption{Messwerte der Aufgabe 4.3 ohne Vorverstärker} \label{tab:Aufgabe4.3}
+% \end{table}
+% \newpage
+% \includepdf[
+%   pages=8,
+%   scale=1,
+%   offset=0 -2cm,
+%   pagecommand={
+%     \phantomsection
+%     \subsection{Schaltpläne}
+%     \subsubsection*{Schaltplan - Platine \cite{Labor_Amplitudenmodulation}}
+%     \label{Ah:Schaltplan_Platine}
+%     \vspace*{0.5cm}
+%     \begin{center}
+%       \captionof{figure}{Schaltplan der Platine}
+%       \label{fig:schaltplan_platine}
+%     \end{center}
+%   }
+% ]{../GIT_Labor_Amplitudenmodulation_SoSe26.pdf}
+
+% \newpage
+
+% \begin{sidewaysfigure}
+%     \subsubsection*{Aufbau - Skizze} 
+% 	\label{Ah:Aufbau}
+% \centering
+% \begin{adjustbox}{max width=\textheight, max height=\textwidth}
+
+% \begin{tikzpicture}[
+%     scale=0.78,
+%     transform shape,
+%     device/.style={
+%         draw,
+%         thick,
+%         minimum width=5.4cm,
+%         minimum height=2.0cm,
+%         align=center
+%     },
+%     board/.style={
+%         draw,
+%         thick,
+%         minimum width=6.2cm,
+%         minimum height=7.0cm,
+%         align=center
+%     },
+%     cable/.style={
+%         thick,
+%         -{Latex[length=2.2mm]}
+%     },
+%     signal/.style={cable, black},
+%     redcable/.style={cable, red},
+%     blackcable/.style={cable, black},
+%     bluecable/.style={cable, blue}
+% ]
+
+% % Geraete
+% \node[device] (fg)  at (-11,0)   {Funktions-\\generator};
+% \node[board]  (pcb) at (0,0)     {Platine};
+% \node[device] (osc) at (11,2.5)  {Oszilloskop};
+% \node[device] (sa)  at (11,-3.5) {Spektrum-\\analyzer};
+% \node[device] (psu) at (0,8.0)   {Power Supply};
+
+% % Anschluesse Platine links
+% \coordinate (E1) at ($(pcb.west)+(0,1.4)$);
+% \coordinate (E2) at ($(pcb.west)+(0,-1.4)$);
+
+% \node[left=8pt] at (E1) {E1};
+% \node[left=8pt] at (E2) {E2};
+
+% % Anschluesse Platine rechts
+% \coordinate (A1) at ($(pcb.east)+(0,1.4)$);
+% \coordinate (A2) at ($(pcb.east)+(0,-1.4)$);
+
+% \node[right=8pt] at (A1) {A1};
+% \node[right=8pt] at (A2) {A2};
+
+% % Anschluesse Platine oben
+% \coordinate (J6) at ($(pcb.north)+(-1.7,0)$);
+% \coordinate (J7) at ($(pcb.north)+(0,0)$);
+% \coordinate (J8) at ($(pcb.north)+(1.7,0)$);
+
+% \node[below=8pt] at (J6) {J6 / DC};
+% \node[below=8pt] at (J7) {J7 / GND};
+% \node[below=8pt] at (J8) {J8 / DC};
+
+% % Funktionsgenerator Anschluesse
+% \coordinate (FG1) at ($(fg.east)+(0,0.55)$);
+% \coordinate (FG2) at ($(fg.east)+(0,-0.55)$);
+
+% \node[left=8pt] at (FG1) {Ch 1};
+% \node[left=8pt] at (FG2) {Ch 2};
+
+% % Oszilloskop Anschluesse
+% \coordinate (OSC1) at ($(osc.west)+(0,0.7)$);
+% \coordinate (OSC2) at ($(osc.west)+(0,0)$);
+% \coordinate (OSC4) at ($(osc.west)+(0,-0.7)$);
+
+% \node[right=8pt] at (OSC1) {Ch 1};
+% \node[right=8pt] at (OSC2) {Ch 2};
+% \node[right=8pt] at (OSC4) {Ch 4};
+
+% % Spektrumanalyzer Eingang
+% \coordinate (SAIN) at ($(sa.west)+(0,0)$);
+% \node[right=8pt] at (SAIN) {Input};
+
+% % Power-Supply Anschluesse
+% \coordinate (PSU1P) at ($(psu.south)+(-1.9,0)$);
+% \coordinate (PSU1M) at ($(psu.south)+(-0.65,0)$);
+% \coordinate (PSU2M) at ($(psu.south)+(0.65,0)$);
+% \coordinate (PSU2P) at ($(psu.south)+(1.9,0)$);
+
+% \node[above=8pt] at (PSU1P) {Ch 1 +};
+% \node[above=8pt] at (PSU1M) {Ch 1 -};
+% \node[above=8pt] at (PSU2M) {Ch 2 -};
+% \node[above=8pt] at (PSU2P) {Ch 2 +};
+
+% % Hilfspunkte
+% \coordinate (LEFTBUS1) at (-6.7,1.4);
+% \coordinate (LEFTBUS2) at (-6.7,-1.4);
+
+% % Funktionsgenerator zu Platine
+% \draw[signal] (FG1) -- (LEFTBUS1) -- (E1);
+% \draw[signal] (FG2) -- (LEFTBUS2) -- (E2);
+
+% % Abzweige zum Oszilloskop ausserhalb der Platine
+% \draw[signal] (LEFTBUS1) -- ++(0,4.0) -- (6.7,5.4) |- (OSC1);
+% \draw[signal] (LEFTBUS2) -- ++(0,-4.0) -- (6.7,-5.4) |- (OSC2);
+
+% % Ausgaenge der Platine
+% \draw[signal] (A2) -- ++(1.5,0) |- (OSC4);
+% \draw[signal] (A1) -- ++(1.5,0) |- (SAIN);
+
+% % Versorgungskabel
+% \draw[redcable] (PSU1P) -- ++(0,-1.0) -- ++(0.3,0) -- (J6);
+
+% \draw[blackcable] (J7) -- ++(0,1.3)
+%                   -- ++(-0.65,0) |- (PSU1M);
+
+% \draw[blackcable] (J7) -- ++(0,1.7)
+%                   -- ++(0.65,0) |- (PSU2M);
+
+% \draw[bluecable] (PSU2P) -- ++(0,-1.0) -- ++(-0.3,0) -- (J8);
+
+% % Anschlussmarkierungen
+% \foreach \p in {E1,E2,A1,A2,J6,J7,J8,FG1,FG2,OSC1,OSC2,OSC4,SAIN,PSU1P,PSU1M,PSU2M,PSU2P}
+%     \fill (\p) circle (2pt);
+
+% \end{tikzpicture}
+
+% \end{adjustbox}
+
+% \caption{Messaufbau des Versuches: Amplitudenmodulation}
+%     \label{Abb:Aufbau-Skizze}
+% \end{sidewaysfigure}
+
+\newpage
+\begin{sidewaystable}[h] 
+	\subsection{Geräteliste} 
+	\label{Ah:Geräteliste}
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline \textbf{Bezeichnung}						& \textbf{Inventar-Nr.} & \textbf{Verwendungszweck}  			\\ \hline
+        Agilent 33522A 									& 005812496 			& Wave-Form-Generator  					\\ \hline
+		Agilent U3401A 									& 004989310 			& Digital Multismeter (4 $1/2$ Digit) 	\\ \hline
+		GW Instek GPS-4303 								& 005812499 			& Labotory DC Power Supply  			\\ \hline
+		Rhode und Schwarz fpc-1500 Spectrum Analayser 	& 007545128			 	& Spektrum Analysator 					\\ \hline
+		Rhode und Schwarz RTB2004 Digital Oszilyskop 	& 005812488 			&    							\\ \hline
+		Amplitudenmodulation Borad V5					& - 					&   									\\ \hline
+		\end{tabular}
+	\caption{Liste aller verwendeten Geräte} \label{tab:Geräteliste}
+\end{sidewaystable}
+	\clearpage
+\end{document}
