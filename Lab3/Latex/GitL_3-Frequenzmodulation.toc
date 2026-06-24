@@ -6,8 +6,9 @@
 \contentsline {subsubsection}{\numberline {1.1.3}Wie ist der Modulationsindex m definiert und was beschreibt er?}{5}{subsubsection.1.1.3}%
 \contentsline {subsubsection}{\numberline {1.1.4}Wie lässt sich das Frequenzspektrum eines FM-Signals berechnen bei einem sinusförmigen Modulationssignal?}{5}{subsubsection.1.1.4}%
 \contentsline {subsubsection}{\numberline {1.1.5}Wie lässt sich der Bandbreitebedarf eines FM-Signals abschätzen?}{5}{subsubsection.1.1.5}%
-\contentsline {subsubsection}{\numberline {1.1.6}Wie hängen die Frequenz- und die Phasenmodulation miteinander zusammen?}{6}{subsubsection.1.1.6}%
-\contentsline {subsubsection}{\numberline {1.1.7}Was versteht man unter Frequency Shift Keying (FSK)?}{6}{subsubsection.1.1.7}%
+\contentsline {subsubsection}{\numberline {1.1.6}Wie hängen die Frequenz- und die Phasenmodulation miteinander zusammen?}{5}{subsubsection.1.1.6}%
+\contentsline {subsubsection}{\numberline {1.1.7}Was versteht man unter Frequency Shift Keying (FSK)?}{5}{subsubsection.1.1.7}%
+\contentsline {paragraph}{\nonumberline Vorteile von FSK}{5}{paragraph*.2}%
 \contentsline {section}{\numberline {2}Durchführung}{6}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Durchführung der Aufgabe: 1}{6}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Durchführung der Aufgabe: 2}{6}{subsection.2.2}%

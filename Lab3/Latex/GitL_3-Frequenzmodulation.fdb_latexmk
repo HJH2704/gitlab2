@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber GitL_3-Frequenzmodulation"] 1782301729.42169 "GitL_3-Frequenzmodulation.bcf" "GitL_3-Frequenzmodulation.bbl" "GitL_3-Frequenzmodulation" 1782303031.72063 0
-  "GitL_3-Frequenzmodulation.bcf" 1782303031 107825 961d8f90bdb2f271c08a3f3b830769c3 "pdflatex"
+["biber GitL_3-Frequenzmodulation"] 1782301729.42169 "GitL_3-Frequenzmodulation.bcf" "GitL_3-Frequenzmodulation.bbl" "GitL_3-Frequenzmodulation" 1782303759.46467 0
+  "GitL_3-Frequenzmodulation.bcf" 1782303759 107825 961d8f90bdb2f271c08a3f3b830769c3 "pdflatex"
   (generated)
   "GitL_3-Frequenzmodulation.bbl"
   "GitL_3-Frequenzmodulation.blg"
   (rewritten before read)
-["pdflatex"] 1782303029.35818 "c:/Users/mvoge/Git/Lab2/gitlab2/Lab3/Latex/GitL_3-Frequenzmodulation.tex" "GitL_3-Frequenzmodulation.pdf" "GitL_3-Frequenzmodulation" 1782303031.72136 0
+["pdflatex"] 1782303757.10844 "c:/Users/mvoge/Git/Lab2/gitlab2/Lab3/Latex/GitL_3-Frequenzmodulation.tex" "GitL_3-Frequenzmodulation.pdf" "GitL_3-Frequenzmodulation" 1782303759.46527 0
   "../Abbildungen/logo.png" 1782286688 38420 b8aefa629d585797c80dc40599e894a3 ""
   "C:/Users/mvoge/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1781529146 112715 7c9c6c2b12bb38e055dbb745e646a057 ""
   "C:/Users/mvoge/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1779893092 31952 8837f59e6b1d9a3165382fbc326c410d ""
@@ -310,14 +310,14 @@
   "C:/Users/mvoge/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/mvoge/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/mvoge/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "GitL_3-Frequenzmodulation.aux" 1782303031 22243 5d080bf1cdbed3cabf7bc05d2bbb3682 "pdflatex"
+  "GitL_3-Frequenzmodulation.aux" 1782303759 22360 9c5e796336ec3672db12bb3a3b223989 "pdflatex"
   "GitL_3-Frequenzmodulation.bbl" 1782301730 486 76d65a242ec496c9b4361af646ff12cb "biber GitL_3-Frequenzmodulation"
-  "GitL_3-Frequenzmodulation.lof" 1782303031 95 266fb778c506bbca413fec0c0a8f3005 "pdflatex"
-  "GitL_3-Frequenzmodulation.lot" 1782303031 203 d1a63140f8253fba1ab0614ba58a4208 "pdflatex"
-  "GitL_3-Frequenzmodulation.run.xml" 1782303031 2569 18f4e5e72da73aa95c3260772b047e38 "pdflatex"
-  "GitL_3-Frequenzmodulation.tex" 1782303026 30922 d79d2532f8f503eaeaeba4e20bc674aa ""
-  "GitL_3-Frequenzmodulation.toc" 1782303031 3409 56484eea0af14e7cb054af4f7997509e "pdflatex"
-  "c:/Users/mvoge/Git/Lab2/gitlab2/Lab3/Latex/GitL_3-Frequenzmodulation.tex" 1782303026 30922 d79d2532f8f503eaeaeba4e20bc674aa ""
+  "GitL_3-Frequenzmodulation.lof" 1782303759 95 266fb778c506bbca413fec0c0a8f3005 "pdflatex"
+  "GitL_3-Frequenzmodulation.lot" 1782303759 203 39c52950bbb4c4b1516ccd82001d5370 "pdflatex"
+  "GitL_3-Frequenzmodulation.run.xml" 1782303759 2569 18f4e5e72da73aa95c3260772b047e38 "pdflatex"
+  "GitL_3-Frequenzmodulation.tex" 1782303754 31725 591f2f1332e364ab376d55d816cea630 ""
+  "GitL_3-Frequenzmodulation.toc" 1782303759 3485 300c949463493820be1d3c4e845a2a10 "pdflatex"
+  "c:/Users/mvoge/Git/Lab2/gitlab2/Lab3/Latex/GitL_3-Frequenzmodulation.tex" 1782303754 31725 591f2f1332e364ab376d55d816cea630 ""
   (generated)
   "GitL_3-Frequenzmodulation.aux"
   "GitL_3-Frequenzmodulation.bcf"
