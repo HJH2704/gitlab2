@@ -16,5 +16,47 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{GoldenbaumGitskript}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=606d4dba137aa2adf71498132f1ac985}{%
+           family={Goldenbaum},
+           familyi={G\bibinitperiod},
+           given={Prof.\bibnamedelimi Dr.-Ing.\bibnamedelimi Mario},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinithyphendelim I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Hochschule Bremen}%
+      }
+      \strng{namehash}{606d4dba137aa2adf71498132f1ac985}
+      \strng{fullhash}{606d4dba137aa2adf71498132f1ac985}
+      \strng{fullhashraw}{606d4dba137aa2adf71498132f1ac985}
+      \strng{bibnamehash}{606d4dba137aa2adf71498132f1ac985}
+      \strng{authorbibnamehash}{606d4dba137aa2adf71498132f1ac985}
+      \strng{authornamehash}{606d4dba137aa2adf71498132f1ac985}
+      \strng{authorfullhash}{606d4dba137aa2adf71498132f1ac985}
+      \strng{authorfullhashraw}{606d4dba137aa2adf71498132f1ac985}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Skript zur Vorlesung Grundlagen der Informationstechnik}
+      \field{type}{Vorlesungsskript}
+      \field{urlday}{20}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://aulis.hs-bremen.de/ilias.php?baseClass=ilrepositorygui&cmdNode=zh:oi&cmdClass=ilObjFileGUI&cmd=sendfile&ref_id=2418942
+      \endverb
+      \verb{url}
+      \verb https://aulis.hs-bremen.de/ilias.php?baseClass=ilrepositorygui&cmdNode=zh:oi&cmdClass=ilObjFileGUI&cmd=sendfile&ref_id=2418942
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

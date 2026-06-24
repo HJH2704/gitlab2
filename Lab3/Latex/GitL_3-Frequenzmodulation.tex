@@ -36,6 +36,9 @@
 
 \usetikzlibrary{arrows.meta, positioning}
 
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
 \newcolumntype{x}[1]{!{\centering\arraybackslash\vrule width #1}}% Erlaubt dickere Linien in Tabellen. cx{2pt}
 
 
@@ -132,9 +135,9 @@ Bei der \textbf{Frequenzmodulation (FM)} wird die \textbf{Frequenz} der Trägers
 
 Mathematisch gilt folgende Gleichung:
 
-\begin{equation*}
+\begin{equation}
    f(t) = f_0 + k_f \cdot m(t) 
-\end{equation*}
+\end{equation}
 \begin{center}
     $f_0$ die Trägerfrequenz\\
     $m(t)$ das Nutzsignal\\
@@ -154,9 +157,9 @@ Bei der \textbf{Phasenmodulation (PM)} wird die \textbf{Phase} der Trägerschwin
 
 Mathematisch gilt:
 
-\begin{equation*}
+\begin{equation}
     \varphi(t) = \varphi_0 + k_p \cdot m(t)    
-\end{equation*}
+\end{equation}
 \begin{center}
     $\varphi_0$ die Ausgangsphase\\
     $m(t)$ das Nutzsignal\\
@@ -165,8 +168,76 @@ Mathematisch gilt:
 
 \subsubsection{Wie sehen winkelmodulierte Signale im Zeitbereich typischerweise aus?}
 
+Winkelmodulierte Signale, wie Frequenz- und Phasenmodulation, zeigen im Zeitbereich charakteristische Veränderungen in der Wellenform des Trägersignals.
+Diese sehen typischerweise wie folgt aus:\\
+\begin{figure}[!h]
+\centering
 
+\begin{tikzpicture}
+\begin{axis}[
+    width=14cm,
+    height=4cm,
+    axis lines=middle,
+    xmin=0,
+    xmax=6.3,
+    ymin=-1.1,
+    ymax=1.1,
+    xtick=\empty,
+    ytick={-1,1},
+    yticklabels={$-A$,$A$},
+    xlabel={$t$},
+    ylabel={$x(t)$},
+    axis line style={blue!70!black, thick},
+    every axis y label/.style={
+        at={(current axis.above origin)},
+        anchor=south
+    },
+    domain=0:6.3,
+    samples=4000,
+]
 
+\addplot[
+    orange,
+    very thick
+]
+{cos(deg(20*x + 8*sin(deg(2*x))))};
+
+\end{axis}
+\end{tikzpicture}
+
+\caption{Frequenzmoduliertes Signal
+}
+\label{fig:bsp_winkelmod_singal}
+\end{figure}\\
+Dieser Verlauf kann mathematisch wie folgt beschrieben werden:
+\begin{equation}
+    x_{\mathrm{PM}}(t) = A \cos\bigl(\omega_0 t + \Delta\Phi \cos(\omega_1 t) + \varphi_0\bigr)
+\end{equation}
+\begin{center}
+    $x_{\mathrm{PM}}(t)$ : phasenmoduliertes Signal\\
+    $A$ : Amplitude des Trägersignals\\
+    $\omega_0$ : Kreisfrequenz des Trägersignals\\
+    $\Delta\Phi$ : Phasenmodulationsindex (maximale Phasenabweichung)\\
+    $\omega_1$ : Modulations-Kreisfrequenz\\
+    $\varphi_0$ : Anfangsphase\\
+    $t$ : Zeit
+\end{center}
+
+Phasenmodulierte Signale im Zeitberiech sehen ähnlich aus, jedoch ist die Phase direkt proportional zum Modulationssignal, während bei der Frequenzmodulation die Phase durch die Integration des Modulationssignals bestimmt wird.
+Mathematisch gilt für die Phasenmodulation:
+\begin{equation}
+    x_{\mathrm{FM}}(t) = A \cos\Bigl(\omega_0 t + \frac{\Delta\Omega}{\omega_1}\sin(\omega_1 t) + \varphi_0\Bigr)
+\end{equation}
+\begin{center}
+    $x_{\mathrm{FM}}(t)$ : frequenzmoduliertes Signal\\
+    $A$ : Amplitude des Trägersignals\\
+    $\omega_0$ : Träger-Kreisfrequenz\\
+    $\Delta\Omega$ : maximale Winkelgeschwindigkeitsabweichung\\
+    $\omega_1$ : Modulations-Kreisfrequenz\\
+    $\dfrac{\Delta\Omega}{\omega_1}$ : FM-Modulationsindex\\
+    $\varphi_0$ : Anfangsphase\\
+    $t$ : Zeit
+\end{center}
 
 \subsubsection{Wie ist der Modulationsindex m definiert und was beschreibt er?}
 \subsubsection*{Modulationsindex}
@@ -177,12 +248,9 @@ Der Modulationsindex beschreibt die maximale Winkelabweichung.
 
 Für die Frequenzmodulation (FM) gilt:
 
-\begin{equation*}
-    m_{FM} = \beta = \frac{\Delta f}{f_m}    
-\end{equation*}
-
-
-
+\begin{equation}
+    m_{FM} = \beta = \frac{\Delta f}{f_m}   \label{eq:modulationsindex}
+\end{equation}
 \begin{center}
     $\Delta f$ : maximale Frequenzabweichung\\
     $f_m$ : Frequenz des modulierenden Signals
@@ -191,23 +259,63 @@ Für die Frequenzmodulation (FM) gilt:
 
 \subsubsection{Wie lässt sich das Frequenzspektrum eines FM-Signals berechnen bei einem sinusförmigen Modulationssignal?}
 
+Das Frequenzspektrum eines Frequenzmodulierten Signals mit einem sinusförmigen Modulationssignal kann mithilfe der Bessel-Funktionen beschrieben werden.
+Die Besselfunktionen geben die Amplituden der verschiedenen Frequenzkomponenten des modulierten Signals an.
+Sie sehen wie folgt aus: \cite{GoldenbaumGitskript}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.8\textwidth]{../Abbildungen/Bessel_plot.pdf}
+\caption{Besselfunktionen erster Art $J_\nu(m)$ für verschiedene Ordnungen $\nu$.}
+\label{fig:bessel_functions}
+\end{figure}
+
+Sinusförmige Modulationssignale haben die Form: 
+
+\begin{equation}
+    x(t) = A \cos(\omega_c t + \beta \sin(\omega_m t))
+\end{equation}
+\begin{center}
+    $A$ : Amplitude des Trägersignals\\
+    $\omega_c$ : Kreisfrequenz des Trägersignals\\
+    $\beta$ : Modulationsindex\\
+    $\omega_m$ : Frequenz des modulierenden Signals\\
+\end{center}
+
+Setztet man nun den Modulationsindex $\beta$ bzw. in die Besselfunktion ein, kann das Frequenzspektrum des FM-Signals berechnet werden. 
+Die Werte der Besselfunktion geben die Amplituden der verschiedenen Frequenzkomponenten des modulierten Signals an.
+Die Frequenzen der Seitenbänder des FM-Signals liegen bei: 
+
+\begin{equation}
+    \omega_n = \omega_c \pm n \cdot \omega_m , n \in \mathbb{Z}
+\end{equation}
 
 
 \subsubsection{Wie lässt sich der Bandbreitebedarf eines FM-Signals abschätzen?}
 Den Bandbreitebedarf der Frequenzmodulation kann mithilfe der Carson-Bandbreite bestimmt werden.
-\begin{equation*}
+\begin{equation}
     B = 2(\Delta\Omega+a\cdot\omega_g) , a \in [1,2]
-\end{equation*}
+\end{equation}
 
 
 
 \subsubsection{Wie hängen die Frequenz- und die Phasenmodulation miteinander zusammen?}
 
+Frequenzmodulation (FM) und Phasenmodulation (PM) sind beide Arten der Winkelmodulation, unterscheiden sich jedoch in der Art und Weise, wie das Trägersignal durch das Nutzsignal beeinflusst wird.
+Im allgemeinen Fall erzeugt die Phasenmodulation eine Frequenzabweichung, die proportional zur zeitlichen Ableitung des Modulationssignals ist, während die Frequenzmodulation eine Frequenzabweichung erzeugt, die proportional zum Modulationssignal selbst ist. 
+Die Phase ist daher die zeitliche Integration der Modulationssignal in der Frequenzmodulation. 
+\begin{align}
+    S_{PM}(t) = A \cos(\omega_c t + k_p m(t))\\
+    \omega_i(t) = \frac{d}{dt}\left(\omega_c t + k_p m(t)\right) = \omega_c + k_p \dot{m}(t)\\
+    \omega_i(t) = \omega_c + k_f m(t)\\
+    \varphi_{FM}(t) = \int \omega_i(t) dt 
+\end{align}
 
-
+Wird nur mit rein sinusförmigen Modulationssignalen gearbeitet, wird die Umrechnung der beiden Modulationsarten vereinfacht. 
+Dann entspricht ein Phasenmoduliertes Signal einem Frequenzmoduliertes Signal mit integriertem Modulationssignal und umgekehrt.
+Voraussetzung dafür ist eine konstante Modulationsfrequenz.
 
 \subsubsection{Was versteht man unter Frequency Shift Keying (FSK)?}
-Frequency Shift Keying (FSK) ist ein digitales Modulationsverfahren, bei dem digitale Informationen (Binäre Codierte Informationen) durch unterschiedliche Frequenzen eines Trägersignals übertragen werden. Dabei wird einer logischen 0 eine Frequenz $f_0$ und einer 1 eine andere Frequenz $f_1$ zugeordnet. Die Amplitude, sowie die Phase des Trägersignals bleibt dabei konstant, lediglich die Frequenz ändert sich entsprechend der zu übertragenden Bits.\cite{} \\
+Frequency Shift Keying (FSK) ist ein digitales Modulationsverfahren, bei dem digitale Informationen (Binäre Codierte Informationen) durch unterschiedliche Frequenzen eines Trägersignals übertragen werden. Dabei wird einer logischen 0 eine Frequenz $f_0$ und einer 1 eine andere Frequenz $f_1$ zugeordnet. Die Amplitude, sowie die Phase des Trägersignals bleibt dabei konstant, lediglich die Frequenz ändert sich entsprechend der zu übertragenden Bits.\cite{GoldenbaumGitskript} \\
 Bit 0 $\to$ $f_0$ \\
 Bit 1 $\to$ $f_1$\\
 \paragraph{Vorteile von FSK}
@@ -408,9 +516,47 @@ Nach Abschluss aller Messungen wurden sämtliche Geräte ausgeschaltet und der A
 \label{kap:2}
 \subsubsection{Modulation von Sinussignalen}
 \label{kap:2.1}
+Sinusförmiges Modulationssignal \\
+abstand der seitenbänder $f_1$ = 10 KHz 
 
+Unter Verwendung der Gleichung \ref{eq:modulationsindex} ergeben sich für die verschiedenen Modulationsindizies: 
+
+m = 0,5 
+\begin{equation}
+    \Delta \Omega = 0,5 \cdot 10 kHz \cdot 2 \cdot \pi  = 31,41 \frac{rad}{s}
+\end{equation}
+
+
+m = 2,4 \\
+\begin{equation}
+   \Delta \Omega  = 2,4 \cdot 10 kHz \cdot 2 \cdot \pi  = 150,79 \frac{rad}{s}
+\end{equation}
+m = 10 \\
+\begin{equation}
+   \Delta \Omega  = 0,5 \cdot 10 kHz \cdot 2 \cdot \pi  = 628,31 \frac{rad}{s}
+\end{equation}
+
+Mit Steigung von Geraden auf ausgabe 1 kann dann die benötigte frequenz bestimmt werden  
+
+Bandbreitenbedarf: 
+m = 0,5 
+\begin{equation}
+    B = 2 \cdot 10 kHz \cdot (0,5 +1) = 30 kHz
+\end{equation}
+
+m = 2,4 
+\begin{equation}
+    B = 2 \cdot 10 kHz \cdot (2,4 +1) = 68 kHz
+\end{equation}
+
+m = 0,5 
+\begin{equation}
+    B = 2 \cdot 10 kHz \cdot (10 +1) = 220 kHz
+\end{equation}
 \subsubsection{Benötige Amplitude eines 20kHz Sinussignals}
 \label{kap:2.2}
+
+
 
 \subsubsection{Frequenzmodulator als Phasenmodulator}
 \label{kap:2.3}
@@ -439,40 +585,34 @@ Nach Abschluss aller Messungen wurden sämtliche Geräte ausgeschaltet und der A
 
 \subsection{Messtabellen}
 \label{Ah:Messtabellen}
-% \begin{table}[!h] 
-%     \centering
-%     \begin{tabular}{|c|c|c|} 
-% \hline\textbf{Gleichspannung} & \textbf{Ausgangsamplitude} & \textbf{Ausgangsamplitude} \\
-% \textbf{$U_2$ [V]} & \textbf{$U_A$ [mV] bei 2V} & \textbf{$U_A$ [mV] bei 25mV} \\ \hline
-%             -12.0 & 0.0  & 0 \\ \hline 
-%             -11.5 & 24.8 & 13.2 \\ \hline
-%             -11.0 & 110  & 51.9 \\ \hline
-%             -10.5 & 203  & 93.9 \\ \hline
-%             -10.0 & 297  & 134 \\ \hline
-%             -9.5  & 392  & 174 \\ \hline
-%             -9.0  & 486  & 211 \\ \hline
-%             -8.5  & 580  & 247 \\ \hline
-%             -8.0  & 675  & 281 \\ \hline
-%             -7.5  & 770  & 313 \\ \hline
-%             -7.0  & 864  & 344 \\ \hline
-%             -6.5  & 958  & 374 \\ \hline
-%             -6.0  & 1051 & 403 \\ \hline
-%             -5.5  & 1145 & 428 \\ \hline
-%             -5.0  & 1238 & 455 \\ \hline
-%             -4.5  & 1331 & 480 \\ \hline
-%             -4.0  & 1423 & 502 \\ \hline
-%             -3.5  & 1517 & 525 \\ \hline
-%             -3.0  & 1609 & 545 \\ \hline
-%             -2.5  & 1700 & 566 \\ \hline
-%             -2.0  & 1791 & 585 \\ \hline
-%             -1.5  & 1882 & 603 \\ \hline
-%             -1.0  & 1973 & 620 \\ \hline
-%             -0.5  & 2065 & 638 \\ \hline
-%              0.0  & 1852 & 608 \\ \hline
-%     \end{tabular}
-% \caption{Messwerte der Aufgabe 1}\label{tab:Aufgabe1}
-% \end{table}
-% \begin{table}[!h] 
+ \begin{table}[!h] 
+     \centering
+     \begin{tabular}{|c|c|} 
+ \hline\textbf{Gleichspannung} & \textbf{Momentanfrequenz}  \\
+ \textbf{$U_2$ [V]} & \textbf{$f(t)$ [Hz] } \\ \hline
+             -4.0 & 0.0  \\ \hline 
+             -3.5 & 0.0 \\ \hline
+             -3.0 & 0.0  \\ \hline
+             -2.5 & 0.0  \\ \hline
+             -2.0 & 0.0 \\ \hline
+             -1.5  & 0.0  \\ \hline
+             -1.0  & 0.0  \\ \hline
+             -0.5  & 0.0  \\ \hline
+             0.0  & 0.0  \\ \hline
+             0.5  & 0.0  \\ \hline
+             1.0  & 0.0  \\ \hline
+             1.5  & 0.0  \\ \hline
+             2.0  & 0.0 \\ \hline
+             2.5  & 0.0 \\ \hline
+             3.0  & 0.0 \\ \hline
+             3.5  & 0.0 \\ \hline
+             4.0  & 0.0 \\ \hline
+     \end{tabular}
+ \caption{Messwerte der Aufgabe 1}\label{tab:Aufgabe1}
+ \end{table}
+
+
+ % \begin{table}[!h] 
 %     \centering
 %     \begin{tabular}{|c|c|c|} 
 %           \hline \textbf{Bandbezeichnung}   & \textbf{Amplitude der Spektrallinien} & \textbf{Frequenz} \\ 
