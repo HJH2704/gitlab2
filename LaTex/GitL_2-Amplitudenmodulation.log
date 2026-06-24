@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.27)  24 JUN 2026 14:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.27)  24 JUN 2026 15:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1532,10 +1532,6 @@ Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
  (GitL_2-Amplitudenmodulation.aux
 Package babel Info: 'ngerman' activates 'german' shorthands.
 (babel)             Reported on input line 12.
-
-
-LaTeX Warning: Label `Abb:Aufbau_phy' multiply defined.
-
 )
 \openout1 = `GitL_2-Amplitudenmodulation.aux'.
 
@@ -1691,204 +1687,204 @@ Underfull \hbox (badness 10000) in paragraph at lines 397--399
 <../Abbildungen/1/1.1/Modulationskennlinie.png, id=270, 569.7285pt x 352.1958pt>
 File: ../Abbildungen/1/1.1/Modulationskennlinie.png Graphic file (type png)
 <use ../Abbildungen/1/1.1/Modulationskennlinie.png>
-Package pdftex.def Info: ../Abbildungen/1/1.1/Modulationskennlinie.png  used on input line 433.
+Package pdftex.def Info: ../Abbildungen/1/1.1/Modulationskennlinie.png  used on input line 434.
 (pdftex.def)             Requested size: 403.31511pt x 249.32452pt.
  [12 <../Abbildungen/1/1.1/Modulationskennlinie.png>]
 <../Abbildungen/1/1.2/Modulationskennlinie.png, id=278, 569.7285pt x 352.1958pt>
 File: ../Abbildungen/1/1.2/Modulationskennlinie.png Graphic file (type png)
 <use ../Abbildungen/1/1.2/Modulationskennlinie.png>
-Package pdftex.def Info: ../Abbildungen/1/1.2/Modulationskennlinie.png  used on input line 453.
+Package pdftex.def Info: ../Abbildungen/1/1.2/Modulationskennlinie.png  used on input line 454.
 (pdftex.def)             Requested size: 313.69029pt x 193.91788pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 449--460
+Underfull \hbox (badness 10000) in paragraph at lines 450--461
 
  []
 
 <../Abbildungen/1/Gesamt_1.png, id=281, 569.7285pt x 352.1958pt>
 File: ../Abbildungen/1/Gesamt_1.png Graphic file (type png)
 <use ../Abbildungen/1/Gesamt_1.png>
-Package pdftex.def Info: ../Abbildungen/1/Gesamt_1.png  used on input line 466.
+Package pdftex.def Info: ../Abbildungen/1/Gesamt_1.png  used on input line 467.
 (pdftex.def)             Requested size: 313.69029pt x 193.91788pt.
 [13 <../Abbildungen/1/1.2/Modulationskennlinie.png> <../Abbildungen/1/Gesamt_1.png>] [14]
 <../Abbildungen/2/2.1/Modulationskennlinie.png, id=301, 569.7285pt x 352.1958pt>
 File: ../Abbildungen/2/2.1/Modulationskennlinie.png Graphic file (type png)
 <use ../Abbildungen/2/2.1/Modulationskennlinie.png>
-Package pdftex.def Info: ../Abbildungen/2/2.1/Modulationskennlinie.png  used on input line 512.
+Package pdftex.def Info: ../Abbildungen/2/2.1/Modulationskennlinie.png  used on input line 513.
 (pdftex.def)             Requested size: 313.69029pt x 193.91788pt.
  [15 <../Abbildungen/2/2.1/Modulationskennlinie.png>]
 <../Abbildungen/2/2.1/Modulationskennlinie_V2.png, id=315, 569.7285pt x 352.1958pt>
 File: ../Abbildungen/2/2.1/Modulationskennlinie_V2.png Graphic file (type png)
 <use ../Abbildungen/2/2.1/Modulationskennlinie_V2.png>
-Package pdftex.def Info: ../Abbildungen/2/2.1/Modulationskennlinie_V2.png  used on input line 540.
+Package pdftex.def Info: ../Abbildungen/2/2.1/Modulationskennlinie_V2.png  used on input line 541.
 (pdftex.def)             Requested size: 268.8813pt x 166.21992pt.
  [16 <../Abbildungen/2/2.1/Modulationskennlinie_V2.png>] [17]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 793--804
+Underfull \hbox (badness 10000) in paragraph at lines 794--805
 
  []
 
 <../Abbildungen/3/3.1/Frequenzgang.png, id=361, 631.158pt x 339.4281pt>
 File: ../Abbildungen/3/3.1/Frequenzgang.png Graphic file (type png)
 <use ../Abbildungen/3/3.1/Frequenzgang.png>
-Package pdftex.def Info: ../Abbildungen/3/3.1/Frequenzgang.png  used on input line 827.
+Package pdftex.def Info: ../Abbildungen/3/3.1/Frequenzgang.png  used on input line 829.
 (pdftex.def)             Requested size: 358.50612pt x 192.79755pt.
 [20] [21 <../Abbildungen/3/3.1/Frequenzgang.png>]
 <../Abbildungen/3/3.2/Modulationskennlinie.png, id=387, 858.3267pt x 351.4731pt>
 File: ../Abbildungen/3/3.2/Modulationskennlinie.png Graphic file (type png)
 <use ../Abbildungen/3/3.2/Modulationskennlinie.png>
-Package pdftex.def Info: ../Abbildungen/3/3.2/Modulationskennlinie.png  used on input line 884.
+Package pdftex.def Info: ../Abbildungen/3/3.2/Modulationskennlinie.png  used on input line 886.
 (pdftex.def)             Requested size: 358.50612pt x 146.8025pt.
  [22 <../Abbildungen/3/3.2/Modulationskennlinie.png>] [23] [24] [25]
-Overfull \hbox (14.15614pt too wide) in paragraph at lines 1010--1015
+Overfull \hbox (14.15614pt too wide) in paragraph at lines 1012--1017
 \T1/cmr/m/n/12 Aus die-sem Grund han-delt es sich hier nicht um ei-ne Einseitenband-Amplitudenmodulation,
  []
 
 [26] [27]
-Overfull \hbox (20.2205pt too wide) in paragraph at lines 1038--1038
+Overfull \hbox (20.2205pt too wide) in paragraph at lines 1077--1077
 []\T1/cmr/m/n/12 ^^R  Informations- und Kom-mu-ni-ka-ti-ons-tech-nik - Am-pli-tu-den-mo-du-la-ti-on. ^^PAdresse: []$\T1/cmtt/m/n/12 https :
  []
 
 
-Overfull \hbox (0.33934pt too wide) in paragraph at lines 1038--1038
+Overfull \hbox (0.33934pt too wide) in paragraph at lines 1077--1077
 []\T1/cmr/m/n/12 ^^R  Op-ti-ma-le Band-brei-te und Ab-ta-stra-te bei Os-zil-lo-sko-pen. ^^PAdresse: []$\T1/cmtt/m/n/12 https : / / media .
  []
 
 
-Overfull \hbox (258.10281pt too wide) in paragraph at lines 1038--1038
+Overfull \hbox (258.10281pt too wide) in paragraph at lines 1077--1077
 \T1/cmtt/m/n/12 wiki / ein -[] oszilloskop -[] kaufen -[] die -[] qual -[] der -[] wahl ? srsltid = AfmBOorMyGCT9sGKx7CwF7cbrcs5xhtXqfGmpeM8GPdHyaUROV0a74oQ$[] 
  []
 
 [28]
-<../Abbildungen/parallelschwingkreis_frequenzgang.png, id=480, 848.4498pt x 622.0038pt>
+<../Abbildungen/parallelschwingkreis_frequenzgang.png, id=487, 848.4498pt x 622.0038pt>
 File: ../Abbildungen/parallelschwingkreis_frequenzgang.png Graphic file (type png)
 <use ../Abbildungen/parallelschwingkreis_frequenzgang.png>
-Package pdftex.def Info: ../Abbildungen/parallelschwingkreis_frequenzgang.png  used on input line 1047.
+Package pdftex.def Info: ../Abbildungen/parallelschwingkreis_frequenzgang.png  used on input line 1086.
 (pdftex.def)             Requested size: 313.69029pt x 229.96696pt.
-<../Abbildungen/1/1.1/1_1_Träger.PNG, id=481, 963.6pt x 620.3175pt>
+<../Abbildungen/1/1.1/1_1_Träger.PNG, id=488, 963.6pt x 620.3175pt>
 File: ../Abbildungen/1/1.1/1_1_Träger.PNG Graphic file (type png)
 <use ../Abbildungen/1/1.1/1_1_Träger.PNG>
-Package pdftex.def Info: ../Abbildungen/1/1.1/1_1_Träger.PNG  used on input line 1053.
+Package pdftex.def Info: ../Abbildungen/1/1.1/1_1_Träger.PNG  used on input line 1092.
 (pdftex.def)             Requested size: 313.69029pt x 201.93208pt.
  [29 <../Abbildungen/parallelschwingkreis_frequenzgang.png> <../Abbildungen/1/1.1/1_1_Träger.PNG>]
-<../Abbildungen/1/1.2/1_2_Träger.PNG, id=488, 963.6pt x 620.3175pt>
+<../Abbildungen/1/1.2/1_2_Träger.PNG, id=495, 963.6pt x 620.3175pt>
 File: ../Abbildungen/1/1.2/1_2_Träger.PNG Graphic file (type png)
 <use ../Abbildungen/1/1.2/1_2_Träger.PNG>
-Package pdftex.def Info: ../Abbildungen/1/1.2/1_2_Träger.PNG  used on input line 1060.
+Package pdftex.def Info: ../Abbildungen/1/1.2/1_2_Träger.PNG  used on input line 1099.
 (pdftex.def)             Requested size: 313.69029pt x 201.93208pt.
-<../Abbildungen/2/2.1/2_1_gesamt_curser_final_.PNG, id=489, 963.6pt x 620.3175pt>
+<../Abbildungen/2/2.1/2_1_gesamt_curser_final_.PNG, id=496, 963.6pt x 620.3175pt>
 File: ../Abbildungen/2/2.1/2_1_gesamt_curser_final_.PNG Graphic file (type png)
 <use ../Abbildungen/2/2.1/2_1_gesamt_curser_final_.PNG>
-Package pdftex.def Info: ../Abbildungen/2/2.1/2_1_gesamt_curser_final_.PNG  used on input line 1066.
+Package pdftex.def Info: ../Abbildungen/2/2.1/2_1_gesamt_curser_final_.PNG  used on input line 1105.
 (pdftex.def)             Requested size: 313.69029pt x 201.93208pt.
  [30 <../Abbildungen/1/1.2/1_2_Träger.PNG> <../Abbildungen/2/2.1/2_1_gesamt_curser_final_.PNG>]
-<../Abbildungen/2/2.3/2_3_Aufnahme_2.PNG, id=496, 963.6pt x 620.3175pt>
+<../Abbildungen/2/2.3/2_3_Aufnahme_2.PNG, id=503, 963.6pt x 620.3175pt>
 File: ../Abbildungen/2/2.3/2_3_Aufnahme_2.PNG Graphic file (type png)
 <use ../Abbildungen/2/2.3/2_3_Aufnahme_2.PNG>
-Package pdftex.def Info: ../Abbildungen/2/2.3/2_3_Aufnahme_2.PNG  used on input line 1073.
+Package pdftex.def Info: ../Abbildungen/2/2.3/2_3_Aufnahme_2.PNG  used on input line 1112.
 (pdftex.def)             Requested size: 313.69029pt x 201.93208pt.
-<../Abbildungen/2/2.3/SA_2_3_alle_Peaks/Measurement0100.png, id=497, 1028.34187pt x 578.16pt>
+<../Abbildungen/2/2.3/SA_2_3_alle_Peaks/Measurement0100.png, id=504, 1028.34187pt x 578.16pt>
 File: ../Abbildungen/2/2.3/SA_2_3_alle_Peaks/Measurement0100.png Graphic file (type png)
 <use ../Abbildungen/2/2.3/SA_2_3_alle_Peaks/Measurement0100.png>
-Package pdftex.def Info: ../Abbildungen/2/2.3/SA_2_3_alle_Peaks/Measurement0100.png  used on input line 1079.
+Package pdftex.def Info: ../Abbildungen/2/2.3/SA_2_3_alle_Peaks/Measurement0100.png  used on input line 1118.
 (pdftex.def)             Requested size: 313.69029pt x 176.3606pt.
  [31 <../Abbildungen/2/2.3/2_3_Aufnahme_2.PNG> <../Abbildungen/2/2.3/SA_2_3_alle_Peaks/Measurement0100.png>]
-<../Abbildungen/3/3.3/Grundbild.PNG, id=505, 963.6pt x 620.3175pt>
+<../Abbildungen/3/3.3/Grundbild.PNG, id=512, 963.6pt x 620.3175pt>
 File: ../Abbildungen/3/3.3/Grundbild.PNG Graphic file (type png)
 <use ../Abbildungen/3/3.3/Grundbild.PNG>
-Package pdftex.def Info: ../Abbildungen/3/3.3/Grundbild.PNG  used on input line 1086.
+Package pdftex.def Info: ../Abbildungen/3/3.3/Grundbild.PNG  used on input line 1125.
 (pdftex.def)             Requested size: 313.69029pt x 201.93208pt.
-<../Abbildungen/3/3.3/Anstiegszet.PNG, id=506, 963.6pt x 620.3175pt>
+<../Abbildungen/3/3.3/Anstiegszet.PNG, id=513, 963.6pt x 620.3175pt>
 File: ../Abbildungen/3/3.3/Anstiegszet.PNG Graphic file (type png)
 <use ../Abbildungen/3/3.3/Anstiegszet.PNG>
-Package pdftex.def Info: ../Abbildungen/3/3.3/Anstiegszet.PNG  used on input line 1092.
+Package pdftex.def Info: ../Abbildungen/3/3.3/Anstiegszet.PNG  used on input line 1131.
 (pdftex.def)             Requested size: 313.69029pt x 201.93208pt.
  [32 <../Abbildungen/3/3.3/Grundbild.PNG> <../Abbildungen/3/3.3/Anstiegszet.PNG>]
-<../Abbildungen/3/3.3/Abfallzeit.PNG, id=513, 963.6pt x 620.3175pt>
+<../Abbildungen/3/3.3/Abfallzeit.PNG, id=520, 963.6pt x 620.3175pt>
 File: ../Abbildungen/3/3.3/Abfallzeit.PNG Graphic file (type png)
 <use ../Abbildungen/3/3.3/Abfallzeit.PNG>
-Package pdftex.def Info: ../Abbildungen/3/3.3/Abfallzeit.PNG  used on input line 1101.
+Package pdftex.def Info: ../Abbildungen/3/3.3/Abfallzeit.PNG  used on input line 1140.
 (pdftex.def)             Requested size: 313.69029pt x 201.93208pt.
-<../Abbildungen/3/3.3/Dachabfall.PNG, id=514, 963.6pt x 620.3175pt>
+<../Abbildungen/3/3.3/Dachabfall.PNG, id=521, 963.6pt x 620.3175pt>
 File: ../Abbildungen/3/3.3/Dachabfall.PNG Graphic file (type png)
 <use ../Abbildungen/3/3.3/Dachabfall.PNG>
-Package pdftex.def Info: ../Abbildungen/3/3.3/Dachabfall.PNG  used on input line 1107.
+Package pdftex.def Info: ../Abbildungen/3/3.3/Dachabfall.PNG  used on input line 1146.
 (pdftex.def)             Requested size: 313.69029pt x 201.93208pt.
  [33 <../Abbildungen/3/3.3/Abfallzeit.PNG> <../Abbildungen/3/3.3/Dachabfall.PNG>]
-<../Abbildungen/3/3.4/Verzögerung_10kHz.PNG, id=521, 963.6pt x 620.3175pt>
+<../Abbildungen/3/3.4/Verzögerung_10kHz.PNG, id=528, 963.6pt x 620.3175pt>
 File: ../Abbildungen/3/3.4/Verzögerung_10kHz.PNG Graphic file (type png)
 <use ../Abbildungen/3/3.4/Verzögerung_10kHz.PNG>
-Package pdftex.def Info: ../Abbildungen/3/3.4/Verzögerung_10kHz.PNG  used on input line 1114.
+Package pdftex.def Info: ../Abbildungen/3/3.4/Verzögerung_10kHz.PNG  used on input line 1153.
 (pdftex.def)             Requested size: 313.69029pt x 201.93208pt.
-<../Abbildungen/3/3.4/Verzögerung_1kHz.PNG, id=522, 963.6pt x 620.3175pt>
+<../Abbildungen/3/3.4/Verzögerung_1kHz.PNG, id=529, 963.6pt x 620.3175pt>
 File: ../Abbildungen/3/3.4/Verzögerung_1kHz.PNG Graphic file (type png)
 <use ../Abbildungen/3/3.4/Verzögerung_1kHz.PNG>
-Package pdftex.def Info: ../Abbildungen/3/3.4/Verzögerung_1kHz.PNG  used on input line 1120.
+Package pdftex.def Info: ../Abbildungen/3/3.4/Verzögerung_1kHz.PNG  used on input line 1159.
 (pdftex.def)             Requested size: 313.69029pt x 201.93208pt.
  [34 <../Abbildungen/3/3.4/Verzögerung_10kHz.PNG> <../Abbildungen/3/3.4/Verzögerung_1kHz.PNG>]
-<../Abbildungen/4/4.2/3.5/Measurement0129.png, id=529, 1028.34187pt x 578.16pt>
+<../Abbildungen/4/4.2/3.5/Measurement0129.png, id=536, 1028.34187pt x 578.16pt>
 File: ../Abbildungen/4/4.2/3.5/Measurement0129.png Graphic file (type png)
 <use ../Abbildungen/4/4.2/3.5/Measurement0129.png>
-Package pdftex.def Info: ../Abbildungen/4/4.2/3.5/Measurement0129.png  used on input line 1127.
+Package pdftex.def Info: ../Abbildungen/4/4.2/3.5/Measurement0129.png  used on input line 1166.
 (pdftex.def)             Requested size: 313.69029pt x 176.3606pt.
-<../Abbildungen/4/4.3/3.5/Measurement0132.png, id=530, 1028.34187pt x 578.16pt>
+<../Abbildungen/4/4.3/3.5/Measurement0132.png, id=537, 1028.34187pt x 578.16pt>
 File: ../Abbildungen/4/4.3/3.5/Measurement0132.png Graphic file (type png)
 <use ../Abbildungen/4/4.3/3.5/Measurement0132.png>
-Package pdftex.def Info: ../Abbildungen/4/4.3/3.5/Measurement0132.png  used on input line 1133.
+Package pdftex.def Info: ../Abbildungen/4/4.3/3.5/Measurement0132.png  used on input line 1172.
 (pdftex.def)             Requested size: 313.69029pt x 176.3606pt.
  [35 <../Abbildungen/4/4.2/3.5/Measurement0129.png> <../Abbildungen/4/4.3/3.5/Measurement0132.png>] [36] [37] [38] [39]
-<../GIT_Labor_Amplitudenmodulation_SoSe26.pdf, id=554, 597.50829pt x 845.0471pt>
+<../GIT_Labor_Amplitudenmodulation_SoSe26.pdf, id=561, 597.50829pt x 845.0471pt>
 File: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf Graphic file (type pdf)
 <use ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf>
-Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf  used on input line 1310.
+Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf  used on input line 1349.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<../GIT_Labor_Amplitudenmodulation_SoSe26.pdf, id=556, page=8, 597.50829pt x 845.0471pt>
+<../GIT_Labor_Amplitudenmodulation_SoSe26.pdf, id=563, page=8, 597.50829pt x 845.0471pt>
 File: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf Graphic file (type pdf)
 <use ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf, page 8>
-Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf , page8 used on input line 1310.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf Graphic file (type pdf)
-<use ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf, page 8>
-Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf , page8 used on input line 1310.
+Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf , page8 used on input line 1349.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf Graphic file (type pdf)
 <use ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf, page 8>
-Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf , page8 used on input line 1310.
+Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf , page8 used on input line 1349.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf Graphic file (type pdf)
 <use ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf, page 8>
-Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf , page8 used on input line 1310.
+Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf , page8 used on input line 1349.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf Graphic file (type pdf)
 <use ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf, page 8>
-Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf , page8 used on input line 1310.
+Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf , page8 used on input line 1349.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf Graphic file (type pdf)
+<use ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf, page 8>
+Package pdftex.def Info: ../GIT_Labor_Amplitudenmodulation_SoSe26.pdf , page8 used on input line 1349.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
  [40
 
  <../GIT_Labor_Amplitudenmodulation_SoSe26.pdf>]
-<../Abbildungen/Aufbau/Aufbau_links.png, id=585, 1606.0pt x 1204.5pt>
+<../Abbildungen/Aufbau/Aufbau_links.png, id=592, 1606.0pt x 1204.5pt>
 File: ../Abbildungen/Aufbau/Aufbau_links.png Graphic file (type png)
 <use ../Abbildungen/Aufbau/Aufbau_links.png>
-Package pdftex.def Info: ../Abbildungen/Aufbau/Aufbau_links.png  used on input line 1449.
+Package pdftex.def Info: ../Abbildungen/Aufbau/Aufbau_links.png  used on input line 1488.
 (pdftex.def)             Requested size: 313.69029pt x 235.2717pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<../Abbildungen/Aufbau/Aufbau_rechts.png, id=586, 1606.0pt x 1204.5pt>
+<../Abbildungen/Aufbau/Aufbau_rechts.png, id=593, 1606.0pt x 1204.5pt>
 File: ../Abbildungen/Aufbau/Aufbau_rechts.png Graphic file (type png)
 <use ../Abbildungen/Aufbau/Aufbau_rechts.png>
-Package pdftex.def Info: ../Abbildungen/Aufbau/Aufbau_rechts.png  used on input line 1455.
+Package pdftex.def Info: ../Abbildungen/Aufbau/Aufbau_rechts.png  used on input line 1494.
 (pdftex.def)             Requested size: 313.69029pt x 235.2717pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<../Abbildungen/Aufbau/Aufbau_Platine.png, id=587, 1053.9375pt x 868.74562pt>
+<../Abbildungen/Aufbau/Aufbau_Platine.png, id=594, 1053.9375pt x 868.74562pt>
 File: ../Abbildungen/Aufbau/Aufbau_Platine.png Graphic file (type png)
 <use ../Abbildungen/Aufbau/Aufbau_Platine.png>
-Package pdftex.def Info: ../Abbildungen/Aufbau/Aufbau_Platine.png  used on input line 1461.
+Package pdftex.def Info: ../Abbildungen/Aufbau/Aufbau_Platine.png  used on input line 1499.
 (pdftex.def)             Requested size: 448.13095pt x 369.39096pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1901,26 +1897,22 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package logreq Info: Writing requests to 'GitL_2-Amplitudenmodulation.run.xml'.
 \openout1 = `GitL_2-Amplitudenmodulation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 75269 strings out of 467683
- 1880799 string characters out of 5414721
- 3128590 words of memory out of 5000000
- 103360 multiletter control sequences out of 15000+600000
+ 75271 strings out of 467683
+ 1880822 string characters out of 5414721
+ 3127648 words of memory out of 5000000
+ 103362 multiletter control sequences out of 15000+600000
  651482 words of font info for 81 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,20n,107p,11290b,2483s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\mvoge\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso12.pfb><C:/Users/mvoge/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on GitL_2-Amplitudenmodulation.pdf (44 pages, 5368734 bytes).
+Output written on GitL_2-Amplitudenmodulation.pdf (44 pages, 5370261 bytes).
 PDF statistics:
- 1074 PDF objects out of 1200 (max. 8388607)
+ 1081 PDF objects out of 1200 (max. 8388607)
  144 named destinations out of 1000 (max. 500000)
  449 words of extra memory for PDF output out of 10000 (max. 10000000)
 

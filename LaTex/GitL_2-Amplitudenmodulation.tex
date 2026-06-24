@@ -422,6 +422,7 @@ Nach Abschluss aller Messungen wurden sämtliche Geräte ausgeschaltet und der A
 
 \newpage
 \section{Auswertung}
+\label{kap:Auswertung}
 \subsection{Statische Modulationskennlinie}
 \label{kap:1}
 \subsubsection{Modulationskennlinie bei einer Eingangsgleichspannung von 2V}
@@ -819,6 +820,7 @@ Somit kann geschlussfolgert werden, dass mithilfe einer vorherigen Bestimmung de
 
 
 \subsection{Frequenzverhalten des Modulators}
+\label{kap:3}
 \subsubsection{Frequenzgang des Modulators}
 Die Messdaten des Frequenzganges $U_A=U_A\left(f_0\right)$ können der Tabelle \ref{tab:Aufgabe3.1} entnommen werden. 
 Für die weitere Bearbeitung der Aufgabe werden die Daten als Graph dargestellt. 
@@ -1015,21 +1017,58 @@ Aus diesem Grund handelt es sich hier nicht um eine Einseitenband-Amplitudenmodu
 Zu sehen ist, dass ein Seitenband gedämpft ist, jedoch nicht die Trägeramplitude \cite{GoldenbaumGitskript}.\newpage
 
 \section{Fazit}
-Abschließend kann gesagt werden, dass die Aufgabenstellung erfolgreich bearbeitet werden konnte. 
-Im ersten Versuchsteil der Modulationskennlinie eine Grundlage geschaffen, welche Vorraussetzung war, dass die betriebene Systemtheorie für die folgenden Versuchsteile richtig ist, und so die theoretischen Annahmen getroffen werden durften. 
-Dies war nötig, um die Theoriewerte zu legitimieren, mit denen in den späteren Versuchsteilen als Referenz dienen. 
-Es ist zu sehen das bei zu geringer Eingangsspannung die Modulationskennlinie nicht mehr linear ist, und somit die theoretischen Annahmen nicht mehr zutreffen.
-Dies ist eine wichtige Erkenntnis, um bei zukünftigen Versuchen die Eingangsspannung so zu wählen, dass gültige Ergebnisse erzeugt werden. 
-Im zweiten Versuchsteil wurde dann der Modulationsgrad der Kennlinie berechnet. 
-Dieser konnte nach Anfänglichen Fehlern durch ungenaues Abrechnen oder ungünstig gewählten Messpunkten durch eine mathematische Lösung mit einer einstelligen prozentualen Abweichung genau genug bestimmt werden, um ihn mit dem theoretischen Wert vergleichen zu können und so die errechnete Theorie zu bestätigen.
-Durch die Darstellung im Zeigerdiagramm konnten Anschließend die Vorgänge bei der Modulation grafisch sichtbar und so noch einmal plastisch dargestellt werden. 
+Mit den Erkenntnissen aus der Auswertung Kapitel \ref{kap:Auswertung} kann folgendes über die Unteraufgaben geschlossen werden.\\
+Bei der Bearbeitung der Statischen Modulationskennlinie Kapitel \ref{kap:1} konnte ein annähernd lineares Verhalten zwischen Eingangsspannung und Ausgangsspannung festgestellt werden. 
+Dies aber nur unter der Vorraussetzung, dass die Trägerspannung eine gewisse unbekannte Spannung überschreitet.
+Fällt die Trägerspannung darunter, entsteht ein Abfall des Verhältnis zwischen Eingangsspannung und Ausgangsspannung des Informationssignales.
+Die Erkenntnis dieser Aufgabe ist daraus folgend, dass bei einer korrekt eingestellten Trägerspannung das Gesamtsystem ein lineares Verhalten zwischen Eingang und Ausgang der Informationssignal zeigt. 
+Damit kann weitere Systemtheoretische Berechnungen erfolgen.
+\bigskip
+
+In der weiteren Bearbeitung des zeitlicher Verlauf und Frequenzspektrum \ref{kap:2} mithilfe der Modulationskennlinie aus Kapitel \ref{kap:1.1} sind jedoch nicht erwartet Messwerte aufgetreten
+Wird der Modulationsgrad mittels der Messwerte berechnet oder von Oszilloskop abgelesen, sollte der Modulationsgrad $m$ identisch sein. 
+Dies war jedoch während der Bearbeitung nicht der Fall. 
+Da grobe Fehler beim Ablesen des Oszilloskop ausgeschlossen werden konnten, wurde der Modulationsgrad an andere Stelle aus den Messwerten sowie mittels Linearisierung berechnet. 
+Da diese beiden zwar etwa Identisch, jedoch nicht identisch zur ersten berechneten Modulationsgrad sind, müssen Messfehler ausgetreten sein. 
+Sollte daraus eine Konkrete Aussage geschlossen werden, müsste die Messung wiederholt werden. 
+Die Ergebnise stellen keine fungierte Aussage für weitere Arbeiten da.
+Weitere Teile der Aufgabe befassen sich mmit dem Betrasspektrum er Ausgangsspannung. 
+Hier konnte Festgestellt werden, dass ein Modulationsgrad $m=1$ aufgrund der verwendeten Geräte nicht erreicht werden kann.
+Realistisch waren Werte um 0.97.
+\bigskip
+
+Weiter wurde das Frequenzverhalten des Modulatiors in Kapitel \ref{kap:3} betrachtet. 
+Es konnte Festgestellt werden, dass der Frequenzgang des Modulators und der Frequenzgang des Modulationsgrades gleiche Eigenschaften aufweisen. 
+Im Fall der Schaltung auf der Platine ein Bandpassverhalten.
+Die Begründungen für diese Verhalten lagen in verschiedenen RLC-Kombination.\\
+Mit der Betrachtung der Schaltung auf ein rechteckiges Eingangssignal, wurde das Verhalten des Bandpasses nochmal verdeutlicht. 
+Weiter wurden alle auffallende Verhaltensweisen begründet und berechnet.
+\bigskip
+
+Verschiedenste Modulationsarten werden in Kapitel \ref{kap:4} betrachtet. 
+Es wurde Festgestellt, dass eine energieärmere Übertragung zwar möglich ist, jedoch nicht ohne Preis. 
+So wird entweder eine höhere Signalfrequenz benötigt oder eine treuere Schaltung. 
+Eine Verbesserung ist somit nie ohne Einschränkungen möglich.
+\bigskip
+
+Grundsätzlich wurden viele Bereiche der Amplitudenmodulation betrachtet und näher erleutert. 
+Trotz der vermutlichen Messfehler in Kapitel \ref{kap:2.1} konnten alle auftretende Erscheinungen erklärt werden.
+
+%Abschließend kann gesagt werden, dass die Aufgabenstellung erfolgreich bearbeitet werden konnte. 
+%Im ersten Versuchsteil der Modulationskennlinie eine Grundlage geschaffen, welche Vorraussetzung war, dass die betriebene Systemtheorie für die folgenden Versuchsteile richtig ist, und so die theoretischen Annahmen getroffen werden durften. 
+%Dies war nötig, um die Theoriewerte zu legitimieren, mit denen in den späteren Versuchsteilen als Referenz dienen. 
+%Es ist zu sehen das bei zu geringer Eingangsspannung die Modulationskennlinie nicht mehr linear ist, und somit die theoretischen Annahmen nicht mehr zutreffen.
+%Dies ist eine wichtige Erkenntnis, um bei zukünftigen Versuchen die Eingangsspannung so zu wählen, dass gültige Ergebnisse erzeugt werden. 
+%Im zweiten Versuchsteil wurde dann der Modulationsgrad der Kennlinie berechnet. 
+%Dieser konnte nach Anfänglichen Fehlern durch ungenaues Abrechnen oder ungünstig gewählten Messpunkten durch eine mathematische Lösung mit einer einstelligen prozentualen Abweichung genau genug bestimmt werden, um ihn mit dem theoretischen Wert vergleichen zu können und so die errechnete Theorie zu bestätigen.
+%Durch die Darstellung im Zeigerdiagramm konnten Anschließend die Vorgänge bei der Modulation grafisch sichtbar und so noch einmal plastisch dargestellt werden. 
 
 
-Weitergehend konnte nun unter der Berücksichtigung der geringfügig Abweichung durch die unsaubereren Einstellungen auch gezeigt werden, das die Amplituden der Spektrallinien  präzise bestimmt werden können und Vorhersagen über das mögliche Verhalten dieser möglich sind.  
-Im nächsten Versuchsteil wurde das frequenzverhalten des Modulator untersucht dieses konnte, wie bereits erläutert nicht exakt, aber jedoch in der richtigen Größenordnung ermittelt werden. Für ein besseres Ergebnis wären zum einen eine Umfangreichere Messung, sowie genauere Ablesemöglichkeiten am Oszilloskop, welche nicht nur auf grafische Verfahren des Bildschirms beruhen nötig gewesen. 
-Im nächsten Versuchsteil wurden Ungenauigkeiten der Abstiegsfall und der Zeitkonstante festgestellt, diese konnten jedoch damit begründet werden das die Grenzfrequenz des vorangegangen Versuchsteil nicht exakt bestimmt werden konnte, bzw. die Zeitkonstante nur Approximiert wurde. 
-Im letzten Versuchsteil wurden dann verscheinden e Modulationsarten untersucht, diese konnten durch die Betrachtung der Spektrallinien und deren Amplituden bestimmt werden. Aufgrundlage der zu sehenden Peaks im Spektrum konnten so die Einseitenband- und Restseitenbandamplitudenmodulation richtig zugeordnet werden. 
-Bei allen Versuchsteilen konnte gezeigt werden, dass die theoretischen Annahmen und Berechnungen mit den gemessenen Werten übereinstimmen, auch wenn die Messungen nicht immer exakt waren.
+%Weitergehend konnte nun unter der Berücksichtigung der geringfügig Abweichung durch die unsaubereren Einstellungen auch gezeigt werden, das die Amplituden der Spektrallinien  präzise bestimmt werden können und Vorhersagen über das mögliche Verhalten dieser möglich sind.  
+%Im nächsten Versuchsteil wurde das frequenzverhalten des Modulator untersucht dieses konnte, wie bereits erläutert nicht exakt, aber jedoch in der richtigen Größenordnung ermittelt werden. Für ein besseres Ergebnis wären zum einen eine Umfangreichere Messung, sowie genauere Ablesemöglichkeiten am Oszilloskop, welche nicht nur auf grafische Verfahren des Bildschirms beruhen nötig gewesen. 
+%Im nächsten Versuchsteil wurden Ungenauigkeiten der Abstiegsfall und der Zeitkonstante festgestellt, diese konnten jedoch damit begründet werden das die Grenzfrequenz des vorangegangen Versuchsteil nicht exakt bestimmt werden konnte, bzw. die Zeitkonstante nur Approximiert wurde. 
+%Im letzten Versuchsteil wurden dann verscheinden e Modulationsarten untersucht, diese konnten durch die Betrachtung der Spektrallinien und deren Amplituden bestimmt werden. Aufgrundlage der zu sehenden Peaks im Spektrum konnten so die Einseitenband- und Restseitenbandamplitudenmodulation richtig zugeordnet werden. 
+%Bei allen Versuchsteilen konnte gezeigt werden, dass die theoretischen Annahmen und Berechnungen mit den gemessenen Werten übereinstimmen, auch wenn die Messungen nicht immer exakt waren.
 
 
 \newpage
@@ -1454,7 +1493,6 @@ Bei allen Versuchsteilen konnte gezeigt werden, dass die theoretischen Annahmen 
     \centering
     \includegraphics[width=0.7\linewidth]{../Abbildungen/Aufbau/Aufbau_rechts.png}
     \caption{Aufbau - Versuch}
-    \label{Abb:Aufbau_phy}
 \end{figure}
 \begin{figure}[!h]
     \centering
