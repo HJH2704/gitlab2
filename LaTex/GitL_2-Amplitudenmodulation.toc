@@ -19,7 +19,7 @@
 \contentsline {subsection}{\numberline {3.2}Zeitlicher Verlauf und Frequenzspektrum}{14}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Vergleich der Modulationsgrade}{14}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}Zeigerdiagramm des Spannungsverlaufes}{17}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Betragsspektrum der Ausgangsspannung}{17}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3}Betragsspektrum der Ausgangsspannung}{18}{subsubsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.3}Frequenzverhalten des Modulators}{20}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Frequenzgang des Modulators}{20}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Frequenzgang des Modulationsgrades}{21}{subsubsection.3.3.2}%
