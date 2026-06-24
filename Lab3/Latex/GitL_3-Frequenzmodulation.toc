@@ -1,25 +1,33 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {section}{\numberline {1}Theoretische Grundlagen}{4}{section.1}%
-\contentsline {section}{\numberline {2}Durchführung}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Durchführung der Aufgabe: 1}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Durchführung der Aufgabe: 2}{4}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Durchführung der Aufgabe: 3}{4}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Ende des Versuchs}{4}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Auswertung}{5}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Statische Modulationskennlinie}{5}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Modulationskennlinie der Momentanfrequenz als Funktion des Augenblickwerts $U_e$ des modulierten Eingangsignals}{5}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Wahl eines Geeigneten Arbeitsbereiches}{5}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Frequenzspektren harmonischer Modulationssignale}{5}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Modulation von Sinussignalen}{5}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Benötige Amplitude eines 20kHz Sinussignals}{5}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Frequenzmodulator als Phasenmodulator}{5}{subsubsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.3}Frequenzspektren periodischer Modulationssignale}{5}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Frequenzspektrum eines Sinus-, Dreieck- und Rechtecksignals}{5}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Frequenzumtastung eines Rechtecksignals}{5}{subsubsection.3.3.2}%
-\contentsline {section}{\numberline {4}Fazit}{5}{section.4}%
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{6}{section.5}%
-\contentsline {section}{Anhang}{7}{section.5}%
-\contentsline {subsection}{\numberline {A}Weitere Abbildungen}{7}{subsection.5.1}%
-\contentsline {subsection}{\numberline {B}Messtabellen}{7}{subsection.5.2}%
-\contentsline {subsection}{\numberline {C}Geräteliste}{8}{subsection.5.3}%
+\contentsline {subsection}{\numberline {1.1}Versuchsvorbereitung}{4}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Grundlegendes Prinzip der Frequenz- und Phasenmodulation}{4}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}Wie sehen winkelmodulierte Signale im Zeitbereich typischerweise aus?}{5}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}Wie ist der Modulationsindex m definiert und was beschreibt er?}{5}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.4}Wie lässt sich das Frequenzspektrum eines FM-Signals berechnen bei einem sinusförmigen Modulationssignal?}{5}{subsubsection.1.1.4}%
+\contentsline {subsubsection}{\numberline {1.1.5}Wie lässt sich der Bandbreitebedarf eines FM-Signals abschätzen?}{5}{subsubsection.1.1.5}%
+\contentsline {subsubsection}{\numberline {1.1.6}Wie hängen die Frequenz- und die Phasenmodulation miteinander zusammen?}{6}{subsubsection.1.1.6}%
+\contentsline {subsubsection}{\numberline {1.1.7}Was versteht man unter Frequency Shift Keying (FSK)?}{6}{subsubsection.1.1.7}%
+\contentsline {section}{\numberline {2}Durchführung}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Durchführung der Aufgabe: 1}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Durchführung der Aufgabe: 2}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Durchführung der Aufgabe: 3}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Ende des Versuchs}{6}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Auswertung}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Statische Modulationskennlinie}{7}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Modulationskennlinie der Momentanfrequenz als Funktion des Augenblickwerts $U_e$ des modulierten Eingangsignals}{7}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Wahl eines Geeigneten Arbeitsbereiches}{7}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Frequenzspektren harmonischer Modulationssignale}{7}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Modulation von Sinussignalen}{7}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Benötige Amplitude eines 20kHz Sinussignals}{7}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Frequenzmodulator als Phasenmodulator}{7}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}Frequenzspektren periodischer Modulationssignale}{7}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Frequenzspektrum eines Sinus-, Dreieck- und Rechtecksignals}{7}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Frequenzumtastung eines Rechtecksignals}{7}{subsubsection.3.3.2}%
+\contentsline {section}{\numberline {4}Fazit}{7}{section.4}%
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{8}{section.5}%
+\contentsline {section}{Anhang}{9}{section.5}%
+\contentsline {subsection}{\numberline {A}Weitere Abbildungen}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {B}Messtabellen}{9}{subsection.5.2}%
+\contentsline {subsection}{\numberline {C}Geräteliste}{10}{subsection.5.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
