@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.7)  24 JUN 2026 23:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.7)  25 JUN 2026 14:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1674,7 +1674,7 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 13.67995pt on input line 121.
  [4] [5]
-<../Abbildungen/Bessel_plot.pdf, id=120, 867.24pt x 289.08pt>
+<../Abbildungen/Bessel_plot.pdf, id=142, 867.24pt x 289.08pt>
 File: ../Abbildungen/Bessel_plot.pdf Graphic file (type pdf)
 <use ../Abbildungen/Bessel_plot.pdf>
 Package pdftex.def Info: ../Abbildungen/Bessel_plot.pdf  used on input line 267.
@@ -1710,11 +1710,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 533--535
 
  []
 
-[9] [10] [11] [12]
+[9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21]
+Overfull \hbox (30.12103pt too wide) in paragraph at lines 933--962
+ [][] 
+ []
+
+[22] [23]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13] (GitL_3-Frequenzmodulation.aux)
+[24] (GitL_3-Frequenzmodulation.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -1728,17 +1733,17 @@ Package logreq Info: Writing requests to 'GitL_3-Frequenzmodulation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 74517 strings out of 467691
- 1864404 string characters out of 5414504
- 3914061 words of memory out of 5000000
- 102682 multiletter control sequences out of 15000+600000
+ 74552 strings out of 467691
+ 1864954 string characters out of 5414504
+ 3915895 words of memory out of 5000000
+ 102694 multiletter control sequences out of 15000+600000
  647948 words of font info for 74 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,20n,107p,11331b,2483s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Holger\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Holger\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Holger\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Holger\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Holger\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on GitL_3-Frequenzmodulation.pdf (13 pages, 283651 bytes).
+Output written on GitL_3-Frequenzmodulation.pdf (24 pages, 309063 bytes).
 PDF statistics:
- 546 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
+ 622 PDF objects out of 1000 (max. 8388607)
+ 92 named destinations out of 1000 (max. 500000)
  271 words of extra memory for PDF output out of 10000 (max. 10000000)
 

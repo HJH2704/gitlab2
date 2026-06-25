@@ -556,13 +556,28 @@ m = 0,5
 \subsubsection{Benötige Amplitude eines 20kHz Sinussignals}
 \label{kap:2.2}
 
+Bestimmung der ampliude 
+
+20KHz/ steigung der geraden = amplitude 
+
 
 
 \subsubsection{Frequenzmodulator als Phasenmodulator}
 \label{kap:2.3}
 
+Durch eine Integration kann der phasenmodulator realisiert werden
+dieser kann mit einem RC-Tiefpass erster ordnung dargestellt werden
+\begin{equation}
+    f_g = 1 -  3  KHz
+\end{equation}
+Größenordnung R = 10 k$\Omega$, C = 8.2 nF 
+
 \subsection{Frequenzspektren periodischer Modulationssignale}
 \subsubsection{Frequenzspektrum eines Sinus-, Dreieck- und Rechtecksignals}
+
+
+Selbe Amplitude wie für M = 10
+
 
 \subsubsection{Frequenzumtastung eines Rechtecksignals}
 
@@ -612,125 +627,342 @@ m = 0,5
  \end{table}
 
 
- % \begin{table}[!h] 
-%     \centering
-%     \begin{tabular}{|c|c|c|} 
-%           \hline \textbf{Bandbezeichnung}   & \textbf{Amplitude der Spektrallinien} & \textbf{Frequenz} \\ 
-%                                             & \textbf{$\hat{U}$ [mV]}               & \textbf{ $f$ [kHz]} \\ \hline
-%             Unteres ungewünschtes Bandsignal& 26.57 &  470    \\ \hline
-%             Unteres gewünschtes Bandsignal  & 479.0 &  475    \\ \hline
-%             Trägeramplitude                 & 989.7 &  480    \\ \hline
-%             Oberes gewünschtes Bandsignal   & 479.0 &  485    \\ \hline
-%             Oberes ungewünschtes Bandsignal & 26.58 &  490    \\ \hline
-%     \end{tabular}
-%     \caption{Messwerte der Aufgabe 2.3} \label{tab:Aufgabe2.3}
-% \end{table}
-% \newpage
-% \begin{table}[H] 
-%     \centering
-%     \begin{tabular}{|c|c|} 
-%           \hline \textbf{Trägerfrequenz} & \textbf{Ausgangsspannung} \\ 
-%           \textbf{ $f_0$ [kHz]}    & \textbf{$U_A$ [mV] bei 2V}       \\ \hline
-%             400  &  201  \\ \hline
-%             410  &  231  \\ \hline
-%             420  &  271  \\ \hline
-%             430  &  324  \\ \hline
-%             440  &  399  \\ \hline
-%             450  &  511  \\ \hline
-%             460  &  670  \\ \hline
-%             465  &  789  \\ \hline
-%             470  &  904  \\ \hline
-%             475  &  995  \\ \hline
-%             477.5& 1018  \\ \hline
-%             480  & 1021  \\ \hline
-%             482.5& 1004  \\ \hline
-%             483  &  998  \\ \hline
-%             485  &  970  \\ \hline
-%             490  &  872  \\ \hline 
-%             495  &  763  \\ \hline 
-%             500  &  666  \\ \hline
-%             505  &  585  \\ \hline
-%             510  &  516  \\ \hline
-%             515  &  461  \\ \hline  
-%             520  &  416  \\ \hline
-%             525  &  378  \\ \hline  
-%             530  &  347  \\ \hline 
-%             540  &  298  \\ \hline 
-%             550  &  261  \\ \hline
-%             560  &  232  \\ \hline
-%             570  &  209  \\ \hline    
-%             580  &  190  \\ \hline 
-%             590  &  175  \\ \hline
-%             600  &  162  \\ \hline      
-%     \end{tabular}
-%     \caption{Messwerte der Aufgabe 3.1} \label{tab:Aufgabe3.1}
-% \end{table}
-% \newpage
-% \begin{table}[H] 
-%     \centering
-%     \begin{tabular}{|c|c|c|} 
-%           \hline \textbf{Signal-} & \textbf{Minimal-} & \textbf{Maximal-}\\ 
-%           \textbf{frequenzen} &\textbf{ausgangsspannung}&\textbf{ausgangsspannung}\\
-%           \textbf{ $f_1$ [Hz]}    & \textbf{$U_{A,min}$ [mV]} &  \textbf{$U_{A,max}$ [mV]}   \\ \hline
-%             10    & 1118 & 1733 \\ \hline
-%             20    & 874  & 2011 \\ \hline
-%             50    & 351  & 2480 \\ \hline
-%             70    & 263  & 2597 \\ \hline
-%             100   & 166  & 2670 \\ \hline
-%             200   & 78   & 2793 \\ \hline
-%             500   & 40   & 2793 \\ \hline
-%             950   & 48   & 2851 \\ \hline
-%             1000  & 40   & 2830 \\ \hline
-%             1050  & 68   & 2832 \\ \hline
-%             2000  & 68   & 2812 \\ \hline
-%             5000  & 98   & 2812 \\ \hline
-%             10000 & 214  & 2666 \\ \hline
-%             15000 & 341  & 2568 \\ \hline
-%             20000 & 517  & 2382 \\ \hline
-%             25000 & 625  & 2275 \\ \hline
-%             30000 & 747  & 2163 \\ \hline
-%             35000 & 810  & 2070 \\ \hline
-%             40000 & 854  & 2065 \\ \hline 
-%     \end{tabular}
-%     \caption{Messwerte der Aufgabe 3.2} \label{tab:Aufgabe3.2}
-% \end{table}
-% \newpage
-% \begin{table}[h] 
-%     \centering
-%     \begin{tabular}{|c|c|c|c|} 
-%           \hline         \textbf{Träger-}& \multicolumn{3}{c|}{\textbf{Ausgangsspannung}}\\
-%           \textbf{frequenz}  & \multicolumn{3}{c|}{\textbf{in mV}}\\ \hline
-%           \textbf{ $U_1$ [V]}  & \textbf{Untere} & \textbf{Träger-} & \textbf{Obere}  \\
-%                & \textbf{Seitenband}& \textbf{frequenz}  & \textbf{Seitenband}     \\ \hline
-%             0    & 0    & 121 & 0   \\ \hline
-%             0.5  & 3.1  & 121 & 67  \\ \hline
-%             1    & 6    & 121 & 133 \\ \hline
-%             1.5  & 9    & 120 & 199 \\ \hline 
-%             2    & 13   & 121 & 266 \\ \hline
-%             2.5  & 16   & 121 & 331 \\ \hline
-%             3    & 19   & 121 & 396 \\ \hline
-%             3.5  & 22   & 121 & 461 \\ \hline
-%     \end{tabular}
-%     \caption{Messwerte der Aufgabe 4.2 ohne Vorverstärker} \label{tab:Aufgabe4.2}
-% \end{table}
-% \begin{table}[h] 
-%     \centering
-%     \begin{tabular}{|c|c|c|c|c|c|} 
-%           \hline         \textbf{Träger-}& \multicolumn{5}{c|}{\textbf{Ausgangsspannung}}\\
-%           \textbf{frequenz}  & \multicolumn{5}{c|}{\textbf{in mV}}\\ \hline
-%           \textbf{ $U_1$} & \textbf{2. Untere}  & \textbf{1. Untere} & \textbf{Träger-} & \textbf{1. Obere}  & \textbf{2. Obere}\\
-%             \textbf{[V]}  & \textbf{Seitenband}   & \textbf{Seitenband}& \textbf{frequenz}  & \textbf{Seitenband}  & \textbf{Seitenband}   \\ \hline
-%             0    & 0 & 0   & 746 & 0   & 0 \\ \hline
-%             0.5  & 0 & 66  & 746 & 32  & 0 \\ \hline
-%             1    & 0 & 136 & 745 & 63  & 0 \\ \hline
-%             1.5  & 0 & 202 & 745 & 94  & 0 \\ \hline
-%             2    & 5 & 269 & 744 & 126 & 0 \\ \hline
-%             2.5  & 8 & 480 & 742 & 155 & 4 \\ \hline
-%             3    & 10& 480 & 740 & 185 & 5 \\ \hline
-%             3.5  & 14& 465 & 739 & 217 & 6 \\ \hline
-%     \end{tabular}
-%     \caption{Messwerte der Aufgabe 4.3 ohne Vorverstärker} \label{tab:Aufgabe4.3}
-% \end{table}
+ \begin{table}[H] 
+     \centering
+     \begin{tabular}{|c|c|} 
+           \hline \textbf{Seitenschwingung} & \textbf{Amplitude} \\ 
+           \textbf{ F [Hz]}    & \textbf{$U$[V]}       \\ \hline
+            2.900 &  0  \\ \hline
+            2.910 &  0  \\ \hline
+            2.920  &  0  \\ \hline
+            2.930 &  0 \\ \hline
+            2.940 &  0 \\ \hline
+            2.950  &  0 \\ \hline
+            2.960 &  0 \\ \hline
+            2.970  &  0 \\ \hline
+            2.980  &  0 \\ \hline
+            2.990  &  0 \\ \hline
+            3.000  &  0 \\ \hline
+            3.010  &  0 \\ \hline
+            3.020 &  0 \\ \hline
+            3.030  &  0 \\ \hline
+            3.040 &  0 \\ \hline
+            3.050  &  0 \\ \hline
+            3.060  &  0 \\ \hline
+            3.070 &  0 \\ \hline
+            3.080 &  0 \\ \hline 
+            3.090  &  0 \\ \hline
+            3.100  &  0 \\ \hline  
+     \end{tabular}
+     \caption{Messwerte der Aufgabe 2.1 mit m = 0.5 } \label{tab:Aufgabe2.1_m=0.5}
+ \end{table}
+ \newpage
+ \begin{table}[H] 
+     \centering
+     \begin{tabular}{|c|c|} 
+           \hline \textbf{Seitenschwingung} & \textbf{Amplitude} \\ 
+           \textbf{F[Hz]}    & \textbf{$U$[V]}       \\ \hline
+            2.900 &  0  \\ \hline
+            2.910 &  0  \\ \hline
+            2.920  &  0  \\ \hline
+            2.930 &  0 \\ \hline
+            2.940 &  0 \\ \hline
+            2.950  &  0 \\ \hline
+            2.960 &  0 \\ \hline
+            2.970  &  0 \\ \hline
+            2.980  &  0 \\ \hline
+            2.990  &  0 \\ \hline
+            3.000  &  0 \\ \hline
+            3.010  &  0 \\ \hline
+            3.020 &  0 \\ \hline
+            3.030  &  0 \\ \hline
+            3.040 &  0 \\ \hline
+            3.050  &  0 \\ \hline
+            3.060  &  0 \\ \hline
+            3.070 &  0 \\ \hline
+            3.080 &  0 \\ \hline 
+            3.090  &  0 \\ \hline
+            3.100  &  0 \\ \hline  
+     \end{tabular}
+     \caption{Messwerte der Aufgabe 2.1 mit m = 2.4 } \label{tab:Aufgabe2.1_m=2.4}
+ \end{table}
+
+  \begin{table}[H] 
+     \centering
+     \begin{tabular}{|c|c|} 
+           \hline \textbf{Seitenschwingung} & \textbf{Amplitude} \\ 
+           \textbf{ F [Hz]}    & \textbf{$U$[V]}       \\ \hline
+            2.900 &  0  \\ \hline
+            2.910 &  0  \\ \hline
+            2.920  &  0  \\ \hline
+            2.930 &  0 \\ \hline
+            2.940 &  0 \\ \hline
+            2.950  &  0 \\ \hline
+            2.960 &  0 \\ \hline
+            2.970  &  0 \\ \hline
+            2.980  &  0 \\ \hline
+            2.990  &  0 \\ \hline
+            3.000  &  0 \\ \hline
+            3.010  &  0 \\ \hline
+            3.020 &  0 \\ \hline
+            3.030  &  0 \\ \hline
+            3.040 &  0 \\ \hline
+            3.050  &  0 \\ \hline
+            3.060  &  0 \\ \hline
+            3.070 &  0 \\ \hline
+            3.080 &  0 \\ \hline 
+            3.090  &  0 \\ \hline
+            3.100  &  0 \\ \hline  
+     \end{tabular}
+     \caption{Messwerte der Aufgabe 2.1 mit m = 10 } \label{tab:Aufgabe2.1_m=10}
+ \end{table}
+
+
+  \begin{table}[H] 
+     \centering
+     \begin{tabular}{|c|c|} 
+           \hline \textbf{Seitenschwingung} & \textbf{Amplitude} \\ 
+           \textbf{ F [Hz]}    & \textbf{$U$[V]}       \\ \hline
+            2.800 &  0  \\ \hline
+            2.820 &  0  \\ \hline
+            2.840  &  0  \\ \hline
+            2.860 &  0 \\ \hline
+            2.880 &  0 \\ \hline
+            2.900 &  0 \\ \hline
+            2.920 &  0 \\ \hline
+            2.940  &  0 \\ \hline
+            2.960  &  0 \\ \hline
+            2.980  &  0 \\ \hline
+            3.000  &  0 \\ \hline
+            3.020  &  0 \\ \hline
+            3.040 &  0 \\ \hline
+            3.060  &  0 \\ \hline
+            3.080 &  0 \\ \hline
+            3.100  &  0 \\ \hline
+            3.120  &  0 \\ \hline
+            3.140 &  0 \\ \hline
+            3.160 &  0 \\ \hline 
+            3.180  &  0 \\ \hline
+            3.200  &  0 \\ \hline  
+     \end{tabular}
+     \caption{Messwerte der Aufgabe 2.2 mit m = 2.4 } \label{tab:Aufgabe2.2_m=24}
+ \end{table}
+
+  \begin{table}[H] 
+     \centering
+     \begin{tabular}{|c|c|} 
+           \hline \textbf{Seitenschwingung} & \textbf{Amplitude} \\ 
+           \textbf{ $F$ [Hz]}    & \textbf{$U$[V]}       \\ \hline
+            2.800 &  0  \\ \hline
+            2.820 &  0  \\ \hline
+            2.840  &  0  \\ \hline
+            2.860 &  0 \\ \hline
+            2.880 &  0 \\ \hline
+            2.900 &  0 \\ \hline
+            2.920 &  0 \\ \hline
+            2.940  &  0 \\ \hline
+            2.960  &  0 \\ \hline
+            2.980  &  0 \\ \hline
+            3.000  &  0 \\ \hline
+            3.020  &  0 \\ \hline
+            3.040 &  0 \\ \hline
+            3.060  &  0 \\ \hline
+            3.080 &  0 \\ \hline
+            3.100  &  0 \\ \hline
+            3.120  &  0 \\ \hline
+            3.140 &  0 \\ \hline
+            3.160 &  0 \\ \hline 
+            3.180  &  0 \\ \hline
+            3.200  &  0 \\ \hline  
+     \end{tabular}
+     \caption{Messwerte der Aufgabe 2.3 mit m = 2.4 } \label{tab:Aufgabe2.3_m=2.4}
+ \end{table}
+
+  \begin{table}[H] 
+     \centering
+     \begin{tabular}{|c|c|} 
+           \hline \textbf{Seitenschwingung} & \textbf{Amplitude} \\ 
+           \textbf{F[Hz]}    & \textbf{$U$[V]}       \\ \hline
+            2.900 &  0  \\ \hline
+            2.910 &  0  \\ \hline
+            2.920  &  0  \\ \hline
+            2.930 &  0 \\ \hline
+            2.940 &  0 \\ \hline
+            2.950  &  0 \\ \hline
+            2.960 &  0 \\ \hline
+            2.970  &  0 \\ \hline
+            2.980  &  0 \\ \hline
+            2.990  &  0 \\ \hline
+            3.000  &  0 \\ \hline
+            3.010  &  0 \\ \hline
+            3.020 &  0 \\ \hline
+            3.030  &  0 \\ \hline
+            3.040 &  0 \\ \hline
+            3.050  &  0 \\ \hline
+            3.060  &  0 \\ \hline
+            3.070 &  0 \\ \hline
+            3.080 &  0 \\ \hline 
+            3.090  &  0 \\ \hline
+            3.100  &  0 \\ \hline  
+     \end{tabular}
+     \caption{Messwerte der Aufgabe 3.1 für die Sinusschwinung} \label{tab:Aufgabe3.1_m=10 Sinus}
+ \end{table}
+
+   \begin{table}[H] 
+     \centering
+     \begin{tabular}{|c|c|} 
+           \hline \textbf{Seitenschwingung} & \textbf{Amplitude} \\ 
+           \textbf{F[Hz]}    & \textbf{$U$[V]}       \\ \hline
+            2.900 &  0  \\ \hline
+            2.910 &  0  \\ \hline
+            2.920  &  0  \\ \hline
+            2.930 &  0 \\ \hline
+            2.940 &  0 \\ \hline
+            2.950  &  0 \\ \hline
+            2.960 &  0 \\ \hline
+            2.970  &  0 \\ \hline
+            2.980  &  0 \\ \hline
+            2.990  &  0 \\ \hline
+            3.000  &  0 \\ \hline
+            3.010  &  0 \\ \hline
+            3.020 &  0 \\ \hline
+            3.030  &  0 \\ \hline
+            3.040 &  0 \\ \hline
+            3.050  &  0 \\ \hline
+            3.060  &  0 \\ \hline
+            3.070 &  0 \\ \hline
+            3.080 &  0 \\ \hline 
+            3.090  &  0 \\ \hline
+            3.100  &  0 \\ \hline  
+     \end{tabular}
+     \caption{Messwerte der Aufgabe 3.1 für die Dreieck} \label{tab:Aufgabe3.1_m=10 Dreieck}
+ \end{table}
+
+   \begin{table}[H] 
+     \centering
+     \begin{tabular}{|c|c|} 
+           \hline \textbf{Seitenschwingung} & \textbf{Amplitude} \\ 
+           \textbf{F[Hz]}    & \textbf{$U$[V]}       \\ \hline
+            2.900 &  0  \\ \hline
+            2.910 &  0  \\ \hline
+            2.920  &  0  \\ \hline
+            2.930 &  0 \\ \hline
+            2.940 &  0 \\ \hline
+            2.950  &  0 \\ \hline
+            2.960 &  0 \\ \hline
+            2.970  &  0 \\ \hline
+            2.980  &  0 \\ \hline
+            2.990  &  0 \\ \hline
+            3.000  &  0 \\ \hline
+            3.010  &  0 \\ \hline
+            3.020 &  0 \\ \hline
+            3.030  &  0 \\ \hline
+            3.040 &  0 \\ \hline
+            3.050  &  0 \\ \hline
+            3.060  &  0 \\ \hline
+            3.070 &  0 \\ \hline
+            3.080 &  0 \\ \hline 
+            3.090  &  0 \\ \hline
+            3.100  &  0 \\ \hline  
+     \end{tabular}
+     \caption{Messwerte der Aufgabe 3.1 für die Rechteckschwinung} \label{tab:Aufgabe3.1_m=10 Rechteck}
+ \end{table}
+
+   \begin{table}[H] 
+     \centering
+     \begin{tabular}{|c|c|} 
+           \hline \textbf{Seitenschwingung} & \textbf{Amplitude} \\ 
+           \textbf{F[Hz]}    & \textbf{$U$[V]}       \\ \hline
+            2.900 &  0  \\ \hline
+            2.910 &  0  \\ \hline
+            2.920  &  0  \\ \hline
+            2.930 &  0 \\ \hline
+            2.940 &  0 \\ \hline
+            2.950  &  0 \\ \hline
+            2.960 &  0 \\ \hline
+            2.970  &  0 \\ \hline
+            2.980  &  0 \\ \hline
+            2.990  &  0 \\ \hline
+            3.000  &  0 \\ \hline
+            3.010  &  0 \\ \hline
+            3.020 &  0 \\ \hline
+            3.030  &  0 \\ \hline
+            3.040 &  0 \\ \hline
+            3.050  &  0 \\ \hline
+            3.060  &  0 \\ \hline
+            3.070 &  0 \\ \hline
+            3.080 &  0 \\ \hline 
+            3.090  &  0 \\ \hline
+            3.100  &  0 \\ \hline  
+     \end{tabular}
+     \caption{Messwerte der Aufgabe 3.2 für die Rechteckschwinung mit m = 0.5} \label{tab:Aufgabe3.2_m=0.5 Rechteck}
+ \end{table}
+
+   \begin{table}[H] 
+     \centering
+     \begin{tabular}{|c|c|} 
+           \hline \textbf{Seitenschwingung} & \textbf{Amplitude} \\ 
+           \textbf{F[Hz]}    & \textbf{$U$[V]}       \\ \hline
+            2.900 &  0  \\ \hline
+            2.910 &  0  \\ \hline
+            2.920  &  0  \\ \hline
+            2.930 &  0 \\ \hline
+            2.940 &  0 \\ \hline
+            2.950  &  0 \\ \hline
+            2.960 &  0 \\ \hline
+            2.970  &  0 \\ \hline
+            2.980  &  0 \\ \hline
+            2.990  &  0 \\ \hline
+            3.000  &  0 \\ \hline
+            3.010  &  0 \\ \hline
+            3.020 &  0 \\ \hline
+            3.030  &  0 \\ \hline
+            3.040 &  0 \\ \hline
+            3.050  &  0 \\ \hline
+            3.060  &  0 \\ \hline
+            3.070 &  0 \\ \hline
+            3.080 &  0 \\ \hline 
+            3.090  &  0 \\ \hline
+            3.100  &  0 \\ \hline  
+     \end{tabular}
+     \caption{Messwerte der Aufgabe 3.2 für die Rechteckschwinung} \label{tab:Aufgabe3.2_m=1 Rechteck}
+ \end{table}
+
+  \begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{$f_1=30$kHz} & \textbf{$U$ [V]} &
+\textbf{$f_1=50$kHz} & \textbf{$U$ [V]} &
+\textbf{$f_1=70$kHz} & \textbf{$U$ [V]} &
+\textbf{$f_1=100$kHz} & \textbf{$U$ [V]} \\
+\hline
+2.700 & 0.0 & 2.500 & 0.0 & 2.300 & 0.0 & 2.000 & 0.0 \\ \hline
+2.730 & 0.0 & 2.550 & 0.0 & 2.370 & 0.0 & 2.100 & 0.0 \\ \hline
+2.760 & 0.0 & 2.600 & 0.0 & 2.440 & 0.0 & 2.200 & 0.0 \\ \hline
+2.790 & 0.0 & 2.650 & 0.0 & 2.510 & 0.0 & 2.300 & 0.0 \\ \hline
+2.820 & 0.0 & 2.700 & 0.0 & 2.580 & 0.0 & 2.400 & 0.0 \\ \hline
+2.850 & 0.0 & 2.750 & 0.0 & 2.650 & 0.0 & 2.500 & 0.0 \\ \hline
+2.880 & 0.0 & 2.800 & 0.0 & 2.720 & 0.0 & 2.600 & 0.0 \\ \hline
+2.910 & 0.0 & 2.850 & 0.0 & 2.790 & 0.0 & 2.700 & 0.0 \\ \hline
+2.940 & 0.0 & 2.900 & 0.0 & 2.860 & 0.0 & 2.800 & 0.0 \\ \hline
+2.970 & 0.0 & 2.950 & 0.0 & 2.930 & 0.0 & 2.900 & 0.0 \\ \hline
+3.000 & 0.0 & 3.000 & 0.0 & 3.000 & 0.0 & 3.000 & 0.0 \\ \hline
+3.030 & 0.0 & 3.050 & 0.0 & 3.070 & 0.0 & 3.100 & 0.0 \\ \hline
+3.060 & 0.0 & 3.100 & 0.0 & 3.140 & 0.0 & 3.200 & 0.0 \\ \hline
+3.090 & 0.0 & 3.150 & 0.0 & 3.210 & 0.0 & 3.300 & 0.0 \\ \hline
+3.120 & 0.0 & 3.200 & 0.0 & 3.280 & 0.0 & 3.400 & 0.0 \\ \hline
+3.150 & 0.0 & 3.250 & 0.0 & 3.350 & 0.0 & 3.500 & 0.0 \\ \hline
+3.180 & 0.0 & 3.300 & 0.0 & 3.420 & 0.0 & 3.600 & 0.0 \\ \hline
+3.210 & 0.0 & 3.350 & 0.0 & 3.490 & 0.0 & 3.700 & 0.0 \\ \hline
+3.240 & 0.0 & 3.400 & 0.0 & 3.560 & 0.0 & 3.800 & 0.0 \\ \hline
+3.270 & 0.0 & 3.450 & 0.0 & 3.630 & 0.0 & 3.900 & 0.0 \\ \hline
+3.300 & 0.0 & 3.500 & 0.0 & 3.700 & 0.0 & 4.000 & 0.0 \\ \hline
+\end{tabular}
+\caption{Messwerte der Aufgabe 3.3 für die Sinusschwingung}
+\label{tab:Aufgabe3.3_m10_Sinus}
+\end{table}
+
 % \newpage
 % \includepdf[
 %   pages=8,

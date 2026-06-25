@@ -1,16 +1,3 @@
-#!/usr/bin/env python3
-"""
-Liest eine LaTeX-Tabelle (Zeilen mit '&' und evtl. '\\\\ \\hline'), wandelt
-die Werte in numpy-Arrays um, speichert diese und erzeugt einen Plot.
-
-Benötigte Pakete:
-- numpy
-- matplotlib
-- scipy (optional)
-
-Installation:
-pip install numpy matplotlib scipy
-"""
 
 import os
 import re
@@ -22,22 +9,16 @@ import matplotlib.pyplot as plt
 # from scipy import interpolate, signal
 
 # --- Konfiguration ---
-INPUT_PATH = "./Data/tabelle_1.txt"       # Eingabedatei mit LaTeX-Tabellenzeilen
-OUT_DIR = "../Abbildungen/1/1.1"           # Ausgabeordner
+INPUT_PATH1 = "./Data/tabelle_2_2.txt"  
+  # Eingabedatei mit LaTeX-Tabellenzeilen
+OUT_DIR = "../Abbildungen/2/2.2"           # Ausgabeordner
 os.makedirs(OUT_DIR, exist_ok=True)
 
-ymaxval = 100
-Xbottom = -3.5
-Xtop = 3.5
-clip_front = 4  # Anzahl der ersten Werte, die entfernt werden sollen
-clip_back = 4  # Anzahl der letzten Werte, die entfernt werden sollen
-mittelwert = 12 #index des mittlerster Wert aus linerarem Bereich
-
 TIMESTAMP = datetime.now().strftime("%Y%m%d_%H%M%S")
-PNG_PATH = os.path.join(OUT_DIR, f"Modulationskennlinie_{TIMESTAMP}.pdf")
+PNG_PATH1 = os.path.join(OUT_DIR, f"Messspektrum_20khz_m24_{TIMESTAMP}.pdf")
 
 
-# --- Hilfsfunktionen ---
+
 def clean_line(line: str) -> str:
     """Entfernt LaTeX-Enden, \hline, Kommentare und Leerraum; wandelt ','->'.'."""
     # Kommentare nach '%' entfernen
@@ -86,11 +67,9 @@ def parse_table_file(path: str):
         mat[i, :len(r)] = r
     return mat
 
-
-# --- Hauptprogramm ---
 if __name__ == "__main__":
-    print("Lese Datei:", INPUT_PATH)
-    data = parse_table_file(INPUT_PATH)   # shape (n_rows, n_cols)
+    print("Lese Datei:", INPUT_PATH1)
+    data = parse_table_file(INPUT_PATH1)   # shape (n_rows, n_cols)
     # Erste Spalte als x, restliche als y1, y2, ...
     x = data[:, 0]
     ys = data[:, 1:]
@@ -104,47 +83,25 @@ if __name__ == "__main__":
     print("x (erste 10):", x[:10])
     print("y-Spaltenanzahl:", ys.shape[1])
 
-
     # --- Plot ---
     plt.figure(figsize=(8, 5))
-    linestyles = ['-', '--', '-.', ':']
-    markers = ['o', 's', 'd', '^', 'v']
-    colors = plt.rcParams['axes.prop_cycle'].by_key()['color']
-
- 
-
     for col in range(ys.shape[1]):
-        y = 2 * np.pi * ys[:, col]
+        y =  ys[:, col] # hier umwandlung in \omega möglich
         # Ignoriere Spalten, die komplett NaN sind
         if np.all(np.isnan(y)):
             continue
         # Entferne NaN-Reihen für Plot
         valid = ~np.isnan(y)
         label = f"$y_{col+1}$"
-        style = linestyles[col % len(linestyles)]
-        marker = markers[col % len(markers)]
-        color = colors[col % len(colors)]
-        x_neu = x[clip_front:len(x)-clip_back]
-        y_neu = y[clip_front:len(y)-clip_back]
-        coeffs= np.polyfit(x_neu,y_neu,1)
-        a_s = coeffs[0]
-        b = coeffs[1]
-        plt.plot(x[valid], y[valid], linestyle=style, marker=marker, color=color, label='Geradengleichung: f(x) = '+ str(a_s)+ ' $\cdot$ x + '+ str(b))
+        base_colors = plt.cm.tab20(np.linspace(0, 1, 11))
+        farben = np.vstack([base_colors, base_colors[:-1][::-1]])
 
-    plt.xlabel("Eingangsgleichspannung $U_e$ [V]")
-    plt.ylabel("Momentfrequenz $\omega$ [rad/s]")
-    plt.title("Statische Modulationskennlinie $\omega = f(U_e)$ ")
-    plt.xlim(-4.5, 4.5)
-    plt.ylim(0, ymaxval)
-    plt.vlines(x = Xbottom,ymax=ymaxval, ymin = 0, color = 'red', linestyle = '--', label = 'Unterer Grenzwert $U_{e,min}= '+ str(Xbottom)+'$V')
-    plt.vlines(x = Xtop,ymax=ymaxval, ymin = 0,color = 'red', linestyle = '-.', label = 'Oberer Grenzwert $U_{e,max}= '+ str(Xtop)+'$V')
-    #plt.axhline(y=896.31, color = 'orange', linestyle = '-', label = 'Hüllkurven-Minima $U_{min}=896$mV')
-    #plt.axhline(y=1423, color = 'green', linestyle = '-', label = 'Hüllkurven-Maxima $U_{max}=1423$mV')
-    plt.grid(True)
-    plt.legend()
-    plt.tight_layout()
-    plt.savefig(PNG_PATH, dpi=300, bbox_inches="tight")
-    print("Plot gespeichert als:", PNG_PATH)
-  
-# Kürzen der Arrays
-
+        plt.bar(x[valid],y[valid], color=farben, width=0.2)
+        plt.axhline(0, color='black', linewidth=1)
+        plt.xlabel("Spektrallinien in MHz")
+        plt.ylabel("Amplitude")
+        plt.title("Messspektrum $f_1$ = 20 kHz m = 2.4")       
+        plt.grid(True)
+        plt.tight_layout()
+        plt.savefig(PNG_PATH1, dpi=300, bbox_inches="tight")
+        print("Plot gespeichert als:", PNG_PATH1)

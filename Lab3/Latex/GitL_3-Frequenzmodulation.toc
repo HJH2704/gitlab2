@@ -20,7 +20,7 @@
 \contentsline {subsubsection}{\numberline {3.1.2}Wahl eines Geeigneten Arbeitsbereiches}{9}{subsubsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.2}Frequenzspektren harmonischer Modulationssignale}{9}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Modulation von Sinussignalen}{9}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Benötige Amplitude eines 20kHz Sinussignals}{10}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2}Benötige Amplitude eines 20kHz Sinussignals}{9}{subsubsection.3.2.2}%
 \contentsline {subsubsection}{\numberline {3.2.3}Frequenzmodulator als Phasenmodulator}{10}{subsubsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.3}Frequenzspektren periodischer Modulationssignale}{10}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Frequenzspektrum eines Sinus-, Dreieck- und Rechtecksignals}{10}{subsubsection.3.3.1}%
@@ -30,5 +30,5 @@
 \contentsline {section}{Anhang}{12}{section.5}%
 \contentsline {subsection}{\numberline {A}Weitere Abbildungen}{12}{subsection.5.1}%
 \contentsline {subsection}{\numberline {B}Messtabellen}{12}{subsection.5.2}%
-\contentsline {subsection}{\numberline {C}Geräteliste}{13}{subsection.5.3}%
+\contentsline {subsection}{\numberline {C}Geräteliste}{24}{subsection.5.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
