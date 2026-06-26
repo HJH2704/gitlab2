@@ -1,34 +1,37 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {section}{\numberline {1}Theoretische Grundlagen}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Versuchsvorbereitung}{4}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}Grundlegendes Prinzip der Frequenz- und Phasenmodulation}{4}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.2}Wie sehen winkelmodulierte Signale im Zeitbereich typischerweise aus?}{5}{subsubsection.1.1.2}%
-\contentsline {subsubsection}{\numberline {1.1.3}Wie ist der Modulationsindex m definiert und was beschreibt er?}{6}{subsubsection.1.1.3}%
-\contentsline {subsubsection}{\numberline {1.1.4}Wie lässt sich das Frequenzspektrum eines FM-Signals berechnen bei einem sinusförmigen Modulationssignal?}{6}{subsubsection.1.1.4}%
-\contentsline {subsubsection}{\numberline {1.1.5}Wie lässt sich der Bandbreitebedarf eines FM-Signals abschätzen?}{7}{subsubsection.1.1.5}%
-\contentsline {subsubsection}{\numberline {1.1.6}Wie hängen die Frequenz- und die Phasenmodulation miteinander zusammen?}{7}{subsubsection.1.1.6}%
-\contentsline {subsubsection}{\numberline {1.1.7}Was versteht man unter Frequency Shift Keying (FSK)?}{7}{subsubsection.1.1.7}%
-\contentsline {paragraph}{\nonumberline Vorteile von FSK}{8}{paragraph*.11}%
+\contentsline {subsection}{\numberline {1.1}Wortdefinitionen}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Grundlegendes Prinzip der Frequenz- und Phasenmodulation}{4}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Frequenzmodulation (FM)}{4}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Phasenmodulation (PM)}{4}{subsubsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.3}Winkelmodulierte Signale im Zeitbereich}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Der Modulationsindex}{6}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Berechnung des Frequenzspektrum für sinusförmige Modulationssignale}{6}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Bandbreitebedarf eines Frequenzmodulierten Signals}{7}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Abhängigkeit von Frequenz- und die Phasenmodulation}{7}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Frequency Shift Keying (FSK)}{8}{subsection.1.8}%
+\contentsline {paragraph}{\nonumberline Vorteile von FSK}{8}{paragraph*.4}%
 \contentsline {section}{\numberline {2}Durchführung}{8}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Durchführung der Aufgabe: 1}{8}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Durchführung der Aufgabe: 2}{8}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Durchführung der Aufgabe: 3}{8}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Ende des Versuchs}{8}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Auswertung}{8}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Statische Modulationskennlinie}{8}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Modulationskennlinie der Momentanfrequenz als Funktion des Augenblickwerts $U_e$ des modulierten Eingangsignals}{8}{subsubsection.3.1.1}%
+\contentsline {subsection}{\numberline {2.3}Durchführung der Aufgabe: 3}{9}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Ende des Versuchs}{9}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Auswertung}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Statische Modulationskennlinie}{9}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Modulationskennlinie der Momentanfrequenz als Funktion des Augenblickwerts $U_e$ des modulierten Eingangsignals}{9}{subsubsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}Wahl eines Geeigneten Arbeitsbereiches}{9}{subsubsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.2}Frequenzspektren harmonischer Modulationssignale}{9}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Modulation von Sinussignalen}{9}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Benötige Amplitude eines 20kHz Sinussignals}{9}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Frequenzmodulator als Phasenmodulator}{9}{subsubsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.3}Frequenzspektren periodischer Modulationssignale}{10}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Frequenzspektrum eines Sinus-, Dreieck- und Rechtecksignals}{10}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Frequenzumtastung eines Rechtecksignals}{10}{subsubsection.3.3.2}%
-\contentsline {section}{\numberline {4}Fazit}{10}{section.4}%
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{11}{section.5}%
-\contentsline {section}{Anhang}{12}{section*.21}%
-\contentsline {subsection}{\numberline {A}Weitere Abbildungen}{12}{subsection.5.1}%
-\contentsline {subsection}{\numberline {B}Messtabellen}{12}{subsection.5.2}%
-\contentsline {subsection}{\numberline {C}Geräteliste}{17}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {3.2.2}Benötige Amplitude eines 20kHz Sinussignals}{10}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Frequenzmodulator als Phasenmodulator}{10}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}Frequenzspektren periodischer Modulationssignale}{11}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Frequenzspektrum eines Sinus-, Dreieck- und Rechtecksignals}{11}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Frequenzumtastung eines Rechtecksignals}{11}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Spektrum des Sinussignal mit Wachsender Singalfrequenz}{11}{subsubsection.3.3.3}%
+\contentsline {section}{\numberline {4}Fazit}{11}{section.4}%
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{12}{section.5}%
+\contentsline {section}{Anhang}{13}{section.5}%
+\contentsline {subsection}{\numberline {A}Weitere Abbildungen}{13}{subsection.5.1}%
+\contentsline {subsection}{\numberline {B}Messtabellen}{13}{subsection.5.2}%
+\contentsline {subsection}{\numberline {C}Geräteliste}{18}{subsection.5.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -118,12 +118,21 @@
 \listoftables 
 \newpage %Erzeugung eines Inhalts-, Abbildungs- und Tabellenverzeichnis
 \section{Theoretische Grundlagen}
-\subsection{Versuchsvorbereitung}
-\subsubsection{Grundlegendes Prinzip der Frequenz- und Phasenmodulation}
+
+
+\subsection{Wortdefinitionen}
+\subsubsection*{Träger}
+ Auf Trägerfrequnz $f_c$ und Trägersignal eingehen 
+
+\subsubsection*{Modulationsfrequenz}
+\subsubsection*{Frequenzhub}
+\subsubsection*{Seitenbänder}
+
+\subsection{Grundlegendes Prinzip der Frequenz- und Phasenmodulation}
 
 Die beiden Modulationsarten unterscheiden sich darin, welche Eigenschaft einer Trägerschwingung durch das Nutzsignal verändert wird.
 
-\subsubsection*{Frequenzmodulation (FM)}
+\subsubsection{Frequenzmodulation (FM)}
 
 Bei der \textbf{Frequenzmodulation (FM)} wird die \textbf{Frequenz} der Trägerschwingung entsprechend dem Nutzsignal verändert.
 
@@ -145,7 +154,7 @@ Mathematisch gilt folgende Gleichung:
 \end{center}
 
 
-\subsubsection*{Phasenmodulation (PM)}
+\subsubsection{Phasenmodulation (PM)}
 
 Bei der \textbf{Phasenmodulation (PM)} wird die \textbf{Phase} der Trägerschwingung entsprechend dem Nutzsignal verändert.
 
@@ -166,7 +175,7 @@ Mathematisch gilt:
     $k_p$ die Phasenempfindlichkeit
 \end{center}
 
-\subsubsection{Wie sehen winkelmodulierte Signale im Zeitbereich typischerweise aus?}
+\subsection{Winkelmodulierte Signale im Zeitbereich}
 
 Winkelmodulierte Signale, wie Frequenz- und Phasenmodulation, zeigen im Zeitbereich charakteristische Veränderungen in der Wellenform des Trägersignals.
 Diese sehen typischerweise wie folgt aus:\\
@@ -195,21 +204,19 @@ Diese sehen typischerweise wie folgt aus:\\
     domain=0:6.3,
     samples=4000,
 ]
-
 \addplot[
     orange,
     very thick
 ]
 {cos(deg(20*x + 8*sin(deg(2*x))))};
-
 \end{axis}
 \end{tikzpicture}
-
-\caption{Frequenzmoduliertes Signal
-}
+\caption{Frequenzmoduliertes Signal}
 \label{fig:bsp_winkelmod_singal}
-\end{figure}\\
+\end{figure}
+
 Dieser Verlauf kann mathematisch wie folgt beschrieben werden:
+
 \begin{equation}
     x_{\mathrm{PM}}(t) = A \cos\bigl(\omega_0 t + \Delta\Phi \cos(\omega_1 t) + \varphi_0\bigr)
 \end{equation}
@@ -222,7 +229,6 @@ Dieser Verlauf kann mathematisch wie folgt beschrieben werden:
     $\varphi_0$ : Anfangsphase\\
     $t$ : Zeit
 \end{center}
-
 Phasenmodulierte Signale im Zeitberiech sehen ähnlich aus, jedoch ist die Phase direkt proportional zum Modulationssignal, während bei der Frequenzmodulation die Phase durch die Integration des Modulationssignals bestimmt wird.
 Mathematisch gilt für die Phasenmodulation:
 \begin{equation}
@@ -239,8 +245,7 @@ Mathematisch gilt für die Phasenmodulation:
     $t$ : Zeit
 \end{center}
 
-\subsubsection{Wie ist der Modulationsindex m definiert und was beschreibt er?}
-\subsubsection*{Modulationsindex}
+\subsection{Der Modulationsindex}
 
 Der \textbf{Modulationsindex} $m$ gibt an, wie stark ein Trägersignal durch das Nutzsignal moduliert wird. 
 Er beschreibt also das Verhältnis zwischen der Modulationsgröße und der entsprechenden Größe des Trägers.
@@ -257,7 +262,7 @@ Für die Frequenzmodulation (FM) gilt:
 \end{center}
 
 
-\subsubsection{Wie lässt sich das Frequenzspektrum eines FM-Signals berechnen bei einem sinusförmigen Modulationssignal?}
+\subsection{Berechnung des Frequenzspektrum für sinusförmige Modulationssignale}
 
 Das Frequenzspektrum eines Frequenzmodulierten Signals mit einem sinusförmigen Modulationssignal kann mithilfe der Bessel-Funktionen beschrieben werden.
 Die Besselfunktionen geben die Amplituden der verschiedenen Frequenzkomponenten des modulierten Signals an.
@@ -290,7 +295,7 @@ Die Frequenzen der Seitenbänder des FM-Signals liegen bei:
 \end{equation}
 
 
-\subsubsection{Wie lässt sich der Bandbreitebedarf eines FM-Signals abschätzen?}
+\subsection{Bandbreitebedarf eines Frequenzmodulierten Signals}
 Den Bandbreitebedarf der Frequenzmodulation kann mithilfe der Carson-Bandbreite bestimmt werden.
 \begin{equation}
     B = 2(\Delta\Omega+a\cdot\omega_g) , a \in [1,2]
@@ -298,23 +303,28 @@ Den Bandbreitebedarf der Frequenzmodulation kann mithilfe der Carson-Bandbreite 
 
 
 
-\subsubsection{Wie hängen die Frequenz- und die Phasenmodulation miteinander zusammen?}
+\subsection{Abhängigkeit von Frequenz- und die Phasenmodulation}
 
 Frequenzmodulation (FM) und Phasenmodulation (PM) sind beide Arten der Winkelmodulation, unterscheiden sich jedoch in der Art und Weise, wie das Trägersignal durch das Nutzsignal beeinflusst wird.
 Im allgemeinen Fall erzeugt die Phasenmodulation eine Frequenzabweichung, die proportional zur zeitlichen Ableitung des Modulationssignals ist, während die Frequenzmodulation eine Frequenzabweichung erzeugt, die proportional zum Modulationssignal selbst ist. 
 Die Phase ist daher die zeitliche Integration der Modulationssignal in der Frequenzmodulation. 
-\begin{align}
-    S_{PM}(t) = A \cos(\omega_c t + k_p m(t))\\
-    \omega_i(t) = \frac{d}{dt}\left(\omega_c t + k_p m(t)\right) = \omega_c + k_p \dot{m}(t)\\
+\begin{equation}
+        S_{PM}(t) = A \cos(\omega_c t + k_p m(t))
+\end{equation}
+\begin{equation}
+        \omega_i(t) = \frac{d}{dt}\left(\omega_c t + k_p m(t)\right) = \omega_c + k_p \dot{m}(t)
+\end{equation}
+\begin{equation}
     \omega_i(t) = \omega_c + k_f m(t)\\
-    \varphi_{FM}(t) = \int \omega_i(t) dt 
-\end{align}
-
+\end{equation}
+\begin{equation}
+        \varphi_{FM}(t) = \int \omega_i(t) dt 
+\end{equation}
 Wird nur mit rein sinusförmigen Modulationssignalen gearbeitet, wird die Umrechnung der beiden Modulationsarten vereinfacht. 
 Dann entspricht ein Phasenmoduliertes Signal einem Frequenzmoduliertes Signal mit integriertem Modulationssignal und umgekehrt.
 Voraussetzung dafür ist eine konstante Modulationsfrequenz.
 
-\subsubsection{Was versteht man unter Frequency Shift Keying (FSK)?}
+\subsection{Frequency Shift Keying (FSK)}
 Frequency Shift Keying (FSK) ist ein digitales Modulationsverfahren, bei dem digitale Informationen (Binäre Codierte Informationen) durch unterschiedliche Frequenzen eines Trägersignals übertragen werden. Dabei wird einer logischen 0 eine Frequenz $f_0$ und einer 1 eine andere Frequenz $f_1$ zugeordnet. Die Amplitude, sowie die Phase des Trägersignals bleibt dabei konstant, lediglich die Frequenz ändert sich entsprechend der zu übertragenden Bits.\cite{GoldenbaumGitskript} \\
 Bit 0 $\to$ $f_0$ \\
 Bit 1 $\to$ $f_1$\\
@@ -325,149 +335,6 @@ Bit 1 $\to$ $f_1$\\
     \item Zuverlässige Datenübertragung auch bei ungünstigen Übertragungsbedingungen.
 \end{itemize}
 
-
-
-
-
-
-
-% \subsection{Wortdefinitionen}
-% \subsubsection*{Modulierendes Signal}
-% Beim modulierenden Signal handelt es sich um das Nachrichten- oder Nutzsignal \cite{GoldenbaumGitskript}. 
-% Dieses enthält die Information und soll übertragen werden.
-
-% \subsubsection*{Moduliertes Signal}
-% Ein moduliertes Signal ist das Ergebnis einer Modulation \cite{GoldenbaumGitskript}.
-% Dabei wird durch ein höherfrequentes Trägersignal das modulierende Signal dahingehend verändert, damit es übertragen werden kann.
-
-% \subsubsection*{Modulationskennlinie}
-% Eine Modulationskennlinie beschreibt den Zusammenhang zwischen einer Eingangsgröße des Modulators und der daraus resultierenden Modulation. 
-% Sie charakterisiert das Übertragungs- und Modulationsverhalten einer Modulatorschaltung
-
-% \subsubsection*{Informationssignal}
-% Das Informationssignal ist das eigentliche Nutzsignal, also das Signal, welches die Information trägt.
-% Als gutes Beispiel für Informationssignale sind die Schallwellen des menschlichen Sprechens. 
-% Hier fällt auch auf, dass das Informationssignal alleine nicht weit übertragen werden kann.
-% Aus diesem Grund muss ein Trägersignal eingebunden werden, um größere Strecken der Übertragung zu ermöglichen.\\
-% Im folgenden Bericht wird die Frequenz des Informationssignals häufig als Signalfrequenz bezeichnet. 
-% Die Amplitude des Signals wird in diesem Bericht als Signalamplitude bezeichnet \cite{GoldenbaumGitskript}.
-
-% \subsubsection*{Trägersignal}
-% Ein Trägersignal ist eine meist hochfrequente Schwingung, die allein noch keine Information enthält. 
-% Es dient dazu, ein anderes Signal zu „tragen“, damit dieses besser übertragen werden kann, zum Beispiel per Funk \cite{GoldenbaumGitskript}.
-
-% \subsubsection*{Frequenzspektrum}
-% Das Frequenzspektrum beschreibt, aus welchen einzelnen Frequenzanteilen ein Signal besteht und wie stark diese Anteile sind.
-% Ein Signal kann also nicht nur aus einer einzigen Frequenz bestehen, sondern aus mehreren Frequenzen zusammengesetzt sein.\\ 
-% Im Frequenzspektrum sieht man dann, bei welchen Frequenzen das Signal Anteile hat und welche Amplituden diese Anteile besitzen \cite{GoldenbaumGitskript}.
-
-
-% \subsection{Amplitudenmodulation}
-% Die Amplitudenmodulation ist eine Art der Signalbearbeitung, mit deren Hilfe ein Informationssignal mithilfe eines Trägersignals über weite Strecken übertragen werden kann.\\
-% Bei dieser Modulationsart wird mithilfe des Informationssignals die Amplitude des Trägersignals moduliert.
-% Das bedeutet, dass nach der Modulation die Amplitude des Trägersignals mit der Frequenz und Amplitude des Informationssignals pulsiert.
-% Die Information liegt somit ebenfalls in der Amplitude des hochfrequenten Trägersignals und kann somit deutlich weiter und besser übertragen werden.\\
-% Wird das resultierende Signal im Frequenzspektrum betrachtet, kann die Trägerfrequenz umgeben von Seitenbändern betrachtet werden. 
-% Die ersten Seitenbänder um die Trägerfrequenz enthalten die Information \cite{GoldenbaumGitskript}.\\
-% Diese Modulation benötigt viel Energie für das Trägersignal und somit wird die meiste Energie unbenutzt verwendet. 
-% Die Energie geht somit nicht ins Informationssignal, sondern eher in das Trägersignal.\\
-% Um dieses Problem zu verringern, können mittels verschiedener Passfilter Träger sowie das Duplikat des Informationssignals weggedämpft werden. 
-% Näheres dazu kann in Kapitel \ref{kap:4} nachgelesen werden. 
-
-
-% \subsection{Bandpassfilter}
-% Ein Bandpassfilter ist ein System aus RLC-Bauteilen. 
-% Er ist eine Schaltung, welche nur Signale in einem bestimmten Frequenzbereich nahezu ungedämpft überträgt.
-% Dieser Frequenzbereich wird von den sogenannten Grenzfrequenzen umschlossen.
-% Die Grenzfrequenz ist die Frequenz, bei der die -3dB-Grenze des Signals durchbrochen wird.
-% Das bedeutet, nur noch 70\% der Ausgangsamplitude werden übertragen.\\
-% Der Bereich zwischen den Grenzfrequenzen nennt man Bandbreite.
-% Diese kann mittels der Grenzfrequenzen berechnet werden.
-% \begin{equation}
-%     BW = f_H-f_L 
-%     \label{Gl:Bandweite}
-% \end{equation}
-
-% Die Frequenz, die am besten übertragen wird, ist die Resonanzfrequenz oder Mittenfrequenz. 
-% Auch diese kann mittels der Grenzfrequenzen berechnet werden.
-% \begin{equation}
-%     f_0=\sqrt{f_L\cdot f_H}
-%     \label{Gl:Mittenfrequenz}
-% \end{equation}
-% \begin{center}
-%     $BW$: Bandbreite [Hz]\\
-%     $f_H$: obere Grenzfrequenzen [Hz]\\
-%     $f_L$: untere Grenzfrequenzen [Hz]\\
-%     $f_0$: Resonanzfrequenz/Mittenfrequenz [Hz]
-% \end{center}
-
-
-
-% \newpage
-% \subsection{Effektivwert}
-% \label{Kp:TG_Effektivwert}
-% Der Effektivwert gibt die konstante Spannung oder Stromstärke an, die am gleichen Widerstand in der gleichen Zeit die gleiche Energie wie die Wechselspannung liefert.\\
-% Zur allgemeinen Berechnung des Effektivwerts kann folgende Formel verwendet werden.
-% \begin{equation}
-%     X_{eff}=\sqrt{\frac{1}{T}\cdot\int_{0}^{T} \left[x(t)\right]^2 \,dt }
-%     \label{Gl:Effektivwert_Grundlagen}
-% \end{equation}
-% \begin{center} 
-%     $X_{eff} $: Effektivwert der Spannung oder des Stroms [V/A]\\
-%     $T$: Periodendauer [s]\\
-%     $x(t)$: zeitlicher Verlauf der Spannung oder des Stroms [V/A]
-% \end{center}
-% Für ein Sinus- oder Cosinussignal kann die Berechnung vereinfacht werden. 
-% Hier gilt zur Berechnung folgender Zusammenhang:
-% \begin{equation}
-%     X_{eff}=\frac{\hat{X}}{\sqrt{2}}
-%     \label{Gl:Effektivwert_Sin}
-% \end{equation}
-% \begin{center}
-%     $\hat{X}$: Scheitelwert [V/A]
-% \end{center}
-% Bei der Frequenzmodulation sowie Phasenmodulation ist die Amplitude konstant, dadurch kann die Gleichung \ref{Gl:Effektivwert_Sin} verwendet werden.\\
-% Bei der Amplitudenmodulation kann der Effektivwert nicht so leicht berechnet werden, da hier die Amplitude schwankend ist. 
-% Für diesen Fall kann folgende Formel zur Berechnung des Effektivwertes verwendet werden \cite{Ampl_eff}.
-% \begin{equation}
-%     U_{eff}=\frac{U_0}{\sqrt{2}} \cdot \sqrt{1+\frac{m^2}{2}} 
-% \end{equation}
-% \begin{center}
-%     $U_0$: Amplitudengröße [V/A]\\
-%     $m$: Modulationsgrad
-% \end{center}
-
-% \subsection{Modulationsgrad}
-% \label{Kp:TG_Modulationsgrad}
-% Der Modulationsgrad $m$ beschreibt die Stärke der Veränderung des Trägersignals durch das Nutzsignal. 
-% Dabei kann der Modulationsgrad $m$ durch die Gleichungen \ref{Gl:Modulationsgrad_Grundlagen} und \ref{Gl:Modulationsgrad_OS} bestimmt werden \cite{Modulationsgrad}.
-% \begin{equation}
-%     m=\frac{A_m}{A_c}=\frac{\hat{U}_m}{\hat{U}_c}
-%     \label{Gl:Modulationsgrad_Grundlagen}
-% \end{equation}
-% \begin{center}
-%     $A_m$: Amplitude des Modulationssignals [V/A]\\
-%     $A_c$: Amplitude des Trägersignals [V/A]
-% \end{center}
-% \begin{equation}
-%     m=\frac{U_{max}-U_{min}}{U_{max}+U_{min}}
-%     \label{Gl:Modulationsgrad_OS}
-% \end{equation}
-% \begin{center}
-%     $U_{max}$: Hüllkurven-Maxima [V]\\
-%     $U_{min}$: Hüllkurven-Minima [V]
-% \end{center}
-% Die Gleichung \ref{Gl:Modulationsgrad_OS} kann mittels eines Oszilloskops direkt bestimmt werden. 
-% Dabei können die Hüllkurven-Maxima und -Minima direkt vom Bildschirm abgelesen werden.\\
-% Der Modulationsgrad $m$ kann wie folgt interpretiert werden:
-% \begin{itemize}
-%     \item $m=0 \rightarrow$ keine Modulation
-%     \item $0<m<1 \rightarrow$ normale, unverzerrte Modulation
-%     \item $m=1 \rightarrow$ maximale sinnvolle Modulation 
-%     \item $m>1 \rightarrow$ Übermodulation, es entstehen Verzerrungen
-% \end{itemize}
-
-% \newpage
 \section{Durchführung}
 
 
@@ -488,6 +355,8 @@ Bit 1 $\to$ $f_1$\\
 
 \subsubsection*{Durchführung der Aufgabe: 2.3}
 
+Da der Hochpass die amplitude dämpft muss diese wieder nachgesteuert werden, bis der gewünschte wert wieder ereicht wird. 
+
 \subsection{Durchführung der Aufgabe: 3}
 \subsubsection*{Durchführung der Aufgabe: 3.1}
 
@@ -507,15 +376,23 @@ Nach Abschluss aller Messungen wurden sämtliche Geräte ausgeschaltet und der A
 \label{kap:1}
 \subsubsection{Modulationskennlinie der Momentanfrequenz als Funktion des Augenblickwerts $U_e$ des modulierten Eingangsignals}
 \label{kap:1.1}
+alle Messwerte sind nicht linear
+
+BILD EINFÜGEN
+\subsubsection{Wahl eines Geeigneten Arbeitsbereiches}
+\label{kap:1.2}
+Linerar bereich von 0.5-2 V
+Arbeitspunkt von 1.25 V plus minus 250kHz 
 
 Steigung = -0.4 Khz/V
 
 $\alpha$ = 2.5 mV
+Dann steigung berechnet -> Formel einfügen, 
+auf Messwerte in tabelle referenzieren 
+das alpha negativ ist, ist nicht relevant 
+alpha wert zur bestimmung der amplituden in den folgenden Versuchsabschnitten
 
-
-\subsubsection{Wahl eines Geeigneten Arbeitsbereiches}
-\label{kap:1.2}
-
+BERECHNUNG ALPHA HINZUGFÜGEN REFERENZ MESSWERTE
 \subsection{ Frequenzspektren harmonischer Modulationssignale }
 \label{kap:2}
 \subsubsection{Modulation von Sinussignalen}
@@ -523,7 +400,32 @@ $\alpha$ = 2.5 mV
 Sinusförmiges Modulationssignal \\
 abstand der seitenbänder $f_1$ = 10 KHz 
 
+Bestimmen der frequenzhübe
+Dann bestimmen welche Signalamplituden wert als eingangspannung eingestellt werden muss 
+Darstellung besselfunktion theoretisch 
+Darstellung der aufgenommenen Spektren
+Besselfunktion ist normiert 
+Daher amplitude einzelt gemessen 
+Messwerte damit normieren
+Dann vergleich der Spektren zeigen 
+Messwerttabelle einfügen, normierte werte vs besselwerte 
+Konnt okay hin, abweichung in Prozent angeben 
+Alles ganz in ordnung bis auf m = 10 
+Wichtig, für Aufgabe 2 wurde der Rauschunterdrückung nicht aktiviert, da,it kann bei 0 aktiviert werden 
+BERECHNUNG SIGNALAMPLITUDEN HINZUFÜGEN
+Wurzel 2 wg effektivwert 
+\begin{equation}
+    U_E = /alpha \cdot \frac{f_1}{\sqrt{2}}
+\end{equation}
+ABBILDUNG BESSELPLOTS HINZUFÜGEN
+
+PLOTS BESSER DARSTELLEN VERGLEICH
+MESSWERTTABELLE ERSTELLEN MESSWERTE NOEMIERT GEGEN THEORIE
+
 Unter Verwendung der Gleichung \ref{eq:modulationsindex} ergeben sich für die verschiedenen Modulationsindizies: 
+
+BEI 2.1 M= 10 Gucken welcher wertebereich genau verwendet, noch mal mit auskommentierten werden gucken, was passt vllt besser 
+Plot werte in messtabelle übernehmen 
 
 m = 0,5 
 \begin{equation}
@@ -564,17 +466,19 @@ Bestimmung der ampliude
 
 20KHz/ steigung der geraden = amplitude 
 
+Soll zeigen, das bei größerem f1 breiter und die peaks etwas kleiner werden (energieerhaltung)
+PLOT AUS MESSWERTEN 
+MESSWERTE VON 2.1. UND 2.2. IN PLOT MITEINANDER VERGLEICHEN
 
 
 \subsubsection{Frequenzmodulator als Phasenmodulator}
 \label{kap:2.3}
 
-Durch eine Integration kann der phasenmodulator realisiert werden
-dieser kann mit einem RC-Tiefpass erster ordnung dargestellt werden
-\begin{equation}
-    f_g = 1 -  3  KHz
-\end{equation}
-Größenordnung R = 10 k$\Omega$, C = 8.2 nF 
+Kein bild da werte und abbildung identisch, soll zeigen, dass phasen und frequenzmodulator in dem fall das selbe bewirken 
+Warum ist das so?
+Gucken ob amplitude angepasst wurde, da hochpass amplitude dämpft -> wurde wieder so eingestellt das der wert von ca 17,6 V da ist 
+
+AUF BILD IM ANHNAG VERWEISEN 
 
 \subsection{Frequenzspektren periodischer Modulationssignale}
 \subsubsection{Frequenzspektrum eines Sinus-, Dreieck- und Rechtecksignals}
@@ -582,9 +486,22 @@ Größenordnung R = 10 k$\Omega$, C = 8.2 nF
 bilder reichen, keine messwerte 
 
 Selbe Amplitude wie für M = 10
+BILDER MITEINANDER VERGLEICHEN 
+
+Bei unterschiedlichen singalen sehen die spektren anders aus, wie kommt das zu stande? 
+Über verhalten der signale argumentieren: rechteckspannug einschalt und ausschalt moment, 2 Si funktionen mit frequenzen 
+Was macht das am Dreieck?
 
 
 \subsubsection{Frequenzumtastung eines Rechtecksignals}
+Spektrum wird Breiter? 
+noch mal erklären lassen 
+BILDER IM ANHANG VERWEISEN 
+GGFS REHNUNG THEORIE
+
+\subsubsection{Spektrum des Sinussignal mit Wachsender Singalfrequenz}
+Erkenntnis: Bei höheren $f_1$ wirds  nicht mehr symetrisch, woran liegt das vllt? 
+BILDER IM ANHANG VERWEISEN 
 
 \section{Fazit}
 

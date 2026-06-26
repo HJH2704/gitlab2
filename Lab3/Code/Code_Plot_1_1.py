@@ -129,19 +129,20 @@ if __name__ == "__main__":
         coeffs= np.polyfit(x_neu,y_neu,1)
         a_s = coeffs[0]
         b = coeffs[1]
-        plt.plot(x[valid], y[valid], linestyle=style, marker=marker, color=color, label='Geradengleichung: f(x) = '+ str(a_s)+ ' $\cdot$ x + '+ str(b))
+        plt.plot(x[valid], y[valid], linestyle=style, marker=marker, color=color, label='Messwerte')
 
     plt.xlabel("Eingangsgleichspannung $U_e$ [V]")
-    plt.ylabel("Momentfrequenz $\omega$ [rad/s]")
-    plt.title("Statische Modulationskennlinie $\omega = f(U_e)$ ")
+    plt.ylabel("Momentanfrequenz F [MHz]")
+    plt.title("Statische Modulationskennlinie $F = f(U_e)$ ")
     plt.xlim(-4.5, 4.5)
     plt.ylim(1.5, ymaxval)
-    plt.vlines(x = Xbottom,ymax=ymaxval, ymin = 0, color = 'red', linestyle = '--', label = 'Unterer Grenzwert $U_{e,min}= '+ str(Xbottom)+'$V')
-    plt.vlines(x = Xtop,ymax=ymaxval, ymin = 0,color = 'red', linestyle = '-.', label = 'Oberer Grenzwert $U_{e,max}= '+ str(Xtop)+'$V')
-    #plt.axhline(y=896.31, color = 'orange', linestyle = '-', label = 'Hüllkurven-Minima $U_{min}=896$mV')
+    plt.vlines(x = Xbottom,ymax=ymaxval, ymin = 0, color = 'red', linestyle = '--', label = 'Unterer Grenzwert des Arbeitsbereichs = '+ str(Xbottom)+'V')
+
+    plt.vlines(x = Xtop,ymax=ymaxval, ymin = 0,color = 'red', linestyle = '-.', label = 'Oberer Grenzwert des Arbeitsbereichs = '+ str(Xtop)+'V')
+    plt.axhline(y=2.520, color = 'orange', linestyle = ':', label = 'Arbeitspunkt bei 2.520 MHz')
     #plt.axhline(y=1423, color = 'green', linestyle = '-', label = 'Hüllkurven-Maxima $U_{max}=1423$mV')
     plt.grid(True)
-    plt.legend()
+    plt.legend(loc ='lower left')
     plt.tight_layout()
     plt.savefig(PNG_PATH, dpi=300, bbox_inches="tight")
     print("Plot gespeichert als:", PNG_PATH)
