@@ -44,7 +44,7 @@
       \field{labeltitlesource}{title}
       \field{title}{Skript zur Vorlesung Grundlagen der Informationstechnik}
       \field{type}{Vorlesungsskript}
-      \field{urlday}{20}
+      \field{urlday}{26}
       \field{urlmonth}{6}
       \field{urlyear}{2026}
       \field{year}{2026}
@@ -55,6 +55,33 @@
       \verb{url}
       \verb https://aulis.hs-bremen.de/ilias.php?baseClass=ilrepositorygui&cmdNode=zh:oi&cmdClass=ilObjFileGUI&cmd=sendfile&ref_id=2418942
       \endverb
+    \endentry
+    \entry{Labor_Amplitudenmodulation}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b9d5092b153ccb9def9dc65d2a782768}{%
+           family={{Prof. Dr.-Ing. Mario Goldenbaum}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Fakultät für Elektrotechnik und Informatik Hochschule Bremen}%
+      }
+      \strng{namehash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{fullhash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{fullhashraw}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{bibnamehash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{authorbibnamehash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{authornamehash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{authorfullhash}{b9d5092b153ccb9def9dc65d2a782768}
+      \strng{authorfullhashraw}{b9d5092b153ccb9def9dc65d2a782768}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Grundlagen der Informationstechnik Labor Frequenzmodulation}
+      \field{urlday}{26}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
     \endentry
   \enddatalist
 \endrefsection

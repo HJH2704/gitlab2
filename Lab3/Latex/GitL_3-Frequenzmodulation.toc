@@ -30,8 +30,8 @@
 \contentsline {subsubsection}{\numberline {3.3.3}Spektrum des Sinussignal mit Wachsender Singalfrequenz}{11}{subsubsection.3.3.3}%
 \contentsline {section}{\numberline {4}Fazit}{11}{section.4}%
 \contentsline {section}{\numberline {5}Literaturverzeichnis}{12}{section.5}%
-\contentsline {section}{Anhang}{13}{section.5}%
-\contentsline {subsection}{\numberline {A}Weitere Abbildungen}{13}{subsection.5.1}%
-\contentsline {subsection}{\numberline {B}Messtabellen}{13}{subsection.5.2}%
-\contentsline {subsection}{\numberline {C}Geräteliste}{18}{subsection.5.3}%
+\contentsline {section}{\numberline {A}Abbildungen}{13}{appendix.A}%
+\contentsline {section}{\numberline {B}Messtabellen}{19}{appendix.B}%
+\contentsline {section}{\numberline {C}Schaltpläne}{24}{appendix.C}%
+\contentsline {section}{\numberline {D}Geräteliste}{26}{appendix.D}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
