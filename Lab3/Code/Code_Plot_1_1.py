@@ -26,9 +26,9 @@ INPUT_PATH = "./Data/tabelle_1.txt"       # Eingabedatei mit LaTeX-Tabellenzeile
 OUT_DIR = "../Abbildungen/1/1.1"           # Ausgabeordner
 os.makedirs(OUT_DIR, exist_ok=True)
 
-ymaxval = 100
-Xbottom = -3.5
-Xtop = 3.5
+ymaxval = 4
+Xbottom = 1.0
+Xtop = 1.5
 clip_front = 4  # Anzahl der ersten Werte, die entfernt werden sollen
 clip_back = 4  # Anzahl der letzten Werte, die entfernt werden sollen
 mittelwert = 12 #index des mittlerster Wert aus linerarem Bereich
@@ -114,7 +114,7 @@ if __name__ == "__main__":
  
 
     for col in range(ys.shape[1]):
-        y = 2 * np.pi * ys[:, col]
+        y =  ys[:, col]
         # Ignoriere Spalten, die komplett NaN sind
         if np.all(np.isnan(y)):
             continue
@@ -135,7 +135,7 @@ if __name__ == "__main__":
     plt.ylabel("Momentfrequenz $\omega$ [rad/s]")
     plt.title("Statische Modulationskennlinie $\omega = f(U_e)$ ")
     plt.xlim(-4.5, 4.5)
-    plt.ylim(0, ymaxval)
+    plt.ylim(1.5, ymaxval)
     plt.vlines(x = Xbottom,ymax=ymaxval, ymin = 0, color = 'red', linestyle = '--', label = 'Unterer Grenzwert $U_{e,min}= '+ str(Xbottom)+'$V')
     plt.vlines(x = Xtop,ymax=ymaxval, ymin = 0,color = 'red', linestyle = '-.', label = 'Oberer Grenzwert $U_{e,max}= '+ str(Xtop)+'$V')
     #plt.axhline(y=896.31, color = 'orange', linestyle = '-', label = 'Hüllkurven-Minima $U_{min}=896$mV')

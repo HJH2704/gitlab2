@@ -14,15 +14,15 @@ TIMESTAMP = datetime.now().strftime("%Y%m%d_%H%M%S")
 PNG_PATH = os.path.join(OUT_DIR, f"Frequenzspektren_{TIMESTAMP}.pdf")
 
 
-dOmega1 = 31.41
-dOmega2 = 150.79
-dOmega3 = 628.31
+dOmega1 = 5
+dOmega2 = 24
+dOmega3 = 1000
 
-steigung_aus_1 = 12.56
+steigung_aus_1 = (2.5*10^-3)
 
-print('Eingangsamplitude für m = 0.5' + str(Eingang_amp(steigung_aus_1, dOmega1)))
-print('Eingangsamplitude für m = 2.4' + str(Eingang_amp(steigung_aus_1, dOmega2)))
-print('Eingangsamplitude für m = 10' + str(Eingang_amp(steigung_aus_1, dOmega3)))
+print('Eingangsamplitude effektiv für m = 0.5 ' + str(((dOmega1 * steigung_aus_1) *np.sqrt(2))))
+print('Eingangsamplitude effektivfür m = 2.4 ' + str(((dOmega2*steigung_aus_1) * np.sqrt(2))))
+print('Eingangsamplitude efektiv für m = 10 ' + str(((dOmega3*steigung_aus_1) * np.sqrt(2))))
 
 Amp = 1 # Wert der amplitude des Trägersignals 
 

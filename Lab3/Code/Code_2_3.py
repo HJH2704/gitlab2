@@ -95,8 +95,7 @@ if __name__ == "__main__":
         label = f"$y_{col+1}$"
         farben = plt.cm.rainbow(np.linspace(0, 1, len(y)))
         
-        plt.bar(x[valid],y[valid], color=farben, width=0.2)
-        plt.bar(-x[valid], y[valid], color=farben, width=0.2)
+        plt.bar(x[valid],y[valid], color=farben, width=0.001)
         plt.axhline(0, color='black', linewidth=1)
         plt.xlabel("Spektrallinien in MHz")
         plt.ylabel("Amplitude")

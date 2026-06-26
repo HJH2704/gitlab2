@@ -84,9 +84,10 @@ if __name__ == "__main__":
     ys = ys[sort_idx, :]
 
     print("Gelesene Form:", data.shape)
-    print("x (erste 10):", x[:10])
+    print("x (erste 21):", x[:21])
     print("y-Spaltenanzahl:", ys.shape[1])
-
+    y_bessel05 = np.array([0.031, 0.242, 0.938, 0.242, 0.031])
+  
     # --- Plot ---
     plt.figure(figsize=(8, 5))
     for col in range(ys.shape[1]):
@@ -97,10 +98,11 @@ if __name__ == "__main__":
         # Entferne NaN-Reihen für Plot
         valid = ~np.isnan(y)
         label = f"$y_{col+1}$"
-        farben = plt.cm.rainbow(np.linspace(0, 1, len(y)))
-        
-        plt.bar(x[valid],y[valid], color=farben, width=0.2)
-        plt.bar(-x[valid], y[valid], color=farben, width=0.2)
+        base_colors = plt.cm.tab20(np.linspace(0, 1, 11))
+        farben = np.vstack([base_colors, base_colors[:-1][::-1]])
+        y_neu = y/1.13
+        plt.bar(x[valid],y_neu[valid], color=farben, width=0.002)
+        plt.bar(x, y_bessel05,color='black', width=0.001)
         plt.axhline(0, color='black', linewidth=1)
         plt.xlabel("Spektrallinien in 10 kHz")
         plt.ylabel("Amplitude")
@@ -121,9 +123,13 @@ if __name__ == "__main__":
     sort_idx = np.argsort(x)
     x = x[sort_idx]
     ys = ys[sort_idx, :]
+    y_bessel24 = np.array([0.004,
+    0.017, 0.064, 0.198, 0.431, 0.520,
+    0.003, 0.520, 0.431, 0.198, 0.064,
+    0.017, 0.004])
 
     print("Gelesene Form:", data.shape)
-    print("x (erste 10):", x[:10])
+    print("x (erste 21):", x[:21])
     print("y-Spaltenanzahl:", ys.shape[1])
 
 
@@ -132,14 +138,23 @@ if __name__ == "__main__":
     for col in range(ys.shape[1]):
         y = ys[:, col] # hier umwandlung in \omega möglich
         # Ignoriere Spalten, die komplett NaN sind
+        y_neu = y/1.13
         if np.all(np.isnan(y)):
             continue
         # Entferne NaN-Reihen für Plot
         valid = ~np.isnan(y)
         label = f"$y_{col+1}$"
-        farben = plt.cm.rainbow(np.linspace(0, 1, len(y)))
-        plt.bar(x[valid],y[valid], color=farben, width=0.2)
-        plt.bar(-x[valid], y[valid], color=farben, width=0.2)
+        base_colors = plt.cm.tab20(np.linspace(0, 1, 11))
+        y_neu = y/1.13
+        besselval_100 =  np.array([ 0.207, 0.292, 0.318, 0.216, 0.014,
+        0.234, 0.220, 0.058, 0.255, 0.043,
+        0.246, 0.043, 0.255, 0.058, 0.220,
+        0.234, 0.014, 0.216, 0.318, 0.292,
+        0.207])
+        farben = np.vstack([base_colors, base_colors[:-1][::-1]])
+        #plt.bar(x[valid],y_neu[valid], color=farben, width=0.002)
+        #plt.bar(x, besselval_100,color='black', width=0.001)
+    
         plt.axhline(0, color='black', linewidth=1)
         plt.xlabel("Spektrallinien in 10 kHz")
         plt.ylabel("Amplitude")
@@ -155,14 +170,15 @@ if __name__ == "__main__":
     # Erste Spalte als x, restliche als y1, y2, ...
     x = data[:, 0]
     ys = data[:, 1:]
-
+   
     # Sortiere nach x (falls nicht sortiert)
     sort_idx = np.argsort(x)
     x = x[sort_idx]
     ys = ys[sort_idx, :]
-
+  
+    
     print("Gelesene Form:", data.shape)
-    print("x (erste 10):", x[:10])
+    print("x (erste 10):", x[:21])
     print("y-Spaltenanzahl:", ys.shape[1])
 
 
@@ -176,9 +192,17 @@ if __name__ == "__main__":
         # Entferne NaN-Reihen für Plot
         valid = ~np.isnan(y)
         label = f"$y_{col+1}$"
-        farben = plt.cm.rainbow(np.linspace(0, 1, len(y)))
-        plt.bar(x[valid],y[valid], color=farben, width=0.2)
-        plt.bar(-x[valid], y[valid], color=farben, width=0.2)
+        base_colors = plt.cm.tab20(np.linspace(0, 1, 11))
+        y_neu = y/1.13
+        besselval_100 =  np.array([ 0.207, 0.292, 0.318, 0.216, 0.014,
+        0.234, 0.220, 0.058, 0.255, 0.043,
+        0.246, 0.043, 0.255, 0.058, 0.220,
+        0.234, 0.014, 0.216, 0.318, 0.292,
+        0.207])
+        #x = np.array([2.396, 2.407, 2.416, 2.426, 2.436, 2.446, 2.456, 2.466, 2.476, 2.486, 2.496, 2.506, 2.516, 2.526, 2.536, 2.546, 2.556, 2.566, 2.576, 2.587, 2.596])
+        farben = np.vstack([base_colors, base_colors[:-1][::-1]])
+        plt.bar(x[valid],y_neu[valid], color=farben, width=0.002)
+        plt.bar(x, besselval_100,color='black', width=0.001)
         plt.axhline(0, color='black', linewidth=1)
         plt.xlabel("Spektrallinien in 10 kHz")
         plt.ylabel("Amplitude")

@@ -96,7 +96,7 @@ if __name__ == "__main__":
         base_colors = plt.cm.tab20(np.linspace(0, 1, 11))
         farben = np.vstack([base_colors, base_colors[:-1][::-1]])
 
-        plt.bar(x[valid],y[valid], color=farben, width=0.2)
+        plt.bar(x[valid],y[valid], color=farben, width=0.001)
         plt.axhline(0, color='black', linewidth=1)
         plt.xlabel("Spektrallinien in MHz")
         plt.ylabel("Amplitude")

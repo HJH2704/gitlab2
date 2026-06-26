@@ -1,21 +1,5 @@
- -10 &  0  \\ \hline
-            -9  &  0  \\ \hline
-            -8  &  0  \\ \hline
-            -7  &  0 \\ \hline
-            -6  &  0 \\ \hline
-            -5  &  0 \\ \hline
-            -4  &  0 \\ \hline
-            -3  &  0 \\ \hline
-            -2  &  0 \\ \hline
-            -1  &  0 \\ \hline
-            0  &  0 \\ \hline
-            1  &  0 \\ \hline
-            2  &  0 \\ \hline
-            3  &  0 \\ \hline
-            4  &  0 \\ \hline
-            5  &  0 \\ \hline
-            6  &  0 \\ \hline
-            7  &  0 \\ \hline
-            8  &  0 \\ \hline 
-            9  &  0 \\ \hline
-            10  &  0 \\ \hline  
+   2.479 &0.0347 \\ \hline
+           2.490 & 0.277 \\ \hline  
+            2.500 & 1.06 \\ \hline  
+            2.509 & 0.278 \\\hline
+            2.520  &  0.036 \\ \hline  
