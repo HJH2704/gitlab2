@@ -1,23 +1,24 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {figure}{\numberline {1}{\ignorespaces Frequenzmoduliertes Signal}}{5}{figure.caption.2}%
 \contentsline {figure}{\numberline {2}{\ignorespaces Besselfunktionen erster Art $J_\nu (m)$ für verschiedene Ordnungen $\nu $.}}{6}{figure.caption.3}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Aufgabe: 1.1 Bespielhafte Momentanfrequenz}}{13}{figure.caption.5}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Aufgabe: 2.1 Modulationssignal mit F = 10 kHz}}{13}{figure.caption.6}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Aufgabe: 2.1 Spektrum des modulierten Signal mit m = 0.5}}{14}{figure.caption.7}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Aufgabe: 2.1 Spektrum des modulierten Signal mit m = 2.4}}{14}{figure.caption.8}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Aufgabe: 2.1 Spektrum des modulierten Signal mit m = 10}}{14}{figure.caption.9}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Aufgabe: 2.1 Amplitude des Trägersignals}}{15}{figure.caption.10}%
-\contentsline {figure}{\numberline {9}{\ignorespaces !!! Aufgabe: 2.2 Spektrum des modulierten Signal mit $f_1$ = 20 kHz !!!}}{15}{figure.caption.11}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Aufgabe: 3.1 Spektrum des modulierten Sinussignals}}{15}{figure.caption.12}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Aufgabe: 3.1 Spektrum des modulierten Dreiecksingals}}{16}{figure.caption.13}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Aufgabe: 3.1 Spektrum des modulierten Rechtecksingals}}{16}{figure.caption.14}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Aufgabe: 3.2 Spektrum des Rechtecksignal mit m = 0.5}}{16}{figure.caption.15}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Aufgabe: 3.2 Spektrum des Rechtecksignal mit m = 1}}{17}{figure.caption.16}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Aufgabe: 3.3 Spektrum des Sinussingals mit $f_1$ = 30kHz}}{17}{figure.caption.17}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Aufgabe: 3.3 Spektrum des Sinussingals mit $f_1$ = 50kHz}}{17}{figure.caption.18}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Aufgabe: 3.3 Spektrum des Sinussingals mit $f_1$ = 70kHz}}{18}{figure.caption.19}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Aufgabe: 3.3 Spektrum des Sinussingals mit $f_1$ = 100kHz}}{18}{figure.caption.20}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Schaltplan der Platine}}{24}{figure.caption.30}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Aufbau des Versuchs}}{25}{figure.caption.31}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Aufbau der Platine}}{25}{figure.caption.32}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Darstellung des Arbeitsbereichs des Verwendeten Hochpasses}}{11}{figure.caption.5}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Aufgabe: 1.1 Bespielhafte Momentanfrequenz}}{14}{figure.caption.6}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Aufgabe: 2.1 Modulationssignal mit F = 10 kHz}}{14}{figure.caption.7}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Aufgabe: 2.1 Spektrum des modulierten Signal mit m = 0.5}}{15}{figure.caption.8}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Aufgabe: 2.1 Spektrum des modulierten Signal mit m = 2.4}}{15}{figure.caption.9}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Aufgabe: 2.1 Spektrum des modulierten Signal mit m = 10}}{15}{figure.caption.10}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Aufgabe: 2.1 Amplitude des Trägersignals}}{16}{figure.caption.11}%
+\contentsline {figure}{\numberline {10}{\ignorespaces !!! Aufgabe: 2.2 Spektrum des modulierten Signal mit $f_1$ = 20 kHz !!!}}{16}{figure.caption.12}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Aufgabe: 3.1 Spektrum des modulierten Sinussignals}}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Aufgabe: 3.1 Spektrum des modulierten Dreiecksingals}}{17}{figure.caption.14}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Aufgabe: 3.1 Spektrum des modulierten Rechtecksingals}}{17}{figure.caption.15}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Aufgabe: 3.2 Spektrum des Rechtecksignal mit m = 0.5}}{17}{figure.caption.16}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Aufgabe: 3.2 Spektrum des Rechtecksignal mit m = 1}}{18}{figure.caption.17}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Aufgabe: 3.3 Spektrum des Sinussingals mit $f_1$ = 30kHz}}{18}{figure.caption.18}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Aufgabe: 3.3 Spektrum des Sinussingals mit $f_1$ = 50kHz}}{18}{figure.caption.19}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Aufgabe: 3.3 Spektrum des Sinussingals mit $f_1$ = 70kHz}}{19}{figure.caption.20}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Aufgabe: 3.3 Spektrum des Sinussingals mit $f_1$ = 100kHz}}{19}{figure.caption.21}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Schaltplan der Platine}}{25}{figure.caption.31}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Aufbau des Versuchs}}{26}{figure.caption.32}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Aufbau der Platine}}{26}{figure.caption.33}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

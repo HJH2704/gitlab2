@@ -376,10 +376,10 @@ Nach Abschluss aller Messungen wurden sämtliche Geräte ausgeschaltet und der A
 \label{kap:1}
 \subsubsection{Modulationskennlinie der Momentanfrequenz als Funktion des Augenblickwerts $U_e$ des modulierten Eingangsignals}
 \label{kap:1.1}
-
+PLOTS ERSTELLEN 23-2
 IN ALLEN ABBILDUNGEN LEGENDE HINZUFÜGEN UND TITEL GGFS BEARBEITEN
 BESSERE DARSTELLUNG VERGLEICH BESSEL MIT MESSWERTEN 
-Messwerttabellen für 3.2 aus Fotos erstellen!!
+
 alle Messwerte sind nicht linear
 
 BILD EINFÜGEN
@@ -483,6 +483,17 @@ Warum ist das so?
 Gucken ob amplitude angepasst wurde, da hochpass amplitude dämpft -> wurde wieder so eingestellt das der wert von ca 17,6 V da ist 
 
 AUF BILD IM ANHNAG VERWEISEN 
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.75\linewidth]{../Abbildungen/2/2.3/Bodeplot.png}
+    \caption{Darstellung des Arbeitsbereichs des Verwendeten Hochpasses}
+    \label{Abb:A2_3_BodeplotHP}
+\end{figure}
+
+C = 15nF 
+Fg = 200kHz
+R = 50 Ohm
+
 
 \subsection{Frequenzspektren periodischer Modulationssignale}
 \subsubsection{Frequenzspektrum eines Sinus-, Dreieck- und Rechtecksignals}
@@ -640,7 +651,7 @@ BILDER IM ANHANG VERWEISEN
      \centering
      \begin{tabular}{|c|c|} 
  \hline\textbf{Gleichspannung} & \textbf{Momentanfrequenz}  \\
- \textbf{$U_2$ [V]} & \textbf{$f(t)$ [MHz] } \\ \hline
+ \textbf{$U_2$ [V]} & \textbf{$f(t)$ [kHz] } \\ \hline
              -4.0 & 3.625  \\ \hline 
              -3.75 & 3.623 \\ \hline
              -3.5 & 3.619 \\ \hline
@@ -681,77 +692,68 @@ BILDER IM ANHANG VERWEISEN
 
  \begin{table}[H] 
      \centering
-     \begin{tabular}{|c|c|c|} 
-           \hline \textbf{Seitenschwingung} & \textbf{Amplitude} & \textbf{Wert der } \\ 
-           \textbf{ F [Hz]}    & \textbf{$U$[V]}   &  \textbf{Besselfunktion}   \\ \hline
-            2.479 &0.0347&0 \\ \hline
-           2.490 & 0.277&0 \\ \hline  
-            2.500 & 1.06&0 \\ \hline  
-            2.509 & 0.278&0 \\\hline
-            2.520  &  0.036&0 \\ \hline  
-
+     \begin{tabular}{|c|c|c|c|} 
+           \hline \textbf{Seitenfrequenz} & \textbf{Amplitude} & \textbf{Normierte }& \textbf{Wert der } \\ 
+           \textbf{ F [kHz]}    & \textbf{$U$[V]}  & \textbf{Werte}  &  \textbf{Besselfunktion}   \\ \hline
+     2.479 & 0.0347 & 0.03071 & 0.031 \\ \hline
+2.490 & 0.277  & 0.24513 & 0.242 \\ \hline  
+2.500 & 1.06   & 0.93805 & 0.938 \\ \hline  
+2.509 & 0.278  & 0.24558 & 0.242 \\ \hline
+2.520 & 0.036  & 0.03186 & 0.031 \\ \hline
      \end{tabular}
      \caption{Messwerte der Aufgabe 2.1 mit m = 0.5 } \label{tab:Aufgabe2.1_m=0.5}
  \end{table}
 
  \begin{table}[H] 
      \centering
-     \begin{tabular}{|c|c|c|} 
-           \hline \textbf{Seitenschwingung} & \textbf{Amplitude} & \textbf{Wert der } \\ 
-           \textbf{F[Hz]}    & \textbf{$U$[V]}  & \textbf{Besselfunktion}     \\ \hline
-            2.439 &  0.003&0  \\ \hline
-            2.449 & 0.018&0 \\\hline
-            2.460 &  0.071&0  \\ \hline
-            2.469  &  0.218 &0 \\ \hline
-            2.479 & 0.485&0 \\ \hline
-            2.490 &  0.589&0 \\ \hline
-            2.500  &  0.015 &0\\ \hline
-            2.509  &  0.592 &0\\ \hline
-            2.519  &  0.483&0 \\ \hline
-            2.529  &  0.219&0 \\ \hline
-            2.539  &  0.070&0 \\ \hline
-            2.550 &  0.017&0 \\ \hline
-            2.558  &  0.004&0 \\ \hline
-              
+\begin{tabular}{|c|c|c|c|} 
+           \hline \textbf{Seitenfrequenz} & \textbf{Amplitude} & \textbf{Normierte }& \textbf{Wert der } \\ 
+           \textbf{ F [kHz]}    & \textbf{$U$[V]}  & \textbf{Werte}  &  \textbf{Besselfunktion}   \\ \hline
+2.439 &  0.003 & 0.00265 & 0.004  \\ \hline
+2.449 &  0.018 & 0.01593 & 0.017  \\ \hline
+2.460 &  0.071 & 0.06283 & 0.064  \\ \hline
+2.469 &  0.218 & 0.19293 & 0.198  \\ \hline
+2.479 &  0.485 & 0.42920 & 0.431  \\ \hline
+2.490 &  0.589 & 0.52124 & 0.520  \\ \hline
+2.500 &  0.015 & 0.01327 & 0.003  \\ \hline
+2.509 &  0.592 & 0.52389 & 0.520  \\ \hline
+2.519 &  0.483 & 0.42743 & 0.431  \\ \hline
+2.529 &  0.219 & 0.19381 & 0.198  \\ \hline
+2.539 &  0.070 & 0.06195 & 0.064  \\ \hline
+2.550 &  0.017 & 0.01504 & 0.017  \\ \hline
+2.558 &  0.004 & 0.00354 & 0.004  \\ \hline
      \end{tabular}
      \caption{Messwerte der Aufgabe 2.1 mit m = 2.4 } \label{tab:Aufgabe2.1_m=2.4}
  \end{table}
 
   \begin{table}[H] 
      \centering
-     \begin{tabular}{|c|c|c|} 
-           \hline \textbf{Seitenschwingung} & \textbf{Amplitude} & \textbf{Wert der }\\ 
-           \textbf{ F [Hz]}    & \textbf{$U$[V]}    & \textbf{Besselfunktion}  \\ \hline
-          
- %           2.367   & 0.029 &0 \\ \hline
- %           2.376   & 0.065 &0 \\ \hline
-            2.386   & 0.127 &0 \\ \hline
-            2.396   & 0.218 &0 \\ \hline
-            2.407   & 0.307 &0 \\ \hline
-            2.416   & 0.350 &0  \\ \hline   
-            2.426   & 0.250 &0 \\ \hline
-            2.436   & 0.001 &0\\ \hline
-            2.446   & 0.245&0  \\ \hline
-            2.456   & 0.243 &0 \\ \hline
-            2.466   & 0.043&0 \\ \hline
-            2.476   & 0.260&0  \\ \hline
-            2.486   & 0.065 &0 \\ \hline
-            2.496   & 0.256 &0 \\ \hline
-            2.506   & 0.064&0 \\ \hline
-            2.516   & 0.267&0  \\ \hline   
-            2.526   & 0.047&0  \\ \hline
-            2.536   & 0.242&0  \\ \hline
-            2.546   & 0.232&0  \\ \hline
-            2.556   & 0.005&0  \\ \hline
-            2.566   & 0.229&0  \\ \hline
-            2.576   & 0.338&0  \\ \hline
-            2.587   & 0.299&0  \\ \hline
-            2.596   & 0.219&0  \\ \hline
-            2.606   & 0.127&0 \\ \hline   
-            2.616   & 0.065&0  \\ \hline
-            2.626   & 0.030&0   \\ \hline
-
-
+\begin{tabular}{|c|c|c|c|} 
+           \hline \textbf{Seitenfrequenz} & \textbf{Amplitude} & \textbf{Normierte }& \textbf{Wert der } \\ 
+           \textbf{ F [kHz]}    & \textbf{$U$[V]}  & \textbf{Werte}  &  \textbf{Besselfunktion}   \\ \hline
+2.386   & 0.127 & 0.10879 & 0.123 \\ \hline
+2.396   & 0.218 & 0.18312 & 0.207 \\ \hline
+2.407   & 0.307 & 0.25833 & 0.292 \\ \hline
+2.416   & 0.350 & 0.28134 & 0.318 \\ \hline   
+2.426   & 0.250 & 0.19115 & 0.216 \\ \hline
+2.436   & 0.001 & 0.01239 & 0.014 \\ \hline
+2.446   & 0.245 & 0.20699 & 0.234 \\ \hline
+2.456   & 0.243 & 0.19469 & 0.220 \\ \hline
+2.466   & 0.043 & 0.05133 & 0.058 \\ \hline
+2.476   & 0.260 & 0.22561 & 0.255 \\ \hline
+2.486   & 0.065 & 0.03804 & 0.043 \\ \hline
+2.496   & 0.256 & 0.21416 & 0.242 \\ \hline
+2.506   & 0.064 & 0.03804 & 0.043 \\ \hline
+2.516   & 0.267 & 0.22561 & 0.255 \\ \hline   
+2.526   & 0.047 & 0.05133 & 0.058 \\ \hline
+2.536   & 0.242 & 0.19469 & 0.220 \\ \hline
+2.546   & 0.232 & 0.20699 & 0.234 \\ \hline
+2.556   & 0.005 & 0.01239 & 0.014 \\ \hline
+2.566   & 0.229 & 0.19115 & 0.216 \\ \hline
+2.576   & 0.338 & 0.28134 & 0.318 \\ \hline
+2.587   & 0.299 & 0.25833 & 0.292 \\ \hline
+2.596   & 0.219 & 0.18312 & 0.207 \\ \hline
+2.606   & 0.127 & 0.10879 & 0.123 \\ \hline
      \end{tabular}
      \caption{Messwerte der Aufgabe 2.1 mit m = 10 } \label{tab:Aufgabe2.1_m=10}
  \end{table}
@@ -761,7 +763,7 @@ BILDER IM ANHANG VERWEISEN
      \centering
      \begin{tabular}{|c|c|} 
            \hline \textbf{Seitenschwingung} & \textbf{Amplitude} \\ 
-           \textbf{ F [Hz]}    & \textbf{$U$[V]}       \\ \hline
+           \textbf{ F [kHz]}    & \textbf{$U$[V]}       \\ \hline
            2.400 & 0.016 \\ \hline
            2.420 & 0.064\\ \hline
            2.440 &0.202 \\ \hline
@@ -781,7 +783,7 @@ BILDER IM ANHANG VERWEISEN
      \centering
      \begin{tabular}{|c|c|} 
            \hline \textbf{Seitenschwingung} & \textbf{Amplitude} \\ 
-           \textbf{ $F$ [Hz]}    & \textbf{$U$[V]}       \\ \hline
+           \textbf{ $F$ [kHz]}    & \textbf{$U$[V]}       \\ \hline
             2.400 & 0.015 \\ \hline
            2.420 & 0.060\\ \hline
            2.440 &0.195 \\ \hline
@@ -801,40 +803,35 @@ BILDER IM ANHANG VERWEISEN
      \centering
      \begin{tabular}{|c|c|} 
            \hline \textbf{Seitenschwingung} & \textbf{Amplitude} \\ 
-           \textbf{ $F$ [Hz]}    & \textbf{$U$[V]}       \\ \hline
-           0  & 0. \\ \hline
-            0& 0. \\ \hline
-           0 &0. \\ \hline
-           0 &0. \\ \hline
-           0 & 0 \\ \hline  
-           0 & 0 \\ \hline  
-           0 & 0 \\\hline
-           0  & 0\\ \hline
-           0 &0\\ \hline
-           0 &0\\ \hline
-           0 &0.\\ \hline
+           \textbf{ $F$ [kHz]}    & \textbf{$U$[V]}       \\ \hline
+           2.470  & 0.024 \\ \hline
+           2.480& 0.069 \\ \hline
+           2.490 &0.322 \\ \hline
+           2.500 &0.938 \\ \hline
+           2.510 & 0.320 \\ \hline  
+           2.520 & 0.069 \\ \hline  
+           2.530 & 0.024 \\\hline
+      
      \end{tabular}
-     \caption{Messwerte der Aufgabe 3.1 mit m = 0.5 } \label{tab:Aufgabe3.1_m=0.5}
+     \caption{Messwerte der Aufgabe 3.2 mit m = 0.5 } \label{tab:Aufgabe3.2_m=0.5}
  \end{table}
 
   \begin{table}[H] 
      \centering
      \begin{tabular}{|c|c|} 
            \hline \textbf{Seitenschwingung} & \textbf{Amplitude} \\ 
-           \textbf{ $F$ [Hz]}    & \textbf{$U$[V]}       \\ \hline
-            0 & 0. \\ \hline
-            0& 0. \\ \hline
-           0 &0. \\ \hline
-           0 &0. \\ \hline
-           0 & 0 \\ \hline  
-           0 & 0 \\ \hline  
-           0 & 0 \\\hline
-           0  & 0\\ \hline
-           0 &0\\ \hline
-           0 &0\\ \hline
-           0 &0.\\ \hline
+           \textbf{ $F$ [kHz]}    & \textbf{$U$[V]}       \\ \hline
+            2.460  & 0.038 \\ \hline
+            2.470  & 0.001 \\ \hline
+           2.480& 0.220 \\ \hline
+           2.490 &0.541 \\ \hline
+           2.500 &0.680 \\ \hline
+           2.510 & 0.542 \\ \hline  
+           2.520 & 0.220 \\ \hline  
+           2.530 & 0.001 \\ \hline  
+           2.540 & 0.038 \\\hline
      \end{tabular}
-     \caption{Messwerte der Aufgabe 3.1 mit m = 1 } \label{tab:Aufgabe3.1_m=1}
+     \caption{Messwerte der Aufgabe 3.2 mit m = 1 } \label{tab:Aufgabe3.2_m=1}
  \end{table}
 
 \includepdf[
