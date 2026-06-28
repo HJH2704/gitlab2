@@ -10,13 +10,49 @@ import matplotlib.pyplot as plt
 
 # --- Konfiguration ---
 INPUT_PATH1 = "./Data/tabelle_2_3.txt"  
+INPUT_PATH2 = "./Data/tabelle_2_2.txt"
   # Eingabedatei mit LaTeX-Tabellenzeilen
 OUT_DIR = "../Abbildungen/2/2.3"           # Ausgabeordner
 os.makedirs(OUT_DIR, exist_ok=True)
 
 TIMESTAMP = datetime.now().strftime("%Y%m%d_%H%M%S")
 PNG_PATH1 = os.path.join(OUT_DIR, f"Messspektrum_Phase_m24_{TIMESTAMP}.pdf")
+PNG_PATH2 = os.path.join(OUT_DIR, f"Messspektrum_VglPhase_m24_{TIMESTAMP}.pdf")
 
+
+def create_sideband_labels(x, carrier_label="Träger"):
+    """
+    Erstellt zweizeilige xticklabels für ein symmetrisches Spektrum.
+
+    Beispiel:
+        3.
+        SF
+
+        2.
+        SF
+
+        1.
+        SF
+
+        Träger
+    """
+
+    n = len(x)
+
+    if n % 2 == 0:
+        raise ValueError("Das Array muss eine ungerade Anzahl an Frequenzen besitzen.")
+
+    center = n // 2
+    labels = []
+
+    for i in range(n):
+        if i == center:
+            labels.append(carrier_label)
+        else:
+            order = abs(i - center)
+            labels.append(f"{order}.\nSF")
+
+    return labels
 
 
 def clean_line(line: str) -> str:
@@ -70,21 +106,22 @@ def parse_table_file(path: str):
 if __name__ == "__main__":
     print("Lese Datei:", INPUT_PATH1)
     data = parse_table_file(INPUT_PATH1)   # shape (n_rows, n_cols)
-    # Erste Spalte als x, restliche als y1, y2, ...
+#   Erste Spalte als x, restliche als y1, y2, ...
     x = data[:, 0]
     ys = data[:, 1:]
-
-    # Sortiere nach x (falls nicht sortiert)
+ 
+#   Sortiere nach x (falls nicht sortiert)
     sort_idx = np.argsort(x)
     x = x[sort_idx]
     ys = ys[sort_idx, :]
-
+ 
     print("Gelesene Form:", data.shape)
-    print("x (erste 10):", x[:10])
+    print("x (erste 21):", x[:21])
     print("y-Spaltenanzahl:", ys.shape[1])
-
-    # --- Plot ---
-    plt.figure(figsize=(8, 5))
+    #y_bessel05 = np.array([0.031, 0.242, 0.938, 0.242, 0.031])
+   
+    #--- Plot ---
+    fig, ax = plt.subplots(figsize=(8, 5))
     for col in range(ys.shape[1]):
         y =  ys[:, col] # hier umwandlung in \omega möglich
         # Ignoriere Spalten, die komplett NaN sind
@@ -93,14 +130,117 @@ if __name__ == "__main__":
         # Entferne NaN-Reihen für Plot
         valid = ~np.isnan(y)
         label = f"$y_{col+1}$"
-        farben = plt.cm.rainbow(np.linspace(0, 1, len(y)))
-        
-        plt.bar(x[valid],y[valid], color=farben, width=0.001)
-        plt.axhline(0, color='black', linewidth=1)
-        plt.xlabel("Spektrallinien in MHz")
-        plt.ylabel("Amplitude")
-        plt.title("Messspektrum Phasenmodulator m = 2,4")       
+        base_colors = plt.cm.tab20(np.linspace(0, 1, 6))
+        farben = np.vstack([base_colors, base_colors[:-1][::-1]])
+        y_neu = y/1.13
+        ax.bar(x[valid],y_neu[valid], color=farben, label= "Messwerte", width=0.001)
+        #ax.bar(x, y_bessel05,color='black',label = "Theoriewerte des Besselfunktion", width=0.00035)
+        ax.axhline(0, color='black', linewidth=1)
+        ax.set_ylim(0,1)
+        ax.set_xlabel("Spektrallinien in MHz")
+        secax = ax.secondary_xaxis('top')
+        secax.set_xticks(x)
+        secax.set_xticklabels(create_sideband_labels(x))
+# Abstand zwischen den beiden Achsen
+       # secax.spines['top'].set_position(('outward', 40))
+        secax.tick_params(length=0)
+        ax.set_ylabel("Amplitude in V")
+        ax.set_title("Messspektrum Phasenmodulator m = 2,4 $f_1$ = 20kHz")       
         plt.grid(True)
         plt.tight_layout()
+        fig.text(0.98, 0.02, "SF = Seitenfrequenz", ha="right", fontsize=10)
+        ax.legend(loc="upper right")
         plt.savefig(PNG_PATH1, dpi=300, bbox_inches="tight")
         print("Plot gespeichert als:", PNG_PATH1)
+
+
+#if __name__ == "__main__":
+#    
+#    print("Lese Datei:", INPUT_PATH1)
+#    data = parse_table_file(INPUT_PATH1)   # shape (n_rows, n_cols)
+##   Erste Spalte als x, restliche als y1, y2, ...
+#    x = data[:, 0]
+#    ys = data[:, 1:]
+# 
+##   Sortiere nach x (falls nicht sortiert)
+#    sort_idx = np.argsort(x)
+#    x = x[sort_idx]
+#    ys = ys[sort_idx, :]
+# 
+#    print("Gelesene Form:", data.shape)
+#    print("x (erste 21):", x[:21])
+#    print("y-Spaltenanzahl:", ys.shape[1])
+#    #y_bessel05 = np.array([0.031, 0.242, 0.938, 0.242, 0.031])
+#   
+#    #--- Plot ---
+#    fig, ax = plt.subplots(figsize=(8, 5))
+#    for col in range(ys.shape[1]):
+#        y =  ys[:, col] # hier umwandlung in \omega möglich
+#        # Ignoriere Spalten, die komplett NaN sind
+#        if np.all(np.isnan(y)):
+#            continue
+#        # Entferne NaN-Reihen für Plot
+#        valid = ~np.isnan(y)
+#        label = f"$y_{col+1}$"
+#        base_colors = plt.cm.tab20(np.linspace(0, 1, 6))
+#        farben = np.vstack([base_colors, base_colors[:-1][::-1]])
+#        y_neu = y/1.13
+#    
+#    
+#    
+#    
+#    
+#    
+#    
+#    
+#    
+#    
+#    
+#    print("Lese Datei:", INPUT_PATH2)
+#    data = parse_table_file(INPUT_PATH2)   # shape (n_rows, n_cols)
+##   Erste Spalte als x, restliche als y1, y2, ...
+#    x1 = data[:, 0]
+#    y1s = data[:, 1:]
+# 
+##   Sortiere nach x (falls nicht sortiert)
+#    sort_idx = np.argsort(x)
+#    x = x[sort_idx]
+#    y1s = y1s[sort_idx, :]
+# 
+#    print("Gelesene Form:", data.shape)
+#    print("x (erste 21):", x[:21])
+#    print("y-Spaltenanzahl:", ys.shape[1])
+#    #y_bessel05 = np.array([0.031, 0.242, 0.938, 0.242, 0.031])
+#   
+#    #--- Plot ---
+#    for col in range(ys.shape[1]):
+#        y1 =  y1s[:, col] # hier umwandlung in \omega möglich
+#        # Ignoriere Spalten, die komplett NaN sind
+#        if np.all(np.isnan(y1)):
+#            continue
+#        # Entferne NaN-Reihen für Plot
+#        valid = ~np.isnan(y1)
+#        label = f"$y_{col+1}$"
+#        base_colors = plt.cm.tab20(np.linspace(0, 1, 6))
+#        farben = np.vstack([base_colors, base_colors[:-1][::-1]])
+#        y_neu1 = y1/1.13
+#        ax.bar(x[valid],y_neu[valid], color=farben, label= "Messwerte Frequenzmodulation ", width=0.002)
+#        ax.bar(x, y_neu1[valid],color='black',label = "Messwerte Phasenmodulation", width=0.0007)
+#        ax.axhline(0, color='black', linewidth=1)
+#        ax.set_ylim(0,1)
+#        ax.set_xlabel("Spektrallinien in MHz")
+#        secax = ax.secondary_xaxis('top')
+#        secax.set_xticks(x)
+#        secax.set_xticklabels(create_sideband_labels(x))
+## Abstand zwischen den beiden Achsen
+#       # secax.spines['top'].set_position(('outward', 40))
+#        secax.tick_params(length=0)
+#        ax.set_ylabel("Amplitude in V")
+#        ax.set_title("Vergleich der Messspektren m = 2,4 $f_1$ = 20kHz")       
+#        plt.grid(True)
+#        plt.tight_layout()
+#        fig.text(0.98, 0.02, "SF = Seitenfrequenz", ha="right", fontsize=10)
+#        ax.legend(loc="upper right")
+#        plt.savefig(PNG_PATH2, dpi=300, bbox_inches="tight")
+#        print("Plot gespeichert als:", PNG_PATH2)
+#

@@ -376,11 +376,24 @@ Nach Abschluss aller Messungen wurden sämtliche Geräte ausgeschaltet und der A
 \label{kap:1}
 \subsubsection{Modulationskennlinie der Momentanfrequenz als Funktion des Augenblickwerts $U_e$ des modulierten Eingangsignals}
 \label{kap:1.1}
-PLOTS ERSTELLEN 23-2
-IN ALLEN ABBILDUNGEN LEGENDE HINZUFÜGEN UND TITEL GGFS BEARBEITEN
-BESSERE DARSTELLUNG VERGLEICH BESSEL MIT MESSWERTEN 
 
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/1/1.1/Modulationskennlinie_20260626_160412.pdf}
+    \caption{Aufgabe: 1.1 statische Modulationskennlinie}
+    \label{Abb:A1_1_Modulationskennlinine}
+\end{figure}
 alle Messwerte sind nicht linear
+
+\begin{equation}
+    b = \frac{2419 kHz - 2619 kHz}{1.0 V-1.5 V} = -0.4\frac{kHz}{V}
+\end{equation}
+
+\begin{equation}
+    \alpha = \frac{1kHz}{b} = \frac{1Khz}{-0.4\frac{KHz}{V}} = -2.5 mV
+\end{equation}
+
+Vorzeichen irrelavant (nur phasendrehung) = 2.5mV
 
 BILD EINFÜGEN
 \subsubsection{Wahl eines Geeigneten Arbeitsbereiches}
@@ -401,6 +414,34 @@ BERECHNUNG ALPHA HINZUGFÜGEN REFERENZ MESSWERTE
 \label{kap:2}
 \subsubsection{Modulation von Sinussignalen}
 \label{kap:2.1}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/combined/Theorie_Bessel_20260628_162142.pdf}
+    \caption{Aufgabe: 2.1 Spektren der Sinusschwingung mit gegebenen Modulationsindizes}
+    \label{Abb:A2_1_Besselspektren}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.1.2/Messspektrum_m05_20260628_142150.pdf}
+    \caption{Aufgabe: 2.1 Spektrum der Sinusschwingung mit m = 0.5}
+    \label{Abb:A2_1_Spektrum_m05}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.1.2/Messspektrum_m24_20260628_140123.pdf}
+    \caption{Aufgabe: 2.1 Spektrum der Sinusschwingung mit m = 2.4}
+    \label{Abb:A2_1_Spektrum_m24}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.1.2/Messspektrm_m100_20260628_142740.pdf}
+    \caption{Aufgabe: 2.1 Spektrum der Sinusschwingung mit m = 10}
+    \label{Abb:A2_1_Spektrum_m10}
+\end{figure}
 Sinusförmiges Modulationssignal \\
 abstand der seitenbänder $f_1$ = 10 KHz 
 
@@ -419,7 +460,7 @@ Wichtig, für Aufgabe 2 wurde der Rauschunterdrückung nicht aktiviert, da,it ka
 BERECHNUNG SIGNALAMPLITUDEN HINZUFÜGEN
 Wurzel 2 wg effektivwert 
 \begin{equation}
-    U_E = /alpha \cdot \frac{f_1}{\sqrt{2}}
+    U_E = \alpha \cdot \frac{f_1}{\sqrt{2}}
 \end{equation}
 ABBILDUNG BESSELPLOTS HINZUFÜGEN
 
@@ -466,6 +507,21 @@ m = 0,5
 \subsubsection{Benötige Amplitude eines 20kHz Sinussignals}
 \label{kap:2.2}
 
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.2/Messspektrum_20khz_m24_20260628_144008.pdf}
+    \caption{Aufgabe: 2.2 Spektrum der Sinusschwingung mit m = 2.4 und $f_1$ = 20 kHz}
+    \label{Abb:A2_2_Spektrum_m24_f120kHz}
+\end{figure}
+
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.2/Messspektrum_2Vgl_m24_20260628_152414.pdf}
+    \caption{Aufgabe: 2.2 Vergleich der Spektren der Sinusschwingungen mit m = 2.4 und}
+    \label{Abb:A2_2_Spektrum_Vglm24_f120kHz}
+\end{figure}
+
 Bestimmung der ampliude 
 
 20KHz/ steigung der geraden = amplitude 
@@ -478,6 +534,19 @@ MESSWERTE VON 2.1. UND 2.2. IN PLOT MITEINANDER VERGLEICHEN
 \subsubsection{Frequenzmodulator als Phasenmodulator}
 \label{kap:2.3}
 
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.3/Messspektrum_Phase_m24_20260628_144103.pdf}
+    \caption{Aufgabe: 2.1 Spektrum der Phasenmodulierten Sinusschwingung }
+    \label{Abb:A2_3_Spektrum_m24_Phase}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.3/Messspektrum_VglPhase_m24_20260628_144700.pdf}
+    \caption{Aufgabe: 2.1 Vergleich des Spektren der Phasensimulierten Sinusschwingung }
+    \label{Abb:A2_3_Spektrum_m24_vglPhase}
+\end{figure}
 Kein bild da werte und abbildung identisch, soll zeigen, dass phasen und frequenzmodulator in dem fall das selbe bewirken 
 Warum ist das so?
 Gucken ob amplitude angepasst wurde, da hochpass amplitude dämpft -> wurde wieder so eingestellt das der wert von ca 17,6 V da ist 
@@ -508,11 +577,26 @@ Bei unterschiedlichen singalen sehen die spektren anders aus, wie kommt das zu s
 Was macht das am Dreieck?
 
 
+
 \subsubsection{Frequenzumtastung eines Rechtecksignals}
 Spektrum wird Breiter? 
 noch mal erklären lassen 
 BILDER IM ANHANG VERWEISEN 
 GGFS REHNUNG THEORIE
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/3/2/Messspektrum_Rechteck_m05_20260628_145402.pdf}
+    \caption{Aufgabe: 3.2 Spektrum des Rechtecksignals mit m = 0.5 }
+    \label{Abb:A3_2_Spektrum_Rechteck_m05}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/3/2/Messspektrum_Rechteck_m120260628_145402.pdf}
+    \caption{Aufgabe: 3.2 Spektrum des Rechtecksignals mit m = 1 }
+    \label{Abb:A3_2_Spektrum_Rechteck_m1}
+\end{figure}
 
 \subsubsection{Spektrum des Sinussignal mit Wachsender Singalfrequenz}
 Erkenntnis: Bei höheren $f_1$ wirds  nicht mehr symetrisch, woran liegt das vllt? 

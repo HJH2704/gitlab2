@@ -20,10 +20,39 @@ TIMESTAMP = datetime.now().strftime("%Y%m%d_%H%M%S")
 PNG_PATH1 = os.path.join(OUT_DIR, f"Messspektrum_m05_{TIMESTAMP}.pdf")
 PNG_PATH2 = os.path.join(OUT_DIR, f"Messspektrum_m24_{TIMESTAMP}.pdf")
 PNG_PATH3 = os.path.join(OUT_DIR, f"Messspektrm_m100_{TIMESTAMP}.pdf")
+def create_sideband_labels(x, carrier_label="Träger"):
+    """
+    Erstellt zweizeilige xticklabels für ein symmetrisches Spektrum.
 
+    Beispiel:
+        3.
+        SF
 
+        2.
+        SF
 
+        1.
+        SF
 
+        Träger
+    """
+
+    n = len(x)
+
+    if n % 2 == 0:
+        raise ValueError("Das Array muss eine ungerade Anzahl an Frequenzen besitzen.")
+
+    center = n // 2
+    labels = []
+
+    for i in range(n):
+        if i == center:
+            labels.append(carrier_label)
+        else:
+            order = abs(i - center)
+            labels.append(f"{order}.\nSF")
+
+    return labels
 def clean_line(line: str) -> str:
     """Entfernt LaTeX-Enden, \hline, Kommentare und Leerraum; wandelt ','->'.'."""
     # Kommentare nach '%' entfernen
@@ -75,22 +104,22 @@ def parse_table_file(path: str):
 #if __name__ == "__main__":
 #    print("Lese Datei:", INPUT_PATH1)
 #    data = parse_table_file(INPUT_PATH1)   # shape (n_rows, n_cols)
-#    # Erste Spalte als x, restliche als y1, y2, ...
+##   Erste Spalte als x, restliche als y1, y2, ...
 #    x = data[:, 0]
 #    ys = data[:, 1:]
-#
-#    # Sortiere nach x (falls nicht sortiert)
+# 
+##   Sortiere nach x (falls nicht sortiert)
 #    sort_idx = np.argsort(x)
 #    x = x[sort_idx]
 #    ys = ys[sort_idx, :]
-#
+# 
 #    print("Gelesene Form:", data.shape)
 #    print("x (erste 21):", x[:21])
 #    print("y-Spaltenanzahl:", ys.shape[1])
 #    y_bessel05 = np.array([0.031, 0.242, 0.938, 0.242, 0.031])
-#  
-#    # --- Plot ---
-#    plt.figure(figsize=(8, 5))
+#   
+#    #--- Plot ---
+#    fig, ax = plt.subplots(figsize=(8, 5))
 #    for col in range(ys.shape[1]):
 #        y =  ys[:, col] # hier umwandlung in \omega möglich
 #        # Ignoriere Spalten, die komplett NaN sind
@@ -99,25 +128,35 @@ def parse_table_file(path: str):
 #        # Entferne NaN-Reihen für Plot
 #        valid = ~np.isnan(y)
 #        label = f"$y_{col+1}$"
-#        base_colors = plt.cm.tab20(np.linspace(0, 1, 11))
+#        base_colors = plt.cm.tab20(np.linspace(0, 1, 3))
 #        farben = np.vstack([base_colors, base_colors[:-1][::-1]])
 #        y_neu = y/1.13
-#        plt.bar(x[valid],y_neu[valid], color=farben, width=0.002)
-#        plt.bar(x, y_bessel05,color='black', width=0.001)
-#        plt.axhline(0, color='black', linewidth=1)
-#        plt.xlabel("Spektrallinien in 10 kHz")
-#        plt.ylabel("Amplitude")
-#        plt.title("Messspektrum m = 0,5")       
+#        ax.bar(x[valid],y_neu[valid], color=farben, label= "Messwerte", width=0.001)
+#        ax.bar(x, y_bessel05,color='black',label = "Theoriewerte des Besselfunktion", width=0.00035)
+#        ax.axhline(0, color='black', linewidth=1)
+#        ax.set_ylim(0,1)
+#        ax.set_xlabel("Spektrallinien in MHz")
+#        secax = ax.secondary_xaxis('top')
+#        secax.set_xticks(x)
+#        secax.set_xticklabels(create_sideband_labels(x))
+## Abstand zwischen den beiden Achsen
+#       # secax.spines['top'].set_position(('outward', 40))
+#        secax.tick_params(length=0)
+#        ax.set_ylabel("Amplitude in V")
+#        ax.set_title("Messspektrum m = 0,5")       
 #        plt.grid(True)
 #        plt.tight_layout()
-#       # plt.savefig(PNG_PATH1, dpi=300, bbox_inches="tight")
-#      #  print("Plot gespeichert als:", PNG_PATH1)
+#        fig.text(0.98, 0.02, "SF = Seitenfrequenz", ha="right", fontsize=10)
+#        ax.legend(loc="upper right")
+#        ax.legend(loc="upper right")
+#        plt.savefig(PNG_PATH1, dpi=300, bbox_inches="tight")
+#        print("Plot gespeichert als:", PNG_PATH1)
 #
-#if __name__ == "__main__":
-#    print("Lese Datei:", INPUT_PATH2)
-#    data = parse_table_file(INPUT_PATH2)   # shape (n_rows, n_cols)
-#    # Erste Spalte als x, restliche als y1, y2, ...
-#    x = data[:, 0]
+##if __name__ == "__main__":
+##    print("Lese Datei:", INPUT_PATH2)
+##    data = parse_table_file(INPUT_PATH2)   # shape (n_rows, n_cols)
+##    # Erste Spalte als x, restliche als y1, y2, ...
+##    x = data[:, 0]
 #    ys = data[:, 1:]
 #
 #    # Sortiere nach x (falls nicht sortiert)
@@ -134,8 +173,8 @@ def parse_table_file(path: str):
 #    print("y-Spaltenanzahl:", ys.shape[1])
 #
 #
-#    # --- Plot ---
-#    plt.figure(figsize=(8, 5))
+    # --- Plot ---
+#    fig, ax = plt.subplots(figsize=(8, 5))
 #    for col in range(ys.shape[1]):
 #        y = ys[:, col] # hier umwandlung in \omega möglich
 #        # Ignoriere Spalten, die komplett NaN sind
@@ -145,63 +184,66 @@ def parse_table_file(path: str):
 #        # Entferne NaN-Reihen für Plot
 #        valid = ~np.isnan(y)
 #        label = f"$y_{col+1}$"
-#        base_colors = plt.cm.tab20(np.linspace(0, 1, 11))
+#        base_colors = plt.cm.tab20(np.linspace(0, 1, 7))
 #        y_neu = y/1.13
-#      
-#
+#     # 
+
 #        farben = np.vstack([base_colors, base_colors[:-1][::-1]])
 #        #plt.bar(x[valid],y_neu[valid], color=farben, width=0.002)
 #        #plt.bar(x, besselval_100,color='black', width=0.001)
-#    
-#        plt.axhline(0, color='black', linewidth=1)
-#        plt.xlabel("Spektrallinien in 10 kHz")
-#        plt.ylabel("Amplitude")
-#        plt.title("Messspektrum m = 2,4")       
+#        ax.bar(x[valid],y_neu[valid], color=farben, label= "Messwerte", width=0.001)
+#        ax.bar(x, y_bessel24,color='black', label = "Theoriewerte des Besselfunktion",width=0.00035)
+#        ax.axhline(0, color='black', linewidth=1)
+#        ax.set_ylim(0,1)
+#        ax.set_xlabel("Spektrallinien in MHz")
+#        secax = ax.secondary_xaxis('top')
+#        secax.set_xticks(x)
+#        secax.set_xticklabels(create_sideband_labels(x))
+## Abstand zwischen den beiden Achsen
+#      # secax.spines['top'].set_position(('outward', 40))
+#        secax.tick_params(length=0)
+#        ax.set_ylabel("Amplitude in V")
+#        ax.set_title("Messspektrum m = 2,4")     
 #        plt.grid(True)
 #        plt.tight_layout()
-#       plt.savefig(PNG_PATH2, dpi=300, bbox_inches="tight")
-#       print("Plot gespeichert als:", PNG_PATH2)
+#        fig.text(0.98, 0.02, "SF = Seitenfrequenz", ha="right", fontsize=10)
+#        ax.legend(loc="upper right")
+#        plt.savefig(PNG_PATH2, dpi=300, bbox_inches="tight")
+#        print("Plot gespeichert als:", PNG_PATH2)
+#
+#if __name__ == "__main__":
+print("Lese Datei:", INPUT_PATH3)
+data = parse_table_file(INPUT_PATH3)   # shape (n_rows, n_cols)
+ # Erste Spalte als x, restliche als y1, y2, ...
+x = data[:, 0]
+ys = data[:, 1:]
 
-if __name__ == "__main__":
-    print("Lese Datei:", INPUT_PATH3)
-    data = parse_table_file(INPUT_PATH3)   # shape (n_rows, n_cols)
-    # Erste Spalte als x, restliche als y1, y2, ...
-    x = data[:, 0]
-    ys = data[:, 1:]
-   
-    # Sortiere nach x (falls nicht sortiert)
-    sort_idx = np.argsort(x)
-    x = x[sort_idx]
-    ys = ys[sort_idx, :]
-  
-    
-    #print("Gelesene Form:", data.shape)
-    #print("x (erste 10):", x[:21])
-    #print("y-Spaltenanzahl:", ys.shape[1])
-
-
-    # --- Plot ---
-    plt.figure(figsize=(8, 5))
-    for col in range(ys.shape[1]):
-        y = ys[:, col] # hier umwandlung in \omega möglich
+ # Sortiere nach x (falls nicht sortiert)
+sort_idx = np.argsort(x)
+x = x[sort_idx]
+ys = ys[sort_idx, :]
+ 
+ #print("Gelesene Form:", data.shape)
+ #print("x (erste 10):", x[:21])
+ #print("y-Spaltenanzahl:", ys.shape[1])
+ # --- Plot ---
+fig, ax = plt.subplots(figsize=(8, 5))
+for col in range(ys.shape[1]):
+    y = ys[:, col] # hier umwandlung in \omega möglich
         # Ignoriere Spalten, die komplett NaN sind
-        if np.all(np.isnan(y)):
+    if np.all(np.isnan(y)):
             continue
         # Entferne NaN-Reihen für Plot
-        valid = ~np.isnan(y)
-        label = f"$y_{col+1}$"
-        base_colors = plt.cm.tab20(np.linspace(0, 1, 12))
-        y_neu = np.array([0.10879,0.18312, 0.25833, 0.28134, 0.19115, 0.01239 ,0.20699 ,0.19469, 0.05133,
+    valid = ~np.isnan(y)
+    label = f"$y_{col+1}$"
+    base_colors = plt.cm.tab20(np.linspace(0, 1, 12))
+    y_neu = np.array([0.10879,0.18312, 0.25833, 0.28134, 0.19115, 0.01239 ,0.20699 ,0.19469, 0.05133,
  0.22561 ,0.03804, 0.21416, 0.03804, 0.22561, 0.05133 ,0.19469, 0.20699, 0.01239
 , 0.19115 ,0.28134 ,0.25833 ,0.18312, 0.10879])
-
-        m = 10
-
-        n = np.arange(-11, 12)
-
-        Jn = sp.special.jv(n, m)
-
-        besselval_100= np.array([
+m = 10
+n = np.arange(-11, 12)
+Jn = sp.special.jv(n, m)
+besselval_100= np.array([
     0.292,
     0.318,
     0.216,
@@ -226,17 +268,22 @@ if __name__ == "__main__":
     0.318,
     0.292
 ])
-       # print(y)
-        #x = np.array([2.396, 2.407, 2.416, 2.426, 2.436, 2.446, 2.456, 2.466, 2.476, 2.486, 2.496, 2.506, 2.516, 2.526, 2.536, 2.546, 2.556, 2.566, 2.576, 2.587, 2.596])
-        farben = np.vstack([base_colors, base_colors[:-1][::-1]])
-        plt.bar(x[valid],y_neu[valid], color=farben, width=0.002)
-        plt.bar(x, np.abs(Jn),color='black', width=0.001)
-        plt.axhline(0, color='black', linewidth=1)
-        plt.xlabel("Spektrallinien in 10 kHz")
-        plt.ylabel("Amplitude")
-        plt.title("Messspektrum m = 10")       
-        plt.grid(True)
-        plt.tight_layout()
-        plt.savefig(PNG_PATH3, dpi=300, bbox_inches="tight")
-        print("Plot gespeichert als:", PNG_PATH3)
-
+# print(y)
+#x = np.array([2.396, 2.407, 2.416, 2.426, 2.436, 2.446, 2.456, 2.466, 2.476, 2.486, 2.496, 2.506, 2.516, 2.526, 2.536, 2.546, 2.556, 2.566, 2.576, 2.587, 2.596])
+farben = np.vstack([base_colors, base_colors[:-1][::-1]])
+ax.bar(x[valid],y_neu[valid], color=farben, label= "Messwerte",width=0.002)
+ax.bar(x, np.abs(Jn),color='black', label= "Theoriewerte der Besselfunktion", width=0.001)
+ax.axhline(0, color='black', linewidth=1)
+ax.set_ylim(0,1)
+ax.set_xlabel("Spektrallinien in MHz")
+secax = ax.secondary_xaxis('top')
+secax.set_xticks(x)
+secax.set_xticklabels(create_sideband_labels(x))
+ax.set_ylabel("Amplitude in V")
+ax.set_title("Messspektrum m = 10")       
+plt.grid(True)
+plt.tight_layout()
+fig.text(0.98, 0.02, "SF = Seitenfrequenz", ha="right", fontsize=10)
+ax.legend(loc="upper right")
+plt.savefig(PNG_PATH3, dpi=300, bbox_inches="tight")
+print("Plot gespeichert als:", PNG_PATH3)
