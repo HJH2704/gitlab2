@@ -50,7 +50,7 @@ def create_sideband_labels(x, carrier_label="Träger"):
             labels.append(carrier_label)
         else:
             order = abs(i - center)
-            labels.append(f"{order}.\nSF")
+            labels.append(f"{order}.\nSB")
 
     return labels
 def clean_line(line: str) -> str:
@@ -135,7 +135,7 @@ def parse_table_file(path: str):
 #        ax.bar(x, y_bessel05,color='black',label = "Theoriewerte des Besselfunktion", width=0.00035)
 #        ax.axhline(0, color='black', linewidth=1)
 #        ax.set_ylim(0,1)
-#        ax.set_xlabel("Spektrallinien in MHz")
+#        ax.set_xlabel("Frequenz in MHz")
 #        secax = ax.secondary_xaxis('top')
 #        secax.set_xticks(x)
 #        secax.set_xticklabels(create_sideband_labels(x))
@@ -146,17 +146,18 @@ def parse_table_file(path: str):
 #        ax.set_title("Messspektrum m = 0,5")       
 #        plt.grid(True)
 #        plt.tight_layout()
-#        fig.text(0.98, 0.02, "SF = Seitenfrequenz", ha="right", fontsize=10)
+#        fig.text(0.98, 0.02, "SB = Seitenband", ha="right", fontsize=10)
 #        ax.legend(loc="upper right")
 #        ax.legend(loc="upper right")
 #        plt.savefig(PNG_PATH1, dpi=300, bbox_inches="tight")
 #        print("Plot gespeichert als:", PNG_PATH1)
 #
-##if __name__ == "__main__":
-##    print("Lese Datei:", INPUT_PATH2)
-##    data = parse_table_file(INPUT_PATH2)   # shape (n_rows, n_cols)
-##    # Erste Spalte als x, restliche als y1, y2, ...
-##    x = data[:, 0]
+#if __name__ == "__main__":
+#
+#    print("Lese Datei:", INPUT_PATH2)
+#    data = parse_table_file(INPUT_PATH2)   # shape (n_rows, n_cols)
+#    # Erste Spalte als x, restliche als y1, y2, ...
+#    x = data[:, 0]
 #    ys = data[:, 1:]
 #
 #    # Sortiere nach x (falls nicht sortiert)
@@ -173,7 +174,7 @@ def parse_table_file(path: str):
 #    print("y-Spaltenanzahl:", ys.shape[1])
 #
 #
-    # --- Plot ---
+#   # --- Plot ---
 #    fig, ax = plt.subplots(figsize=(8, 5))
 #    for col in range(ys.shape[1]):
 #        y = ys[:, col] # hier umwandlung in \omega möglich
@@ -187,7 +188,6 @@ def parse_table_file(path: str):
 #        base_colors = plt.cm.tab20(np.linspace(0, 1, 7))
 #        y_neu = y/1.13
 #     # 
-
 #        farben = np.vstack([base_colors, base_colors[:-1][::-1]])
 #        #plt.bar(x[valid],y_neu[valid], color=farben, width=0.002)
 #        #plt.bar(x, besselval_100,color='black', width=0.001)
@@ -195,7 +195,7 @@ def parse_table_file(path: str):
 #        ax.bar(x, y_bessel24,color='black', label = "Theoriewerte des Besselfunktion",width=0.00035)
 #        ax.axhline(0, color='black', linewidth=1)
 #        ax.set_ylim(0,1)
-#        ax.set_xlabel("Spektrallinien in MHz")
+#        ax.set_xlabel("Frequenz in MHz")
 #        secax = ax.secondary_xaxis('top')
 #        secax.set_xticks(x)
 #        secax.set_xticklabels(create_sideband_labels(x))
@@ -206,12 +206,12 @@ def parse_table_file(path: str):
 #        ax.set_title("Messspektrum m = 2,4")     
 #        plt.grid(True)
 #        plt.tight_layout()
-#        fig.text(0.98, 0.02, "SF = Seitenfrequenz", ha="right", fontsize=10)
+#        fig.text(0.98, 0.02, "SB = Seitenband", ha="right", fontsize=10)
 #        ax.legend(loc="upper right")
 #        plt.savefig(PNG_PATH2, dpi=300, bbox_inches="tight")
 #        print("Plot gespeichert als:", PNG_PATH2)
 #
-#if __name__ == "__main__":
+##if __name__ == "__main__":
 print("Lese Datei:", INPUT_PATH3)
 data = parse_table_file(INPUT_PATH3)   # shape (n_rows, n_cols)
  # Erste Spalte als x, restliche als y1, y2, ...
@@ -275,7 +275,7 @@ ax.bar(x[valid],y_neu[valid], color=farben, label= "Messwerte",width=0.002)
 ax.bar(x, np.abs(Jn),color='black', label= "Theoriewerte der Besselfunktion", width=0.001)
 ax.axhline(0, color='black', linewidth=1)
 ax.set_ylim(0,1)
-ax.set_xlabel("Spektrallinien in MHz")
+ax.set_xlabel("Frequenz in MHz")
 secax = ax.secondary_xaxis('top')
 secax.set_xticks(x)
 secax.set_xticklabels(create_sideband_labels(x))
@@ -283,7 +283,7 @@ ax.set_ylabel("Amplitude in V")
 ax.set_title("Messspektrum m = 10")       
 plt.grid(True)
 plt.tight_layout()
-fig.text(0.98, 0.02, "SF = Seitenfrequenz", ha="right", fontsize=10)
+fig.text(0.98, 0.02, "SB = Seitenband", ha="right", fontsize=10)
 ax.legend(loc="upper right")
 plt.savefig(PNG_PATH3, dpi=300, bbox_inches="tight")
 print("Plot gespeichert als:", PNG_PATH3)

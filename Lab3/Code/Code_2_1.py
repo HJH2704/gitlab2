@@ -28,7 +28,7 @@ def create_sideband_labels(x, carrier_label="Träger"):
         if i == c:
             labels.append(carrier_label)
         else:
-            labels.append(f"{abs(i-c)}.\nSF")
+            labels.append(f"{abs(i-c)}.\nSB")
 
     return labels
 
@@ -103,8 +103,9 @@ def plot_bessel(ax, x, y, title):
     ax.axhline(0, color='black', linewidth=1)
 
     ax.set_title(title)
-    ax.set_xlabel("Spektrallinien in MHz")
+    ax.set_xlabel("Frequenz in MHz")
     ax.set_ylabel("Amplitude in V")
+
     ax.set_ylim(0,1)
     ax.grid(True)
 
@@ -122,6 +123,7 @@ fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(9, 11))
 plot_bessel(ax1, x, besselval_05, "Theorie m = 0.5")
 plot_bessel(ax2, x, besselval_24, "Theorie m = 2.4")
 plot_bessel(ax3,x, besselval_100, "Theorie m = 10")
+fig.text(0.98, 0.02, "SB= Seitenband", ha="right", fontsize=10)
 
 # =========================
 # m = 10 KORREKT: 13 LINKS + TRÄGER + 13 RECHTS

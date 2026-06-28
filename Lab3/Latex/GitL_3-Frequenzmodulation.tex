@@ -125,7 +125,8 @@
  Auf Trägerfrequnz $f_c$ und Trägersignal eingehen 
 
 \subsubsection*{Modulationsfrequenz}
-\subsubsection*{Frequenzhub}
+\subsubsection*{Frequenzhub}\label{sec:frequenzhub}
+Formel für frequenzhub mit reinschreiben 
 \subsubsection*{Seitenbänder}
 
 \subsection{Grundlegendes Prinzip der Frequenz- und Phasenmodulation}
@@ -295,7 +296,7 @@ Die Frequenzen der Seitenbänder des FM-Signals liegen bei:
 \end{equation}
 
 
-\subsection{Bandbreitebedarf eines Frequenzmodulierten Signals}
+\subsection{Bandbreitebedarf eines Frequenzmodulierten Signals}\label{sec:Carson}
 Den Bandbreitebedarf der Frequenzmodulation kann mithilfe der Carson-Bandbreite bestimmt werden.
 \begin{equation}
     B = 2(\Delta\Omega+a\cdot\omega_g) , a \in [1,2]
@@ -370,146 +371,137 @@ Da der Hochpass die amplitude dämpft muss diese wieder nachgesteuert werden, bi
 Nach Abschluss aller Messungen wurden sämtliche Geräte ausgeschaltet und der Arbeitsplatz wieder in seinen ursprünglichen Zustand zurückversetzt (Siehe Abbildung \ref{Abb:Aufbau_phy}).
 
 
-
+\newpage
 \section{Auswertung}
 \subsection{Statische Modulationskennlinie}
 \label{kap:1}
 \subsubsection{Modulationskennlinie der Momentanfrequenz als Funktion des Augenblickwerts $U_e$ des modulierten Eingangsignals}
 \label{kap:1.1}
-
+Aufgabe war es die Wirkungsweise der Modulatorschaltung in Abbildung \ref{Ah:Schaltplan_Platine} zu untersuchen. 
+Dazu sollte eine statische Modulationskennlinie aufgenommen werden. Die gemessenen Werte sind in Tabelle \ref{tab:Aufgabe1} zu finden. 
+Im folgenden sollen nun diese Werte dargestellt und ein geeigneter Arbeitspunkt bestimmt werden. 
+\subsubsection{Wahl eines Geeigneten Arbeitsbereiches}
+\label{kap:1.2}
+Die gemessenen Daten sind in der Abbildung \ref{Abb:A1_1_Modulationskennlinine} zu visualisiert. 
+Es ist zu erkennen, das diese Kennlinie nicht linear verläuft. Daher kann nicht der gesamte Messbereich für eine Auswertung genutzt werden, sondern es muss ein Arbeitspunkt gewählt werden um welchen herum die Modulatorschaltung betrieben werden soll. 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.8\linewidth]{../Abbildungen/1/1.1/Modulationskennlinie_20260626_160412.pdf}
     \caption{Aufgabe: 1.1 statische Modulationskennlinie}
     \label{Abb:A1_1_Modulationskennlinine}
 \end{figure}
-alle Messwerte sind nicht linear
 
+In Abbildung \ref{Abb:A1_1_Modulationskennlinine} ist zu erkennen, dass die Kennlinie zwischen 0V und 2V einen annähernd linearen Verlauf hat. 
+Auf Anweisung des betreuenden Professors wurde dann der Arbeitspunkt auf $A_p$ = 1.25 V $\pm$ 0.5 V gewählt.
+Für diesen Bereich wurde dann die Steigung berechnet. 
 \begin{equation}
     b = \frac{2419 kHz - 2619 kHz}{1.0 V-1.5 V} = -0.4\frac{kHz}{V}
 \end{equation}
 
+Der Kehrwert der Steigung $\alpha$ ist für die Folgenden Versuchsabschnitte Elementar, um die benötigten Signalamplituden berechnen zu können. 
 \begin{equation}
-    \alpha = \frac{1kHz}{b} = \frac{1Khz}{-0.4\frac{KHz}{V}} = -2.5 mV
+    \alpha = \frac{1kHz}{b} = \frac{1khz}{-0.4\frac{kHz}{V}} = -2.5 mV
 \end{equation}
 
-Vorzeichen irrelavant (nur phasendrehung) = 2.5mV
+Es ist hierbei zu erwähnen, das nur der Betrag dieses Wertes von Bedeutung ist, da das negative Vorzeichen als eine Phasendrehung des Modulationssignal von 180° aufgefasst werden kann. \cite{GoldenbaumGitskript} 
+Daher kann $\alpha$  zu 2.5 mV bestimmt werden. 
 
-BILD EINFÜGEN
-\subsubsection{Wahl eines Geeigneten Arbeitsbereiches}
-\label{kap:1.2}
-Linerar bereich von 0.5-2 V
-Arbeitspunkt von 1.25 V plus minus 250kHz 
-
-Steigung = -0.4 Khz/V
-
-$\alpha$ = 2.5 mV
-Dann steigung berechnet -> Formel einfügen, 
-auf Messwerte in tabelle referenzieren 
-das alpha negativ ist, ist nicht relevant 
-alpha wert zur bestimmung der amplituden in den folgenden Versuchsabschnitten
-
-BERECHNUNG ALPHA HINZUGFÜGEN REFERENZ MESSWERTE
 \subsection{ Frequenzspektren harmonischer Modulationssignale }
 \label{kap:2}
 \subsubsection{Modulation von Sinussignalen}
 \label{kap:2.1}
 
+Die nächste Aufgabe war es die Frequenzspektren von Sinusschwingungen mit verschiedenen Modulationsindizes aufzunehmen und zu vergleichen. 
+Dazu sollten zunächst die Frequenzhübe $\Delta$F bestimmt werden. 
+Dazu kann kann die in Abschnitt \ref{sec:frequenzhub} definierte Formel verwendet werden. Die Frequenz $f_1$ wurde in der Versuchsbeschreibung mit $f_1$ = 10 kHz angegeben. 
+Für die Modulationsindizes m = 0.5, m = 2.4 und m = 10 ergibt sich so: 
+\begin{equation}
+    \Delta F_{0.5} = 0,5 \cdot 10 kHz  = 5 kHz
+\end{equation}
+\begin{equation}
+   \Delta F_{2.4}  = 2,4 \cdot 10 kHz  = 24 KHz
+\end{equation}
+\begin{equation}
+   \Delta  F_{10} = 10 \cdot 10 kHz   = 100 KHz
+\end{equation}
+Mit diesen Werten können dann die einzustellenden Signalamplituden über folgenden Zusammenhang errechnet werden:
+
+\begin{equation}
+    U_A = \alpha \cdot \frac{\Delta F}{\sqrt{2}}
+\end{equation}
+Hierbei ist zu beachten, dass hier der Effektivwert angegeben wird. Da es sich um eine Sinusschwingung handelt kann hier der Effektivwert durch eine Division mit $\sqrt{2}$ bestimmt werden. \cite{hagmannGrundlagenElektrotechnikBewaehrte2020}\\
+So ergeben sich folgende Signalamplituden:
+\begin{equation}
+    U_{A0.5} = 2.5 mV \cdot \frac{5 kHz}{\sqrt{2}} = 8.838 mV
+\end{equation}
+\begin{equation}
+    U_{A2.4} = 2.5 mV \cdot \frac{24 kHz}{\sqrt{2}} = 42.426 mV
+\end{equation}
+\begin{equation}
+    U_{A10} = 2.5 mV \cdot \frac{100 kHz}{\sqrt{2}} = 176.776 mV
+\end{equation}
+Um die zu messenden Werte Vergleichen zu können, soll mittels der Besselfunktion erster Art das zu erwartende Spektrum berechnet werden. 
+Mittels der Python Libary Scipy wurden sich die Werte für das Spektrum erstellt und in der Abbildung \ref{Abb:A2_1_Besselspektren} dargestellt.
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/combined/Theorie_Bessel_20260628_162142.pdf}
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/combined/Theorie_Bessel_20260629_012110.pdf}
     \caption{Aufgabe: 2.1 Spektren der Sinusschwingung mit gegebenen Modulationsindizes}
     \label{Abb:A2_1_Besselspektren}
 \end{figure}
+Nachdem nun Vergleichswerte erstellt wurden, wurden nun die Spektren messtechnisch erfasst. 
+Der Bandbreitenbedarf für diese Messungen kann wie in Kapitel \ref{sec:Carson} beschrieben über die Formel von Carson bestimmt werden. Dieser sieht für die Indizes wie folgt aus:
 
+\begin{equation}
+    B_{0.5} = 2 \cdot 10 kHz \cdot (0.5 +1) = 30 kHz
+\end{equation}
+\begin{equation}
+    B_{2.4} = 2 \cdot 10 kHz \cdot (2.4 +1) = 68 kHz
+\end{equation} 
+\begin{equation}
+    B_{10}= 2 \cdot 10 kHz \cdot (10 +1) = 220 kHz
+\end{equation}
+Da die Amplitude des Trägers nicht bekannt ist, wurde am Anfang der Messung nur das Trägersignal ohne Modulationssignal gemessen. Dies ist in Abbildung \ref{Abb:A2_1_4_1_Trägeramplitude} zu sehen. 
+Auf diesen Wert müssen alle gemessen Werte normiert werden, da die Werte der Besselfunktion alle auf Amplitude von 1 bezogen sind. 
+Für den Modulationindex m = 0.5 wurde das Spektrum in Abbildung \ref{Abb:A2_1_1_2_Spektralbild_m0_5} festgehalten, und die Werte der Seitenbänder in Tabelle \ref{tab:Aufgabe2.1_m=0.5} notiert. 
+Mit diesen Werten wurde dann die Abbildung \ref{Abb:A2_1_1_2_Spektralbild_m0_5} erstellt, welche die Messwerte mit den theoretischen Werten der Besselfunktion vergleicht. 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.1.2/Messspektrum_m05_20260628_142150.pdf}
+    \includegraphics[width=\linewidth]{../Abbildungen/2/2.1.2/Messspektrum_m05_20260629_012245.pdf}
     \caption{Aufgabe: 2.1 Spektrum der Sinusschwingung mit m = 0.5}
     \label{Abb:A2_1_Spektrum_m05}
 \end{figure}
-
+\newline
+Es ist zu sehen, das die Bunt dargestellten Messwerte und die Schwarz dargestellten Theoriewerte annähert identisch sind. Die größte Abweichung zwischen Messwert und Theoriewert beträgt 2.77\%.
+Dies Zeigt, das die Messung mit den Berechnungen übereinstimmt und es nur geringe Abweichungen gibt, welche durch Bauteiltoleranzen oder Leitungswiderstände herbeigeführt werden könnten. 
+Für den Modulationindex m = 2.4 wurde das Spektrum in Abbildung \ref{Abb:A2_1_2_1_Spektralbild_m2_4} festgehalten, und die Werte der Seitenbänder in Tabelle \ref{tab:Aufgabe2.1_m=2.4} notiert. 
+Mit diesen Werten wurde dann die Abbildung \ref{Abb:A2_1_Spektrum_m24} erstellt, welche die Messwerte mit den theoretischen Werten der Besselfunktion vergleicht. 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.1.2/Messspektrum_m24_20260628_140123.pdf}
+    \includegraphics[width=\linewidth]{../Abbildungen/2/2.1.2/Messspektrum_m24_20260629_012245.pdf}
     \caption{Aufgabe: 2.1 Spektrum der Sinusschwingung mit m = 2.4}
     \label{Abb:A2_1_Spektrum_m24}
 \end{figure}
-
+\newline
+Auch in Abbildung \ref{Abb:A2_1_Spektrum_m24} kann dargestellt werden dass die gemessenen Werten den Berechnungen entsprechen. Das für den Modulationsindex 2.4 typischen Verschwinden der Trägeramplitude kann sauber dargestellt werden. 
+In diesem Plot beträgt die größte Abweichung zwischen  den Theoriewerten und der Messung 0.0103 V, was zeigt, das eine sehr akkurate Messung vorgenommen werden konnte.
+Für den Modulationindex m = 10 wurde das Spektrum in Abbildung \ref{Abb:A2_1_3_1_Spektralbild_m10} festgehalten, und die Werte der Seitenbänder in Tabelle \ref{tab:Aufgabe2.1_m=10} notiert. 
+Mit diesen Werten wurde dann die Abbildung \ref{Abb:A2_1_Spektrum_m10} erstellt, welche die Messwerte mit den theoretischen Werten der Besselfunktion vergleicht. 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.1.2/Messspektrm_m100_20260628_142740.pdf}
+    \includegraphics[width=\linewidth]{../Abbildungen/2/2.1.2/Messspektrm_m100_20260629_012447.pdf}
     \caption{Aufgabe: 2.1 Spektrum der Sinusschwingung mit m = 10}
     \label{Abb:A2_1_Spektrum_m10}
 \end{figure}
-Sinusförmiges Modulationssignal \\
-abstand der seitenbänder $f_1$ = 10 KHz 
-
-Bestimmen der frequenzhübe
-Dann bestimmen welche Signalamplituden wert als eingangspannung eingestellt werden muss 
-Darstellung besselfunktion theoretisch 
-Darstellung der aufgenommenen Spektren
-Besselfunktion ist normiert 
-Daher amplitude einzelt gemessen 
-Messwerte damit normieren
-Dann vergleich der Spektren zeigen 
-Messwerttabelle einfügen, normierte werte vs besselwerte 
-Konnt okay hin, abweichung in Prozent angeben 
-Alles ganz in ordnung bis auf m = 10 
-Wichtig, für Aufgabe 2 wurde der Rauschunterdrückung nicht aktiviert, da,it kann bei 0 aktiviert werden 
-BERECHNUNG SIGNALAMPLITUDEN HINZUFÜGEN
-Wurzel 2 wg effektivwert 
-\begin{equation}
-    U_E = \alpha \cdot \frac{f_1}{\sqrt{2}}
-\end{equation}
-ABBILDUNG BESSELPLOTS HINZUFÜGEN
-
-PLOTS BESSER DARSTELLEN VERGLEICH
-MESSWERTTABELLE ERSTELLEN MESSWERTE NOEMIERT GEGEN THEORIE
-
-Unter Verwendung der Gleichung \ref{eq:modulationsindex} ergeben sich für die verschiedenen Modulationsindizies: 
-
-BEI 2.1 M= 10 Gucken welcher wertebereich genau verwendet, noch mal mit auskommentierten werden gucken, was passt vllt besser 
-Plot werte in messtabelle übernehmen 
-
-m = 0,5 
-\begin{equation}
-    \Delta \Omega = 0,5 \cdot 10 kHz  = 5 kHz
-\end{equation}
-
-
-m = 2,4 \\
-\begin{equation}
-   \Delta \Omega  = 2,4 \cdot 10 kHz  = 24 KHz
-\end{equation}
-m = 10 \\
-\begin{equation}
-   \Delta \Omega  = 0,5 \cdot 10 kHz   = 100 KHz
-\end{equation}
-
-Mit Steigung von Geraden auf ausgabe 1 kann dann die benötigte frequenz bestimmt werden  
-
-Bandbreitenbedarf: 
-m = 0,5 
-\begin{equation}
-    B = 2 \cdot 10 kHz \cdot (0,5 +1) = 30 kHz
-\end{equation}
-
-m = 2,4 
-\begin{equation}
-    B = 2 \cdot 10 kHz \cdot (2,4 +1) = 68 kHz
-\end{equation}
-
-m = 0,5 
-\begin{equation}
-    B = 2 \cdot 10 kHz \cdot (10 +1) = 220 kHz
-\end{equation}
+Die Auswertung von Abbildung \ref{Abb:A2_1_3_1_Spektralbild_m10} zeigt, das grundsätzlich auch das erwartete Spektrum aufgenommen werden könnte, jedoch die gemessenen Werte im mittel um 11.52 \% kleiner sind als erwartet. 
+Gründe dafür könnten neben den oben erwähnten sein, das die Witterung(38°C Außentemperatur) und die Lage des Labors (6. Stock) die Umgebungsluft deutlich über 20°C (293,15°K) befand, welcher bei den meisten Messgeräten als Referenzwert dient. Durch die Temperaturdifferenz könnte so ein größerer Messfehler entstanden sein.  
+Zudem War der Raschunterdrückungsfilter des Frequenzanalysators während des gesamten Versuchs ausgeschaltet, was ebenfalls zu ungenaueren Ergebnissen beigetragen haben könnte. 
 \subsubsection{Benötige Amplitude eines 20kHz Sinussignals}
 \label{kap:2.2}
 
+AUSWERTUNG WEITER MACHEN
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.2/Messspektrum_20khz_m24_20260628_144008.pdf}
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.2/Messspektrum_20khz_m24_20260629_011957.pdf}
     \caption{Aufgabe: 2.2 Spektrum der Sinusschwingung mit m = 2.4 und $f_1$ = 20 kHz}
     \label{Abb:A2_2_Spektrum_m24_f120kHz}
 \end{figure}
@@ -517,7 +509,7 @@ m = 0,5
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.2/Messspektrum_2Vgl_m24_20260628_152414.pdf}
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.2/Messspektrum_2Vgl_m24_20260629_011957.pdf}
     \caption{Aufgabe: 2.2 Vergleich der Spektren der Sinusschwingungen mit m = 2.4 und}
     \label{Abb:A2_2_Spektrum_Vglm24_f120kHz}
 \end{figure}
@@ -536,15 +528,15 @@ MESSWERTE VON 2.1. UND 2.2. IN PLOT MITEINANDER VERGLEICHEN
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.3/Messspektrum_Phase_m24_20260628_144103.pdf}
-    \caption{Aufgabe: 2.1 Spektrum der Phasenmodulierten Sinusschwingung }
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.3/Messspektrum_Phase_m24_20260629_011531.pdf}
+    \caption{Aufgabe: 2.3 Spektrum der Phasenmodulierten Sinusschwingung }
     \label{Abb:A2_3_Spektrum_m24_Phase}
 \end{figure}
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.3/Messspektrum_VglPhase_m24_20260628_144700.pdf}
-    \caption{Aufgabe: 2.1 Vergleich des Spektren der Phasensimulierten Sinusschwingung }
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.3/Messspektrum_VglPhase_m24_20260629_011531.pdf}
+    \caption{Aufgabe: 2.3 Vergleich des Spektren der Phasensimulierten Sinusschwingung }
     \label{Abb:A2_3_Spektrum_m24_vglPhase}
 \end{figure}
 Kein bild da werte und abbildung identisch, soll zeigen, dass phasen und frequenzmodulator in dem fall das selbe bewirken 
@@ -586,14 +578,14 @@ GGFS REHNUNG THEORIE
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/3/2/Messspektrum_Rechteck_m05_20260628_145402.pdf}
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/3/2/Messspektrum_Rechteck_m05_20260629_011824.pdf}
     \caption{Aufgabe: 3.2 Spektrum des Rechtecksignals mit m = 0.5 }
     \label{Abb:A3_2_Spektrum_Rechteck_m05}
 \end{figure}
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Abbildungen/3/2/Messspektrum_Rechteck_m120260628_145402.pdf}
+    \includegraphics[width=0.8\linewidth]{../Abbildungen/3/2/Messspektrum_Rechteck_m120260629_011824.pdf}
     \caption{Aufgabe: 3.2 Spektrum des Rechtecksignals mit m = 1 }
     \label{Abb:A3_2_Spektrum_Rechteck_m1}
 \end{figure}

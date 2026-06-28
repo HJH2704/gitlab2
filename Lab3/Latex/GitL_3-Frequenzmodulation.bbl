@@ -56,6 +56,44 @@
       \verb https://aulis.hs-bremen.de/ilias.php?baseClass=ilrepositorygui&cmdNode=zh:oi&cmdClass=ilObjFileGUI&cmd=sendfile&ref_id=2418942
       \endverb
     \endentry
+    \entry{hagmannGrundlagenElektrotechnikBewaehrte2020}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=33a7d9a9998e42a7fcbf533ad49040ab}{%
+           family={Hagmann},
+           familyi={H\bibinitperiod},
+           given={Gert},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Wiebelsheim}%
+      }
+      \list{publisher}{1}{%
+        {{AULA}-Verlag}%
+      }
+      \strng{namehash}{33a7d9a9998e42a7fcbf533ad49040ab}
+      \strng{fullhash}{33a7d9a9998e42a7fcbf533ad49040ab}
+      \strng{fullhashraw}{33a7d9a9998e42a7fcbf533ad49040ab}
+      \strng{bibnamehash}{33a7d9a9998e42a7fcbf533ad49040ab}
+      \strng{authorbibnamehash}{33a7d9a9998e42a7fcbf533ad49040ab}
+      \strng{authornamehash}{33a7d9a9998e42a7fcbf533ad49040ab}
+      \strng{authorfullhash}{33a7d9a9998e42a7fcbf533ad49040ab}
+      \strng{authorfullhashraw}{33a7d9a9998e42a7fcbf533ad49040ab}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{18., durchgesehene und korrigierte Auflage}
+      \field{isbn}{978-3-89104-830-6}
+      \field{pagetotal}{398}
+      \field{series}{Elektrotechnik}
+      \field{shorttitle}{Grundlagen der Elektrotechnik}
+      \field{title}{Grundlagen der Elektrotechnik: das bewährte Lehrbuch für Studierende der Elektrotechnik und anderer technischer Studiengänge ab 1. Semester: mit 225 Abbildungen, 4 Tabellen, Aufgaben und Lösungen}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Table of Contents PDF:C\:\\Users\\mvoge\\Zotero\\storage\\HXQ84HLF\\Hagmann - 2020 - Grundlagen der Elektrotechnik das bewährte Lehrbuch für Studierende der Elektrotechnik und anderer.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{Labor_Amplitudenmodulation}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=b9d5092b153ccb9def9dc65d2a782768}{%
@@ -73,8 +111,8 @@
       \strng{authornamehash}{b9d5092b153ccb9def9dc65d2a782768}
       \strng{authorfullhash}{b9d5092b153ccb9def9dc65d2a782768}
       \strng{authorfullhashraw}{b9d5092b153ccb9def9dc65d2a782768}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Grundlagen der Informationstechnik Labor Frequenzmodulation}

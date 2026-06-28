@@ -102,7 +102,7 @@ def create_sideband_labels(x, carrier_label="Träger"):
             labels.append(carrier_label)
         else:
             order = abs(i - center)
-            labels.append(f"{order}.\nSF")
+            labels.append(f"{order}.\nSB")
 
     return labels
 
@@ -140,7 +140,7 @@ if __name__ == "__main__":
         #ax.bar(x, y_bessel05,color='black',label = "Theoriewerte des Besselfunktion", width=0.00035)
         ax.axhline(0, color='black', linewidth=1)
         ax.set_ylim(0,1)
-        ax.set_xlabel("Spektrallinien in MHz")
+        ax.set_xlabel("Frequenz in MHz")
         secax = ax.secondary_xaxis('top')
         secax.set_xticks(x)
         secax.set_xticklabels(create_sideband_labels(x))
@@ -151,7 +151,7 @@ if __name__ == "__main__":
         ax.set_title("Messspektrum m = 0,5")       
         plt.grid(True)
         plt.tight_layout()
-        fig.text(0.98, 0.02, "SF = Seitenfrequenz", ha="right", fontsize=10)
+        fig.text(0.98, 0.02, "SB = Seitenband", ha="right", fontsize=10)
         ax.legend(loc="upper right")
         plt.savefig(PNG_PATH1, dpi=300, bbox_inches="tight")
         print("Plot gespeichert als:", PNG_PATH1)
@@ -191,7 +191,7 @@ if __name__ == "__main__":
         #ax.bar(x, y_bessel05,color='black',label = "Theoriewerte des Besselfunktion", width=0.00035)
         ax.axhline(0, color='black', linewidth=1)
         ax.set_ylim(0,1)
-        ax.set_xlabel("Spektrallinien in MHz")
+        ax.set_xlabel("Frequenz in MHz")
         secax = ax.secondary_xaxis('top')
         secax.set_xticks(x)
         secax.set_xticklabels(create_sideband_labels(x))
@@ -202,7 +202,7 @@ if __name__ == "__main__":
         ax.set_title("Messspektrum Phasenmodulator m = 1")       
         plt.grid(True)
         plt.tight_layout()
-        fig.text(0.98, 0.02, "SF = Seitenfrequenz", ha="right", fontsize=10)
+        fig.text(0.98, 0.02, "SB = Seitenband", ha="right", fontsize=10)
         ax.legend(loc="upper right")
         plt.savefig(PNG_PATH2, dpi=300, bbox_inches="tight")
         print("Plot gespeichert als:", PNG_PATH2)

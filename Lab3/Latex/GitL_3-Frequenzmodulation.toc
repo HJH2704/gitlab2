@@ -10,28 +10,28 @@
 \contentsline {subsection}{\numberline {1.6}Bandbreitebedarf eines Frequenzmodulierten Signals}{8}{subsection.1.6}%
 \contentsline {subsection}{\numberline {1.7}Abhängigkeit von Frequenz- und die Phasenmodulation}{8}{subsection.1.7}%
 \contentsline {subsection}{\numberline {1.8}Frequency Shift Keying (FSK)}{9}{subsection.1.8}%
-\contentsline {paragraph}{\nonumberline Vorteile von FSK}{9}{paragraph*.12}%
+\contentsline {paragraph}{\nonumberline Vorteile von FSK}{9}{paragraph*.4}%
 \contentsline {section}{\numberline {2}Durchführung}{9}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Durchführung der Aufgabe: 1}{9}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Durchführung der Aufgabe: 2}{9}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Durchführung der Aufgabe: 3}{10}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Ende des Versuchs}{10}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Auswertung}{10}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Statische Modulationskennlinie}{10}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Modulationskennlinie der Momentanfrequenz als Funktion des Augenblickwerts $U_e$ des modulierten Eingangsignals}{10}{subsubsection.3.1.1}%
+\contentsline {section}{\numberline {3}Auswertung}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Statische Modulationskennlinie}{11}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Modulationskennlinie der Momentanfrequenz als Funktion des Augenblickwerts $U_e$ des modulierten Eingangsignals}{11}{subsubsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}Wahl eines Geeigneten Arbeitsbereiches}{11}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Frequenzspektren harmonischer Modulationssignale}{11}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Modulation von Sinussignalen}{11}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Benötige Amplitude eines 20kHz Sinussignals}{13}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Frequenzmodulator als Phasenmodulator}{14}{subsubsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.3}Frequenzspektren periodischer Modulationssignale}{15}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Frequenzspektrum eines Sinus-, Dreieck- und Rechtecksignals}{15}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Frequenzumtastung eines Rechtecksignals}{17}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Spektrum des Sinussignal mit Wachsender Singalfrequenz}{18}{subsubsection.3.3.3}%
-\contentsline {section}{\numberline {4}Fazit}{18}{section.4}%
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{19}{section.5}%
-\contentsline {section}{\numberline {A}Abbildungen}{20}{appendix.A}%
-\contentsline {section}{\numberline {B}Messtabellen}{26}{appendix.B}%
-\contentsline {section}{\numberline {C}Schaltpläne}{31}{appendix.C}%
-\contentsline {section}{\numberline {D}Geräteliste}{33}{appendix.D}%
+\contentsline {subsection}{\numberline {3.2}Frequenzspektren harmonischer Modulationssignale}{12}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Modulation von Sinussignalen}{12}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Benötige Amplitude eines 20kHz Sinussignals}{15}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Frequenzmodulator als Phasenmodulator}{16}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}Frequenzspektren periodischer Modulationssignale}{18}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Frequenzspektrum eines Sinus-, Dreieck- und Rechtecksignals}{18}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Frequenzumtastung eines Rechtecksignals}{19}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Spektrum des Sinussignal mit Wachsender Singalfrequenz}{19}{subsubsection.3.3.3}%
+\contentsline {section}{\numberline {4}Fazit}{19}{section.4}%
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{20}{section.5}%
+\contentsline {section}{\numberline {A}Abbildungen}{21}{appendix.A}%
+\contentsline {section}{\numberline {B}Messtabellen}{27}{appendix.B}%
+\contentsline {section}{\numberline {C}Schaltpläne}{32}{appendix.C}%
+\contentsline {section}{\numberline {D}Geräteliste}{34}{appendix.D}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
