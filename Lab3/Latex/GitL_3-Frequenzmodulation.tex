@@ -427,7 +427,7 @@ Für die Modulationsindizes m = 0.5, m = 2.4 und m = 10 ergibt sich so:
 Mit diesen Werten können dann die einzustellenden Signalamplituden über folgenden Zusammenhang errechnet werden:
 
 \begin{equation}
-    U_A = \alpha \cdot \frac{\Delta F}{\sqrt{2}}
+    U_A = \alpha \cdot \frac{\Delta F}{\sqrt{2}}\label{eq:Amplitude}
 \end{equation}
 Hierbei ist zu beachten, dass hier der Effektivwert angegeben wird. Da es sich um eine Sinusschwingung handelt kann hier der Effektivwert durch eine Division mit $\sqrt{2}$ bestimmt werden. \cite{hagmannGrundlagenElektrotechnikBewaehrte2020}\\
 So ergeben sich folgende Signalamplituden:
@@ -493,51 +493,80 @@ Mit diesen Werten wurde dann die Abbildung \ref{Abb:A2_1_Spektrum_m10} erstellt,
     \label{Abb:A2_1_Spektrum_m10}
 \end{figure}
 Die Auswertung von Abbildung \ref{Abb:A2_1_3_1_Spektralbild_m10} zeigt, das grundsätzlich auch das erwartete Spektrum aufgenommen werden könnte, jedoch die gemessenen Werte im mittel um 11.52 \% kleiner sind als erwartet. 
-Gründe dafür könnten neben den oben erwähnten sein, das die Witterung(38°C Außentemperatur) und die Lage des Labors (6. Stock) die Umgebungsluft deutlich über 20°C (293,15°K) befand, welcher bei den meisten Messgeräten als Referenzwert dient. Durch die Temperaturdifferenz könnte so ein größerer Messfehler entstanden sein.  
+Es fällt hier auf, das die werte kontinuierlich unterhalb der theoretisch berechneten Werten liegt. Dadurch liegt der Verdacht nahe, das vor Aufnahme der Messwerte unbeabsichtigt eine Einstellung an einem der Messgeräte durch antippen oder drehen an einem der Potenziometer verändert wurde. 
 Zudem War der Raschunterdrückungsfilter des Frequenzanalysators während des gesamten Versuchs ausgeschaltet, was ebenfalls zu ungenaueren Ergebnissen beigetragen haben könnte. 
+\newline
+Auswertend kann gesagt werden, dass durch die Erhöhung des Modulationsindex das Spektrum in Breiter wird und mehr Seitenbänder auftreten. In folge der Energieerhaltung haben alle Peaks im Spektrum eine geringere Amplitude als bei nur einem diskreten Peak. Außerdem ist zu erkennen, dass bei einem Modualtionsindex von m = 2.4 der Träger komplett im Spektrum verschwindet. 
+
 \subsubsection{Benötige Amplitude eines 20kHz Sinussignals}
 \label{kap:2.2}
-AUSWERTUNG WEITER MACHEN
-
+Im nächsten Versuchsabschnitt soll die vorausgegangene Messung mit dem Modulationsindex von m = 2.4 nun mit einer Signalfrequenz $f_1$ = 20 kHz widerholt werden.
+Daher muss nun ebenfalls der Frequenzhub berechnet werden, dazu wird wieder die Formel aus \ref{sec:frequenzhub} verwendet. Die einzustellende Signalamplitude wird ebenfalls über die Gleichung \ref{eq:Amplitude} berechnet.
+So ergeben sich die folgenden Werte: 
 \begin{equation}
     \Delta F_{2.4, 20} = 2.4 \cdot 20 kHz  = 48 kHz
 \end{equation}
-
 \begin{equation}
-    U_{A0.5} = 2.5 mV \cdot \frac{48 kHz}{\sqrt{2}} = 84.852 mV
+    U_{A,2.4,20} = 2.5 mV \cdot \frac{48 kHz}{\sqrt{2}} = 84.852 mV
 \end{equation}
-
+Die benötigte Bandbreite kann ebenfalls wieder über die Formel von Carson (\ref{sec:Carson}) berechnet werden. 
 \begin{equation}
-    B_{2.4} = 2 \cdot 20 kHz \cdot (2.4 +1) = 136 kHz
+    B_{2.4,20} = 2 \cdot 20 kHz \cdot (2.4 +1) = 136 kHz
 \end{equation} 
-
+Die Darstellung des Spektrum ist in Abbildung \ref{Abb:A2_2/A2_3 Spektralbild_20kHz} zu finden. Die aus der Darstellung gewonnen Messdaten befinden sich in Tabelle \ref{tab:Aufgabe2.2_m=24}.
+Visualisiert man diese Werte entsteht Abbildung \ref{Abb:A2_2_Spektrum_m24_f120kHz}.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.2/Messspektrum_20khz_m24_20260629_011957.pdf}
     \caption{Aufgabe: 2.2 Spektrum der Sinusschwingung mit m = 2.4 und $f_1$ = 20 kHz}
     \label{Abb:A2_2_Spektrum_m24_f120kHz}
 \end{figure}
-
-
+Auch hier ist zu erkenne, dass der Träger nahezu gänzlich verschwindet, wie es bei einem Modulationsindex von 2.4 zu erwarten ist. 
+Außerdem ist das Spektrum breiter als das aus Kapitel \ref{kap:2.1}. Um beide Spektren gut miteinander vergleichen zu können werde diese nun in Abbildung \ref{Abb:A2_2_Spektrum_Vglm24_f120kHz} dargestellt.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.2/Messspektrum_2Vgl_m24_20260629_011957.pdf}
     \caption{Aufgabe: 2.2 Vergleich der Spektren der Sinusschwingungen mit m = 2.4 und}
     \label{Abb:A2_2_Spektrum_Vglm24_f120kHz}
 \end{figure}
-
-Bestimmung der ampliude 
-
-20KHz/ steigung der geraden = amplitude 
-
-Soll zeigen, das bei größerem f1 breiter und die peaks etwas kleiner werden (energieerhaltung)
-PLOT AUS MESSWERTEN 
-MESSWERTE VON 2.1. UND 2.2. IN PLOT MITEINANDER VERGLEICHEN
-
-
+Im Vergleich der beiden Spektren ist gut zu erkennen, das die höhere Signalfrequenz nur eine Auswirkung auf den Abstand der Seitenbänder vom Träger hat. Dieser beträgt nun nicht mehr 10 kHz zwischen den einzelnen Peaks sondern 20kHz, der Rest des Spektrums bleibt unverändert. 
+\newline
+Würde es sich um eine Phasenmodulation handeln, wäre bei gleichem Modulationsindex die Benötigte Signalamplitude Identisch. Darauf wird im nachfolgenden Kapitel weiter eingegangen. 
 \subsubsection{Frequenzmodulator als Phasenmodulator}
 \label{kap:2.3}
-
+Nun soll der Frequenzmodulator als Phasenmodulator betrieben werden. Dafür muss das Eingangssignal vor der Einspeisung in den Modulator differenziert werden. 
+Grund dafür ist der Zusammenhang: 
+\begin{equation}
+    x_{\mathrm{FM}}(t) = A\cos\Bigl(\omega_0 t + \frac{\Delta\Omega}{\omega_1}\sin(\omega_1 t) + \varphi_0\Bigr)
+\end{equation}
+\begin{equation}
+    x_{\mathrm{PM}}(t) = A\cos\bigl(\omega_0 t + \Delta\Phi\cos(\omega_1 t) + \varphi_0\bigr)
+\end{equation}
+\begin{center}
+    $A$ : Amplitude des Trägersignals\\
+    $\omega_0$ : Träger-Kreisfrequenz (rad/s)\\
+    $\Delta\Omega$ : maximale Winkelgeschwindigkeitsabweichung (rad/s)\\
+    $\omega_1$ : Modulations-Kreisfrequenz (rad/s)\\
+    $\varphi_0$ : Anfangsphase\\
+    $t$ : Zeit
+    $\Delta\Phi = \dfrac{\Delta\Omega}{\omega_1}$ : Beziehung zwischen FM- und PM-Modulationsindex\\
+\end{center}
+Eine Differentiation eines Signal, kann systemtheoretisch durch einen Hochpass beschrieben werden, wenn die Grenzfrequenz weit überhalb der verwendeten Frequenz liegt. Es gilt:
+\begin{equation}
+    H(s) = \frac{sRC}{1+sRC} \approx sRC
+\end{equation}
+Laplace Rücktransformiert ergibt sich dann: 
+\begin{equation}
+    u_a(t) \approx RC \frac{d}{dt} u_e(t)
+\end{equation}
+Für den Hochpass wurde eine Grenzfrequenz von 200kHz gewählt, was eine Dekade über der Frequenz des Modulationssignals liegt. Zur Realisierung wurde ein RC-Hochpass mit einem C = 15nF Kondensator, sowie einem R = 50$\Omega$ Widerstand. Dies ergibt rechnerisch eine Grenzfrequenz von 196 kHz, was für den Versuch ausreichend genau an 200kHz liegt. In der Aufgabenstellung wurde gefordert, das im Frequenzbereich von 10 kHz - 20kHz die Differentiation durchgeführt wird. Dies ist in Abbildung \ref{Abb:A2_3_BodeplotHP} zu sehen, das in diesem Bereich eine Steigung von -20 dB/Dekade vorliegt. 
+Das aufgenommene Spektrum ist in Abbildung \ref{Abb:A2_2/A2_3 Spektralbild_20kHz} zu sehen. Die Messwerte sind in Tabelle \ref{tab:Aufgabe2.3_m=2.4} festgehalten. Diese Daten grafisch Dargestellt zeigt Abbildung \ref{Abb:A2_3_Spektrum_m24_Phase}.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.75\linewidth]{../Abbildungen/2/2.3/Bodeplot.png}
+    \caption{Darstellung des Arbeitsbereichs des Verwendeten Hochpasses}
+    \label{Abb:A2_3_BodeplotHP}
+\end{figure}
 
 
 \begin{figure}[!h]
@@ -553,17 +582,11 @@ MESSWERTE VON 2.1. UND 2.2. IN PLOT MITEINANDER VERGLEICHEN
     \caption{Aufgabe: 2.3 Vergleich des Spektren der Phasensimulierten Sinusschwingung }
     \label{Abb:A2_3_Spektrum_m24_vglPhase}
 \end{figure}
-Kein bild da werte und abbildung identisch, soll zeigen, dass phasen und frequenzmodulator in dem fall das selbe bewirken 
 Warum ist das so?
 Gucken ob amplitude angepasst wurde, da hochpass amplitude dämpft -> wurde wieder so eingestellt das der wert von ca 17,6 V da ist 
 
 AUF BILD IM ANHNAG VERWEISEN 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=0.75\linewidth]{../Abbildungen/2/2.3/Bodeplot.png}
-    \caption{Darstellung des Arbeitsbereichs des Verwendeten Hochpasses}
-    \label{Abb:A2_3_BodeplotHP}
-\end{figure}
+
 
 C = 15nF 
 Fg = 200kHz (196 kHz)
