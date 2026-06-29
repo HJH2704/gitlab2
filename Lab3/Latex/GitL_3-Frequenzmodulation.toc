@@ -24,14 +24,14 @@
 \contentsline {subsubsection}{\numberline {3.2.1}Modulation von Sinussignalen}{12}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}Benötige Amplitude eines 20kHz Sinussignals}{15}{subsubsection.3.2.2}%
 \contentsline {subsubsection}{\numberline {3.2.3}Frequenzmodulator als Phasenmodulator}{17}{subsubsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.3}Frequenzspektren periodischer Modulationssignale}{18}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Frequenzspektrum eines Sinus-, Dreieck- und Rechtecksignals}{18}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Frequenzumtastung eines Rechtecksignals}{19}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Spektrum des Sinussignal mit Wachsender Singalfrequenz}{20}{subsubsection.3.3.3}%
-\contentsline {section}{\numberline {4}Fazit}{21}{section.4}%
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{22}{section.5}%
-\contentsline {section}{\numberline {A}Abbildungen}{23}{appendix.A}%
-\contentsline {section}{\numberline {B}Messtabellen}{29}{appendix.B}%
-\contentsline {section}{\numberline {C}Schaltpläne}{34}{appendix.C}%
-\contentsline {section}{\numberline {D}Geräteliste}{36}{appendix.D}%
+\contentsline {subsection}{\numberline {3.3}Frequenzspektren periodischer Modulationssignale}{20}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Frequenzspektrum eines Sinus-, Dreieck- und Rechtecksignals}{20}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Frequenzumtastung eines Rechtecksignals}{21}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Spektrum des Sinussignal mit Wachsender Singalfrequenz}{22}{subsubsection.3.3.3}%
+\contentsline {section}{\numberline {4}Fazit}{22}{section.4}%
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{23}{section.5}%
+\contentsline {section}{\numberline {A}Abbildungen}{24}{appendix.A}%
+\contentsline {section}{\numberline {B}Messtabellen}{30}{appendix.B}%
+\contentsline {section}{\numberline {C}Schaltpläne}{35}{appendix.C}%
+\contentsline {section}{\numberline {D}Geräteliste}{37}{appendix.D}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

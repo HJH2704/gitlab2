@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber GitL_3-Frequenzmodulation"] 1782750405.38631 "GitL_3-Frequenzmodulation.bcf" "GitL_3-Frequenzmodulation.bbl" "GitL_3-Frequenzmodulation" 1782753484.59145 0
+["biber GitL_3-Frequenzmodulation"] 1782750405.38631 "GitL_3-Frequenzmodulation.bcf" "GitL_3-Frequenzmodulation.bbl" "GitL_3-Frequenzmodulation" 1782770739.73589 0
   "../Literatur/Amplitudenmodulation.bib" 1782748695 16603 abbe239b28b8739e32c1928902ea0eb1 ""
-  "GitL_3-Frequenzmodulation.bcf" 1782753483 108227 32dc96af5593922c3afb19c2240ce0ae "pdflatex"
+  "GitL_3-Frequenzmodulation.bcf" 1782770739 108227 32dc96af5593922c3afb19c2240ce0ae "pdflatex"
   (generated)
   "GitL_3-Frequenzmodulation.bbl"
   "GitL_3-Frequenzmodulation.blg"
   (rewritten before read)
-["pdflatex"] 1782753476.70315 "c:/Users/Holger/OneDrive/Hochschule_Bremen/4Semester/GIT/Lab2/gitlab2/Lab3/Latex/GitL_3-Frequenzmodulation.tex" "GitL_3-Frequenzmodulation.pdf" "GitL_3-Frequenzmodulation" 1782753484.59256 0
+["pdflatex"] 1782770731.39715 "c:/Users/Holger/OneDrive/Hochschule_Bremen/4Semester/GIT/Lab2/gitlab2/Lab3/Latex/GitL_3-Frequenzmodulation.tex" "GitL_3-Frequenzmodulation.pdf" "GitL_3-Frequenzmodulation" 1782770739.73704 0
   "../Abbildungen/1/1.1/Modulationskennlinie_20260626_160412.pdf" 1782482652 21232 9896226741feba1dc13ad0393298e9b8 ""
   "../Abbildungen/2/2.1.2/Messspektrm_m100_20260629_012447.pdf" 1782689088 18972 06b02a881b1948d72c9db7881efe586b ""
   "../Abbildungen/2/2.1.2/Messspektrum_m05_20260629_012245.pdf" 1782688965 16660 3e32b8bc80f1ccc00ebe40ba956219b6 ""
@@ -353,14 +353,14 @@
   "C:/Users/Holger/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/Holger/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/Holger/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "GitL_3-Frequenzmodulation.aux" 1782753483 34883 e73c916c6d5e1321f5d3d645c35a6178 "pdflatex"
+  "GitL_3-Frequenzmodulation.aux" 1782770739 34883 0050bd908049947e403ac1f220dabae6 "pdflatex"
   "GitL_3-Frequenzmodulation.bbl" 1782750407 5432 df35c6516ddd5de91d4b473f9da0488e "biber GitL_3-Frequenzmodulation"
-  "GitL_3-Frequenzmodulation.lof" 1782753484 4476 f02dae14a55178749a40c0460217f18e "pdflatex"
-  "GitL_3-Frequenzmodulation.lot" 1782753484 1114 8a6afb2fcbe35867a7c735c33ad729c2 "pdflatex"
-  "GitL_3-Frequenzmodulation.run.xml" 1782753484 2569 18f4e5e72da73aa95c3260772b047e38 "pdflatex"
-  "GitL_3-Frequenzmodulation.tex" 1782753467 44957 0316c3b9671f0d73c5c91550ff637226 ""
-  "GitL_3-Frequenzmodulation.toc" 1782753484 3578 bdb3e518171d7a63e79059df0566fbfb "pdflatex"
-  "c:/Users/Holger/OneDrive/Hochschule_Bremen/4Semester/GIT/Lab2/gitlab2/Lab3/Latex/GitL_3-Frequenzmodulation.tex" 1782753467 44957 0316c3b9671f0d73c5c91550ff637226 ""
+  "GitL_3-Frequenzmodulation.lof" 1782770739 4476 9941d7315c95829e5a867a2826afd0ad "pdflatex"
+  "GitL_3-Frequenzmodulation.lot" 1782770739 1114 c8b33dde56d07d0f869401546cf13f16 "pdflatex"
+  "GitL_3-Frequenzmodulation.run.xml" 1782770739 2569 18f4e5e72da73aa95c3260772b047e38 "pdflatex"
+  "GitL_3-Frequenzmodulation.tex" 1782770721 47336 5f9c396cf632ff568473978b973f6432 ""
+  "GitL_3-Frequenzmodulation.toc" 1782770739 3578 30666803054ccb683f42a299e79843aa "pdflatex"
+  "c:/Users/Holger/OneDrive/Hochschule_Bremen/4Semester/GIT/Lab2/gitlab2/Lab3/Latex/GitL_3-Frequenzmodulation.tex" 1782770721 47336 5f9c396cf632ff568473978b973f6432 ""
   (generated)
   "GitL_3-Frequenzmodulation.aux"
   "GitL_3-Frequenzmodulation.bcf"

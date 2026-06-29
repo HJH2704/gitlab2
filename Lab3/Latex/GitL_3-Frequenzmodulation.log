@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.7)  29 JUN 2026 19:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.7)  30 JUN 2026 00:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1758,180 +1758,175 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [16 <../Abbildungen/2/2.1.2/Messspektrm_m100_20260629_012447.pdf>] [17 <../Abbildungen/2/2.2/Messspektrum_20khz_m24_20260629_011957.pdf> <../Abbildungen/2/2.2/Messspektrum_2Vgl_m24_20260629_011957.pdf>]
-<../Abbildungen/2/2.3/Bodeplot.png, id=693, 578.16pt x 433.62pt>
+<../Abbildungen/2/2.3/Bodeplot.png, id=690, 578.16pt x 433.62pt>
 File: ../Abbildungen/2/2.3/Bodeplot.png Graphic file (type png)
 <use ../Abbildungen/2/2.3/Bodeplot.png>
-Package pdftex.def Info: ../Abbildungen/2/2.3/Bodeplot.png  used on input line 566.
+Package pdftex.def Info: ../Abbildungen/2/2.3/Bodeplot.png  used on input line 565.
 (pdftex.def)             Requested size: 336.0982pt x 252.06879pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 <../Abbildungen/2/2.3/Messspektrum_Phase_m24_20260629_011531.pdf, id=694, 570.58984pt x 357.41191pt>
 File: ../Abbildungen/2/2.3/Messspektrum_Phase_m24_20260629_011531.pdf Graphic file (type pdf)
 <use ../Abbildungen/2/2.3/Messspektrum_Phase_m24_20260629_011531.pdf>
-Package pdftex.def Info: ../Abbildungen/2/2.3/Messspektrum_Phase_m24_20260629_011531.pdf  used on input line 574.
+Package pdftex.def Info: ../Abbildungen/2/2.3/Messspektrum_Phase_m24_20260629_011531.pdf  used on input line 572.
 (pdftex.def)             Requested size: 358.50612pt x 224.57079pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../Abbildungen/2/2.3/Messspektrum_VglPhase_m24_20260629_011531.pdf, id=695, 570.58984pt x 357.41191pt>
+<../Abbildungen/2/2.3/Messspektrum_VglPhase_m24_20260629_011531.pdf, id=697, 570.58984pt x 357.41191pt>
 File: ../Abbildungen/2/2.3/Messspektrum_VglPhase_m24_20260629_011531.pdf Graphic file (type pdf)
 <use ../Abbildungen/2/2.3/Messspektrum_VglPhase_m24_20260629_011531.pdf>
 Package pdftex.def Info: ../Abbildungen/2/2.3/Messspektrum_VglPhase_m24_20260629_011531.pdf  used on input line 581.
 (pdftex.def)             Requested size: 358.50612pt x 224.57079pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<../Abbildungen/3/2/Messspektrum_Rechteck_m05_20260629_011824.pdf, id=696, 570.58984pt x 357.97903pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[18] [19 <../Abbildungen/2/2.3/Bodeplot.png> <../Abbildungen/2/2.3/Messspektrum_Phase_m24_20260629_011531.pdf>]
+<../Abbildungen/3/2/Messspektrum_Rechteck_m05_20260629_011824.pdf, id=769, 570.58984pt x 357.97903pt>
 File: ../Abbildungen/3/2/Messspektrum_Rechteck_m05_20260629_011824.pdf Graphic file (type pdf)
 <use ../Abbildungen/3/2/Messspektrum_Rechteck_m05_20260629_011824.pdf>
-Package pdftex.def Info: ../Abbildungen/3/2/Messspektrum_Rechteck_m05_20260629_011824.pdf  used on input line 618.
+Package pdftex.def Info: ../Abbildungen/3/2/Messspektrum_Rechteck_m05_20260629_011824.pdf  used on input line 622.
 (pdftex.def)             Requested size: 358.50612pt x 224.92712pt.
-[18]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../Abbildungen/3/2/Messspektrum_Rechteck_m120260629_011824.pdf, id=705, 570.58984pt x 357.97903pt>
+ [20 <../Abbildungen/2/2.3/Messspektrum_VglPhase_m24_20260629_011531.pdf>]
+<../Abbildungen/3/2/Messspektrum_Rechteck_m120260629_011824.pdf, id=828, 570.58984pt x 357.97903pt>
 File: ../Abbildungen/3/2/Messspektrum_Rechteck_m120260629_011824.pdf Graphic file (type pdf)
 <use ../Abbildungen/3/2/Messspektrum_Rechteck_m120260629_011824.pdf>
-Package pdftex.def Info: ../Abbildungen/3/2/Messspektrum_Rechteck_m120260629_011824.pdf  used on input line 625.
+Package pdftex.def Info: ../Abbildungen/3/2/Messspektrum_Rechteck_m120260629_011824.pdf  used on input line 629.
 (pdftex.def)             Requested size: 358.50612pt x 224.92712pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[19 <../Abbildungen/2/2.3/Bodeplot.png> <../Abbildungen/2/2.3/Messspektrum_Phase_m24_20260629_011531.pdf>] [20 <../Abbildungen/2/2.3/Messspektrum_VglPhase_m24_20260629_011531.pdf> <../Abbildungen/3/2/Messspektrum_Rechteck_m05_20260629_011824.pdf>] [21 <../Abbildungen/3/2/Messspektrum_Rechteck_m120260629_011824.pdf>] [22]
-<../Fotos/1/1_1/Beispielbild_Ausgangsfrequenz.PNG, id=932, 1284.8pt x 827.09pt>
+ [21 <../Abbildungen/3/2/Messspektrum_Rechteck_m05_20260629_011824.pdf> <../Abbildungen/3/2/Messspektrum_Rechteck_m120260629_011824.pdf>] [22] [23]
+<../Fotos/1/1_1/Beispielbild_Ausgangsfrequenz.PNG, id=942, 1284.8pt x 827.09pt>
 File: ../Fotos/1/1_1/Beispielbild_Ausgangsfrequenz.PNG Graphic file (type png)
 <use ../Fotos/1/1_1/Beispielbild_Ausgangsfrequenz.PNG>
-Package pdftex.def Info: ../Fotos/1/1_1/Beispielbild_Ausgangsfrequenz.PNG  used on input line 648.
+Package pdftex.def Info: ../Fotos/1/1_1/Beispielbild_Ausgangsfrequenz.PNG  used on input line 652.
 (pdftex.def)             Requested size: 291.28238pt x 187.51332pt.
-<../Fotos/2/2_1/0_5/Trägerfrequenz.PNG, id=933, 1284.8pt x 827.09pt>
+<../Fotos/2/2_1/0_5/Trägerfrequenz.PNG, id=943, 1284.8pt x 827.09pt>
 File: ../Fotos/2/2_1/0_5/Trägerfrequenz.PNG Graphic file (type png)
 <use ../Fotos/2/2_1/0_5/Trägerfrequenz.PNG>
-Package pdftex.def Info: ../Fotos/2/2_1/0_5/Trägerfrequenz.PNG  used on input line 655.
+Package pdftex.def Info: ../Fotos/2/2_1/0_5/Trägerfrequenz.PNG  used on input line 659.
 (pdftex.def)             Requested size: 291.28238pt x 187.51332pt.
- [23 <../Fotos/1/1_1/Beispielbild_Ausgangsfrequenz.PNG (PNG copy)> <../Fotos/2/2_1/0_5/Trägerfrequenz.PNG (PNG copy)>]
-<../Fotos/2/2_1/0_5/Spekatralbild.png, id=938, 1371.1225pt x 770.88pt>
+ [24 <../Fotos/1/1_1/Beispielbild_Ausgangsfrequenz.PNG (PNG copy)> <../Fotos/2/2_1/0_5/Trägerfrequenz.PNG (PNG copy)>]
+<../Fotos/2/2_1/0_5/Spekatralbild.png, id=948, 1371.1225pt x 770.88pt>
 File: ../Fotos/2/2_1/0_5/Spekatralbild.png Graphic file (type png)
 <use ../Fotos/2/2_1/0_5/Spekatralbild.png>
-Package pdftex.def Info: ../Fotos/2/2_1/0_5/Spekatralbild.png  used on input line 662.
+Package pdftex.def Info: ../Fotos/2/2_1/0_5/Spekatralbild.png  used on input line 666.
 (pdftex.def)             Requested size: 291.28238pt x 163.75984pt.
-<../Fotos/2/2_1/2_4/Spektralanalyse.png, id=939, 1371.1225pt x 770.88pt>
+<../Fotos/2/2_1/2_4/Spektralanalyse.png, id=949, 1371.1225pt x 770.88pt>
 File: ../Fotos/2/2_1/2_4/Spektralanalyse.png Graphic file (type png)
 <use ../Fotos/2/2_1/2_4/Spektralanalyse.png>
-Package pdftex.def Info: ../Fotos/2/2_1/2_4/Spektralanalyse.png  used on input line 669.
+Package pdftex.def Info: ../Fotos/2/2_1/2_4/Spektralanalyse.png  used on input line 673.
 (pdftex.def)             Requested size: 291.28238pt x 163.75984pt.
-<../Fotos/2/2_1/10/Measurement0155.png, id=940, 1371.1225pt x 770.88pt>
+<../Fotos/2/2_1/10/Measurement0155.png, id=950, 1371.1225pt x 770.88pt>
 File: ../Fotos/2/2_1/10/Measurement0155.png Graphic file (type png)
 <use ../Fotos/2/2_1/10/Measurement0155.png>
-Package pdftex.def Info: ../Fotos/2/2_1/10/Measurement0155.png  used on input line 676.
+Package pdftex.def Info: ../Fotos/2/2_1/10/Measurement0155.png  used on input line 680.
 (pdftex.def)             Requested size: 291.28238pt x 163.75984pt.
- [24 <../Fotos/2/2_1/0_5/Spekatralbild.png (PNG copy)> <../Fotos/2/2_1/2_4/Spektralanalyse.png (PNG copy)> <../Fotos/2/2_1/10/Measurement0155.png (PNG copy)>]
-<../Fotos/2/2_1/Unbeschaltet.png, id=945, 1371.1225pt x 770.88pt>
+ [25 <../Fotos/2/2_1/0_5/Spekatralbild.png (PNG copy)> <../Fotos/2/2_1/2_4/Spektralanalyse.png (PNG copy)> <../Fotos/2/2_1/10/Measurement0155.png (PNG copy)>]
+<../Fotos/2/2_1/Unbeschaltet.png, id=956, 1371.1225pt x 770.88pt>
 File: ../Fotos/2/2_1/Unbeschaltet.png Graphic file (type png)
 <use ../Fotos/2/2_1/Unbeschaltet.png>
-Package pdftex.def Info: ../Fotos/2/2_1/Unbeschaltet.png  used on input line 683.
+Package pdftex.def Info: ../Fotos/2/2_1/Unbeschaltet.png  used on input line 687.
 (pdftex.def)             Requested size: 291.28238pt x 163.75984pt.
-<../Fotos/2/2_2/Measurement0214.png, id=946, 1371.1225pt x 770.88pt>
+<../Fotos/2/2_2/Measurement0214.png, id=957, 1371.1225pt x 770.88pt>
 File: ../Fotos/2/2_2/Measurement0214.png Graphic file (type png)
 <use ../Fotos/2/2_2/Measurement0214.png>
-Package pdftex.def Info: ../Fotos/2/2_2/Measurement0214.png  used on input line 690.
+Package pdftex.def Info: ../Fotos/2/2_2/Measurement0214.png  used on input line 694.
 (pdftex.def)             Requested size: 291.28238pt x 163.75984pt.
-<../Fotos/3/3_1/Sin.png, id=947, 1371.1225pt x 770.88pt>
+<../Fotos/3/3_1/Sin.png, id=958, 1371.1225pt x 770.88pt>
 File: ../Fotos/3/3_1/Sin.png Graphic file (type png)
 <use ../Fotos/3/3_1/Sin.png>
-Package pdftex.def Info: ../Fotos/3/3_1/Sin.png  used on input line 697.
+Package pdftex.def Info: ../Fotos/3/3_1/Sin.png  used on input line 701.
 (pdftex.def)             Requested size: 291.28238pt x 163.75984pt.
- [25 <../Fotos/2/2_1/Unbeschaltet.png (PNG copy)> <../Fotos/2/2_2/Measurement0214.png (PNG copy)> <../Fotos/3/3_1/Sin.png (PNG copy)>]
-<../Fotos/3/3_1/Dreiesck.png, id=953, 1371.1225pt x 770.88pt>
+ [26 <../Fotos/2/2_1/Unbeschaltet.png (PNG copy)> <../Fotos/2/2_2/Measurement0214.png (PNG copy)> <../Fotos/3/3_1/Sin.png (PNG copy)>]
+<../Fotos/3/3_1/Dreiesck.png, id=963, 1371.1225pt x 770.88pt>
 File: ../Fotos/3/3_1/Dreiesck.png Graphic file (type png)
 <use ../Fotos/3/3_1/Dreiesck.png>
-Package pdftex.def Info: ../Fotos/3/3_1/Dreiesck.png  used on input line 704.
+Package pdftex.def Info: ../Fotos/3/3_1/Dreiesck.png  used on input line 708.
 (pdftex.def)             Requested size: 291.28238pt x 163.75984pt.
-<../Fotos/3/3_1/Rechteck.png, id=954, 1371.1225pt x 770.88pt>
+<../Fotos/3/3_1/Rechteck.png, id=964, 1371.1225pt x 770.88pt>
 File: ../Fotos/3/3_1/Rechteck.png Graphic file (type png)
 <use ../Fotos/3/3_1/Rechteck.png>
-Package pdftex.def Info: ../Fotos/3/3_1/Rechteck.png  used on input line 711.
+Package pdftex.def Info: ../Fotos/3/3_1/Rechteck.png  used on input line 715.
 (pdftex.def)             Requested size: 291.28238pt x 163.75984pt.
-<../Fotos/3/3_2/0.5/Measurement0160.png, id=955, 1371.1225pt x 770.88pt>
+<../Fotos/3/3_2/0.5/Measurement0160.png, id=965, 1371.1225pt x 770.88pt>
 File: ../Fotos/3/3_2/0.5/Measurement0160.png Graphic file (type png)
 <use ../Fotos/3/3_2/0.5/Measurement0160.png>
-Package pdftex.def Info: ../Fotos/3/3_2/0.5/Measurement0160.png  used on input line 718.
+Package pdftex.def Info: ../Fotos/3/3_2/0.5/Measurement0160.png  used on input line 722.
 (pdftex.def)             Requested size: 291.28238pt x 163.75984pt.
- [26 <../Fotos/3/3_1/Dreiesck.png (PNG copy)> <../Fotos/3/3_1/Rechteck.png (PNG copy)> <../Fotos/3/3_2/0.5/Measurement0160.png (PNG copy)>]
-<../Fotos/3/3_2/1/Measurement0167.png, id=960, 1371.1225pt x 770.88pt>
+ [27 <../Fotos/3/3_1/Dreiesck.png (PNG copy)> <../Fotos/3/3_1/Rechteck.png (PNG copy)> <../Fotos/3/3_2/0.5/Measurement0160.png (PNG copy)>]
+<../Fotos/3/3_2/1/Measurement0167.png, id=970, 1371.1225pt x 770.88pt>
 File: ../Fotos/3/3_2/1/Measurement0167.png Graphic file (type png)
 <use ../Fotos/3/3_2/1/Measurement0167.png>
-Package pdftex.def Info: ../Fotos/3/3_2/1/Measurement0167.png  used on input line 727.
+Package pdftex.def Info: ../Fotos/3/3_2/1/Measurement0167.png  used on input line 731.
 (pdftex.def)             Requested size: 291.28238pt x 163.75984pt.
-<../Fotos/3/3_3/30/Measurement0182.png, id=961, 1371.1225pt x 770.88pt>
+<../Fotos/3/3_3/30/Measurement0182.png, id=971, 1371.1225pt x 770.88pt>
 File: ../Fotos/3/3_3/30/Measurement0182.png Graphic file (type png)
 <use ../Fotos/3/3_3/30/Measurement0182.png>
-Package pdftex.def Info: ../Fotos/3/3_3/30/Measurement0182.png  used on input line 734.
+Package pdftex.def Info: ../Fotos/3/3_3/30/Measurement0182.png  used on input line 738.
 (pdftex.def)             Requested size: 291.28238pt x 163.75984pt.
-<../Fotos/3/3_3/50/Measurement0181.png, id=962, 1371.1225pt x 770.88pt>
+<../Fotos/3/3_3/50/Measurement0181.png, id=972, 1371.1225pt x 770.88pt>
 File: ../Fotos/3/3_3/50/Measurement0181.png Graphic file (type png)
 <use ../Fotos/3/3_3/50/Measurement0181.png>
-Package pdftex.def Info: ../Fotos/3/3_3/50/Measurement0181.png  used on input line 741.
+Package pdftex.def Info: ../Fotos/3/3_3/50/Measurement0181.png  used on input line 745.
 (pdftex.def)             Requested size: 291.28238pt x 163.75984pt.
- [27 <../Fotos/3/3_2/1/Measurement0167.png (PNG copy)> <../Fotos/3/3_3/30/Measurement0182.png (PNG copy)> <../Fotos/3/3_3/50/Measurement0181.png (PNG copy)>]
-<../Fotos/3/3_3/70/Measurement0180.png, id=967, 1371.1225pt x 770.88pt>
+ [28 <../Fotos/3/3_2/1/Measurement0167.png (PNG copy)> <../Fotos/3/3_3/30/Measurement0182.png (PNG copy)> <../Fotos/3/3_3/50/Measurement0181.png (PNG copy)>]
+<../Fotos/3/3_3/70/Measurement0180.png, id=977, 1371.1225pt x 770.88pt>
 File: ../Fotos/3/3_3/70/Measurement0180.png Graphic file (type png)
 <use ../Fotos/3/3_3/70/Measurement0180.png>
-Package pdftex.def Info: ../Fotos/3/3_3/70/Measurement0180.png  used on input line 748.
+Package pdftex.def Info: ../Fotos/3/3_3/70/Measurement0180.png  used on input line 752.
 (pdftex.def)             Requested size: 291.28238pt x 163.75984pt.
-<../Fotos/3/3_3/100/Measurement0179.png, id=968, 1371.1225pt x 770.88pt>
+<../Fotos/3/3_3/100/Measurement0179.png, id=978, 1371.1225pt x 770.88pt>
 File: ../Fotos/3/3_3/100/Measurement0179.png Graphic file (type png)
 <use ../Fotos/3/3_3/100/Measurement0179.png>
-Package pdftex.def Info: ../Fotos/3/3_3/100/Measurement0179.png  used on input line 755.
+Package pdftex.def Info: ../Fotos/3/3_3/100/Measurement0179.png  used on input line 759.
 (pdftex.def)             Requested size: 291.28238pt x 163.75984pt.
- [28 <../Fotos/3/3_3/70/Measurement0180.png (PNG copy)> <../Fotos/3/3_3/100/Measurement0179.png (PNG copy)>] [29] [30] [31] [32]
-<../GIT_Labor_Frequenzmodulation_SoSe26.pdf, id=990, 597.50829pt x 845.0471pt>
+ [29 <../Fotos/3/3_3/70/Measurement0180.png (PNG copy)> <../Fotos/3/3_3/100/Measurement0179.png (PNG copy)>] [30] [31] [32] [33]
+<../GIT_Labor_Frequenzmodulation_SoSe26.pdf, id=1000, 597.50829pt x 845.0471pt>
 File: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf Graphic file (type pdf)
 <use ../GIT_Labor_Frequenzmodulation_SoSe26.pdf>
-Package pdftex.def Info: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf  used on input line 965.
+Package pdftex.def Info: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf  used on input line 969.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<../GIT_Labor_Frequenzmodulation_SoSe26.pdf, id=992, page=6, 597.50829pt x 845.0471pt>
+<../GIT_Labor_Frequenzmodulation_SoSe26.pdf, id=1002, page=6, 597.50829pt x 845.0471pt>
 File: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf Graphic file (type pdf)
 <use ../GIT_Labor_Frequenzmodulation_SoSe26.pdf, page 6>
-Package pdftex.def Info: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf , page6 used on input line 965.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf Graphic file (type pdf)
-<use ../GIT_Labor_Frequenzmodulation_SoSe26.pdf, page 6>
-Package pdftex.def Info: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf , page6 used on input line 965.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
- [33]
-File: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf Graphic file (type pdf)
-<use ../GIT_Labor_Frequenzmodulation_SoSe26.pdf, page 6>
-Package pdftex.def Info: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf , page6 used on input line 965.
+Package pdftex.def Info: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf , page6 used on input line 969.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf Graphic file (type pdf)
 <use ../GIT_Labor_Frequenzmodulation_SoSe26.pdf, page 6>
-Package pdftex.def Info: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf , page6 used on input line 965.
+Package pdftex.def Info: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf , page6 used on input line 969.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+ [34]
+File: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf Graphic file (type pdf)
+<use ../GIT_Labor_Frequenzmodulation_SoSe26.pdf, page 6>
+Package pdftex.def Info: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf , page6 used on input line 969.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf Graphic file (type pdf)
 <use ../GIT_Labor_Frequenzmodulation_SoSe26.pdf, page 6>
-Package pdftex.def Info: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf , page6 used on input line 965.
+Package pdftex.def Info: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf , page6 used on input line 969.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
- [34
+File: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf Graphic file (type pdf)
+<use ../GIT_Labor_Frequenzmodulation_SoSe26.pdf, page 6>
+Package pdftex.def Info: ../GIT_Labor_Frequenzmodulation_SoSe26.pdf , page6 used on input line 969.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+ [35
 
  <../GIT_Labor_Frequenzmodulation_SoSe26.pdf>]
-<../Fotos/PXL_20260626_081001859.MP.jpg, id=1027, 4095.3pt x 3083.52pt>
+<../Fotos/PXL_20260626_081001859.MP.jpg, id=1037, 4095.3pt x 3083.52pt>
 File: ../Fotos/PXL_20260626_081001859.MP.jpg Graphic file (type jpg)
 <use ../Fotos/PXL_20260626_081001859.MP.jpg>
-Package pdftex.def Info: ../Fotos/PXL_20260626_081001859.MP.jpg  used on input line 969.
+Package pdftex.def Info: ../Fotos/PXL_20260626_081001859.MP.jpg  used on input line 973.
 (pdftex.def)             Requested size: 291.28238pt x 219.30315pt.
-<../Fotos/IMG-20260626-WA0000.jpg, id=1028, 1204.5pt x 1606.0pt>
+<../Fotos/IMG-20260626-WA0000.jpg, id=1038, 1204.5pt x 1606.0pt>
 File: ../Fotos/IMG-20260626-WA0000.jpg Graphic file (type jpg)
 <use ../Fotos/IMG-20260626-WA0000.jpg>
-Package pdftex.def Info: ../Fotos/IMG-20260626-WA0000.jpg  used on input line 975.
+Package pdftex.def Info: ../Fotos/IMG-20260626-WA0000.jpg  used on input line 979.
 (pdftex.def)             Requested size: 291.28238pt x 388.36404pt.
- [35 <../Fotos/PXL_20260626_081001859.MP.jpg> <../Fotos/IMG-20260626-WA0000.jpg>]
+ [36 <../Fotos/PXL_20260626_081001859.MP.jpg> <../Fotos/IMG-20260626-WA0000.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[36] (GitL_3-Frequenzmodulation.aux)
+[37] (GitL_3-Frequenzmodulation.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -1945,17 +1940,17 @@ Package logreq Info: Writing requests to 'GitL_3-Frequenzmodulation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 74883 strings out of 467691
- 1878954 string characters out of 5414504
- 3920923 words of memory out of 5000000
+ 74884 strings out of 467691
+ 1878961 string characters out of 5414504
+ 3920921 words of memory out of 5000000
  102965 multiletter control sequences out of 15000+600000
  649307 words of font info for 76 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,20n,107p,11331b,2863s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Holger\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\Holger\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Holger\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Holger\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Holger\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Holger\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Holger\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso12.pfb><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Holger/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on GitL_3-Frequenzmodulation.pdf (36 pages, 7463865 bytes).
+Output written on GitL_3-Frequenzmodulation.pdf (37 pages, 7467464 bytes).
 PDF statistics:
- 1463 PDF objects out of 1728 (max. 8388607)
- 150 named destinations out of 1000 (max. 500000)
+ 1476 PDF objects out of 1728 (max. 8388607)
+ 151 named destinations out of 1000 (max. 500000)
  460 words of extra memory for PDF output out of 10000 (max. 10000000)
 

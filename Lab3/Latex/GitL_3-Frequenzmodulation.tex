@@ -560,45 +560,49 @@ Laplace Rücktransformiert ergibt sich dann:
     u_a(t) \approx RC \frac{d}{dt} u_e(t)
 \end{equation}
 Für den Hochpass wurde eine Grenzfrequenz von 200kHz gewählt, was eine Dekade über der Frequenz des Modulationssignals liegt. Zur Realisierung wurde ein RC-Hochpass mit einem C = 15nF Kondensator, sowie einem R = 50$\Omega$ Widerstand. Dies ergibt rechnerisch eine Grenzfrequenz von 196 kHz, was für den Versuch ausreichend genau an 200kHz liegt. In der Aufgabenstellung wurde gefordert, das im Frequenzbereich von 10 kHz - 20kHz die Differentiation durchgeführt wird. Dies ist in Abbildung \ref{Abb:A2_3_BodeplotHP} zu sehen, das in diesem Bereich eine Steigung von -20 dB/Dekade vorliegt. 
-Das aufgenommene Spektrum ist in Abbildung \ref{Abb:A2_2/A2_3 Spektralbild_20kHz} zu sehen. Die Messwerte sind in Tabelle \ref{tab:Aufgabe2.3_m=2.4} festgehalten. Diese Daten grafisch Dargestellt zeigt Abbildung \ref{Abb:A2_3_Spektrum_m24_Phase}.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.75\linewidth]{../Abbildungen/2/2.3/Bodeplot.png}
     \caption{Darstellung des Arbeitsbereichs des Verwendeten Hochpasses}
     \label{Abb:A2_3_BodeplotHP}
 \end{figure}
-
-
+Das aufgenommene Spektrum ist in Abbildung \ref{Abb:A2_2/A2_3 Spektralbild_20kHz} zu sehen. Die Messwerte sind in Tabelle \ref{tab:Aufgabe2.3_m=2.4} festgehalten. Diese Daten grafisch Dargestellt zeigt Abbildung \ref{Abb:A2_3_Spektrum_m24_Phase}.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.3/Messspektrum_Phase_m24_20260629_011531.pdf}
     \caption{Aufgabe: 2.3 Spektrum der Phasenmodulierten Sinusschwingung }
     \label{Abb:A2_3_Spektrum_m24_Phase}
 \end{figure}
-
+Es ist wichtig zu erwähnen, dass durch die Integration des Hochpassen die Amplitude gedämpft wurde. Dadurch musste nach Einbau des Hochpasses die Amplitude auf den vorherigen Wert nachgeregelt werden. 
+Auch bei diesen Daten ist wieder das charakteristische Ausbleiben der Trägerfrequenz zu sehen. So wie in Kapitel \ref{kap:2.2} beträgt der Abstand der Seitenbänder 20 kHz, so wie es zu erwarten wäre. 
+Um nun die Daten adäquat vergleichen zu können werden nun die Daten aus Aufgabe 2.2 und die neu gewonnenen Daten in Abbildung \ref{Abb:A2_2_Spektrum_Vglm24_f120kHz} miteinander verglichen. 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.8\linewidth]{../Abbildungen/2/2.3/Messspektrum_VglPhase_m24_20260629_011531.pdf}
     \caption{Aufgabe: 2.3 Vergleich des Spektren der Phasensimulierten Sinusschwingung }
     \label{Abb:A2_3_Spektrum_m24_vglPhase}
 \end{figure}
-Warum ist das so?
-Gucken ob amplitude angepasst wurde, da hochpass amplitude dämpft -> wurde wieder so eingestellt das der wert von ca 17,6 V da ist 
-
-AUF BILD IM ANHNAG VERWEISEN 
-
-
-C = 15nF 
-Fg = 200kHz (196 kHz)
-R = 50 Ohm
-
-
+Es ist zu sehen, das bis auf minimale Abweichungen von ca. 3.6 \% bzw. 0.00464 V die Werte identisch aussehen. Die kleinen Abweichungen können unter anderem durch zufällige Messunsicherheiten entstehen oder durch die Verwendung des Hochpassen entstanden sein. 
+Zu begründen ist das gleiche Aussehen der Phasen- und Frequenzmodulation damit, dass bei unverändertem Modulationsindex die gleiche Form des modulierten Trägers entsteht. Bei der Phasenmodulation wird die Phase direkt über die Eingangsgrößen gesteuert wird, oder bei Frequenzmodulation 
+die Phase indirekt beeinflusst wird. Da die Ableitung des Sinus wieder ein verschobener Sinus (Cosinus) mit identischer Frequenz. 
+Es entsteht dadurch die selbe Besselfunktion, welche Maßgeblich für das Aussehen des Spektrum verantwortlich sind. 
+So ist zu erklären warum die Spektren identisch aussehen. 
 \subsection{Frequenzspektren periodischer Modulationssignale}
 \subsubsection{Frequenzspektrum eines Sinus-, Dreieck- und Rechtecksignals}
+Im dritten Abschnitt des Versuchs soll das Aussehen der Spektren von Sinus-, Dreieck- und Rechteckspannung verglichen werden. 
+Bei der Dreieck und Rechteckspannung soll die Amplitude so gewählt werden, das sie im Falle der Sinusschwingung zu einem Modulationsindex vom m= 10 führen sollte.
+Die Abbildung \ref{Abb:A3_1_Spektralbild_Sinus} zeigt das Spektrum des Sinussignals. Die Abbildung \ref{Abb:A3_1_Spektralbild_Dreieck} zeigt das Spektrum des Dreiecksignal und in der Abbildung \ref{Abb:A3_1_Spektralbild_Rechteck} ist das Spektrum des Recktecksignal zu sehen.
+Das Zustandekommen des Spektrums des Sinussignals ist in Kapitel \ref{kap:2.1} bereits erklärt. 
+Wie sich die anderen beiden Spektren erklären lassen wird nun untersucht. 
+Erst aussehen der Spektren beschreiben, dann wie diese zustande kommen 
+Ja, das Spektrum entsteht im Wesentlichen durch die Sprünge des Rechtecks.
 
-bilder reichen, keine messwerte 
+Ja, die sinc-/Si-Form erklärt die Hüllkurve.
 
-Selbe Amplitude wie für M = 10
+Beim periodischen Rechteck bekommst du zusätzlich ein Linienspektrum mit harmonischen Anteilen.
+
+Wenn du möchtest, kann ich dir das auch noch mit einer mathematischen Herleitung über die Fourierreihe oder über die Fourier-Transformation eines Einzelpulses zeigen.
+
 BILDER MITEINANDER VERGLEICHEN 
 
 Bei unterschiedlichen singalen sehen die spektren anders aus, wie kommt das zu stande? 
