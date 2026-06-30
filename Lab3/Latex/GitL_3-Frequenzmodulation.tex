@@ -337,35 +337,108 @@ Bit 1 $\to$ $f_1$\\
 \end{itemize}
 
 \section{Durchführung}
+Zu Beginn des Versuches „Frequenzmodulation“ wurde der grundlegende Versuchsaufbau aufgebaut. 
+Dieser musste für die einzelnen Versuchsteile jeweils angepasst, beziehungsweise erweitert werden.\\
+Der Schaltplan des Aufbaus sowie eine Abbildung des Versuchsaufbaus befinden sich im Anhang \ref{Abb:Aufbau_1}.
+Detaillierte Abbildungen der Platine sind in Abbildung \ref{fig:schaltplan_platine} und \ref{Abb:Aufbau_Platine} zu sehen \cite{Labor_Frequenzmodulation}.
+Eine Liste aller verwendeten Geräte kann in der Tabelle \ref{tab:Geräteliste} nachgelesen werden.\\
+Der Ausgang des Gleichstromsgenerators werden in J1, J2 und J3 angeschlossen.
+Zur Regelierung der Gleichspannung werden zwischen den Ausgang J11 und den Eingang J6 der Platine ein Kabel gezogen.
+Weiter wird der Signalgenerator am Eingang J8 der Platine sowie am Eingang CH1 des Oszilyskop angeschlossen.
+Der Ausgang J5 der Platine werden an den Spektralanalysator und am Frequenzanalysators angeschlossen.
+Der Ausgang J7 der Platine wir an den Eingang CH4 des Oszilyskop angeschlossen.
+Das Ampermeter wird am Eingang J4 und Ausgang J5 der Platine angeschlossen, dieses Koaxtialkabel verläuft weiter zum Eingang CH2 des Oszilloskop. \\
+Die Schaltbeschreibung kann mit der Abbildung \ref{Abb:Aufbau_1} nachvollzogen werden.
 
 
 
 \subsection{Durchführung der Aufgabe:  1}
 \subsubsection*{Durchführung der Aufgabe: 1.1}
-
+Für die Aufnahme der statische Modulationskennlinie $\omega =f\left(U_e\right)$ wurde eine Gleichspannung in den FM-Mod-DC-Eingang eingespeist.
+Der Signalgenerator bleibt ausgeschaltet.
+Dabei wurde die Frequenz $f\left(t\right)$ am Ausgang J5 mittels des Frequenzzählers für jede eingespeiste Gleichspannung. 
+Die Gleichspannung wird zwischen -4V bis 4V in 0.25 Schritten variert. 
+Die gemessenen Momentanfrequenzen $f\left(t\right)$  können in Tabelle \ref{tab:Aufgabe1} betrachtet werden.
 
 
 \subsubsection*{Durchführung der Aufgabe: 1.2}
-
-
+Mittels der Tabelle \ref{tab:Aufgabe1} kann eine Kennlinie gebildet werden. 
+Genauere Beschreibungen können in Kapitel \ref{kap:1.1} betrachtet werden. 
+Die Kennlinie kann in Abbildung \ref{Abb:A1_1_Modulationskennlinine} betrachtet werden.
+%%Hier ist die Frage ob du das überhaupt haben möchtest ?
 \subsection{Durchführung der Aufgabe: 2}
 \subsubsection*{Durchführung der Aufgabe: 2.1}
+Am Signalgenerator wird eine sinusförmiges Signal mit der Frequenz $f_1$=10kHz angelegt. 
+Um einen Modulationsgrad von 0.5 zu erhalten muss nach der Gleichung \ref{eq:UA0.5} eine Spannung von 8.838mV anliegen. 
+Um diese Spannung zu erreichen kann Regler RV4 verwendet werden.
+Die anliegende Spannung kann den Multimeter abgelesen werden. \\
+Folgend wurden die Amplitudenmaxima des Frequenzspektrum abgelesen und in die Tabelle \ref{tab:Aufgabe2.1_m=0.5} übertragen.
+Diese Werte müssen jedoch normiert werden. 
+Eine Abbildung des Frequenzspektrum kann in Abbildung \ref{Abb:A2_1_1_2_Spektralbild_m0_5} betrachtet werden.
+Dafür kann der Signalgenerator ausgeschaltet werden und das Maxima im Frequenzspektrum ermittelt werden. 
+Bei diesen durchlauf war dies ein Wert von 1,13V bestimmt worden.\\
+Nachdem dieser Abschnitt beendet worden ist, das Experiment für den Modulationsindex von 2.4 wiederholt. 
+Dafür muss nach der Gleichung \ref{eq:UA2.4} eine Spannung von 42.426mV anliegen. 
+Die Werte dieses Modulationsindex kann in Tabelle \ref{tab:Aufgabe2.1_m=2.4} betrachtet werden.
+Das dazugehörige Frequenzspektrum kann in Abbildung \ref{Abb:A2_1_2_1_Spektralbild_m2_4} betrachtet werden.\\
+Der Versuch wird mit den Modulationsindex 10 wiederholt. 
+Dafür muss eine Spannung von 176.776mV eingestellt werden. 
+Das ist durch Gleichung \ref{eq:UA10} nachfolzogen werden. 
+In Tabelle \ref{tab:Aufgabe2.1_m=10} können die Maxima des Frequenzspektrum abgelesen werden.
+Das Frequenzspektrum kann in Abbildung \ref{Abb:A2_1_3_1_Spektralbild_m10} betrachtet werden.
 
 
 \subsubsection*{Durchführung der Aufgabe: 2.2}
+Der Signalgenerator muss für diese Aufgabenstellung geändert werden. 
+Dabei muss die Frequenz $f_1$ auf 20kHz gesetzt werden. 
+Weiter muss die Spannung so eingestellt werden, das ein Modulationsindex von 2.4 erzeugt wird. 
+Dabei muss eine Spannung von 84.852mV anliegen. 
+Dies kann mit der Gleichung \ref{eq:2UA2.4} nachvollzogen werden. 
+Die Amplitudenmaxima können in Tabelle \ref{tab:Aufgabe2.2_m=24} nachvollzogen werden. 
+Eine Abbildung des Frequenzspektrum kann in Abbildung \ref{Abb:A2_1_2_1_Spektralbild_m2_4} betrachtet werden.
+
+
+
 
 \subsubsection*{Durchführung der Aufgabe: 2.3}
+Zu Begin dieses Versuchsabschnitt muss eine Hochpass gebildet werden. 
+Dafür muss ein Kondensator an Eingang J6 in Reihe geschaltet werden, dafür muss das Multimeter und das Oszilloskop abgenommen werden.
+Die Größe des Kondensator kann in Gleichung \ref{eq:fg} nachvollzogen werden. 
+Da dieses Bauteil nicht vorhanden war, wurde ein 15nF Kondensator eingebaut werden.
+Das dazugehörige Spektrum kann in Abbildung \ref{Abb:A2_3_Spektrum_m24_Phase} betrachtet werden.
+Die Werte des dazugehörigen Maxima kann in Tabelle \ref{tab:Aufgabe2.3_m=2.4} betrachtete werden.
 
-Da der Hochpass die amplitude dämpft muss diese wieder nachgesteuert werden, bis der gewünschte wert wieder ereicht wird. 
+
+
+%%Da der Hochpass die Amplitude dämpft muss diese wieder nachgesteuert werden, bis der gewünschte Wert wieder erreicht wird. 
 
 \subsection{Durchführung der Aufgabe: 3}
 \subsubsection*{Durchführung der Aufgabe: 3.1}
+Die Schaltung wird erneut zurück gebaut werden.
+Für diesen Aufgabenabschnitt muss der Funktionsgenerator angepasst werden. 
+Die Signalfrequenz $f_1$ muss auf 10kHz gesetzt werden. 
+Die Signalart bleibt vorerst auf den Sinus.
+Um bei diesen Einstellungen einen Modulationsindex von 10 zu erhalten, muss nach Gleichung \ref{eq:UA10} ein Spannung von 176.776mmV anliegen.
+Die Aufnahme des Spektrums kann in Abbildung \ref{Abb:A3_1_Spektralbild_Sinus} betrachtet werden.\\
+Nachfolgend muss die Signalart am Signalgenerator auf Rechtecksignal eingestellt werden. 
+Auch hierfür wurde ein Spektrum aufgenommen, welches in Abbildung \ref{Abb:A3_1_Spektralbild_Rechteck} betrachtete werden kann. 
+Schlussendlich wurde das Funktionsgenerator auf ein Dreiecksignal umgestellt. 
+Die Aufnahme hierfür ist in Abbildung \ref{Abb:A3_1_Spektralbild_Dreieck} zu sehen.
+
 
 \subsubsection*{Durchführung der Aufgabe: 3.2}
-
+Der Funktionsgenerator muss auf folgende Werte eingestellt sein: $f_1$=10kHz, Rechtecksignal. 
+Folgend wurde eine Spannung von 8.838mV für einen Modulationsindex von 0.5 und eine Spannung von 17,677mmV für einen Modulationsindex von 1 eingespeist werden. 
+Weiter wurde von beiden erscheinenden Spektrum eine Abbildung gemacht.
+Dafür können Abbildung \ref{Abb:A3_2_Spektrum_Rechteck_m05} und \ref{Abb:A3_2_Spektrum_Rechteck_m1} betrachtet werden. 
+Um eine Auswertung später zu verbessern wurden zusätzlich die Maxima-Werte aufgenommen. 
+Diese sind in Tabelle \ref{tab:Aufgabe3.2_m=0.5} und \ref{tab:Aufgabe3.2_m=1} dokumentiert.
 
 \subsubsection*{Durchführung der Aufgabe: 3.3}
-
+Nachfolgend wurde der Funktionsgenerator auf ein Sinussignal gestellt. 
+Die Anliegende Signalspannung wurde auf 8.838mV eingestellt. 
+Nachfolgend wurde die Frequenz des Signals erhöht und jeweils ein Bild des Spektrums aufgenommen. 
+Diese Spektrumsaufnahmen sind im Anhang \ref{Ah:Weitere_Abbildungen} mit der Abbildungen \ref{Abb:A3_3_Spektralbild_30kHz}, \ref{Abb:A3_3_Spektralbild_50kHz}, \ref{Abb:A3_3_Spektralbild_70kHz} und \ref{Abb:A3_3_Spektralbild_100kHz} zu finden.
 
 \subsection{Ende des Versuchs}
 Nach Abschluss aller Messungen wurden sämtliche Geräte ausgeschaltet und der Arbeitsplatz wieder in seinen ursprünglichen Zustand zurückversetzt (Siehe Abbildung \ref{Abb:Aufbau_phy}).
@@ -400,7 +473,7 @@ Für diesen Bereich wurde dann die Steigung berechnet.
 
 Der Kehrwert der Steigung $\alpha$ ist für die Folgenden Versuchsabschnitte Elementar, um die benötigten Signalamplituden berechnen zu können. 
 \begin{equation}
-    \alpha = \frac{1kHz}{b} = \frac{1khz}{-0.4\frac{kHz}{V}} = -2.5 mV
+    \alpha = \frac{1}{b} = \frac{1}{-0.4\frac{kHz}{V}} = -2.5 \frac{mV}{kHz}
 \end{equation}
 
 Es ist hierbei zu erwähnen, das nur der Betrag dieses Wertes von Bedeutung ist, da das negative Vorzeichen als eine Phasendrehung des Modulationssignal von 180° aufgefasst werden kann. \cite{GoldenbaumGitskript} 
@@ -432,13 +505,13 @@ Mit diesen Werten können dann die einzustellenden Signalamplituden über folgen
 Hierbei ist zu beachten, dass hier der Effektivwert angegeben wird. Da es sich um eine Sinusschwingung handelt kann hier der Effektivwert durch eine Division mit $\sqrt{2}$ bestimmt werden. \cite{hagmannGrundlagenElektrotechnikBewaehrte2020}\\
 So ergeben sich folgende Signalamplituden:
 \begin{equation}
-    U_{A0.5} = 2.5 mV \cdot \frac{5 kHz}{\sqrt{2}} = 8.838 mV
+    U_{A0.5} = 2.5\frac{mV}{kHz} \cdot \frac{5 kHz}{\sqrt{2}} = 8.838 mV \label{eq:UA0.5}
 \end{equation}
 \begin{equation}
-    U_{A2.4} = 2.5 mV \cdot \frac{24 kHz}{\sqrt{2}} = 42.426 mV
+    U_{A2.4} = 2.5 \frac{mV}{kHz}\cdot \frac{24 kHz}{\sqrt{2}} = 42.426 mV \label{eq:UA2.4}
 \end{equation}
 \begin{equation}
-    U_{A10} = 2.5 mV \cdot \frac{100 kHz}{\sqrt{2}} = 176.776 mV
+    U_{A10} = 2.5 \frac{mV}{kHz}\cdot \frac{100 kHz}{\sqrt{2}} = 176.776 mV \label{eq:UA10}
 \end{equation}
 Um die zu messenden Werte Vergleichen zu können, soll mittels der Besselfunktion erster Art das zu erwartende Spektrum berechnet werden. 
 Mittels der Python Libary Scipy wurden sich die Werte für das Spektrum erstellt und in der Abbildung \ref{Abb:A2_1_Besselspektren} dargestellt.
@@ -507,7 +580,7 @@ So ergeben sich die folgenden Werte:
     \Delta F_{2.4, 20} = 2.4 \cdot 20 kHz  = 48 kHz
 \end{equation}
 \begin{equation}
-    U_{A,2.4,20} = 2.5 mV \cdot \frac{48 kHz}{\sqrt{2}} = 84.852 mV
+    U_{A,2.4,20} = 2.5 mV \cdot \frac{48 kHz}{\sqrt{2}} = 84.852 mV \label{eq:2UA2.4}
 \end{equation}
 Die benötigte Bandbreite kann ebenfalls wieder über die Formel von Carson (\ref{sec:Carson}) berechnet werden. 
 \begin{equation}
@@ -559,7 +632,11 @@ Laplace Rücktransformiert ergibt sich dann:
 \begin{equation}
     u_a(t) \approx RC \frac{d}{dt} u_e(t)
 \end{equation}
-Für den Hochpass wurde eine Grenzfrequenz von 200kHz gewählt, was eine Dekade über der Frequenz des Modulationssignals liegt. Zur Realisierung wurde ein RC-Hochpass mit einem C = 15nF Kondensator, sowie einem R = 50$\Omega$ Widerstand. Dies ergibt rechnerisch eine Grenzfrequenz von 196 kHz, was für den Versuch ausreichend genau an 200kHz liegt. In der Aufgabenstellung wurde gefordert, das im Frequenzbereich von 10 kHz - 20kHz die Differentiation durchgeführt wird. Dies ist in Abbildung \ref{Abb:A2_3_BodeplotHP} zu sehen, das in diesem Bereich eine Steigung von -20 dB/Dekade vorliegt. 
+Für den Hochpass wurde eine Grenzfrequenz von 200kHz gewählt, was eine Dekade über der Frequenz des Modulationssignals liegt. 
+\begin{equation}
+    f_g = \frac{1}{2\pi RC} \Rightarrow C = \frac{1}{2\pi \cdot 200kHz \cdot 50\Omega} = 15.9 nF \label{eq:fg}
+\end{equation}
+Zur Realisierung wurde ein RC-Hochpass mit einem C = 15nF Kondensator, sowie einem R = 50$\Omega$ Widerstand. Dies ergibt rechnerisch eine Grenzfrequenz von 196 kHz, was für den Versuch ausreichend genau an 200kHz liegt. In der Aufgabenstellung wurde gefordert, das im Frequenzbereich von 10 kHz - 20kHz die Differentiation durchgeführt wird. Dies ist in Abbildung \ref{Abb:A2_3_BodeplotHP} zu sehen, das in diesem Bereich eine Steigung von -20 dB/Dekade vorliegt. 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.75\linewidth]{../Abbildungen/2/2.3/Bodeplot.png}
@@ -594,6 +671,8 @@ Bei der Dreieck und Rechteckspannung soll die Amplitude so gewählt werden, das 
 Die Abbildung \ref{Abb:A3_1_Spektralbild_Sinus} zeigt das Spektrum des Sinussignals. Die Abbildung \ref{Abb:A3_1_Spektralbild_Dreieck} zeigt das Spektrum des Dreiecksignal und in der Abbildung \ref{Abb:A3_1_Spektralbild_Rechteck} ist das Spektrum des Recktecksignal zu sehen.
 Das Zustandekommen des Spektrums des Sinussignals ist in Kapitel \ref{kap:2.1} bereits erklärt. 
 Wie sich die anderen beiden Spektren erklären lassen wird nun untersucht. 
+
+
 Erst aussehen der Spektren beschreiben, dann wie diese zustande kommen 
 Ja, das Spektrum entsteht im Wesentlichen durch die Sprünge des Rechtecks.
 
